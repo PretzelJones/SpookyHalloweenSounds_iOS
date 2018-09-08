@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B05DEA021361BB300BAC058 /* grave_stones_source_shadows_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DE9F21361BB300BAC058 /* grave_stones_source_shadows_title.png */; };
+		7B05DEA22136234300BAC058 /* tickrtreat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA12136234200BAC058 /* tickrtreat.png */; };
+		7B05DEA42137665B00BAC058 /* graveyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA32137665A00BAC058 /* graveyard.png */; };
+		7B05DEA62139EAF200BAC058 /* chilling_cries.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA52139EAF100BAC058 /* chilling_cries.mp3 */; };
+		7B305C8D2132F25300B184F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B305C8C2132F25300B184F5 /* AppDelegate.swift */; };
+		7B305C8F2132F25300B184F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B305C8E2132F25300B184F5 /* ViewController.swift */; };
+		7B305C922132F25300B184F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B305C902132F25300B184F5 /* Main.storyboard */; };
+		7B305C942132F25500B184F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B305C932132F25500B184F5 /* Assets.xcassets */; };
+		7B305C972132F25500B184F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B305C952132F25500B184F5 /* LaunchScreen.storyboard */; };
+		7B305CA22132F25500B184F5 /* SpookyHalloweenSoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B305CA12132F25500B184F5 /* SpookyHalloweenSoundsTests.swift */; };
+		7B305CAD2132F25500B184F5 /* SpookyHalloweenSoundsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B305CAC2132F25500B184F5 /* SpookyHalloweenSoundsUITests.swift */; };
+		7B987D7E2133718D00743717 /* cat_scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D512133718800743717 /* cat_scream.mp3 */; };
+		7B987D7F2133718D00743717 /* igor_grumble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D522133718800743717 /* igor_grumble.mp3 */; };
+		7B987D802133718D00743717 /* creepy_song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D532133718900743717 /* creepy_song.mp3 */; };
+		7B987D812133718D00743717 /* chained_ghoul.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D542133718900743717 /* chained_ghoul.wav */; };
+		7B987D822133718D00743717 /* cries_from_hell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D552133718900743717 /* cries_from_hell.mp3 */; };
+		7B987D832133718D00743717 /* scarecrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D562133718900743717 /* scarecrow.mp3 */; };
+		7B987D842133718D00743717 /* haunted_organ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D572133718900743717 /* haunted_organ.mp3 */; };
+		7B987D852133718D00743717 /* warning_bells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D582133718900743717 /* warning_bells.mp3 */; };
+		7B987D862133718D00743717 /* chilling_horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D592133718900743717 /* chilling_horn.mp3 */; };
+		7B987D872133718D00743717 /* poltergeist_voice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D5A2133718900743717 /* poltergeist_voice.mp3 */; };
+		7B987D882133718D00743717 /* long_mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D5B2133718A00743717 /* long_mix.mp3 */; };
+		7B987D892133718D00743717 /* spooky_owl.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D5C2133718A00743717 /* spooky_owl.wav */; };
+		7B987D8A2133718D00743717 /* witch_laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D5D2133718A00743717 /* witch_laugh.mp3 */; };
+		7B987D8B2133718D00743717 /* scary_nursery.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D5E2133718A00743717 /* scary_nursery.mp3 */; };
+		7B987D8C2133718D00743717 /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D5F2133718A00743717 /* bubbles.wav */; };
+		7B987D8D2133718D00743717 /* ghostly_whisper.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D602133718A00743717 /* ghostly_whisper.mp3 */; };
+		7B987D8E2133718D00743717 /* werewolf_howl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D612133718A00743717 /* werewolf_howl.mp3 */; };
+		7B987D8F2133718D00743717 /* spooky_chains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D622133718A00743717 /* spooky_chains.mp3 */; };
+		7B987D902133718D00743717 /* wolf_cry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D632133718A00743717 /* wolf_cry.mp3 */; };
+		7B987D912133718D00743717 /* wraith_wail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D642133718A00743717 /* wraith_wail.wav */; };
+		7B987D922133718D00743717 /* evil_man.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D652133718A00743717 /* evil_man.mp3 */; };
+		7B987D932133718D00743717 /* zombie_come.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D662133718B00743717 /* zombie_come.mp3 */; };
+		7B987D942133718D00743717 /* blowing_wind.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D672133718B00743717 /* blowing_wind.wav */; };
+		7B987D952133718D00743717 /* monster_growl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D682133718B00743717 /* monster_growl.mp3 */; };
+		7B987D962133718D00743717 /* zombie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D692133718B00743717 /* zombie.mp3 */; };
+		7B987D972133718D00743717 /* black_cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D6A2133718B00743717 /* black_cat.mp3 */; };
+		7B987D982133718D00743717 /* haunted_swamp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D6B2133718B00743717 /* haunted_swamp.mp3 */; };
+		7B987D9A2133718D00743717 /* ultra_terror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D6D2133718B00743717 /* ultra_terror.mp3 */; };
+		7B987D9B2133718D00743717 /* horror_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D6E2133718C00743717 /* horror_ambience.mp3 */; };
+		7B987D9C2133718D00743717 /* knock_knock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D6F2133718C00743717 /* knock_knock.mp3 */; };
+		7B987D9D2133718D00743717 /* tortured_souls.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D702133718C00743717 /* tortured_souls.mp3 */; };
+		7B987D9E2133718D00743717 /* haunted_house.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D712133718C00743717 /* haunted_house.mp3 */; };
+		7B987D9F2133718D00743717 /* dracula_laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D722133718C00743717 /* dracula_laugh.mp3 */; };
+		7B987DA02133718D00743717 /* scary_scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D732133718C00743717 /* scary_scream.mp3 */; };
+		7B987DA12133718D00743717 /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D742133718C00743717 /* thunder.mp3 */; };
+		7B987DA22133718D00743717 /* ghost_boo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D752133718C00743717 /* ghost_boo.mp3 */; };
+		7B987DA32133718D00743717 /* terrified_scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D762133718C00743717 /* terrified_scream.mp3 */; };
+		7B987DA52133718D00743717 /* horror_film.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D782133718D00743717 /* horror_film.mp3 */; };
+		7B987DA62133718D00743717 /* painful_moan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D792133718D00743717 /* painful_moan.mp3 */; };
+		7B987DA82133718D00743717 /* vampire_bat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D7B2133718D00743717 /* vampire_bat.mp3 */; };
+		7B987DA92133718D00743717 /* creaky_door.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D7C2133718D00743717 /* creaky_door.mp3 */; };
+		7B987DD8213371FA00743717 /* scream.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DAA213371F200743717 /* scream.png */; };
+		7B987DD9213371FA00743717 /* chained_ghoul.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DAB213371F200743717 /* chained_ghoul.png */; };
+		7B987DDA213371FA00743717 /* witches_cauldron.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DAC213371F200743717 /* witches_cauldron.png */; };
+		7B987DDB213371FA00743717 /* cat_scream.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DAD213371F200743717 /* cat_scream.png */; };
+		7B987DDC213371FA00743717 /* igor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DAE213371F200743717 /* igor.png */; };
+		7B987DDD213371FA00743717 /* poltergeist_tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DAF213371F200743717 /* poltergeist_tv.png */; };
+		7B987DDE213371FA00743717 /* dispair.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB0213371F300743717 /* dispair.png */; };
+		7B987DDF213371FA00743717 /* warning_bells.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB1213371F300743717 /* warning_bells.png */; };
+		7B987DE0213371FA00743717 /* play_all.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB2213371F300743717 /* play_all.png */; };
+		7B987DE1213371FA00743717 /* tortured_souls.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB3213371F300743717 /* tortured_souls.png */; };
+		7B987DE2213371FA00743717 /* loop.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB4213371F400743717 /* loop.png */; };
+		7B987DE3213371FA00743717 /* spider.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB5213371F400743717 /* spider.png */; };
+		7B987DE4213371FA00743717 /* wolf.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB6213371F400743717 /* wolf.png */; };
+		7B987DE5213371FA00743717 /* haunted_organ.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB7213371F400743717 /* haunted_organ.png */; };
+		7B987DE6213371FA00743717 /* scarecrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB8213371F500743717 /* scarecrow.png */; };
+		7B987DE7213371FA00743717 /* zombie.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DB9213371F500743717 /* zombie.png */; };
+		7B987DE8213371FA00743717 /* ghost_boo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DBA213371F500743717 /* ghost_boo.png */; };
+		7B987DE9213371FA00743717 /* ghostly_whisper.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DBB213371F500743717 /* ghostly_whisper.png */; };
+		7B987DEA213371FA00743717 /* tree_wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DBC213371F500743717 /* tree_wall.jpg */; };
+		7B987DEB213371FA00743717 /* thunder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DBD213371F500743717 /* thunder.png */; };
+		7B987DEC213371FA00743717 /* spooky_owl.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DBE213371F600743717 /* spooky_owl.png */; };
+		7B987DED213371FA00743717 /* haunted_swamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DBF213371F600743717 /* haunted_swamp.png */; };
+		7B987DEE213371FA00743717 /* evil_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC0213371F600743717 /* evil_man.png */; };
+		7B987DEF213371FA00743717 /* witch_hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC1213371F600743717 /* witch_hat.png */; };
+		7B987DF0213371FA00743717 /* grave_stone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC2213371F600743717 /* grave_stone.png */; };
+		7B987DF1213371FA00743717 /* dracula_laugh.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC3213371F600743717 /* dracula_laugh.png */; };
+		7B987DF2213371FA00743717 /* black_cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC4213371F700743717 /* black_cat.png */; };
+		7B987DF3213371FA00743717 /* blowing_wind.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC5213371F700743717 /* blowing_wind.png */; };
+		7B987DF4213371FA00743717 /* chains.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC6213371F700743717 /* chains.png */; };
+		7B987DF5213371FA00743717 /* film.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC7213371F700743717 /* film.png */; };
+		7B987DF6213371FA00743717 /* creaky_door.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC8213371F700743717 /* creaky_door.png */; };
+		7B987DF7213371FA00743717 /* monster_walking.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DC9213371F800743717 /* monster_walking.png */; };
+		7B987DF8213371FA00743717 /* old_tape.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DCA213371F800743717 /* old_tape.png */; };
+		7B987DF9213371FA00743717 /* alien.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DCB213371F800743717 /* alien.png */; };
+		7B987DFA213371FA00743717 /* knock.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DCC213371F800743717 /* knock.png */; };
+		7B987DFB213371FA00743717 /* terrified_scream.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DCD213371F800743717 /* terrified_scream.png */; };
+		7B987DFC213371FA00743717 /* two_bells.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DCE213371F800743717 /* two_bells.png */; };
+		7B987DFD213371FA00743717 /* wraith_wail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DCF213371F900743717 /* wraith_wail.png */; };
+		7B987DFE213371FA00743717 /* zombies_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD0213371F900743717 /* zombies_three.png */; };
+		7B987DFF213371FA00743717 /* cries_hell.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD1213371F900743717 /* cries_hell.png */; };
+		7B987E00213371FA00743717 /* ghost_song.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD2213371F900743717 /* ghost_song.png */; };
+		7B987E01213371FA00743717 /* ghostly_children.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD3213371F900743717 /* ghostly_children.jpg */; };
+		7B987E02213371FA00743717 /* monster_growl.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD4213371F900743717 /* monster_growl.png */; };
+		7B987E03213371FA00743717 /* werewolf.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD5213371F900743717 /* werewolf.png */; };
+		7B987E04213371FA00743717 /* vampire_bat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD6213371FA00743717 /* vampire_bat.png */; };
+		7B987E05213371FA00743717 /* bd_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD7213371FA00743717 /* bd_logo.png */; };
+		7B987E072133751100743717 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987E062133751000743717 /* stop.png */; };
+		7B987E092134961D00743717 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987E082134961D00743717 /* pause.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B305C9E2132F25500B184F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B305C812132F25300B184F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B305C882132F25300B184F5;
+			remoteInfo = SpookyHalloweenSounds;
+		};
+		7B305CA92132F25500B184F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B305C812132F25300B184F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B305C882132F25300B184F5;
+			remoteInfo = SpookyHalloweenSounds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B05DE9F21361BB300BAC058 /* grave_stones_source_shadows_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grave_stones_source_shadows_title.png; sourceTree = "<group>"; };
+		7B05DEA12136234200BAC058 /* tickrtreat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickrtreat.png; sourceTree = "<group>"; };
+		7B05DEA32137665A00BAC058 /* graveyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graveyard.png; sourceTree = "<group>"; };
+		7B05DEA52139EAF100BAC058 /* chilling_cries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chilling_cries.mp3; sourceTree = "<group>"; };
+		7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpookyHalloweenSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B305C8C2132F25300B184F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B305C8E2132F25300B184F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B305C912132F25300B184F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B305C932132F25500B184F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B305C962132F25500B184F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B305C982132F25500B184F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpookyHalloweenSoundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B305CA12132F25500B184F5 /* SpookyHalloweenSoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpookyHalloweenSoundsTests.swift; sourceTree = "<group>"; };
+		7B305CA32132F25500B184F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpookyHalloweenSoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B305CAC2132F25500B184F5 /* SpookyHalloweenSoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpookyHalloweenSoundsUITests.swift; sourceTree = "<group>"; };
+		7B305CAE2132F25500B184F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B987D512133718800743717 /* cat_scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat_scream.mp3; sourceTree = "<group>"; };
+		7B987D522133718800743717 /* igor_grumble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = igor_grumble.mp3; sourceTree = "<group>"; };
+		7B987D532133718900743717 /* creepy_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = creepy_song.mp3; sourceTree = "<group>"; };
+		7B987D542133718900743717 /* chained_ghoul.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chained_ghoul.wav; sourceTree = "<group>"; };
+		7B987D552133718900743717 /* cries_from_hell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cries_from_hell.mp3; sourceTree = "<group>"; };
+		7B987D562133718900743717 /* scarecrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scarecrow.mp3; sourceTree = "<group>"; };
+		7B987D572133718900743717 /* haunted_organ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = haunted_organ.mp3; sourceTree = "<group>"; };
+		7B987D582133718900743717 /* warning_bells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = warning_bells.mp3; sourceTree = "<group>"; };
+		7B987D592133718900743717 /* chilling_horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chilling_horn.mp3; sourceTree = "<group>"; };
+		7B987D5A2133718900743717 /* poltergeist_voice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = poltergeist_voice.mp3; sourceTree = "<group>"; };
+		7B987D5B2133718A00743717 /* long_mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = long_mix.mp3; sourceTree = "<group>"; };
+		7B987D5C2133718A00743717 /* spooky_owl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spooky_owl.wav; sourceTree = "<group>"; };
+		7B987D5D2133718A00743717 /* witch_laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = witch_laugh.mp3; sourceTree = "<group>"; };
+		7B987D5E2133718A00743717 /* scary_nursery.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scary_nursery.mp3; sourceTree = "<group>"; };
+		7B987D5F2133718A00743717 /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
+		7B987D602133718A00743717 /* ghostly_whisper.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ghostly_whisper.mp3; sourceTree = "<group>"; };
+		7B987D612133718A00743717 /* werewolf_howl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = werewolf_howl.mp3; sourceTree = "<group>"; };
+		7B987D622133718A00743717 /* spooky_chains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spooky_chains.mp3; sourceTree = "<group>"; };
+		7B987D632133718A00743717 /* wolf_cry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wolf_cry.mp3; sourceTree = "<group>"; };
+		7B987D642133718A00743717 /* wraith_wail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wraith_wail.wav; sourceTree = "<group>"; };
+		7B987D652133718A00743717 /* evil_man.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = evil_man.mp3; sourceTree = "<group>"; };
+		7B987D662133718B00743717 /* zombie_come.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zombie_come.mp3; sourceTree = "<group>"; };
+		7B987D672133718B00743717 /* blowing_wind.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blowing_wind.wav; sourceTree = "<group>"; };
+		7B987D682133718B00743717 /* monster_growl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monster_growl.mp3; sourceTree = "<group>"; };
+		7B987D692133718B00743717 /* zombie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zombie.mp3; sourceTree = "<group>"; };
+		7B987D6A2133718B00743717 /* black_cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = black_cat.mp3; sourceTree = "<group>"; };
+		7B987D6B2133718B00743717 /* haunted_swamp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = haunted_swamp.mp3; sourceTree = "<group>"; };
+		7B987D6D2133718B00743717 /* ultra_terror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ultra_terror.mp3; sourceTree = "<group>"; };
+		7B987D6E2133718C00743717 /* horror_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror_ambience.mp3; sourceTree = "<group>"; };
+		7B987D6F2133718C00743717 /* knock_knock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = knock_knock.mp3; sourceTree = "<group>"; };
+		7B987D702133718C00743717 /* tortured_souls.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tortured_souls.mp3; sourceTree = "<group>"; };
+		7B987D712133718C00743717 /* haunted_house.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = haunted_house.mp3; sourceTree = "<group>"; };
+		7B987D722133718C00743717 /* dracula_laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dracula_laugh.mp3; sourceTree = "<group>"; };
+		7B987D732133718C00743717 /* scary_scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scary_scream.mp3; sourceTree = "<group>"; };
+		7B987D742133718C00743717 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunder.mp3; sourceTree = "<group>"; };
+		7B987D752133718C00743717 /* ghost_boo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ghost_boo.mp3; sourceTree = "<group>"; };
+		7B987D762133718C00743717 /* terrified_scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = terrified_scream.mp3; sourceTree = "<group>"; };
+		7B987D782133718D00743717 /* horror_film.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror_film.mp3; sourceTree = "<group>"; };
+		7B987D792133718D00743717 /* painful_moan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = painful_moan.mp3; sourceTree = "<group>"; };
+		7B987D7B2133718D00743717 /* vampire_bat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vampire_bat.mp3; sourceTree = "<group>"; };
+		7B987D7C2133718D00743717 /* creaky_door.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = creaky_door.mp3; sourceTree = "<group>"; };
+		7B987DAA213371F200743717 /* scream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scream.png; sourceTree = "<group>"; };
+		7B987DAB213371F200743717 /* chained_ghoul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chained_ghoul.png; sourceTree = "<group>"; };
+		7B987DAC213371F200743717 /* witches_cauldron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = witches_cauldron.png; sourceTree = "<group>"; };
+		7B987DAD213371F200743717 /* cat_scream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_scream.png; sourceTree = "<group>"; };
+		7B987DAE213371F200743717 /* igor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = igor.png; sourceTree = "<group>"; };
+		7B987DAF213371F200743717 /* poltergeist_tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poltergeist_tv.png; sourceTree = "<group>"; };
+		7B987DB0213371F300743717 /* dispair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dispair.png; sourceTree = "<group>"; };
+		7B987DB1213371F300743717 /* warning_bells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning_bells.png; sourceTree = "<group>"; };
+		7B987DB2213371F300743717 /* play_all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_all.png; sourceTree = "<group>"; };
+		7B987DB3213371F300743717 /* tortured_souls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tortured_souls.png; sourceTree = "<group>"; };
+		7B987DB4213371F400743717 /* loop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loop.png; sourceTree = "<group>"; };
+		7B987DB5213371F400743717 /* spider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spider.png; sourceTree = "<group>"; };
+		7B987DB6213371F400743717 /* wolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wolf.png; sourceTree = "<group>"; };
+		7B987DB7213371F400743717 /* haunted_organ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haunted_organ.png; sourceTree = "<group>"; };
+		7B987DB8213371F500743717 /* scarecrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scarecrow.png; sourceTree = "<group>"; };
+		7B987DB9213371F500743717 /* zombie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie.png; sourceTree = "<group>"; };
+		7B987DBA213371F500743717 /* ghost_boo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_boo.png; sourceTree = "<group>"; };
+		7B987DBB213371F500743717 /* ghostly_whisper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghostly_whisper.png; sourceTree = "<group>"; };
+		7B987DBC213371F500743717 /* tree_wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tree_wall.jpg; sourceTree = "<group>"; };
+		7B987DBD213371F500743717 /* thunder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunder.png; sourceTree = "<group>"; };
+		7B987DBE213371F600743717 /* spooky_owl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spooky_owl.png; sourceTree = "<group>"; };
+		7B987DBF213371F600743717 /* haunted_swamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haunted_swamp.png; sourceTree = "<group>"; };
+		7B987DC0213371F600743717 /* evil_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = evil_man.png; sourceTree = "<group>"; };
+		7B987DC1213371F600743717 /* witch_hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = witch_hat.png; sourceTree = "<group>"; };
+		7B987DC2213371F600743717 /* grave_stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grave_stone.png; sourceTree = "<group>"; };
+		7B987DC3213371F600743717 /* dracula_laugh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dracula_laugh.png; sourceTree = "<group>"; };
+		7B987DC4213371F700743717 /* black_cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_cat.png; sourceTree = "<group>"; };
+		7B987DC5213371F700743717 /* blowing_wind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blowing_wind.png; sourceTree = "<group>"; };
+		7B987DC6213371F700743717 /* chains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chains.png; sourceTree = "<group>"; };
+		7B987DC7213371F700743717 /* film.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = film.png; sourceTree = "<group>"; };
+		7B987DC8213371F700743717 /* creaky_door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = creaky_door.png; sourceTree = "<group>"; };
+		7B987DC9213371F800743717 /* monster_walking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster_walking.png; sourceTree = "<group>"; };
+		7B987DCA213371F800743717 /* old_tape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_tape.png; sourceTree = "<group>"; };
+		7B987DCB213371F800743717 /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
+		7B987DCC213371F800743717 /* knock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knock.png; sourceTree = "<group>"; };
+		7B987DCD213371F800743717 /* terrified_scream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terrified_scream.png; sourceTree = "<group>"; };
+		7B987DCE213371F800743717 /* two_bells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two_bells.png; sourceTree = "<group>"; };
+		7B987DCF213371F900743717 /* wraith_wail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wraith_wail.png; sourceTree = "<group>"; };
+		7B987DD0213371F900743717 /* zombies_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombies_three.png; sourceTree = "<group>"; };
+		7B987DD1213371F900743717 /* cries_hell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cries_hell.png; sourceTree = "<group>"; };
+		7B987DD2213371F900743717 /* ghost_song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_song.png; sourceTree = "<group>"; };
+		7B987DD3213371F900743717 /* ghostly_children.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ghostly_children.jpg; sourceTree = "<group>"; };
+		7B987DD4213371F900743717 /* monster_growl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster_growl.png; sourceTree = "<group>"; };
+		7B987DD5213371F900743717 /* werewolf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = werewolf.png; sourceTree = "<group>"; };
+		7B987DD6213371FA00743717 /* vampire_bat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vampire_bat.png; sourceTree = "<group>"; };
+		7B987DD7213371FA00743717 /* bd_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bd_logo.png; sourceTree = "<group>"; };
+		7B987E062133751000743717 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		7B987E082134961D00743717 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		7BCD372F213F1C3000B27F54 /* witch_laugh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = witch_laugh.m4a; sourceTree = "<group>"; };
+		7BCD3730213F4DBC00B27F54 /* Creepster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Creepster.ttf; path = ../../../../../Downloads/Creepster.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B305C862132F25300B184F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B305C9A2132F25500B184F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B305CA52132F25500B184F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B305C802132F25300B184F5 = {
+			isa = PBXGroup;
+			children = (
+				7B305C8B2132F25300B184F5 /* SpookyHalloweenSounds */,
+				7B305CA02132F25500B184F5 /* SpookyHalloweenSoundsTests */,
+				7B305CAB2132F25500B184F5 /* SpookyHalloweenSoundsUITests */,
+				7B305C8A2132F25300B184F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B305C8A2132F25300B184F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */,
+				7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */,
+				7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B305C8B2132F25300B184F5 /* SpookyHalloweenSounds */ = {
+			isa = PBXGroup;
+			children = (
+				7B305CBF21336D5500B184F5 /* Fonts */,
+				7B305CBC2132F9FD00B184F5 /* Images */,
+				7B305CBB2132F9F300B184F5 /* Audio */,
+				7B305C8C2132F25300B184F5 /* AppDelegate.swift */,
+				7B305C8E2132F25300B184F5 /* ViewController.swift */,
+				7B305C902132F25300B184F5 /* Main.storyboard */,
+				7B305C932132F25500B184F5 /* Assets.xcassets */,
+				7B305C952132F25500B184F5 /* LaunchScreen.storyboard */,
+				7B305C982132F25500B184F5 /* Info.plist */,
+			);
+			path = SpookyHalloweenSounds;
+			sourceTree = "<group>";
+		};
+		7B305CA02132F25500B184F5 /* SpookyHalloweenSoundsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B305CA12132F25500B184F5 /* SpookyHalloweenSoundsTests.swift */,
+				7B305CA32132F25500B184F5 /* Info.plist */,
+			);
+			path = SpookyHalloweenSoundsTests;
+			sourceTree = "<group>";
+		};
+		7B305CAB2132F25500B184F5 /* SpookyHalloweenSoundsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B305CAC2132F25500B184F5 /* SpookyHalloweenSoundsUITests.swift */,
+				7B305CAE2132F25500B184F5 /* Info.plist */,
+			);
+			path = SpookyHalloweenSoundsUITests;
+			sourceTree = "<group>";
+		};
+		7B305CBB2132F9F300B184F5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD372F213F1C3000B27F54 /* witch_laugh.m4a */,
+				7B05DEA52139EAF100BAC058 /* chilling_cries.mp3 */,
+				7B987D6A2133718B00743717 /* black_cat.mp3 */,
+				7B987D672133718B00743717 /* blowing_wind.wav */,
+				7B987D5F2133718A00743717 /* bubbles.wav */,
+				7B987D512133718800743717 /* cat_scream.mp3 */,
+				7B987D542133718900743717 /* chained_ghoul.wav */,
+				7B987D592133718900743717 /* chilling_horn.mp3 */,
+				7B987D7C2133718D00743717 /* creaky_door.mp3 */,
+				7B987D532133718900743717 /* creepy_song.mp3 */,
+				7B987D552133718900743717 /* cries_from_hell.mp3 */,
+				7B987D722133718C00743717 /* dracula_laugh.mp3 */,
+				7B987D652133718A00743717 /* evil_man.mp3 */,
+				7B987D752133718C00743717 /* ghost_boo.mp3 */,
+				7B987D602133718A00743717 /* ghostly_whisper.mp3 */,
+				7B987D712133718C00743717 /* haunted_house.mp3 */,
+				7B987D572133718900743717 /* haunted_organ.mp3 */,
+				7B987D6B2133718B00743717 /* haunted_swamp.mp3 */,
+				7B987D6E2133718C00743717 /* horror_ambience.mp3 */,
+				7B987D782133718D00743717 /* horror_film.mp3 */,
+				7B987D522133718800743717 /* igor_grumble.mp3 */,
+				7B987D6F2133718C00743717 /* knock_knock.mp3 */,
+				7B987D5B2133718A00743717 /* long_mix.mp3 */,
+				7B987D682133718B00743717 /* monster_growl.mp3 */,
+				7B987D792133718D00743717 /* painful_moan.mp3 */,
+				7B987D5A2133718900743717 /* poltergeist_voice.mp3 */,
+				7B987D562133718900743717 /* scarecrow.mp3 */,
+				7B987D5E2133718A00743717 /* scary_nursery.mp3 */,
+				7B987D732133718C00743717 /* scary_scream.mp3 */,
+				7B987D622133718A00743717 /* spooky_chains.mp3 */,
+				7B987D5C2133718A00743717 /* spooky_owl.wav */,
+				7B987D762133718C00743717 /* terrified_scream.mp3 */,
+				7B987D742133718C00743717 /* thunder.mp3 */,
+				7B987D702133718C00743717 /* tortured_souls.mp3 */,
+				7B987D6D2133718B00743717 /* ultra_terror.mp3 */,
+				7B987D7B2133718D00743717 /* vampire_bat.mp3 */,
+				7B987D582133718900743717 /* warning_bells.mp3 */,
+				7B987D612133718A00743717 /* werewolf_howl.mp3 */,
+				7B987D5D2133718A00743717 /* witch_laugh.mp3 */,
+				7B987D632133718A00743717 /* wolf_cry.mp3 */,
+				7B987D642133718A00743717 /* wraith_wail.wav */,
+				7B987D662133718B00743717 /* zombie_come.mp3 */,
+				7B987D692133718B00743717 /* zombie.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		7B305CBC2132F9FD00B184F5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7B05DEA32137665A00BAC058 /* graveyard.png */,
+				7B05DEA12136234200BAC058 /* tickrtreat.png */,
+				7B05DE9F21361BB300BAC058 /* grave_stones_source_shadows_title.png */,
+				7B987E082134961D00743717 /* pause.png */,
+				7B987E062133751000743717 /* stop.png */,
+				7B987DCB213371F800743717 /* alien.png */,
+				7B987DD7213371FA00743717 /* bd_logo.png */,
+				7B987DC4213371F700743717 /* black_cat.png */,
+				7B987DC5213371F700743717 /* blowing_wind.png */,
+				7B987DAD213371F200743717 /* cat_scream.png */,
+				7B987DAB213371F200743717 /* chained_ghoul.png */,
+				7B987DC6213371F700743717 /* chains.png */,
+				7B987DC8213371F700743717 /* creaky_door.png */,
+				7B987DD1213371F900743717 /* cries_hell.png */,
+				7B987DB0213371F300743717 /* dispair.png */,
+				7B987DC3213371F600743717 /* dracula_laugh.png */,
+				7B987DC0213371F600743717 /* evil_man.png */,
+				7B987DC7213371F700743717 /* film.png */,
+				7B987DBA213371F500743717 /* ghost_boo.png */,
+				7B987DD2213371F900743717 /* ghost_song.png */,
+				7B987DD3213371F900743717 /* ghostly_children.jpg */,
+				7B987DBB213371F500743717 /* ghostly_whisper.png */,
+				7B987DC2213371F600743717 /* grave_stone.png */,
+				7B987DB7213371F400743717 /* haunted_organ.png */,
+				7B987DBF213371F600743717 /* haunted_swamp.png */,
+				7B987DAE213371F200743717 /* igor.png */,
+				7B987DCC213371F800743717 /* knock.png */,
+				7B987DB4213371F400743717 /* loop.png */,
+				7B987DD4213371F900743717 /* monster_growl.png */,
+				7B987DC9213371F800743717 /* monster_walking.png */,
+				7B987DCA213371F800743717 /* old_tape.png */,
+				7B987DB2213371F300743717 /* play_all.png */,
+				7B987DAF213371F200743717 /* poltergeist_tv.png */,
+				7B987DB8213371F500743717 /* scarecrow.png */,
+				7B987DAA213371F200743717 /* scream.png */,
+				7B987DB5213371F400743717 /* spider.png */,
+				7B987DBE213371F600743717 /* spooky_owl.png */,
+				7B987DCD213371F800743717 /* terrified_scream.png */,
+				7B987DBD213371F500743717 /* thunder.png */,
+				7B987DB3213371F300743717 /* tortured_souls.png */,
+				7B987DBC213371F500743717 /* tree_wall.jpg */,
+				7B987DCE213371F800743717 /* two_bells.png */,
+				7B987DD6213371FA00743717 /* vampire_bat.png */,
+				7B987DB1213371F300743717 /* warning_bells.png */,
+				7B987DD5213371F900743717 /* werewolf.png */,
+				7B987DC1213371F600743717 /* witch_hat.png */,
+				7B987DAC213371F200743717 /* witches_cauldron.png */,
+				7B987DB6213371F400743717 /* wolf.png */,
+				7B987DCF213371F900743717 /* wraith_wail.png */,
+				7B987DB9213371F500743717 /* zombie.png */,
+				7B987DD0213371F900743717 /* zombies_three.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7B305CBF21336D5500B184F5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD3730213F4DBC00B27F54 /* Creepster.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B305C882132F25300B184F5 /* SpookyHalloweenSounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSounds" */;
+			buildPhases = (
+				7B305C852132F25300B184F5 /* Sources */,
+				7B305C862132F25300B184F5 /* Frameworks */,
+				7B305C872132F25300B184F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpookyHalloweenSounds;
+			productName = SpookyHalloweenSounds;
+			productReference = 7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B305C9C2132F25500B184F5 /* SpookyHalloweenSoundsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B305CB42132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsTests" */;
+			buildPhases = (
+				7B305C992132F25500B184F5 /* Sources */,
+				7B305C9A2132F25500B184F5 /* Frameworks */,
+				7B305C9B2132F25500B184F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B305C9F2132F25500B184F5 /* PBXTargetDependency */,
+			);
+			name = SpookyHalloweenSoundsTests;
+			productName = SpookyHalloweenSoundsTests;
+			productReference = 7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B305CA72132F25500B184F5 /* SpookyHalloweenSoundsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B305CB72132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsUITests" */;
+			buildPhases = (
+				7B305CA42132F25500B184F5 /* Sources */,
+				7B305CA52132F25500B184F5 /* Frameworks */,
+				7B305CA62132F25500B184F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B305CAA2132F25500B184F5 /* PBXTargetDependency */,
+			);
+			name = SpookyHalloweenSoundsUITests;
+			productName = SpookyHalloweenSoundsUITests;
+			productReference = 7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B305C812132F25300B184F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Bosson Design";
+				TargetAttributes = {
+					7B305C882132F25300B184F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7B305C9C2132F25500B184F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7B305C882132F25300B184F5;
+					};
+					7B305CA72132F25500B184F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7B305C882132F25300B184F5;
+					};
+				};
+			};
+			buildConfigurationList = 7B305C842132F25300B184F5 /* Build configuration list for PBXProject "SpookyHalloweenSounds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B305C802132F25300B184F5;
+			productRefGroup = 7B305C8A2132F25300B184F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B305C882132F25300B184F5 /* SpookyHalloweenSounds */,
+				7B305C9C2132F25500B184F5 /* SpookyHalloweenSoundsTests */,
+				7B305CA72132F25500B184F5 /* SpookyHalloweenSoundsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B305C872132F25300B184F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B305C972132F25500B184F5 /* LaunchScreen.storyboard in Resources */,
+				7B987DFC213371FA00743717 /* two_bells.png in Resources */,
+				7B987D9E2133718D00743717 /* haunted_house.mp3 in Resources */,
+				7B987DE8213371FA00743717 /* ghost_boo.png in Resources */,
+				7B987D832133718D00743717 /* scarecrow.mp3 in Resources */,
+				7B987E01213371FA00743717 /* ghostly_children.jpg in Resources */,
+				7B987DE7213371FA00743717 /* zombie.png in Resources */,
+				7B987DE1213371FA00743717 /* tortured_souls.png in Resources */,
+				7B987DE3213371FA00743717 /* spider.png in Resources */,
+				7B987D8F2133718D00743717 /* spooky_chains.mp3 in Resources */,
+				7B987DDD213371FA00743717 /* poltergeist_tv.png in Resources */,
+				7B987DF0213371FA00743717 /* grave_stone.png in Resources */,
+				7B987DF7213371FA00743717 /* monster_walking.png in Resources */,
+				7B987DD9213371FA00743717 /* chained_ghoul.png in Resources */,
+				7B987D952133718D00743717 /* monster_growl.mp3 in Resources */,
+				7B987DA22133718D00743717 /* ghost_boo.mp3 in Resources */,
+				7B987DA52133718D00743717 /* horror_film.mp3 in Resources */,
+				7B987D9C2133718D00743717 /* knock_knock.mp3 in Resources */,
+				7B987DA92133718D00743717 /* creaky_door.mp3 in Resources */,
+				7B987D842133718D00743717 /* haunted_organ.mp3 in Resources */,
+				7B987DDC213371FA00743717 /* igor.png in Resources */,
+				7B987DE2213371FA00743717 /* loop.png in Resources */,
+				7B987DF6213371FA00743717 /* creaky_door.png in Resources */,
+				7B987D972133718D00743717 /* black_cat.mp3 in Resources */,
+				7B987E092134961D00743717 /* pause.png in Resources */,
+				7B305C942132F25500B184F5 /* Assets.xcassets in Resources */,
+				7B987D872133718D00743717 /* poltergeist_voice.mp3 in Resources */,
+				7B987D9F2133718D00743717 /* dracula_laugh.mp3 in Resources */,
+				7B987DF9213371FA00743717 /* alien.png in Resources */,
+				7B987DEE213371FA00743717 /* evil_man.png in Resources */,
+				7B987E072133751100743717 /* stop.png in Resources */,
+				7B987D902133718D00743717 /* wolf_cry.mp3 in Resources */,
+				7B987DF4213371FA00743717 /* chains.png in Resources */,
+				7B987D8C2133718D00743717 /* bubbles.wav in Resources */,
+				7B987DFD213371FA00743717 /* wraith_wail.png in Resources */,
+				7B987E00213371FA00743717 /* ghost_song.png in Resources */,
+				7B987DA62133718D00743717 /* painful_moan.mp3 in Resources */,
+				7B987D8B2133718D00743717 /* scary_nursery.mp3 in Resources */,
+				7B987DFE213371FA00743717 /* zombies_three.png in Resources */,
+				7B987DEB213371FA00743717 /* thunder.png in Resources */,
+				7B987D9B2133718D00743717 /* horror_ambience.mp3 in Resources */,
+				7B987D802133718D00743717 /* creepy_song.mp3 in Resources */,
+				7B987DA02133718D00743717 /* scary_scream.mp3 in Resources */,
+				7B987DA32133718D00743717 /* terrified_scream.mp3 in Resources */,
+				7B987DF8213371FA00743717 /* old_tape.png in Resources */,
+				7B987E04213371FA00743717 /* vampire_bat.png in Resources */,
+				7B987DDF213371FA00743717 /* warning_bells.png in Resources */,
+				7B987DE9213371FA00743717 /* ghostly_whisper.png in Resources */,
+				7B987E05213371FA00743717 /* bd_logo.png in Resources */,
+				7B987D882133718D00743717 /* long_mix.mp3 in Resources */,
+				7B987D822133718D00743717 /* cries_from_hell.mp3 in Resources */,
+				7B05DEA021361BB300BAC058 /* grave_stones_source_shadows_title.png in Resources */,
+				7B987E03213371FA00743717 /* werewolf.png in Resources */,
+				7B987D7F2133718D00743717 /* igor_grumble.mp3 in Resources */,
+				7B987D7E2133718D00743717 /* cat_scream.mp3 in Resources */,
+				7B987D8A2133718D00743717 /* witch_laugh.mp3 in Resources */,
+				7B987DE0213371FA00743717 /* play_all.png in Resources */,
+				7B05DEA62139EAF200BAC058 /* chilling_cries.mp3 in Resources */,
+				7B987D962133718D00743717 /* zombie.mp3 in Resources */,
+				7B987DE6213371FA00743717 /* scarecrow.png in Resources */,
+				7B987DFA213371FA00743717 /* knock.png in Resources */,
+				7B05DEA22136234300BAC058 /* tickrtreat.png in Resources */,
+				7B987DED213371FA00743717 /* haunted_swamp.png in Resources */,
+				7B987D922133718D00743717 /* evil_man.mp3 in Resources */,
+				7B305C922132F25300B184F5 /* Main.storyboard in Resources */,
+				7B987DA12133718D00743717 /* thunder.mp3 in Resources */,
+				7B987DEC213371FA00743717 /* spooky_owl.png in Resources */,
+				7B987DDB213371FA00743717 /* cat_scream.png in Resources */,
+				7B987D852133718D00743717 /* warning_bells.mp3 in Resources */,
+				7B987D892133718D00743717 /* spooky_owl.wav in Resources */,
+				7B987D932133718D00743717 /* zombie_come.mp3 in Resources */,
+				7B987E02213371FA00743717 /* monster_growl.png in Resources */,
+				7B987D8D2133718D00743717 /* ghostly_whisper.mp3 in Resources */,
+				7B987DE5213371FA00743717 /* haunted_organ.png in Resources */,
+				7B987DE4213371FA00743717 /* wolf.png in Resources */,
+				7B987D9D2133718D00743717 /* tortured_souls.mp3 in Resources */,
+				7B987DD8213371FA00743717 /* scream.png in Resources */,
+				7B987DF1213371FA00743717 /* dracula_laugh.png in Resources */,
+				7B987DEF213371FA00743717 /* witch_hat.png in Resources */,
+				7B987DF3213371FA00743717 /* blowing_wind.png in Resources */,
+				7B05DEA42137665B00BAC058 /* graveyard.png in Resources */,
+				7B987D812133718D00743717 /* chained_ghoul.wav in Resources */,
+				7B987DF5213371FA00743717 /* film.png in Resources */,
+				7B987DFB213371FA00743717 /* terrified_scream.png in Resources */,
+				7B987DEA213371FA00743717 /* tree_wall.jpg in Resources */,
+				7B987DA82133718D00743717 /* vampire_bat.mp3 in Resources */,
+				7B987DDA213371FA00743717 /* witches_cauldron.png in Resources */,
+				7B987D912133718D00743717 /* wraith_wail.wav in Resources */,
+				7B987D862133718D00743717 /* chilling_horn.mp3 in Resources */,
+				7B987D8E2133718D00743717 /* werewolf_howl.mp3 in Resources */,
+				7B987D9A2133718D00743717 /* ultra_terror.mp3 in Resources */,
+				7B987DFF213371FA00743717 /* cries_hell.png in Resources */,
+				7B987D942133718D00743717 /* blowing_wind.wav in Resources */,
+				7B987D982133718D00743717 /* haunted_swamp.mp3 in Resources */,
+				7B987DF2213371FA00743717 /* black_cat.png in Resources */,
+				7B987DDE213371FA00743717 /* dispair.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B305C9B2132F25500B184F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B305CA62132F25500B184F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B305C852132F25300B184F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B305C8F2132F25300B184F5 /* ViewController.swift in Sources */,
+				7B305C8D2132F25300B184F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B305C992132F25500B184F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B305CA22132F25500B184F5 /* SpookyHalloweenSoundsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B305CA42132F25500B184F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B305CAD2132F25500B184F5 /* SpookyHalloweenSoundsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B305C9F2132F25500B184F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B305C882132F25300B184F5 /* SpookyHalloweenSounds */;
+			targetProxy = 7B305C9E2132F25500B184F5 /* PBXContainerItemProxy */;
+		};
+		7B305CAA2132F25500B184F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B305C882132F25300B184F5 /* SpookyHalloweenSounds */;
+			targetProxy = 7B305CA92132F25500B184F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B305C902132F25300B184F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B305C912132F25300B184F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B305C952132F25500B184F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B305C962132F25500B184F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B305CAF2132F25500B184F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B305CB02132F25500B184F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B305CB22132F25500B184F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B305CB32132F25500B184F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B305CB52132F25500B184F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				INFOPLIST_FILE = SpookyHalloweenSoundsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpookyHalloweenSounds.app/SpookyHalloweenSounds";
+			};
+			name = Debug;
+		};
+		7B305CB62132F25500B184F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				INFOPLIST_FILE = SpookyHalloweenSoundsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpookyHalloweenSounds.app/SpookyHalloweenSounds";
+			};
+			name = Release;
+		};
+		7B305CB82132F25500B184F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				INFOPLIST_FILE = SpookyHalloweenSoundsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpookyHalloweenSounds;
+			};
+			name = Debug;
+		};
+		7B305CB92132F25500B184F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				INFOPLIST_FILE = SpookyHalloweenSoundsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SpookyHalloweenSounds;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B305C842132F25300B184F5 /* Build configuration list for PBXProject "SpookyHalloweenSounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B305CAF2132F25500B184F5 /* Debug */,
+				7B305CB02132F25500B184F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B305CB22132F25500B184F5 /* Debug */,
+				7B305CB32132F25500B184F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B305CB42132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B305CB52132F25500B184F5 /* Debug */,
+				7B305CB62132F25500B184F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B305CB72132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B305CB82132F25500B184F5 /* Debug */,
+				7B305CB92132F25500B184F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B305C812132F25300B184F5 /* Project object */;
+}
