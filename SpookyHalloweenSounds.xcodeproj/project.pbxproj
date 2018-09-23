@@ -500,13 +500,16 @@
 				TargetAttributes = {
 					7B305C882132F25300B184F5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					7B305C9C2132F25500B184F5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 7B305C882132F25300B184F5;
 					};
 					7B305CA72132F25500B184F5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 7B305C882132F25300B184F5;
 					};
 				};
@@ -839,7 +842,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -857,7 +860,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -877,7 +880,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpookyHalloweenSounds.app/SpookyHalloweenSounds";
 			};
@@ -898,7 +901,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpookyHalloweenSounds.app/SpookyHalloweenSounds";
 			};
@@ -918,7 +921,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SpookyHalloweenSounds;
 			};
@@ -938,7 +941,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SpookyHalloweenSounds;
 			};
