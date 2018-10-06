@@ -1,1 +1,1 @@
-This is a simple Halloween themed app that plays 31+ Halloween based sounds in mp3 format.
+This is a simple Halloween themed app that plays 31+ Halloween based sounds.
