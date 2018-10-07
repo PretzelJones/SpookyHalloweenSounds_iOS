@@ -542,7 +542,7 @@
                         <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="28"/>
+                            <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="30"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

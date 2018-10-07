@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B6D7A9216A4CC000DAAAE4 /* Creepster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BCD3730213F4DBC00B27F54 /* Creepster.ttf */; };
 		7B05DEA021361BB300BAC058 /* grave_stones_source_shadows_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DE9F21361BB300BAC058 /* grave_stones_source_shadows_title.png */; };
 		7B05DEA22136234300BAC058 /* tickrtreat.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA12136234200BAC058 /* tickrtreat.png */; };
 		7B05DEA42137665B00BAC058 /* graveyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA32137665A00BAC058 /* graveyard.png */; };
@@ -234,7 +235,7 @@
 		7B987E062133751000743717 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		7B987E082134961D00743717 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		7BCD372F213F1C3000B27F54 /* witch_laugh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = witch_laugh.m4a; sourceTree = "<group>"; };
-		7BCD3730213F4DBC00B27F54 /* Creepster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Creepster.ttf; path = ../../../../../Downloads/Creepster.ttf; sourceTree = "<group>"; };
+		7BCD3730213F4DBC00B27F54 /* Creepster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Creepster.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -574,6 +575,7 @@
 				7B987DF4213371FA00743717 /* chains.png in Resources */,
 				7B987D8C2133718D00743717 /* bubbles.wav in Resources */,
 				7B987DFD213371FA00743717 /* wraith_wail.png in Resources */,
+				14B6D7A9216A4CC000DAAAE4 /* Creepster.ttf in Resources */,
 				7B987E00213371FA00743717 /* ghost_song.png in Resources */,
 				7B987DA62133718D00743717 /* painful_moan.mp3 in Resources */,
 				7B987D8B2133718D00743717 /* scary_nursery.mp3 in Resources */,
