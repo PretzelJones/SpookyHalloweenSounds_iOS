@@ -6,6 +6,7 @@ target 'SpookyHalloweenSounds' do
   use_frameworks!
 
   # Pods for SpookyHalloweenSounds
+  pod 'Firebase/Core'
 
   target 'SpookyHalloweenSoundsTests' do
     inherit! :search_paths
