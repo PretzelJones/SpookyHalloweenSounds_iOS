@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import StoreKit
 
 class ViewController: UIViewController {
     
@@ -417,11 +418,17 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        SKStoreReviewController.requestReview()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func ultraTerrorPlay(_ sender: Any) {
         
         ultraTerrorPlayer.play()
