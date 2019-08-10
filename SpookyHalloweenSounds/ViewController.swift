@@ -431,197 +431,485 @@ class ViewController: UIViewController {
     
     @IBAction func ultraTerrorPlay(_ sender: Any) {
         
-        ultraTerrorPlayer.play()
+        if (ultraTerrorPlayer.isPlaying)
+        {
+            ultraTerrorPlayer.pause();
+            
+        }
+        else
+        {
+            ultraTerrorPlayer.play();
+        }
     }
-    
+    /*
     @IBAction func ultraTerrorStop(_ sender: Any) {
         
         ultraTerrorPlayer.pause()
     }
-    
+    */
     @IBAction func longMixPlay(_ sender: Any) {
         
-        longMixPlayer.play()
+        if (longMixPlayer.isPlaying)
+        {
+            longMixPlayer.pause();
+            
+        }
+        else
+        {
+            longMixPlayer.play();
+        }
     }
-    
+    /*
     @IBAction func longMixStop(_ sender: Any) {
         
         longMixPlayer.pause()
     }
-    
+    */
     @IBAction func insaneAsylumPlay(_ sender: Any) {
         
-        insaneAsylumPlayer.play()
+        if (insaneAsylumPlayer.isPlaying)
+        {
+            insaneAsylumPlayer.pause();
+            
+        }
+        else
+        {
+            insaneAsylumPlayer.play();
+        }
     }
-    
+    /*
     @IBAction func insaneAsylumStop(_ sender: Any) {
         
         insaneAsylumPlayer.pause()
     }
-    
+    */
     @IBAction func witchCacklePlay(_ sender: Any) {
         
-        witchCacklePlayer.play()
+        if (witchCacklePlayer.isPlaying)
+        {
+            witchCacklePlayer.pause();
+            
+        }
+        else
+        {
+            witchCacklePlayer.play();
+        }
     }
     
     @IBAction func blackCatPlay(_ sender: Any) {
         
-        blackCatPlayer.play()
+        if (blackCatPlayer.isPlaying)
+        {
+            blackCatPlayer.pause();
+            
+        }
+        else
+        {
+            blackCatPlayer.play();
+        }
     }
     
     @IBAction func monsterGrowlPlay(_ sender: Any) {
         
-        monsterGrowlPlayer.play()
+        if (monsterGrowlPlayer.isPlaying)
+        {
+            monsterGrowlPlayer.pause();
+            
+        }
+        else
+        {
+            monsterGrowlPlayer.play();
+        }
     }
     
     @IBAction func creakyDoorPlay(_ sender: Any) {
         
-        creakyDoorPlayer.play()
+        if (creakyDoorPlayer.isPlaying)
+        {
+            creakyDoorPlayer.pause();
+            
+        }
+        else
+        {
+            creakyDoorPlayer.play();
+        }
     }
     
     @IBAction func spookyChainsPlay(_ sender: Any) {
         
-        spookyChainsPlayer.play()
+        if (spookyChainsPlayer.isPlaying)
+        {
+            spookyChainsPlayer.pause();
+            
+        }
+        else
+        {
+            spookyChainsPlayer.play();
+        }
     }
 
     @IBAction func thunderStormPlay(_ sender: Any) {
         
-        thunderStormPlayer.play()
+        if (thunderStormPlayer.isPlaying)
+        {
+            thunderStormPlayer.pause();
+            
+        }
+        else
+        {
+            thunderStormPlayer.play();
+        }
     }
     
     @IBAction func vampireBatPlay(_ sender: Any) {
         
-        vampireBatPlayer.play()
+        if (vampireBatPlayer.isPlaying)
+        {
+            vampireBatPlayer.pause();
+            
+        }
+        else
+        {
+            vampireBatPlayer.play();
+        }
     }
     
     @IBAction func scaryScreamPlay(_ sender: Any) {
         
-        scaryScreamPlayer.play()
+        if (scaryScreamPlayer.isPlaying)
+        {
+            scaryScreamPlayer.pause();
+            
+        }
+        else
+        {
+            scaryScreamPlayer.play();
+        }
     }
     
     @IBAction func zombieGroanPlay(_ sender: Any) {
         
-        zombieGroanPlayer.play()
+        if (zombieGroanPlayer.isPlaying)
+        {
+            zombieGroanPlayer.pause();
+            
+        }
+        else
+        {
+            zombieGroanPlayer.play();
+        }
     }
     
     @IBAction func ghostBooPlay(_ sender: Any) {
         
-        ghostBooPlayer.play()
+        if (ghostBooPlayer.isPlaying)
+        {
+            ghostBooPlayer.pause();
+            
+        }
+        else
+        {
+            ghostBooPlayer.play();
+        }
     }
     
     @IBAction func wereWolfHowlPlay(_ sender: Any) {
         
-        wereWolfHowlPlayer.play()
+        if (wereWolfHowlPlayer.isPlaying)
+        {
+            wereWolfHowlPlayer.pause();
+            
+        }
+        else
+        {
+            wereWolfHowlPlayer.play();
+        }
     }
     
     @IBAction func poltergeistVoicePlay(_ sender: Any) {
         
-        poltergeistVoicePlayer.play()
+        if (poltergeistVoicePlayer.isPlaying)
+        {
+            poltergeistVoicePlayer.pause();
+            
+        }
+        else
+        {
+            poltergeistVoicePlayer.play();
+        }
     }
     
     @IBAction func zombieCallPlay(_ sender: Any) {
         
-        zombieCallPlayer.play()
+        if (zombieCallPlayer.isPlaying)
+        {
+            zombieCallPlayer.pause();
+            
+        }
+        else
+        {
+            zombieCallPlayer.play();
+        }
     }
     
     @IBAction func catScreamPlay(_ sender: Any) {
         
-        catScreamPlayer.play()
+        if (catScreamPlayer.isPlaying)
+        {
+            catScreamPlayer.pause();
+            
+        }
+        else
+        {
+            catScreamPlayer.play();
+        }
     }
     
     @IBAction func wraithWailPlay(_ sender: Any) {
         
-        wraithWailPlayer.play()
+        if (wraithWailPlayer.isPlaying)
+        {
+            wraithWailPlayer.pause();
+            
+        }
+        else
+        {
+            wraithWailPlayer.play();
+        }
     }
     
     @IBAction func spookyOwlPlay(_ sender: Any) {
         
-        spookyOwlPlayer.play()
+        if (spookyOwlPlayer.isPlaying)
+        {
+            spookyOwlPlayer.pause();
+            
+        }
+        else
+        {
+            spookyOwlPlayer.play();
+        }
     }
     
     @IBAction func chainedGhoulPlay(_ sender: Any) {
         
-        chainedGhoulPlayer.play()
+        if (chainedGhoulPlayer.isPlaying)
+        {
+            chainedGhoulPlayer.pause();
+            
+        }
+        else
+        {
+            chainedGhoulPlayer.play();
+        }
     }
     
     @IBAction func terrifiedScreamPlay(_ sender: Any) {
         
-        terrifiedScreamPlayer.play()
+        if (terrifiedScreamPlayer.isPlaying)
+        {
+            terrifiedScreamPlayer.pause();
+            
+        }
+        else
+        {
+            terrifiedScreamPlayer.play();
+        }
     }
     
     @IBAction func hauntedOrganPlay(_ sender: Any) {
         
-        hauntedOrganPlayer.play()
+        if (hauntedOrganPlayer.isPlaying)
+        {
+            hauntedOrganPlayer.pause();
+            
+        }
+        else
+        {
+            hauntedOrganPlayer.play();
+        }
     }
     
     @IBAction func scareCrowPlay(_ sender: Any) {
         
-        scareCrowPlayer.play()
+        if (scareCrowPlayer.isPlaying)
+        {
+            scareCrowPlayer.pause();
+            
+        }
+        else
+        {
+            scareCrowPlayer.play();
+        }
     }
     
     @IBAction func blowingWindPlay(_ sender: Any) {
         
-        blowingWindPlayer.play()
+        if (blowingWindPlayer.isPlaying)
+        {
+            blowingWindPlayer.pause();
+            
+        }
+        else
+        {
+            blowingWindPlayer.play();
+        }
     }
     
     @IBAction func ghostlyWhisperPlay(_ sender: Any) {
         
-        ghostlyWhisperPlayer.play()
+        if (ghostlyWhisperPlayer.isPlaying)
+        {
+            ghostlyWhisperPlayer.pause();
+            
+        }
+        else
+        {
+            ghostlyWhisperPlayer.play();
+        }
     }
     
     @IBAction func draculaLaughPlay(_ sender: Any) {
         
-        draculaLaughPlayer.play()
+        if (draculaLaughPlayer.isPlaying)
+        {
+            draculaLaughPlayer.pause();
+            
+        }
+        else
+        {
+            draculaLaughPlayer.play();
+        }
     }
     
     @IBAction func wolfCryPlay(_ sender: Any) {
         
-        wolfCryPlayer.play()
+        if (wolfCryPlayer.isPlaying)
+        {
+            wolfCryPlayer.pause();
+            
+        }
+        else
+        {
+            wolfCryPlayer.play();
+        }
     }
     
     @IBAction func knockKnockPlay(_ sender: Any) {
         
-        knockKnockPlayer.play()
+        if (knockKnockPlayer.isPlaying)
+        {
+            knockKnockPlayer.pause();
+            
+        }
+        else
+        {
+            knockKnockPlayer.play();
+        }
     }
     
     @IBAction func igorGrumblePlay(_ sender: Any) {
         
-        igorGrumblePlayer.play()
+        if (igorGrumblePlayer.isPlaying)
+        {
+            igorGrumblePlayer.pause();
+            
+        }
+        else
+        {
+            igorGrumblePlayer.play();
+        }
     }
     
     @IBAction func warningBellsPlay(_ sender: Any) {
         
-        warningBellsPlayer.play()
+        if (warningBellsPlayer.isPlaying)
+        {
+            warningBellsPlayer.pause();
+            
+        }
+        else
+        {
+            warningBellsPlayer.play();
+        }
     }
     
     @IBAction func painfulMoanPlay(_ sender: Any) {
         
-        painfulMoanPlayer.play()
+        if (painfulMoanPlayer.isPlaying)
+        {
+            painfulMoanPlayer.pause();
+            
+        }
+        else
+        {
+            painfulMoanPlayer.play();
+        }
     }
     
     @IBAction func witchesCauldronPlay(_ sender: Any) {
         
-        witchesCauldronPlayer.play()
+        if (witchesCauldronPlayer.isPlaying)
+        {
+            witchesCauldronPlayer.pause();
+            
+        }
+        else
+        {
+            witchesCauldronPlayer.play();
+        }
     }
     
     @IBAction func ghostlyChildrenPlay(_ sender: Any) {
         
-        ghostlyChildrenPlayer.play()
+        if (ghostlyChildrenPlayer.isPlaying)
+        {
+            ghostlyChildrenPlayer.pause();
+            
+        }
+        else
+        {
+            ghostlyChildrenPlayer.play();
+        }
     }
     
     @IBAction func hauntedSwampPlay(_ sender: Any) {
         
-        hauntedSwampPlayer.play()
+        if (hauntedSwampPlayer.isPlaying)
+        {
+            hauntedSwampPlayer.pause();
+            
+        }
+        else
+        {
+            hauntedSwampPlayer.play();
+        }
     }
 
     @IBAction func torturedSoulsPlay(_ sender: Any) {
         
-        torturedSoulsPlayer.play()
+        if (torturedSoulsPlayer.isPlaying)
+        {
+            torturedSoulsPlayer.pause();
+            
+        }
+        else
+        {
+            torturedSoulsPlayer.play();
+        }
     }
     
     @IBAction func chillingHornPlay(_ sender: Any) {
         
-        chillingHornPlayer.play()
+        if (chillingHornPlayer.isPlaying)
+        {
+            chillingHornPlayer.pause();
+            
+        }
+        else
+        {
+            chillingHornPlayer.play();
+        }
     }
     
 }

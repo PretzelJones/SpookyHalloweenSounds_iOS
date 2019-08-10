@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SpookyHalloweenSounds.xcodeproj">
+      location = "self:/Users/sean/Projects/iOS/SpookyHalloweenSoundsiOS/SpookyHalloweenSounds.xcodeproj">
    </FileRef>
 </Workspace>

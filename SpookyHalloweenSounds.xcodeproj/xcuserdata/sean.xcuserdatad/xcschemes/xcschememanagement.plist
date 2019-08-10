@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>Spooky Halloween Sounds.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>SpookyHalloweenSounds.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>

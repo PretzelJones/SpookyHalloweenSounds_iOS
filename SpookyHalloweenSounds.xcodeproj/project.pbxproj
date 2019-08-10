@@ -142,17 +142,17 @@
 		7B05DEA12136234200BAC058 /* tickrtreat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickrtreat.png; sourceTree = "<group>"; };
 		7B05DEA32137665A00BAC058 /* graveyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graveyard.png; sourceTree = "<group>"; };
 		7B05DEA52139EAF100BAC058 /* chilling_cries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chilling_cries.mp3; sourceTree = "<group>"; };
-		7B305C892132F25300B184F5 /* Spooky Halloween Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spooky Halloween Sounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpookyHalloweenSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B305C8C2132F25300B184F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B305C8E2132F25300B184F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B305C912132F25300B184F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B305C932132F25500B184F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B305C962132F25500B184F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B305C982132F25500B184F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B305C9D2132F25500B184F5 /* Spooky Halloween SoundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spooky Halloween SoundsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpookyHalloweenSoundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B305CA12132F25500B184F5 /* SpookyHalloweenSoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpookyHalloweenSoundsTests.swift; sourceTree = "<group>"; };
 		7B305CA32132F25500B184F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B305CA82132F25500B184F5 /* Spooky Halloween SoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spooky Halloween SoundsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpookyHalloweenSoundsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B305CAC2132F25500B184F5 /* SpookyHalloweenSoundsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpookyHalloweenSoundsUITests.swift; sourceTree = "<group>"; };
 		7B305CAE2132F25500B184F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B987D512133718800743717 /* cat_scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat_scream.mp3; sourceTree = "<group>"; };
@@ -306,9 +306,9 @@
 		7B305C8A2132F25300B184F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B305C892132F25300B184F5 /* Spooky Halloween Sounds.app */,
-				7B305C9D2132F25500B184F5 /* Spooky Halloween SoundsTests.xctest */,
-				7B305CA82132F25500B184F5 /* Spooky Halloween SoundsUITests.xctest */,
+				7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */,
+				7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */,
+				7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -481,9 +481,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B305C882132F25300B184F5 /* Spooky Halloween Sounds */ = {
+		7B305C882132F25300B184F5 /* SpookyHalloweenSounds */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "Spooky Halloween Sounds" */;
+			buildConfigurationList = 7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSounds" */;
 			buildPhases = (
 				1280DA4D8EF57518D8ACAC5C /* [CP] Check Pods Manifest.lock */,
 				7B305C852132F25300B184F5 /* Sources */,
@@ -495,14 +495,14 @@
 			);
 			dependencies = (
 			);
-			name = "Spooky Halloween Sounds";
+			name = SpookyHalloweenSounds;
 			productName = SpookyHalloweenSounds;
-			productReference = 7B305C892132F25300B184F5 /* Spooky Halloween Sounds.app */;
+			productReference = 7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B305C9C2132F25500B184F5 /* Spooky Halloween SoundsTests */ = {
+		7B305C9C2132F25500B184F5 /* SpookyHalloweenSoundsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B305CB42132F25500B184F5 /* Build configuration list for PBXNativeTarget "Spooky Halloween SoundsTests" */;
+			buildConfigurationList = 7B305CB42132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsTests" */;
 			buildPhases = (
 				6CEDB1D68FA0C2FE494FCE85 /* [CP] Check Pods Manifest.lock */,
 				7B305C992132F25500B184F5 /* Sources */,
@@ -514,14 +514,14 @@
 			dependencies = (
 				7B305C9F2132F25500B184F5 /* PBXTargetDependency */,
 			);
-			name = "Spooky Halloween SoundsTests";
+			name = SpookyHalloweenSoundsTests;
 			productName = SpookyHalloweenSoundsTests;
-			productReference = 7B305C9D2132F25500B184F5 /* Spooky Halloween SoundsTests.xctest */;
+			productReference = 7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7B305CA72132F25500B184F5 /* Spooky Halloween SoundsUITests */ = {
+		7B305CA72132F25500B184F5 /* SpookyHalloweenSoundsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B305CB72132F25500B184F5 /* Build configuration list for PBXNativeTarget "Spooky Halloween SoundsUITests" */;
+			buildConfigurationList = 7B305CB72132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsUITests" */;
 			buildPhases = (
 				3A015BC9FB99206F4B8CB3DC /* [CP] Check Pods Manifest.lock */,
 				7B305CA42132F25500B184F5 /* Sources */,
@@ -533,9 +533,9 @@
 			dependencies = (
 				7B305CAA2132F25500B184F5 /* PBXTargetDependency */,
 			);
-			name = "Spooky Halloween SoundsUITests";
+			name = SpookyHalloweenSoundsUITests;
 			productName = SpookyHalloweenSoundsUITests;
-			productReference = 7B305CA82132F25500B184F5 /* Spooky Halloween SoundsUITests.xctest */;
+			productReference = 7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -550,7 +550,7 @@
 				TargetAttributes = {
 					7B305C882132F25300B184F5 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1030;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -562,17 +562,17 @@
 					};
 					7B305C9C2132F25500B184F5 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1030;
 						TestTargetID = 7B305C882132F25300B184F5;
 					};
 					7B305CA72132F25500B184F5 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1030;
 						TestTargetID = 7B305C882132F25300B184F5;
 					};
 				};
 			};
-			buildConfigurationList = 7B305C842132F25300B184F5 /* Build configuration list for PBXProject "Spooky Halloween Sounds" */;
+			buildConfigurationList = 7B305C842132F25300B184F5 /* Build configuration list for PBXProject "SpookyHalloweenSounds" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -585,9 +585,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B305C882132F25300B184F5 /* Spooky Halloween Sounds */,
-				7B305C9C2132F25500B184F5 /* Spooky Halloween SoundsTests */,
-				7B305CA72132F25500B184F5 /* Spooky Halloween SoundsUITests */,
+				7B305C882132F25300B184F5 /* SpookyHalloweenSounds */,
+				7B305C9C2132F25500B184F5 /* SpookyHalloweenSoundsTests */,
+				7B305CA72132F25500B184F5 /* SpookyHalloweenSoundsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -787,24 +787,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -840,12 +831,12 @@
 /* Begin PBXTargetDependency section */
 		7B305C9F2132F25500B184F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B305C882132F25300B184F5 /* Spooky Halloween Sounds */;
+			target = 7B305C882132F25300B184F5 /* SpookyHalloweenSounds */;
 			targetProxy = 7B305C9E2132F25500B184F5 /* PBXContainerItemProxy */;
 		};
 		7B305CAA2132F25500B184F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B305C882132F25300B184F5 /* Spooky Halloween Sounds */;
+			target = 7B305C882132F25300B184F5 /* SpookyHalloweenSounds */;
 			targetProxy = 7B305CA92132F25500B184F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -988,6 +979,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D24DA90158C71024B5308D9B /* Pods-SpookyHalloweenSounds.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1001,7 +993,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1010,6 +1002,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D76A24C61EEA5D17BE548554 /* Pods-SpookyHalloweenSounds.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1023,7 +1016,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1044,9 +1037,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spooky Halloween Sounds.app/Spooky Halloween Sounds";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpookyHalloweenSounds.app/SpookyHalloweenSounds";
 			};
 			name = Debug;
 		};
@@ -1066,9 +1059,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spooky Halloween Sounds.app/Spooky Halloween Sounds";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpookyHalloweenSounds.app/SpookyHalloweenSounds";
 			};
 			name = Release;
 		};
@@ -1087,7 +1080,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SpookyHalloweenSounds;
 			};
@@ -1108,7 +1101,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSoundsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SpookyHalloweenSounds;
 			};
@@ -1117,7 +1110,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B305C842132F25300B184F5 /* Build configuration list for PBXProject "Spooky Halloween Sounds" */ = {
+		7B305C842132F25300B184F5 /* Build configuration list for PBXProject "SpookyHalloweenSounds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B305CAF2132F25500B184F5 /* Debug */,
@@ -1126,7 +1119,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "Spooky Halloween Sounds" */ = {
+		7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSounds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B305CB22132F25500B184F5 /* Debug */,
@@ -1135,7 +1128,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B305CB42132F25500B184F5 /* Build configuration list for PBXNativeTarget "Spooky Halloween SoundsTests" */ = {
+		7B305CB42132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B305CB52132F25500B184F5 /* Debug */,
@@ -1144,7 +1137,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B305CB72132F25500B184F5 /* Build configuration list for PBXNativeTarget "Spooky Halloween SoundsUITests" */ = {
+		7B305CB72132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B305CB82132F25500B184F5 /* Debug */,
