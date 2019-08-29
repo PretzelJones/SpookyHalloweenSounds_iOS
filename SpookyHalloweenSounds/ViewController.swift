@@ -5,6 +5,7 @@
 //  Created by Sean Patterson on 8/26/18.
 //  Copyright © 2018 Bosson Design. All rights reserved.
 //
+//  Version 1.0.4 Build 5
 
 import UIKit
 import AVFoundation
