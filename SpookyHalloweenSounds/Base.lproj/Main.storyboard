@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--SpookyHalloweenSounds-->
+        <!--Spooky Halloween Sounds-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
@@ -386,7 +386,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="Rui-8p-PJp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
-                                                <state key="normal" title="  Ultra Terror Mix" image="play_all.png">
+                                                <state key="normal" title="  Ultra Terror Mix" image="loop.png">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -442,7 +442,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="eNe-3e-1tj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
-                                                <state key="normal" title="  Spooky Sounds Mix" image="play_all.png">
+                                                <state key="normal" title="  Spooky Sounds Mix" image="loop.png">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -526,7 +526,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="aDL-jQ-7RU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
-                                                <state key="normal" title="  Insane Asylum Mix" image="play_all.png">
+                                                <state key="normal" title="  Insane Asylum Mix" image="loop.png">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -667,7 +667,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SpookyHalloweenSounds" largeTitleDisplayMode="always" id="YPw-MA-E8X"/>
+                    <navigationItem key="navigationItem" title="Spooky Halloween Sounds" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds"/>
                     <size key="freeformSize" width="375" height="2235"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -715,8 +715,8 @@
         <image name="haunted_swamp.png" width="25" height="25"/>
         <image name="igor.png" width="17" height="26"/>
         <image name="knock.png" width="25" height="25"/>
+        <image name="loop.png" width="25" height="25"/>
         <image name="monster_growl.png" width="16.5" height="20.25"/>
-        <image name="play_all.png" width="26" height="26"/>
         <image name="poltergeist_tv.png" width="35" height="22"/>
         <image name="scarecrow.png" width="25" height="24"/>
         <image name="scream.png" width="18.75" height="16.5"/>

@@ -92,7 +92,6 @@ class ViewController: UIViewController {
             
             witchCacklePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "witch_laugh", ofType: "mp3")!))
             witchCacklePlayer.prepareToPlay()
-            //witchCacklePlayer.numberOfLoops = 2
         }
         catch {
             print(error)
