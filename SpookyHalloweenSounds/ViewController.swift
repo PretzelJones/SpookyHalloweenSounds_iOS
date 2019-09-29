@@ -2,10 +2,10 @@
 //  ViewController.swift
 //  SpookyHalloweenSounds
 //
-//  Created by Sean Patterson on 8/26/18.
-//  Copyright © 2018 Bosson Design. All rights reserved.
+//  Created by Sean Patterson on 9/29/18.
+//  Copyright © 2019 Bosson Design. All rights reserved.
 //
-//  Version 1.0.4 Build 5
+//  Version 1.0.5 Build 6
 
 import UIKit
 import AVFoundation
@@ -14,47 +14,42 @@ import StoreKit
 class ViewController: UIViewController {
     
     
-    var longMixPlayer = AVAudioPlayer()
-    var ultraTerrorPlayer = AVAudioPlayer()
-    var insaneAsylumPlayer = AVAudioPlayer()
-    var chilingCriesPlayer = AVAudioPlayer()
-    var witchCacklePlayer = AVAudioPlayer()
-    var blackCatPlayer = AVAudioPlayer()
-    var creepyLaughPlayer = AVAudioPlayer()
-    var creakyDoorPlayer = AVAudioPlayer()
-    var horrorAmbiancePlayer = AVAudioPlayer()
-    var monsterGrowlPlayer = AVAudioPlayer()
-    var monsterWalkingPlayer = AVAudioPlayer()
-    var spookyChainsPlayer = AVAudioPlayer()
-    var thunderStormPlayer = AVAudioPlayer()
-    var vampireBatPlayer = AVAudioPlayer()
-    var scaryScreamPlayer = AVAudioPlayer()
-    var zombieGroanPlayer = AVAudioPlayer()
-    var ghostBooPlayer = AVAudioPlayer()
-    var wereWolfHowlPlayer = AVAudioPlayer()
-    var poltergeistVoicePlayer = AVAudioPlayer()
-    var zombieCallPlayer = AVAudioPlayer()
-    var catScreamPlayer = AVAudioPlayer()
-    var wraithWailPlayer = AVAudioPlayer()
-    var spookyOwlPlayer = AVAudioPlayer()
-    var chainedGhoulPlayer = AVAudioPlayer()
-    var terrifiedScreamPlayer = AVAudioPlayer()
-    var hauntedOrganPlayer = AVAudioPlayer()
-    var scareCrowPlayer = AVAudioPlayer()
-    var blowingWindPlayer = AVAudioPlayer()
-    var ghostlyWhisperPlayer = AVAudioPlayer()
-    var draculaLaughPlayer = AVAudioPlayer()
-    var wolfCryPlayer = AVAudioPlayer()
-    var knockKnockPlayer = AVAudioPlayer()
-    var igorGrumblePlayer = AVAudioPlayer()
-    var horrorMoviePlayer = AVAudioPlayer()
-    var warningBellsPlayer = AVAudioPlayer()
-    var painfulMoanPlayer = AVAudioPlayer()
-    var witchesCauldronPlayer = AVAudioPlayer()
-    var ghostlyChildrenPlayer = AVAudioPlayer()
-    var hauntedSwampPlayer = AVAudioPlayer()
-    var torturedSoulsPlayer = AVAudioPlayer()
-    var chillingHornPlayer = AVAudioPlayer()
+    var longMixPlayer: AVAudioPlayer?
+    var ultraTerrorPlayer: AVAudioPlayer?
+    var insaneAsylumPlayer: AVAudioPlayer?
+    var witchCacklePlayer: AVAudioPlayer?
+    var blackCatPlayer: AVAudioPlayer?
+    var creakyDoorPlayer: AVAudioPlayer?
+    var monsterGrowlPlayer: AVAudioPlayer?
+    var spookyChainsPlayer: AVAudioPlayer?
+    var thunderStormPlayer: AVAudioPlayer?
+    var vampireBatPlayer: AVAudioPlayer?
+    var scaryScreamPlayer: AVAudioPlayer?
+    var zombieGroanPlayer: AVAudioPlayer?
+    var ghostBooPlayer: AVAudioPlayer?
+    var wereWolfHowlPlayer: AVAudioPlayer?
+    var poltergeistVoicePlayer: AVAudioPlayer?
+    var zombieCallPlayer: AVAudioPlayer?
+    var catScreamPlayer: AVAudioPlayer?
+    var wraithWailPlayer: AVAudioPlayer?
+    var spookyOwlPlayer: AVAudioPlayer?
+    var chainedGhoulPlayer: AVAudioPlayer?
+    var terrifiedScreamPlayer: AVAudioPlayer?
+    var hauntedOrganPlayer: AVAudioPlayer?
+    var scareCrowPlayer: AVAudioPlayer?
+    var blowingWindPlayer: AVAudioPlayer?
+    var ghostlyWhisperPlayer: AVAudioPlayer?
+    var draculaLaughPlayer: AVAudioPlayer?
+    var wolfCryPlayer: AVAudioPlayer?
+    var knockKnockPlayer: AVAudioPlayer?
+    var igorGrumblePlayer: AVAudioPlayer?
+    var warningBellsPlayer: AVAudioPlayer?
+    var painfulMoanPlayer: AVAudioPlayer?
+    var witchesCauldronPlayer: AVAudioPlayer?
+    var ghostlyChildrenPlayer: AVAudioPlayer?
+    var hauntedSwampPlayer: AVAudioPlayer?
+    var torturedSoulsPlayer: AVAudioPlayer?
+    var chillingHornPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +57,7 @@ class ViewController: UIViewController {
         do {
             
             ultraTerrorPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ultra_terror", ofType: "mp3")!))
-            ultraTerrorPlayer.prepareToPlay()
+            ultraTerrorPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -72,7 +67,7 @@ class ViewController: UIViewController {
         do {
             
             longMixPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "long_mix", ofType: "mp3")!))
-            longMixPlayer.prepareToPlay()
+            longMixPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -82,7 +77,7 @@ class ViewController: UIViewController {
         do {
             
             insaneAsylumPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chilling_cries", ofType: "mp3")!))
-            insaneAsylumPlayer.prepareToPlay()
+            insaneAsylumPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -92,7 +87,7 @@ class ViewController: UIViewController {
         do {
             
             witchCacklePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "witch_laugh", ofType: "mp3")!))
-            witchCacklePlayer.prepareToPlay()
+            witchCacklePlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -101,7 +96,7 @@ class ViewController: UIViewController {
         do {
             
             blackCatPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "black_cat", ofType: "mp3")!))
-            blackCatPlayer.prepareToPlay()
+            blackCatPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -111,7 +106,7 @@ class ViewController: UIViewController {
         do {
             
             monsterGrowlPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "monster_growl", ofType: "mp3")!))
-            monsterGrowlPlayer.prepareToPlay()
+            monsterGrowlPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -121,7 +116,7 @@ class ViewController: UIViewController {
         do {
             
             creakyDoorPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "creaky_door", ofType: "mp3")!))
-            creakyDoorPlayer.prepareToPlay()
+            creakyDoorPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -131,7 +126,7 @@ class ViewController: UIViewController {
         do {
             
             spookyChainsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "spooky_chains", ofType: "mp3")!))
-            spookyChainsPlayer.prepareToPlay()
+            spookyChainsPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -141,7 +136,7 @@ class ViewController: UIViewController {
         do {
             //fails
             thunderStormPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "thunder", ofType: "mp3")!))
-            thunderStormPlayer.prepareToPlay()
+            thunderStormPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -151,7 +146,7 @@ class ViewController: UIViewController {
         do {
             
             vampireBatPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "vampire_bat", ofType: "mp3")!))
-            vampireBatPlayer.prepareToPlay()
+            vampireBatPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -161,7 +156,7 @@ class ViewController: UIViewController {
         do {
             
             scaryScreamPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "scary_scream", ofType: "mp3")!))
-            scaryScreamPlayer.prepareToPlay()
+            scaryScreamPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -171,7 +166,7 @@ class ViewController: UIViewController {
         do {
             
             zombieGroanPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "zombie", ofType: "mp3")!))
-            zombieGroanPlayer.prepareToPlay()
+            zombieGroanPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -181,7 +176,7 @@ class ViewController: UIViewController {
         do {
             
             ghostBooPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ghost_boo", ofType: "mp3")!))
-            ghostBooPlayer.prepareToPlay()
+            ghostBooPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -191,7 +186,7 @@ class ViewController: UIViewController {
         do {
             
             wereWolfHowlPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "werewolf_howl", ofType: "mp3")!))
-            wereWolfHowlPlayer.prepareToPlay()
+            wereWolfHowlPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -201,7 +196,7 @@ class ViewController: UIViewController {
         do {
             
             poltergeistVoicePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "poltergeist_voice", ofType: "mp3")!))
-            poltergeistVoicePlayer.prepareToPlay()
+            poltergeistVoicePlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -211,7 +206,7 @@ class ViewController: UIViewController {
         do {
             
             zombieCallPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "zombie_come", ofType: "mp3")!))
-            zombieCallPlayer.prepareToPlay()
+            zombieCallPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -221,7 +216,7 @@ class ViewController: UIViewController {
         do {
             
             catScreamPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cat_scream", ofType: "mp3")!))
-            catScreamPlayer.prepareToPlay()
+            catScreamPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -231,7 +226,7 @@ class ViewController: UIViewController {
         do {
             
             wraithWailPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "wraith_wail", ofType: "wav")!))
-            wraithWailPlayer.prepareToPlay()
+            wraithWailPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -241,7 +236,7 @@ class ViewController: UIViewController {
         do {
             
             spookyOwlPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "spooky_owl", ofType: "wav")!))
-            spookyOwlPlayer.prepareToPlay()
+            spookyOwlPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -251,7 +246,7 @@ class ViewController: UIViewController {
         do {
             
             chainedGhoulPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chained_ghoul", ofType: "wav")!))
-            chainedGhoulPlayer.prepareToPlay()
+            chainedGhoulPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -261,7 +256,7 @@ class ViewController: UIViewController {
         do {
             
             terrifiedScreamPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "terrified_scream", ofType: "mp3")!))
-            terrifiedScreamPlayer.prepareToPlay()
+            terrifiedScreamPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -271,7 +266,7 @@ class ViewController: UIViewController {
         do {
             
             hauntedOrganPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "haunted_organ", ofType: "mp3")!))
-            hauntedOrganPlayer.prepareToPlay()
+            hauntedOrganPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -281,7 +276,7 @@ class ViewController: UIViewController {
         do {
             
             scareCrowPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "scarecrow", ofType: "mp3")!))
-            scareCrowPlayer.prepareToPlay()
+            scareCrowPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -291,7 +286,7 @@ class ViewController: UIViewController {
         do {
             
             blowingWindPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "blowing_wind", ofType: "wav")!))
-            blowingWindPlayer.prepareToPlay()
+            blowingWindPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -301,7 +296,7 @@ class ViewController: UIViewController {
         do {
             
             ghostlyWhisperPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ghostly_whisper", ofType: "mp3")!))
-            ghostlyWhisperPlayer.prepareToPlay()
+            ghostlyWhisperPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -311,7 +306,7 @@ class ViewController: UIViewController {
         do {
             
             draculaLaughPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "dracula_laugh", ofType: "mp3")!))
-            draculaLaughPlayer.prepareToPlay()
+            draculaLaughPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -321,7 +316,7 @@ class ViewController: UIViewController {
         do {
             
             wolfCryPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "wolf_cry", ofType: "mp3")!))
-            wolfCryPlayer.prepareToPlay()
+            wolfCryPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -331,7 +326,7 @@ class ViewController: UIViewController {
         do {
             
             knockKnockPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "knock_knock", ofType: "mp3")!))
-            knockKnockPlayer.prepareToPlay()
+            knockKnockPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -341,7 +336,7 @@ class ViewController: UIViewController {
         do {
             
             igorGrumblePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "igor_grumble", ofType: "mp3")!))
-            igorGrumblePlayer.prepareToPlay()
+            igorGrumblePlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -351,7 +346,7 @@ class ViewController: UIViewController {
         do {
             
             warningBellsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "warning_bells", ofType: "mp3")!))
-            warningBellsPlayer.prepareToPlay()
+            warningBellsPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -361,7 +356,7 @@ class ViewController: UIViewController {
         do {
             
             painfulMoanPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "painful_moan", ofType: "mp3")!))
-            painfulMoanPlayer.prepareToPlay()
+            painfulMoanPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -371,7 +366,7 @@ class ViewController: UIViewController {
         do {
             
             witchesCauldronPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bubbles", ofType: "wav")!))
-            witchesCauldronPlayer.prepareToPlay()
+            witchesCauldronPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -381,7 +376,7 @@ class ViewController: UIViewController {
         do {
             
             ghostlyChildrenPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "scary_nursery", ofType: "mp3")!))
-            ghostlyChildrenPlayer.prepareToPlay()
+            ghostlyChildrenPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -391,7 +386,7 @@ class ViewController: UIViewController {
         do {
             
             hauntedSwampPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "haunted_swamp", ofType: "mp3")!))
-            hauntedSwampPlayer.prepareToPlay()
+            hauntedSwampPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -401,7 +396,7 @@ class ViewController: UIViewController {
         do {
             
             torturedSoulsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "tortured_souls", ofType: "mp3")!))
-            torturedSoulsPlayer.prepareToPlay()
+            torturedSoulsPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -410,7 +405,7 @@ class ViewController: UIViewController {
         do {
             
             chillingHornPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chilling_horn", ofType: "mp3")!))
-            chillingHornPlayer.prepareToPlay()
+            chillingHornPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -423,7 +418,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         SKStoreReviewController.requestReview()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -431,485 +426,206 @@ class ViewController: UIViewController {
     
     @IBAction func ultraTerrorPlay(_ sender: Any) {
         
-        if (ultraTerrorPlayer.isPlaying)
+        if (ultraTerrorPlayer!.isPlaying)
         {
-            ultraTerrorPlayer.pause();
+            ultraTerrorPlayer!.pause();
             
         }
         else
         {
-            ultraTerrorPlayer.play();
+            ultraTerrorPlayer!.play();
         }
     }
-    /*
-    @IBAction func ultraTerrorStop(_ sender: Any) {
-        
-        ultraTerrorPlayer.pause()
-    }
-    */
+
     @IBAction func longMixPlay(_ sender: Any) {
         
-        if (longMixPlayer.isPlaying)
+        if (longMixPlayer!.isPlaying)
         {
-            longMixPlayer.pause();
+            longMixPlayer!.pause();
             
         }
         else
         {
-            longMixPlayer.play();
+            longMixPlayer!.play();
         }
     }
-    /*
-    @IBAction func longMixStop(_ sender: Any) {
-        
-        longMixPlayer.pause()
-    }
-    */
+
     @IBAction func insaneAsylumPlay(_ sender: Any) {
         
-        if (insaneAsylumPlayer.isPlaying)
+        if (insaneAsylumPlayer!.isPlaying)
         {
-            insaneAsylumPlayer.pause();
+            insaneAsylumPlayer!.pause();
             
         }
         else
         {
-            insaneAsylumPlayer.play();
+            insaneAsylumPlayer!.play();
         }
     }
-    /*
-    @IBAction func insaneAsylumStop(_ sender: Any) {
-        
-        insaneAsylumPlayer.pause()
-    }
-    */
+    
     @IBAction func witchCacklePlay(_ sender: Any) {
         
-        if (witchCacklePlayer.isPlaying)
-        {
-            witchCacklePlayer.pause();
-            
-        }
-        else
-        {
-            witchCacklePlayer.play();
-        }
+        witchCacklePlayer?.play();
     }
     
     @IBAction func blackCatPlay(_ sender: Any) {
         
-        if (blackCatPlayer.isPlaying)
-        {
-            blackCatPlayer.pause();
-            
-        }
-        else
-        {
-            blackCatPlayer.play();
-        }
+        blackCatPlayer?.play();
     }
     
     @IBAction func monsterGrowlPlay(_ sender: Any) {
         
-        if (monsterGrowlPlayer.isPlaying)
-        {
-            monsterGrowlPlayer.pause();
-            
-        }
-        else
-        {
-            monsterGrowlPlayer.play();
-        }
+        monsterGrowlPlayer?.play();
     }
     
     @IBAction func creakyDoorPlay(_ sender: Any) {
         
-        if (creakyDoorPlayer.isPlaying)
-        {
-            creakyDoorPlayer.pause();
-            
-        }
-        else
-        {
-            creakyDoorPlayer.play();
-        }
+        creakyDoorPlayer?.play();
     }
     
     @IBAction func spookyChainsPlay(_ sender: Any) {
         
-        if (spookyChainsPlayer.isPlaying)
-        {
-            spookyChainsPlayer.pause();
-            
-        }
-        else
-        {
-            spookyChainsPlayer.play();
-        }
+        spookyChainsPlayer?.play();
     }
-
+    
     @IBAction func thunderStormPlay(_ sender: Any) {
         
-        if (thunderStormPlayer.isPlaying)
-        {
-            thunderStormPlayer.pause();
-            
-        }
-        else
-        {
-            thunderStormPlayer.play();
-        }
+        thunderStormPlayer?.play();
     }
     
     @IBAction func vampireBatPlay(_ sender: Any) {
         
-        if (vampireBatPlayer.isPlaying)
-        {
-            vampireBatPlayer.pause();
-            
-        }
-        else
-        {
-            vampireBatPlayer.play();
-        }
+        vampireBatPlayer?.play();
     }
     
     @IBAction func scaryScreamPlay(_ sender: Any) {
         
-        if (scaryScreamPlayer.isPlaying)
-        {
-            scaryScreamPlayer.pause();
-            
-        }
-        else
-        {
-            scaryScreamPlayer.play();
-        }
+        scaryScreamPlayer?.play();
     }
     
     @IBAction func zombieGroanPlay(_ sender: Any) {
         
-        if (zombieGroanPlayer.isPlaying)
-        {
-            zombieGroanPlayer.pause();
-            
-        }
-        else
-        {
-            zombieGroanPlayer.play();
-        }
+        zombieGroanPlayer?.play();
     }
     
     @IBAction func ghostBooPlay(_ sender: Any) {
         
-        if (ghostBooPlayer.isPlaying)
-        {
-            ghostBooPlayer.pause();
-            
-        }
-        else
-        {
-            ghostBooPlayer.play();
-        }
+        ghostBooPlayer?.play();
     }
     
     @IBAction func wereWolfHowlPlay(_ sender: Any) {
         
-        if (wereWolfHowlPlayer.isPlaying)
-        {
-            wereWolfHowlPlayer.pause();
-            
-        }
-        else
-        {
-            wereWolfHowlPlayer.play();
-        }
+        wereWolfHowlPlayer?.play();
     }
     
     @IBAction func poltergeistVoicePlay(_ sender: Any) {
         
-        if (poltergeistVoicePlayer.isPlaying)
-        {
-            poltergeistVoicePlayer.pause();
-            
-        }
-        else
-        {
-            poltergeistVoicePlayer.play();
-        }
+        poltergeistVoicePlayer?.play();
     }
     
     @IBAction func zombieCallPlay(_ sender: Any) {
         
-        if (zombieCallPlayer.isPlaying)
-        {
-            zombieCallPlayer.pause();
-            
-        }
-        else
-        {
-            zombieCallPlayer.play();
-        }
+        zombieCallPlayer?.play();
     }
     
     @IBAction func catScreamPlay(_ sender: Any) {
         
-        if (catScreamPlayer.isPlaying)
-        {
-            catScreamPlayer.pause();
-            
-        }
-        else
-        {
-            catScreamPlayer.play();
-        }
+        catScreamPlayer?.play();
     }
     
     @IBAction func wraithWailPlay(_ sender: Any) {
         
-        if (wraithWailPlayer.isPlaying)
-        {
-            wraithWailPlayer.pause();
-            
-        }
-        else
-        {
-            wraithWailPlayer.play();
-        }
+        wraithWailPlayer?.play();
     }
     
     @IBAction func spookyOwlPlay(_ sender: Any) {
         
-        if (spookyOwlPlayer.isPlaying)
-        {
-            spookyOwlPlayer.pause();
-            
-        }
-        else
-        {
-            spookyOwlPlayer.play();
-        }
+        spookyOwlPlayer?.play();
     }
     
     @IBAction func chainedGhoulPlay(_ sender: Any) {
         
-        if (chainedGhoulPlayer.isPlaying)
-        {
-            chainedGhoulPlayer.pause();
-            
-        }
-        else
-        {
-            chainedGhoulPlayer.play();
-        }
+        chainedGhoulPlayer?.play();
     }
     
     @IBAction func terrifiedScreamPlay(_ sender: Any) {
         
-        if (terrifiedScreamPlayer.isPlaying)
-        {
-            terrifiedScreamPlayer.pause();
-            
-        }
-        else
-        {
-            terrifiedScreamPlayer.play();
-        }
+        terrifiedScreamPlayer?.play();
     }
     
     @IBAction func hauntedOrganPlay(_ sender: Any) {
         
-        if (hauntedOrganPlayer.isPlaying)
-        {
-            hauntedOrganPlayer.pause();
-            
-        }
-        else
-        {
-            hauntedOrganPlayer.play();
-        }
+        hauntedOrganPlayer?.play();
     }
     
     @IBAction func scareCrowPlay(_ sender: Any) {
         
-        if (scareCrowPlayer.isPlaying)
-        {
-            scareCrowPlayer.pause();
-            
-        }
-        else
-        {
-            scareCrowPlayer.play();
-        }
+        scareCrowPlayer?.play();
     }
     
     @IBAction func blowingWindPlay(_ sender: Any) {
         
-        if (blowingWindPlayer.isPlaying)
-        {
-            blowingWindPlayer.pause();
-            
-        }
-        else
-        {
-            blowingWindPlayer.play();
-        }
+        blowingWindPlayer?.play();
     }
     
     @IBAction func ghostlyWhisperPlay(_ sender: Any) {
         
-        if (ghostlyWhisperPlayer.isPlaying)
-        {
-            ghostlyWhisperPlayer.pause();
-            
-        }
-        else
-        {
-            ghostlyWhisperPlayer.play();
-        }
+        ghostlyWhisperPlayer?.play();
     }
     
     @IBAction func draculaLaughPlay(_ sender: Any) {
         
-        if (draculaLaughPlayer.isPlaying)
-        {
-            draculaLaughPlayer.pause();
-            
-        }
-        else
-        {
-            draculaLaughPlayer.play();
-        }
+        draculaLaughPlayer?.play();
     }
     
     @IBAction func wolfCryPlay(_ sender: Any) {
         
-        if (wolfCryPlayer.isPlaying)
-        {
-            wolfCryPlayer.pause();
-            
-        }
-        else
-        {
-            wolfCryPlayer.play();
-        }
+        wolfCryPlayer?.play();
     }
     
     @IBAction func knockKnockPlay(_ sender: Any) {
         
-        if (knockKnockPlayer.isPlaying)
-        {
-            knockKnockPlayer.pause();
-            
-        }
-        else
-        {
-            knockKnockPlayer.play();
-        }
+        knockKnockPlayer?.play();
     }
     
     @IBAction func igorGrumblePlay(_ sender: Any) {
         
-        if (igorGrumblePlayer.isPlaying)
-        {
-            igorGrumblePlayer.pause();
-            
-        }
-        else
-        {
-            igorGrumblePlayer.play();
-        }
+        igorGrumblePlayer?.play();
     }
     
     @IBAction func warningBellsPlay(_ sender: Any) {
         
-        if (warningBellsPlayer.isPlaying)
-        {
-            warningBellsPlayer.pause();
-            
-        }
-        else
-        {
-            warningBellsPlayer.play();
-        }
+        warningBellsPlayer?.play();
     }
     
     @IBAction func painfulMoanPlay(_ sender: Any) {
         
-        if (painfulMoanPlayer.isPlaying)
-        {
-            painfulMoanPlayer.pause();
-            
-        }
-        else
-        {
-            painfulMoanPlayer.play();
-        }
+        painfulMoanPlayer?.play();
     }
     
     @IBAction func witchesCauldronPlay(_ sender: Any) {
         
-        if (witchesCauldronPlayer.isPlaying)
-        {
-            witchesCauldronPlayer.pause();
-            
-        }
-        else
-        {
-            witchesCauldronPlayer.play();
-        }
+        witchesCauldronPlayer?.play();
     }
     
     @IBAction func ghostlyChildrenPlay(_ sender: Any) {
         
-        if (ghostlyChildrenPlayer.isPlaying)
-        {
-            ghostlyChildrenPlayer.pause();
-            
-        }
-        else
-        {
-            ghostlyChildrenPlayer.play();
-        }
+        ghostlyChildrenPlayer?.play();
     }
     
     @IBAction func hauntedSwampPlay(_ sender: Any) {
         
-        if (hauntedSwampPlayer.isPlaying)
-        {
-            hauntedSwampPlayer.pause();
-            
-        }
-        else
-        {
-            hauntedSwampPlayer.play();
-        }
+        hauntedSwampPlayer?.play();
     }
-
+    
     @IBAction func torturedSoulsPlay(_ sender: Any) {
         
-        if (torturedSoulsPlayer.isPlaying)
-        {
-            torturedSoulsPlayer.pause();
-            
-        }
-        else
-        {
-            torturedSoulsPlayer.play();
-        }
+        torturedSoulsPlayer?.play();
     }
     
     @IBAction func chillingHornPlay(_ sender: Any) {
         
-        if (chillingHornPlayer.isPlaying)
-        {
-            chillingHornPlayer.pause();
-            
-        }
-        else
-        {
-            chillingHornPlayer.play();
-        }
+        chillingHornPlayer?.play();
     }
     
 }
