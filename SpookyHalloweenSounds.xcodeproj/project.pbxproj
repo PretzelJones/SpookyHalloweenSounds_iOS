@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B310222342A692005E2914 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B310212342A692005E2914 /* Default-568h@2x.png */; };
 		14B6D7A9216A4CC000DAAAE4 /* Creepster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BCD3730213F4DBC00B27F54 /* Creepster.ttf */; };
 		14B6D7AB216A4DA600DAAAE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14B6D7AA216A4DA600DAAAE4 /* GoogleService-Info.plist */; };
 		1C0DC4EB85673193A672B4AB /* Pods_SpookyHalloweenSoundsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674DFB5997272BAF82DCC28F /* Pods_SpookyHalloweenSoundsTests.framework */; };
@@ -134,6 +135,7 @@
 /* Begin PBXFileReference section */
 		105F84DBA14D4C4A0A2127B7 /* Pods-SpookyHalloweenSoundsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSoundsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpookyHalloweenSoundsTests/Pods-SpookyHalloweenSoundsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
+		14B310212342A692005E2914 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		14B6D7AA216A4DA600DAAAE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C7A54540AA8CC828F7CFD62 /* Pods_SpookyHalloweenSounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpookyHalloweenSounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB2BF4BC43400E4A383D69B /* Pods-SpookyHalloweenSoundsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSoundsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSoundsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		7B305C802132F25300B184F5 = {
 			isa = PBXGroup;
 			children = (
+				14B310212342A692005E2914 /* Default-568h@2x.png */,
 				7B305C8B2132F25300B184F5 /* SpookyHalloweenSounds */,
 				7B305CA02132F25500B184F5 /* SpookyHalloweenSoundsTests */,
 				7B305CAB2132F25500B184F5 /* SpookyHalloweenSoundsUITests */,
@@ -653,6 +656,7 @@
 				7B987E03213371FA00743717 /* werewolf.png in Resources */,
 				7B987D7F2133718D00743717 /* igor_grumble.mp3 in Resources */,
 				7B987D7E2133718D00743717 /* cat_scream.mp3 in Resources */,
+				14B310222342A692005E2914 /* Default-568h@2x.png in Resources */,
 				7B987D8A2133718D00743717 /* witch_laugh.mp3 in Resources */,
 				7B987DE0213371FA00743717 /* play_all.png in Resources */,
 				7B05DEA62139EAF200BAC058 /* chilling_cries.mp3 in Resources */,

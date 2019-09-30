@@ -29,13 +29,13 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73N-uY-Xdd">
                                                 <rect key="frame" x="0.0" y="1284" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="sZs-aJ-yT7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Scarecrow" image="scarecrow.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="scareCrowPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yoK-JW-S9e"/>
@@ -43,13 +43,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-l4-qp2">
                                                 <rect key="frame" x="0.0" y="1052" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="FGq-9N-Hzn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Spooky Owl" image="spooky_owl.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="spookyOwlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtN-Ni-A6c"/>
@@ -57,13 +57,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DED-VW-7xT">
                                                 <rect key="frame" x="0.0" y="1110" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="bqz-9c-9GT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Chained Ghoul" image="chained_ghoul.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="chainedGhoulPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z81-Go-IhI"/>
@@ -71,13 +71,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-44-OjK">
                                                 <rect key="frame" x="0.0" y="1226" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="o1Q-oj-Zsb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Haunted Organ" image="haunted_organ.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="hauntedOrganPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhb-5S-k5h"/>
@@ -85,13 +85,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twt-zf-07d">
                                                 <rect key="frame" x="0.0" y="994" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="htv-as-xkl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Wraith Wail" image="wraith_wail.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="wraithWailPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgY-YS-lZf"/>
@@ -99,13 +99,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-UM-s2y">
                                                 <rect key="frame" x="0.0" y="878" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="OIK-JK-TGv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Zombie Call" image="zombies_three.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="zombieCallPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ad-rd-H5t"/>
@@ -113,13 +113,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-8E-Jgq" userLabel="Poltergeist Voice">
                                                 <rect key="frame" x="0.0" y="820" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LdC-08-gKQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Poltergeist Voice" image="poltergeist_tv.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="poltergeistVoicePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4X-ef-TFb"/>
@@ -127,13 +127,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TY-Jj-eUn">
                                                 <rect key="frame" x="0.0" y="762" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c9g-Sc-zM7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Werewolf Howl" image="werewolf.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="wereWolfHowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5f-M5-chs"/>
@@ -141,13 +141,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lP4-hh-rvx">
                                                 <rect key="frame" x="0.0" y="704" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="HIL-Dz-LgM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Ghost Boo" image="ghost_boo.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="ghostBooPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h56-qM-qto"/>
@@ -155,13 +155,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-Se-SLz">
                                                 <rect key="frame" x="0.0" y="646" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="8jg-v6-X5f"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Zombie Groan" image="zombie.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="zombieGroanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gai-eX-y7Y"/>
@@ -169,13 +169,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-XV-bXZ">
                                                 <rect key="frame" x="0.0" y="588" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mw1-Ds-CqW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Scary Scream" image="scream.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="scaryScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="553-rL-pH9"/>
@@ -183,13 +183,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeZ-kn-hUW">
                                                 <rect key="frame" x="0.0" y="530" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Zbi-Iz-orZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Vampire Bat" image="vampire_bat.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="vampireBatPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMv-tx-m00"/>
@@ -197,13 +197,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke0-6q-0N0">
                                                 <rect key="frame" x="0.0" y="414" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c9V-zL-aup"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Spooky Chains" image="chains.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="spookyChainsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vq-2F-8mA"/>
@@ -211,13 +211,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-gW-NiH">
                                                 <rect key="frame" x="0.0" y="1342" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="qnf-Vd-SkR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Blowing Wind" image="blowing_wind.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="blowingWindPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdU-OF-cCm"/>
@@ -225,13 +225,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAM-xK-aic">
                                                 <rect key="frame" x="0.0" y="1400" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="hfS-Mh-OPf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Ghostly Whisper" image="ghostly_whisper.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="ghostlyWhisperPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAK-7i-KoX"/>
@@ -239,13 +239,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-3A-l4N">
                                                 <rect key="frame" x="0.0" y="1458" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="CcR-96-SGd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Dracula Laugh" image="dracula_laugh.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="draculaLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVs-Vc-PsT"/>
@@ -253,13 +253,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-Sn-1J5">
                                                 <rect key="frame" x="0.0" y="1516" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="BpK-KI-ugo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Wolf Cry" image="wolf.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="wolfCryPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yS-Lk-SR0"/>
@@ -267,13 +267,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-m9-chY">
                                                 <rect key="frame" x="0.0" y="1574" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c8P-N7-UoG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Knock Knock" image="knock.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="knockKnockPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRB-5b-yjL"/>
@@ -281,13 +281,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmX-91-FOB">
                                                 <rect key="frame" x="0.0" y="1632" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="rBH-Oc-zWq"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Igor Grumble" image="igor.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="igorGrumblePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHv-la-zdb"/>
@@ -295,13 +295,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKc-6q-NMq">
                                                 <rect key="frame" x="0.0" y="1748" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c5q-z6-Ad2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Painful Moan" image="grave_stone.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="painfulMoanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qer-1U-qZY"/>
@@ -309,13 +309,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-YQ-ScV">
                                                 <rect key="frame" x="0.0" y="1806" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="gQs-yS-7jv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Witches Cauldron" image="witches_cauldron.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="witchesCauldronPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snq-Uy-6r8"/>
@@ -323,13 +323,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-hS-dgf">
                                                 <rect key="frame" x="0.0" y="1864" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="fGO-d5-dL3"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Ghostly Children" image="ghostly_children.jpg">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="ghostlyChildrenPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6e-Bp-F4C"/>
@@ -337,13 +337,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-rM-CbT">
                                                 <rect key="frame" x="0.0" y="1922" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ZUc-Jc-Kqh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Haunted Swamp" image="haunted_swamp.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="hauntedSwampPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nh9-17-4gg"/>
@@ -351,13 +351,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXR-xM-xy8">
                                                 <rect key="frame" x="0.0" y="298" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wFQ-jA-NeH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Monster Growl" image="monster_growl.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="monsterGrowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiU-Xy-q03"/>
@@ -365,13 +365,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-2V-Npe">
                                                 <rect key="frame" x="0.0" y="1980" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Rly-i1-bBq"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Tortured Souls" image="tortured_souls.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="torturedSoulsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dj2-Kt-Rtl"/>
@@ -379,13 +379,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ek-23-9dX">
                                                 <rect key="frame" x="0.0" y="8" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Rui-8p-PJp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Ultra Terror Mix" image="loop.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="ultraTerrorPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSH-MS-PSc"/>
@@ -393,13 +393,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-Rg-vnl">
                                                 <rect key="frame" x="0.0" y="240" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Zf1-ri-yyr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Black Cat" image="black_cat.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="blackCatPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmM-v7-O6g"/>
@@ -407,13 +407,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-no-Em0">
                                                 <rect key="frame" x="0.0" y="356" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wXh-Ng-DIR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Creaky Door" image="creaky_door.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="creakyDoorPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lan-Og-GEV"/>
@@ -421,13 +421,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-3s-Bd6">
                                                 <rect key="frame" x="0.0" y="2038" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Zti-gJ-DMo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Chilling Horn" image="alien.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="chillingHornPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-oN-U6I"/>
@@ -435,13 +435,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6X-H9-h7A">
                                                 <rect key="frame" x="0.0" y="66" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="eNe-3e-1tj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Spooky Sounds Mix" image="loop.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="longMixPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvg-5u-DuB"/>
@@ -449,13 +449,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Age-0K-NlH">
                                                 <rect key="frame" x="0.0" y="1168" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mW3-O1-IGy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Terrified Scream" image="terrified_scream.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="terrifiedScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTQ-u3-pCm"/>
@@ -463,13 +463,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvs-tF-XxO">
                                                 <rect key="frame" x="0.0" y="182" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="K5k-Nz-UEH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Witch Cackle" image="witch_hat.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="witchCacklePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAj-ab-giA"/>
@@ -477,13 +477,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-3N-V7Q">
                                                 <rect key="frame" x="0.0" y="1690" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="HVr-9g-4M9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Warning Bells" image="warning_bells.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="warningBellsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DuA-Wv-bKa"/>
@@ -491,13 +491,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQn-cP-KJy">
                                                 <rect key="frame" x="0.0" y="472" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="4q4-OW-QRQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Thunder Storm" image="thunder.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="thunderStormPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mn-vO-sI9"/>
@@ -505,13 +505,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-Zj-0Wt">
                                                 <rect key="frame" x="0.0" y="936" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="UuO-an-w7G"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Cat Sceam" image="cat_scream.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="catScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q64-dC-ms3"/>
@@ -519,13 +519,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfn-nP-t18" userLabel="Insane Asylum Long Play">
                                                 <rect key="frame" x="0.0" y="124" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="aDL-jQ-7RU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                                 <state key="normal" title="  Insane Asylum Mix" image="loop.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="insaneAsylumPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30V-Xg-qkh"/>
@@ -665,7 +665,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Spooky Halloween Sounds" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds"/>
+                    <navigationItem key="navigationItem" title="Spooky Halloween Sounds" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds"/>
                     <size key="freeformSize" width="375" height="2235"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -681,8 +681,12 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="28"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="30"/>
                         </textAttributes>
                     </navigationBar>
