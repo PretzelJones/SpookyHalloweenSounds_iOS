@@ -14,6 +14,7 @@ class HiddenViewController: UIViewController {
     var ghostSongPlayer: AVAudioPlayer?
     var oldTapePlayer: AVAudioPlayer?
     var criesHellPlayer: AVAudioPlayer?
+    var spaceTerrorsPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,16 @@ class HiddenViewController: UIViewController {
             print(error)
             
         }
+        
+        do {
+            
+            spaceTerrorsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "space_terror", ofType: "mp3")!))
+            spaceTerrorsPlayer?.prepareToPlay()
+        }
+        catch {
+            print(error)
+            
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -64,7 +75,6 @@ class HiddenViewController: UIViewController {
         if (ghostSongPlayer!.isPlaying)
         {
             ghostSongPlayer!.pause();
-            
         }
         else
         {
@@ -93,6 +103,18 @@ class HiddenViewController: UIViewController {
         else
         {
             criesHellPlayer!.play();
+        }
+    }
+    
+    @IBAction func spaceTerrorsPlay(_ sender: Any) {
+        
+        if (spaceTerrorsPlayer!.isPlaying)
+        {
+            spaceTerrorsPlayer!.pause();
+        }
+        else
+        {
+            spaceTerrorsPlayer!.play();
         }
     }
 }

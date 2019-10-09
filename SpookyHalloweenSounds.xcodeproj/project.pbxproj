@@ -13,6 +13,11 @@
 		14357AB5234A8C2F00D9B0D3 /* HiddenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14357AB4234A8C2F00D9B0D3 /* HiddenViewController.swift */; };
 		14357AB7234A9DD400D9B0D3 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14357AB6234A9DD400D9B0D3 /* moon.png */; };
 		145204AE234BFBB900B94BDE /* small_axe.png in Resources */ = {isa = PBXBuildFile; fileRef = 145204AD234BFBB900B94BDE /* small_axe.png */; };
+		1455C2AD234D32480053D99C /* old_tape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AA234D32450053D99C /* old_tape.png */; };
+		1455C2AE234D32480053D99C /* ghost_song.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AB234D32470053D99C /* ghost_song.png */; };
+		1455C2AF234D32480053D99C /* cries_hell.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AC234D32470053D99C /* cries_hell.png */; };
+		1455C2B3234E80480053D99C /* space_terrors.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2B2234E80480053D99C /* space_terrors.png */; };
+		1455C2B5234E8AD60053D99C /* space_terror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2B4234E8AD60053D99C /* space_terror.mp3 */; };
 		14582FFF234AC0AD0096F85A /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 14582FFE234AC0AD0096F85A /* about.png */; };
 		146FC6CA234BFD02008FEECD /* ghost_icon_30px.png in Resources */ = {isa = PBXBuildFile; fileRef = 146FC6C9234BFD02008FEECD /* ghost_icon_30px.png */; };
 		146FC6CC234C0B07008FEECD /* axe_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 146FC6CB234C0B06008FEECD /* axe_outline.png */; };
@@ -148,6 +153,11 @@
 		14357AB4234A8C2F00D9B0D3 /* HiddenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenViewController.swift; sourceTree = "<group>"; };
 		14357AB6234A9DD400D9B0D3 /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
 		145204AD234BFBB900B94BDE /* small_axe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_axe.png; sourceTree = "<group>"; };
+		1455C2AA234D32450053D99C /* old_tape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_tape.png; sourceTree = "<group>"; };
+		1455C2AB234D32470053D99C /* ghost_song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_song.png; sourceTree = "<group>"; };
+		1455C2AC234D32470053D99C /* cries_hell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cries_hell.png; sourceTree = "<group>"; };
+		1455C2B2234E80480053D99C /* space_terrors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = space_terrors.png; sourceTree = "<group>"; };
+		1455C2B4234E8AD60053D99C /* space_terror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = space_terror.mp3; sourceTree = "<group>"; };
 		14582FFE234AC0AD0096F85A /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		146FC6C9234BFD02008FEECD /* ghost_icon_30px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_icon_30px.png; sourceTree = "<group>"; };
 		146FC6CB234C0B06008FEECD /* axe_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axe_outline.png; sourceTree = "<group>"; };
@@ -370,6 +380,7 @@
 		7B305CBB2132F9F300B184F5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				1455C2B4234E8AD60053D99C /* space_terror.mp3 */,
 				14995ACA234AA6350042E5F1 /* the_old_tape.mp3 */,
 				14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */,
 				14995AC6234AA6100042E5F1 /* cries_from_hell.mp3 */,
@@ -422,6 +433,10 @@
 		7B305CBC2132F9FD00B184F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1455C2B2234E80480053D99C /* space_terrors.png */,
+				1455C2AC234D32470053D99C /* cries_hell.png */,
+				1455C2AB234D32470053D99C /* ghost_song.png */,
+				1455C2AA234D32450053D99C /* old_tape.png */,
 				146FC6CB234C0B06008FEECD /* axe_outline.png */,
 				146FC6C9234BFD02008FEECD /* ghost_icon_30px.png */,
 				145204AD234BFBB900B94BDE /* small_axe.png */,
@@ -621,6 +636,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1455C2AE234D32480053D99C /* ghost_song.png in Resources */,
 				7B305C972132F25500B184F5 /* LaunchScreen.storyboard in Resources */,
 				146FC6CA234BFD02008FEECD /* ghost_icon_30px.png in Resources */,
 				7B987DFC213371FA00743717 /* two_bells.png in Resources */,
@@ -662,6 +678,7 @@
 				14B6D7A9216A4CC000DAAAE4 /* Creepster.ttf in Resources */,
 				14582FFF234AC0AD0096F85A /* about.png in Resources */,
 				7B987DA62133718D00743717 /* painful_moan.mp3 in Resources */,
+				1455C2AD234D32480053D99C /* old_tape.png in Resources */,
 				7B987D8B2133718D00743717 /* scary_nursery.mp3 in Resources */,
 				7B987DFE213371FA00743717 /* zombies_three.png in Resources */,
 				14995AC7234AA6100042E5F1 /* cries_from_hell.mp3 in Resources */,
@@ -682,6 +699,7 @@
 				14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */,
 				7B987D8A2133718D00743717 /* witch_laugh.mp3 in Resources */,
 				7B987DE0213371FA00743717 /* play_all.png in Resources */,
+				1455C2B5234E8AD60053D99C /* space_terror.mp3 in Resources */,
 				7B05DEA62139EAF200BAC058 /* chilling_cries.mp3 in Resources */,
 				7B987D962133718D00743717 /* zombie.mp3 in Resources */,
 				7B987DE6213371FA00743717 /* scarecrow.png in Resources */,
@@ -712,8 +730,10 @@
 				7B05DEA42137665B00BAC058 /* graveyard.png in Resources */,
 				7B987D812133718D00743717 /* chained_ghoul.wav in Resources */,
 				7B987DF5213371FA00743717 /* film.png in Resources */,
+				1455C2AF234D32480053D99C /* cries_hell.png in Resources */,
 				7B987DFB213371FA00743717 /* terrified_scream.png in Resources */,
 				7B987DEA213371FA00743717 /* tree_wall.jpg in Resources */,
+				1455C2B3234E80480053D99C /* space_terrors.png in Resources */,
 				7B987DA82133718D00743717 /* vampire_bat.mp3 in Resources */,
 				7B987DDA213371FA00743717 /* witches_cauldron.png in Resources */,
 				7B987D912133718D00743717 /* wraith_wail.wav in Resources */,
@@ -1016,14 +1036,14 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1042,14 +1062,14 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
