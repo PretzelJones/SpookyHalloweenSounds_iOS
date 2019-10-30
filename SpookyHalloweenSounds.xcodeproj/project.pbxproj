@@ -21,6 +21,7 @@
 		14582FFF234AC0AD0096F85A /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 14582FFE234AC0AD0096F85A /* about.png */; };
 		146FC6CA234BFD02008FEECD /* ghost_icon_30px.png in Resources */ = {isa = PBXBuildFile; fileRef = 146FC6C9234BFD02008FEECD /* ghost_icon_30px.png */; };
 		146FC6CC234C0B07008FEECD /* axe_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 146FC6CB234C0B06008FEECD /* axe_outline.png */; };
+		148A187C2360F8BD00CA2493 /* orange_skull.png in Resources */ = {isa = PBXBuildFile; fileRef = 148A187B2360F8BC00CA2493 /* orange_skull.png */; };
 		14995AC7234AA6100042E5F1 /* cries_from_hell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995AC6234AA6100042E5F1 /* cries_from_hell.mp3 */; };
 		14995AC9234AA6220042E5F1 /* the_ghost_song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */; };
 		14995ACB234AA6350042E5F1 /* the_old_tape.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995ACA234AA6350042E5F1 /* the_old_tape.mp3 */; };
@@ -161,6 +162,7 @@
 		14582FFE234AC0AD0096F85A /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		146FC6C9234BFD02008FEECD /* ghost_icon_30px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_icon_30px.png; sourceTree = "<group>"; };
 		146FC6CB234C0B06008FEECD /* axe_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axe_outline.png; sourceTree = "<group>"; };
+		148A187B2360F8BC00CA2493 /* orange_skull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_skull.png; sourceTree = "<group>"; };
 		14995AC6234AA6100042E5F1 /* cries_from_hell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cries_from_hell.mp3; path = ../../../../Android/SpookyHalloweenSounds/app/src/main/res/raw/cries_from_hell.mp3; sourceTree = "<group>"; };
 		14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = the_ghost_song.mp3; sourceTree = "<group>"; };
 		14995ACA234AA6350042E5F1 /* the_old_tape.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = the_old_tape.mp3; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 		7B305CBC2132F9FD00B184F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				148A187B2360F8BC00CA2493 /* orange_skull.png */,
 				1455C2B2234E80480053D99C /* space_terrors.png */,
 				1455C2AC234D32470053D99C /* cries_hell.png */,
 				1455C2AB234D32470053D99C /* ghost_song.png */,
@@ -679,6 +682,7 @@
 				14582FFF234AC0AD0096F85A /* about.png in Resources */,
 				7B987DA62133718D00743717 /* painful_moan.mp3 in Resources */,
 				1455C2AD234D32480053D99C /* old_tape.png in Resources */,
+				148A187C2360F8BD00CA2493 /* orange_skull.png in Resources */,
 				7B987D8B2133718D00743717 /* scary_nursery.mp3 in Resources */,
 				7B987DFE213371FA00743717 /* zombies_three.png in Resources */,
 				14995AC7234AA6100042E5F1 /* cries_from_hell.mp3 in Resources */,
@@ -1034,8 +1038,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
@@ -1046,7 +1050,7 @@
 				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Spooky Halloween Sounds";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1060,8 +1064,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
@@ -1072,7 +1076,7 @@
 				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Spooky Halloween Sounds";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

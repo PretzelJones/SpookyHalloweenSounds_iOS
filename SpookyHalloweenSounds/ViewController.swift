@@ -13,7 +13,6 @@ import StoreKit
 
 class ViewController: UIViewController {
     
-    
     var longMixPlayer: AVAudioPlayer?
     var ultraTerrorPlayer: AVAudioPlayer?
     var insaneAsylumPlayer: AVAudioPlayer?

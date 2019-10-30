@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,11 +18,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2147"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2185"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-Ci-EFb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2064"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2135"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2448"/>
@@ -685,32 +685,32 @@
             <objects>
                 <viewController id="YAK-Zu-roR" customClass="AboutViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6b-IE-eF6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1030"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="PaL-Ar-NW6">
-                                <rect key="frame" x="8" y="20" width="398" height="240"/>
+                                <rect key="frame" x="8" y="20" width="794" height="240"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spooky Halloween Sounds is brought to you by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6D-H5-0tu">
-                                <rect key="frame" x="27" y="296" width="360" height="21"/>
+                                <rect key="frame" x="225" y="296" width="360" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bosson design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aec-vP-VF5">
-                                <rect key="frame" x="88.5" y="359" width="237" height="46"/>
+                                <rect key="frame" x="286.5" y="359" width="237" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.bosson.design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRn-uh-ifg">
-                                <rect key="frame" x="8" y="413" width="398" height="21"/>
+                                <rect key="frame" x="8" y="413" width="794" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version 1.0.5 October 7, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ya-BJe">
-                                <rect key="frame" x="8" y="674" width="258" height="21"/>
+                                <rect key="frame" x="8" y="929" width="258" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -754,27 +754,28 @@
             <objects>
                 <viewController id="t1I-FK-ggP" customClass="HiddenViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEb-Jn-bmi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1030"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6h-XR-WMW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="810" height="980"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoP-8k-yZU">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="177"/>
+                                        <rect key="frame" x="0.0" y="8" width="810" height="177"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="177" id="ldl-pQ-xvr"/>
+                                            <constraint firstAttribute="height" constant="177" id="fzh-so-FNy"/>
                                         </constraints>
                                         <string key="text">Congratulations! You’ve found the hidden sounds. We’ve saved the best for here. The sounds below are audio recordings found deep in the web. These are genuine recordings of mysterious origin and meaning. They are not for the faint of heart and may leave you feeling uneasy, frightened, and paranoid. You have been warned. </string>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                         <color key="textColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <string key="userLabel">Congratulations! You’ve found the hidden sounds. We’ve saved the best for here. The sounds below are audio recordings found deep in the web. These are genuine recordings of mysterious origin and meaning. They are not for the faint of heart and may leave you feeling uneasy, frightened, and paranoid. You have been warned.</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-aB-cvW">
-                                        <rect key="frame" x="0.0" y="251" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="251" width="810" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="OUa-bM-FYq"/>
+                                            <constraint firstAttribute="height" constant="50" id="sUB-N6-6eJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                         <state key="normal" title="  The Old Tape" image="old_tape.png">
@@ -785,10 +786,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdY-Y9-yvx">
-                                        <rect key="frame" x="0.0" y="309" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="309" width="810" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="QUm-iL-aaV"/>
+                                            <constraint firstAttribute="height" constant="50" id="Llk-Hy-zUf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                         <state key="normal" title="  Cries from Hell" image="cries_hell.png">
@@ -799,10 +800,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6V-Hk-3t2">
-                                        <rect key="frame" x="0.0" y="193" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="193" width="810" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="zgv-w1-kB9"/>
+                                            <constraint firstAttribute="height" constant="50" id="t3Z-US-tuA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                         <state key="normal" title="  The Ghost Song" image="ghost_song.png">
@@ -813,10 +814,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaI-SI-g20">
-                                        <rect key="frame" x="0.0" y="367" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="367" width="810" height="50"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ioF-QD-pkB"/>
+                                            <constraint firstAttribute="height" constant="50" id="gpb-R6-N3e"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="17"/>
                                         <state key="normal" title="   Space Terrors" image="space_terrors.png">
@@ -826,37 +827,40 @@
                                             <action selector="spaceTerrorsPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="atv-B0-hRQ"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-Vd-5qj">
-                                        <rect key="frame" x="0.0" y="425" width="414" height="300"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="M4J-sT-cHh">
+                                        <rect key="frame" x="8" y="425" width="794" height="555"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="leading" secondItem="D6h-XR-WMW" secondAttribute="leading" id="43f-Aw-mq2"/>
-                                    <constraint firstItem="BdY-Y9-yvx" firstAttribute="leading" secondItem="D6h-XR-WMW" secondAttribute="leading" id="50r-lK-BAT"/>
-                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="top" secondItem="D6h-XR-WMW" secondAttribute="topMargin" id="6bB-Ew-PXE"/>
-                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="centerX" secondItem="Ogf-aB-cvW" secondAttribute="centerX" id="BRe-rj-Vt0"/>
-                                    <constraint firstItem="BdY-Y9-yvx" firstAttribute="top" secondItem="Ogf-aB-cvW" secondAttribute="bottom" constant="8" id="Gh8-AB-7Fc"/>
-                                    <constraint firstItem="Ogf-aB-cvW" firstAttribute="top" secondItem="M6V-Hk-3t2" secondAttribute="bottom" constant="8" id="JS0-q1-nXV"/>
-                                    <constraint firstItem="IaI-SI-g20" firstAttribute="top" secondItem="BdY-Y9-yvx" secondAttribute="bottom" constant="8" id="Q3W-Qc-F3O"/>
-                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="leading" secondItem="M6V-Hk-3t2" secondAttribute="leading" id="Qv9-by-mPG"/>
-                                    <constraint firstAttribute="trailing" secondItem="IaI-SI-g20" secondAttribute="trailing" id="Sgn-Ze-OyC"/>
-                                    <constraint firstItem="IaI-SI-g20" firstAttribute="leading" secondItem="D6h-XR-WMW" secondAttribute="leading" id="UBp-x7-3jY"/>
-                                    <constraint firstItem="BdY-Y9-yvx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ogf-aB-cvW" secondAttribute="trailing" id="c2R-Ln-X4b"/>
-                                    <constraint firstItem="M6V-Hk-3t2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ogf-aB-cvW" secondAttribute="leading" id="mXH-KB-PzE"/>
-                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="centerX" secondItem="D6h-XR-WMW" secondAttribute="centerX" id="px3-Hg-6sj"/>
-                                    <constraint firstItem="M6V-Hk-3t2" firstAttribute="top" secondItem="UoP-8k-yZU" secondAttribute="bottom" constant="8" id="tCt-hv-rkH"/>
-                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="centerX" secondItem="M6V-Hk-3t2" secondAttribute="centerX" id="yfo-zG-sIs"/>
+                                    <constraint firstAttribute="bottom" secondItem="M4J-sT-cHh" secondAttribute="bottom" id="BVc-w1-jTb"/>
+                                    <constraint firstItem="BdY-Y9-yvx" firstAttribute="top" secondItem="Ogf-aB-cvW" secondAttribute="bottom" constant="8" id="Bb6-g9-gpN"/>
+                                    <constraint firstItem="IaI-SI-g20" firstAttribute="top" secondItem="BdY-Y9-yvx" secondAttribute="bottom" constant="8" id="CML-yI-0vs"/>
+                                    <constraint firstItem="M4J-sT-cHh" firstAttribute="leading" secondItem="D6h-XR-WMW" secondAttribute="leadingMargin" id="Fo5-Zd-2r2"/>
+                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="leading" secondItem="M6V-Hk-3t2" secondAttribute="leading" id="Ivb-yN-L8k"/>
+                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="top" secondItem="D6h-XR-WMW" secondAttribute="topMargin" id="OA4-Sd-Wtw"/>
+                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="trailing" secondItem="M6V-Hk-3t2" secondAttribute="trailing" id="RjG-Ba-ToI"/>
+                                    <constraint firstItem="UoP-8k-yZU" firstAttribute="leading" secondItem="D6h-XR-WMW" secondAttribute="leading" id="Rt2-WZ-Qb5"/>
+                                    <constraint firstItem="IaI-SI-g20" firstAttribute="centerX" secondItem="M4J-sT-cHh" secondAttribute="centerX" id="WP2-qF-8hP"/>
+                                    <constraint firstItem="M6V-Hk-3t2" firstAttribute="top" secondItem="UoP-8k-yZU" secondAttribute="bottom" constant="8" id="XCs-Qd-mrW"/>
+                                    <constraint firstItem="M4J-sT-cHh" firstAttribute="top" secondItem="IaI-SI-g20" secondAttribute="bottom" constant="8" id="ZyZ-7j-9c3"/>
+                                    <constraint firstItem="M6V-Hk-3t2" firstAttribute="leading" secondItem="Ogf-aB-cvW" secondAttribute="leading" id="ksh-2r-cBB"/>
+                                    <constraint firstItem="Ogf-aB-cvW" firstAttribute="leading" secondItem="BdY-Y9-yvx" secondAttribute="leading" id="lYV-LY-LR8"/>
+                                    <constraint firstItem="M6V-Hk-3t2" firstAttribute="trailing" secondItem="Ogf-aB-cvW" secondAttribute="trailing" id="o6h-eL-Rst"/>
+                                    <constraint firstItem="Ogf-aB-cvW" firstAttribute="trailing" secondItem="BdY-Y9-yvx" secondAttribute="trailing" id="oi3-LJ-RoX"/>
+                                    <constraint firstItem="Ogf-aB-cvW" firstAttribute="top" secondItem="M6V-Hk-3t2" secondAttribute="bottom" constant="8" id="pTa-Ab-KDF"/>
+                                    <constraint firstItem="M4J-sT-cHh" firstAttribute="trailing" secondItem="D6h-XR-WMW" secondAttribute="trailingMargin" id="qb4-0h-QQa"/>
+                                    <constraint firstItem="BdY-Y9-yvx" firstAttribute="trailing" secondItem="IaI-SI-g20" secondAttribute="trailing" id="qgs-5t-sSN"/>
+                                    <constraint firstItem="BdY-Y9-yvx" firstAttribute="leading" secondItem="IaI-SI-g20" secondAttribute="leading" id="vrN-Mf-9D6"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="D6h-XR-WMW" firstAttribute="leading" secondItem="WVk-wP-Wdy" secondAttribute="leading" id="ElM-Ag-tY9"/>
-                            <constraint firstItem="D6h-XR-WMW" firstAttribute="centerX" secondItem="MEb-Jn-bmi" secondAttribute="centerX" id="Fu2-eU-vi8"/>
-                            <constraint firstItem="D6h-XR-WMW" firstAttribute="bottom" secondItem="WVk-wP-Wdy" secondAttribute="bottom" id="Y6X-xY-otr"/>
-                            <constraint firstItem="D6h-XR-WMW" firstAttribute="top" secondItem="WVk-wP-Wdy" secondAttribute="top" id="bdq-a3-lDf"/>
+                            <constraint firstItem="D6h-XR-WMW" firstAttribute="bottom" secondItem="WVk-wP-Wdy" secondAttribute="bottom" id="3h5-U9-gt7"/>
+                            <constraint firstItem="D6h-XR-WMW" firstAttribute="centerX" secondItem="MEb-Jn-bmi" secondAttribute="centerX" id="Udr-MB-tgb"/>
+                            <constraint firstItem="D6h-XR-WMW" firstAttribute="top" secondItem="WVk-wP-Wdy" secondAttribute="top" id="hOI-Tk-Pbt"/>
+                            <constraint firstItem="D6h-XR-WMW" firstAttribute="leading" secondItem="WVk-wP-Wdy" secondAttribute="leading" id="tnb-L6-PYt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WVk-wP-Wdy"/>
                     </view>
@@ -864,7 +868,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS1-hv-ZXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786.9565217391305" y="-315.40178571428572"/>
+            <point key="canvasLocation" x="1785.9259259259259" y="-316.11111111111109"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N9Z-BK-hCR">
@@ -872,7 +876,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbS-8A-ydh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rUF-dG-xkY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -917,8 +921,8 @@
         <image name="knock.png" width="25" height="25"/>
         <image name="loop.png" width="25" height="25"/>
         <image name="monster_growl.png" width="16.5" height="20.25"/>
-        <image name="moon.png" width="623" height="623"/>
         <image name="old_tape.png" width="25" height="25"/>
+        <image name="orange_skull.png" width="256" height="320"/>
         <image name="poltergeist_tv.png" width="35" height="22"/>
         <image name="scarecrow.png" width="25" height="24"/>
         <image name="scream.png" width="18.75" height="16.5"/>
