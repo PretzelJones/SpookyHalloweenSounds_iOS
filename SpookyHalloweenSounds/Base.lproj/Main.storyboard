@@ -860,7 +860,7 @@
             </objects>
             <point key="canvasLocation" x="1074.6376811594205" y="132.25446428571428"/>
         </scene>
-        <!--About View Controller-->
+        <!--Developer Information-->
         <scene sceneID="8I4-fq-n0v">
             <objects>
                 <viewController id="YAK-Zu-roR" customClass="AboutViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
@@ -917,7 +917,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dmx-By-hLX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IIL-Uw-Z61">
+                    <navigationItem key="navigationItem" title="Developer Information" largeTitleDisplayMode="never" id="IIL-Uw-Z61">
+                        <barButtonItem key="backBarButtonItem" title=" " id="WZQ-Sf-oYE"/>
                         <barButtonItem key="rightBarButtonItem" image="small_axe.png" id="h2M-QW-YoB">
                             <connections>
                                 <segue destination="t1I-FK-ggP" kind="show" id="EfQ-Pl-L5d"/>
@@ -1065,7 +1066,7 @@
                         <viewLayoutGuide key="safeArea" id="WVk-wP-Wdy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hidden Sounds" id="lv5-Jj-tPq" customClass="HiddenViewController">
-                        <barButtonItem key="backBarButtonItem" title="   " id="2ih-BN-y2q"/>
+                        <barButtonItem key="backBarButtonItem" title="  " id="3pb-IQ-FC2"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS1-hv-ZXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
