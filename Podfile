@@ -6,8 +6,8 @@ target 'SpookyHalloweenSounds' do
   use_frameworks!
 
   # Pods for SpookyHalloweenSounds
-  pod 'Firebase/Core'
-  pod 'Firebase/Messaging'
+   pod 'Firebase/Core'
+   pod 'Firebase/Messaging'
 
   target 'SpookyHalloweenSoundsTests' do
     inherit! :search_paths
