@@ -10,7 +10,7 @@
 import UIKit
 import AVFoundation
 import StoreKit
-// MARK: test comment
+// MARK: test comment - again and again
 class ViewController: UIViewController {
     
     var longMixPlayer: AVAudioPlayer?
