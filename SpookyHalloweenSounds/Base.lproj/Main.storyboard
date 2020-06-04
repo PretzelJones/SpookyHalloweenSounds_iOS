@@ -860,7 +860,7 @@
             </objects>
             <point key="canvasLocation" x="1074.6376811594205" y="132.25446428571428"/>
         </scene>
-        <!--Developer Information-->
+        <!--App Information-->
         <scene sceneID="8I4-fq-n0v">
             <objects>
                 <viewController id="YAK-Zu-roR" customClass="AboutViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
@@ -917,8 +917,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dmx-By-hLX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Developer Information" largeTitleDisplayMode="never" id="IIL-Uw-Z61">
-                        <barButtonItem key="backBarButtonItem" title=" " id="WZQ-Sf-oYE"/>
+                    <navigationItem key="navigationItem" title="App Information" id="IIL-Uw-Z61">
+                        <barButtonItem key="backBarButtonItem" title=" " id="i7U-R3-Cef"/>
                         <barButtonItem key="rightBarButtonItem" image="small_axe.png" id="h2M-QW-YoB">
                             <connections>
                                 <segue destination="t1I-FK-ggP" kind="show" id="EfQ-Pl-L5d"/>
@@ -1034,6 +1034,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="M4J-sT-cHh" firstAttribute="top" secondItem="IaI-SI-g20" secondAttribute="bottom" constant="8" id="34W-Px-ftz"/>
+                                    <constraint firstItem="M4J-sT-cHh" firstAttribute="top" secondItem="IaI-SI-g20" secondAttribute="bottom" constant="8" id="7ed-Fk-88T"/>
                                     <constraint firstAttribute="bottom" secondItem="M4J-sT-cHh" secondAttribute="bottom" id="BVc-w1-jTb"/>
                                     <constraint firstItem="BdY-Y9-yvx" firstAttribute="top" secondItem="Ogf-aB-cvW" secondAttribute="bottom" constant="8" id="Bb6-g9-gpN"/>
                                     <constraint firstItem="IaI-SI-g20" firstAttribute="top" secondItem="BdY-Y9-yvx" secondAttribute="bottom" constant="8" id="CML-yI-0vs"/>
@@ -1066,7 +1068,7 @@
                         <viewLayoutGuide key="safeArea" id="WVk-wP-Wdy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hidden Sounds" id="lv5-Jj-tPq" customClass="HiddenViewController">
-                        <barButtonItem key="backBarButtonItem" title="  " id="3pb-IQ-FC2"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="3pb-IQ-FC2"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS1-hv-ZXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

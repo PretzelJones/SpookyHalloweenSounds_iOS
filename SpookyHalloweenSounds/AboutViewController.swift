@@ -9,4 +9,11 @@
 import Foundation
 import UIKit
 
-//self.navigationItem.backBarButtonItem?.title = ""
+
+class AboutViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+}
