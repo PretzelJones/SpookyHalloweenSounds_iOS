@@ -13,8 +13,8 @@ class HiddenViewController: UIViewController {
     
     var ghostSongPlayer: AVAudioPlayer?
     var oldTapePlayer: AVAudioPlayer?
+    var criesOfInsanityPlayer: AVAudioPlayer?
     var criesHellPlayer: AVAudioPlayer?
-    var spaceTerrorsPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +39,11 @@ class HiddenViewController: UIViewController {
             
         }
         
+        
         do {
             
-            criesHellPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cries_from_hell", ofType: "mp3")!))
-            criesHellPlayer?.prepareToPlay()
+            criesOfInsanityPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chilling_cries", ofType: "mp3")!))
+            criesOfInsanityPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -51,8 +52,8 @@ class HiddenViewController: UIViewController {
         
         do {
             
-            spaceTerrorsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "space_terror", ofType: "mp3")!))
-            spaceTerrorsPlayer?.prepareToPlay()
+            criesHellPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cries_from_hell", ofType: "mp3")!))
+            criesHellPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -94,6 +95,19 @@ class HiddenViewController: UIViewController {
         }
     }
     
+    @IBAction func criesOfInsanityPlay(_ sender: Any) {
+        
+        if (criesOfInsanityPlayer!.isPlaying)
+        {
+            criesOfInsanityPlayer!.pause();
+        }
+        else
+        {
+            criesOfInsanityPlayer!.play();
+        }
+    }
+    
+    
     @IBAction func criesHellPlay(_ sender: Any) {
         
         if (criesHellPlayer!.isPlaying)
@@ -106,15 +120,4 @@ class HiddenViewController: UIViewController {
         }
     }
     
-    @IBAction func spaceTerrorsPlay(_ sender: Any) {
-        
-        if (spaceTerrorsPlayer!.isPlaying)
-        {
-            spaceTerrorsPlayer!.pause();
-        }
-        else
-        {
-            spaceTerrorsPlayer!.play();
-        }
-    }
 }

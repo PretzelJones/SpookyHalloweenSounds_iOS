@@ -1374,7 +1374,7 @@
                                             <constraint firstAttribute="height" constant="50" id="Llk-Hy-zUf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                        <state key="normal" title="  Cries from Hell" image="cries_hell.png">
+                                        <state key="normal" title="  Cries of Insanity" image="dispair.png">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1384,6 +1384,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="criesHellPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="dGp-Zk-N1g"/>
+                                            <action selector="criesOfInsanityPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="4tp-mK-SAP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6V-Hk-3t2">
@@ -1412,7 +1413,7 @@
                                             <constraint firstAttribute="height" constant="50" id="gpb-R6-N3e"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                        <state key="normal" title="   Space Terrors" image="space_terrors.png">
+                                        <state key="normal" title="   Cries from Hell" image="cries_hell.png">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1421,7 +1422,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="spaceTerrorsPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="atv-B0-hRQ"/>
+                                            <action selector="criesHellPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="X5H-xh-chm"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="M4J-sT-cHh">
@@ -1511,6 +1512,7 @@
         <image name="creaky_door.png" width="25" height="22"/>
         <image name="cries_hell.png" width="25" height="25"/>
         <image name="cross.png" width="4.320000171661377" height="6"/>
+        <image name="dispair.png" width="25" height="25"/>
         <image name="dracula_laugh.png" width="15" height="30"/>
         <image name="evil_man.png" width="25" height="20"/>
         <image name="film.png" width="32" height="25"/>

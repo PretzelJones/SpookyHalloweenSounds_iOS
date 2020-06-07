@@ -44,7 +44,6 @@
 		14995AC9234AA6220042E5F1 /* the_ghost_song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */; };
 		14995ACB234AA6350042E5F1 /* the_old_tape.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995ACA234AA6350042E5F1 /* the_old_tape.mp3 */; };
 		14B6D7A9216A4CC000DAAAE4 /* Creepster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BCD3730213F4DBC00B27F54 /* Creepster.ttf */; };
-		14B6D7AB216A4DA600DAAAE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14B6D7AA216A4DA600DAAAE4 /* GoogleService-Info.plist */; };
 		14FE01E0248B0F6400E1B0B0 /* titlebar_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FE01DF248B0F6400E1B0B0 /* titlebar_image.png */; };
 		14FE01E2248B1CE900E1B0B0 /* titlebar_image_smaller.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FE01E1248B1CE900E1B0B0 /* titlebar_image_smaller.png */; };
 		14FE01E4248B260A00E1B0B0 /* LongMixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */; };
@@ -198,7 +197,6 @@
 		148A187B2360F8BC00CA2493 /* orange_skull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_skull.png; sourceTree = "<group>"; };
 		14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = the_ghost_song.mp3; sourceTree = "<group>"; };
 		14995ACA234AA6350042E5F1 /* the_old_tape.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = the_old_tape.mp3; sourceTree = "<group>"; };
-		14B6D7AA216A4DA600DAAAE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14FE01DF248B0F6400E1B0B0 /* titlebar_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar_image.png; sourceTree = "<group>"; };
 		14FE01E1248B1CE900E1B0B0 /* titlebar_image_smaller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar_image_smaller.png; sourceTree = "<group>"; };
 		14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongMixViewController.swift; sourceTree = "<group>"; };
@@ -354,7 +352,6 @@
 			isa = PBXGroup;
 			children = (
 				140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */,
-				14B6D7AA216A4DA600DAAAE4 /* GoogleService-Info.plist */,
 				7B305CBF21336D5500B184F5 /* Fonts */,
 				7B305CBC2132F9FD00B184F5 /* Images */,
 				7B305CBB2132F9F300B184F5 /* Audio */,
@@ -774,7 +771,6 @@
 				7B987D982133718D00743717 /* haunted_swamp.mp3 in Resources */,
 				7B987DF2213371FA00743717 /* black_cat.png in Resources */,
 				7B987DDE213371FA00743717 /* dispair.png in Resources */,
-				14B6D7AB216A4DA600DAAAE4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
