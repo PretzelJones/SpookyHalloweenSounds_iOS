@@ -351,20 +351,20 @@
 		7B305C8B2132F25300B184F5 /* SpookyHalloweenSounds */ = {
 			isa = PBXGroup;
 			children = (
-				140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */,
+				7B305C932132F25500B184F5 /* Assets.xcassets */,
 				7B305CBF21336D5500B184F5 /* Fonts */,
 				7B305CBC2132F9FD00B184F5 /* Images */,
 				7B305CBB2132F9F300B184F5 /* Audio */,
 				7B305C8C2132F25300B184F5 /* AppDelegate.swift */,
 				7B305C8E2132F25300B184F5 /* ViewController.swift */,
-				14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */,
-				7B305C902132F25300B184F5 /* Main.storyboard */,
-				7B305C932132F25500B184F5 /* Assets.xcassets */,
-				7B305C952132F25500B184F5 /* LaunchScreen.storyboard */,
-				7B305C982132F25500B184F5 /* Info.plist */,
 				14357AB4234A8C2F00D9B0D3 /* HiddenViewController.swift */,
 				14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */,
 				1447250A248C1EF600A27662 /* HorrorMovieViewController.swift */,
+				14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */,
+				7B305C902132F25300B184F5 /* Main.storyboard */,
+				7B305C952132F25500B184F5 /* LaunchScreen.storyboard */,
+				7B305C982132F25500B184F5 /* Info.plist */,
+				140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */,
 			);
 			path = SpookyHalloweenSounds;
 			sourceTree = "<group>";
