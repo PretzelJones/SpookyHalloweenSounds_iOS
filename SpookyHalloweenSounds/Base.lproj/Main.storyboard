@@ -1030,10 +1030,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-4E-zIy">
-                                <rect key="frame" x="0.0" y="201" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="202" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RKh-Gf-Q8P"/>
+                                    <constraint firstAttribute="height" constant="50" id="j6J-MK-5bF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1050,10 +1050,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-h1-AJt">
-                                <rect key="frame" x="0.0" y="259" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="260" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="czc-em-JSw"/>
+                                    <constraint firstAttribute="height" constant="50" id="pF9-UV-SG8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1070,10 +1070,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtT-Uc-9rd">
-                                <rect key="frame" x="0.0" y="317" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="318" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="QmM-dZ-klV"/>
+                                    <constraint firstAttribute="height" constant="50" id="yDC-rh-8jp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1090,11 +1090,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ex-mw-HV9">
-                                <rect key="frame" x="0.0" y="375" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="376" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="PIS-9W-GVf"/>
-                                    <constraint firstAttribute="height" constant="50" id="l2d-K4-hyC"/>
+                                    <constraint firstAttribute="height" constant="50" id="pq7-ew-Fpp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1110,17 +1109,11 @@
                                     <action selector="dontLetThemIn:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="Mof-8N-dVv"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-vc-vke">
-                                <rect key="frame" x="0.0" y="433" width="414" height="292"/>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-Sy-aG0">
-                                <rect key="frame" x="89" y="433" width="256" height="244"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VB-UG-b7Q">
-                                <rect key="frame" x="0.0" y="143" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="qGv-hR-glp"/>
+                                    <constraint firstAttribute="height" constant="50" id="W3b-Ng-3xC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1136,10 +1129,14 @@
                                     <action selector="ultraTerrorPlay:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="iVX-EA-5Iq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-cI-Mq1">
-                                <rect key="frame" x="20" y="20" width="374" height="115"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-jR-PWl">
+                                <rect key="frame" x="0.0" y="434" width="414" height="291"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-cI-Mq1">
+                                <rect key="frame" x="20" y="8" width="374" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="1QA-u9-pzQ"/>
+                                    <constraint firstAttribute="width" constant="374" id="TCb-Fk-wQE"/>
+                                    <constraint firstAttribute="height" constant="128" id="YNe-rN-cDS"/>
                                 </constraints>
                                 <string key="text">The loopping sounds will contine to play indefinitely! Press the button a second time to pause or press two or more to mix the sounds together.</string>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
@@ -1149,30 +1146,34 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="trailing" secondItem="Rqw-vc-vke" secondAttribute="trailing" id="2er-2V-Bai"/>
-                            <constraint firstItem="Rqw-vc-vke" firstAttribute="bottom" secondItem="FsQ-bp-e8u" secondAttribute="bottom" id="CGE-PA-Mao"/>
-                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="leading" secondItem="Rqw-vc-vke" secondAttribute="leading" id="DTu-9o-RPr"/>
-                            <constraint firstItem="VHt-h1-AJt" firstAttribute="leading" secondItem="mtT-Uc-9rd" secondAttribute="leading" id="FWk-xT-y9N"/>
-                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="centerX" secondItem="0VB-UG-b7Q" secondAttribute="centerX" id="IZk-yI-JDe"/>
-                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="leading" secondItem="Yba-4E-zIy" secondAttribute="leading" id="KA7-F8-1qg"/>
-                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="top" secondItem="wU3-CW-mrY" secondAttribute="top" constant="20" symbolic="YES" id="Osc-H8-0t0"/>
-                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="top" secondItem="VHt-h1-AJt" secondAttribute="bottom" constant="8" symbolic="YES" id="Q9b-6C-HUS"/>
-                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="leading" secondItem="9Ex-mw-HV9" secondAttribute="leading" id="Sj7-b2-byf"/>
-                            <constraint firstItem="Rqw-vc-vke" firstAttribute="top" secondItem="9Ex-mw-HV9" secondAttribute="bottom" constant="8" symbolic="YES" id="U4V-Tn-enn"/>
-                            <constraint firstItem="Yba-4E-zIy" firstAttribute="top" secondItem="0VB-UG-b7Q" secondAttribute="bottom" constant="8" symbolic="YES" id="UyG-DX-2yx"/>
-                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="trailing" secondItem="9Ex-mw-HV9" secondAttribute="trailing" id="VIk-fq-8ou"/>
-                            <constraint firstItem="VHt-h1-AJt" firstAttribute="top" secondItem="Yba-4E-zIy" secondAttribute="bottom" constant="8" symbolic="YES" id="Wip-cJ-9ff"/>
-                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="leading" secondItem="wU3-CW-mrY" secondAttribute="leadingMargin" id="Ysd-Fj-jmo"/>
-                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="top" secondItem="Gb3-cI-Mq1" secondAttribute="bottom" constant="8" symbolic="YES" id="dOM-UI-qeD"/>
-                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="trailing" secondItem="Yba-4E-zIy" secondAttribute="trailing" id="dfe-VW-ztQ"/>
-                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="top" secondItem="mtT-Uc-9rd" secondAttribute="bottom" constant="8" symbolic="YES" id="gVj-Hf-s3v"/>
-                            <constraint firstItem="FsQ-bp-e8u" firstAttribute="bottom" secondItem="gd8-Sy-aG0" secondAttribute="bottom" constant="48" id="gWs-Xd-P04"/>
-                            <constraint firstItem="VHt-h1-AJt" firstAttribute="trailing" secondItem="mtT-Uc-9rd" secondAttribute="trailing" id="gvK-fg-uRv"/>
-                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="leading" secondItem="wU3-CW-mrY" secondAttribute="leading" id="hDo-Gf-scj"/>
-                            <constraint firstItem="gd8-Sy-aG0" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" constant="89" id="jgF-j9-l9I"/>
-                            <constraint firstItem="Rqw-vc-vke" firstAttribute="top" secondItem="gd8-Sy-aG0" secondAttribute="top" id="rNq-qD-Guk"/>
-                            <constraint firstItem="Yba-4E-zIy" firstAttribute="trailing" secondItem="VHt-h1-AJt" secondAttribute="trailing" id="uwa-d9-D3q"/>
-                            <constraint firstItem="Yba-4E-zIy" firstAttribute="leading" secondItem="VHt-h1-AJt" secondAttribute="leading" id="z3T-Qc-RoW"/>
+                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" constant="20" id="2ng-Er-4mu"/>
+                            <constraint firstItem="Yba-4E-zIy" firstAttribute="top" secondItem="0VB-UG-b7Q" secondAttribute="bottom" constant="8" id="5Sc-Ph-UhO"/>
+                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" id="5da-Mh-IAw"/>
+                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="top" secondItem="mtT-Uc-9rd" secondAttribute="bottom" constant="8" id="8tV-2k-A2v"/>
+                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" id="BQb-1T-vj3"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="trailing" secondItem="FsQ-bp-e8u" secondAttribute="trailing" id="CYQ-Pb-6h0"/>
+                            <constraint firstItem="UiN-jR-PWl" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" id="Kwm-Jb-Axl"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" id="Nxx-jp-hNn"/>
+                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="trailing" secondItem="FsQ-bp-e8u" secondAttribute="trailing" id="R3K-4H-Zwb"/>
+                            <constraint firstItem="Yba-4E-zIy" firstAttribute="top" secondItem="0VB-UG-b7Q" secondAttribute="bottom" constant="8" id="Reg-wc-Ph1"/>
+                            <constraint firstItem="UiN-jR-PWl" firstAttribute="trailing" secondItem="FsQ-bp-e8u" secondAttribute="trailing" id="VX3-vc-MlG"/>
+                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="centerX" secondItem="0VB-UG-b7Q" secondAttribute="centerX" id="ZpQ-eT-8Hl"/>
+                            <constraint firstItem="UiN-jR-PWl" firstAttribute="top" secondItem="9Ex-mw-HV9" secondAttribute="bottom" constant="8" id="ayt-05-3Zl"/>
+                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="top" secondItem="FsQ-bp-e8u" secondAttribute="top" constant="8" id="cOm-vp-Elt"/>
+                            <constraint firstItem="Yba-4E-zIy" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" id="fkK-EB-Yuy"/>
+                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="top" secondItem="mtT-Uc-9rd" secondAttribute="bottom" constant="8" id="gTJ-VA-HZL"/>
+                            <constraint firstItem="VHt-h1-AJt" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" id="jFA-gw-oPF"/>
+                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="top" secondItem="VHt-h1-AJt" secondAttribute="bottom" constant="8" id="n2H-SD-54J"/>
+                            <constraint firstItem="UiN-jR-PWl" firstAttribute="bottom" secondItem="FsQ-bp-e8u" secondAttribute="bottom" id="nLN-Sv-Kfi"/>
+                            <constraint firstItem="FsQ-bp-e8u" firstAttribute="trailing" secondItem="Gb3-cI-Mq1" secondAttribute="trailing" constant="20" id="nha-sy-kc4"/>
+                            <constraint firstItem="Yba-4E-zIy" firstAttribute="trailing" secondItem="FsQ-bp-e8u" secondAttribute="trailing" id="oK6-Wr-wvF"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="top" secondItem="Gb3-cI-Mq1" secondAttribute="bottom" constant="8" id="qSI-Lg-ffF"/>
+                            <constraint firstItem="VHt-h1-AJt" firstAttribute="trailing" secondItem="FsQ-bp-e8u" secondAttribute="trailing" id="ruD-8m-T1r"/>
+                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="trailing" secondItem="FsQ-bp-e8u" secondAttribute="trailing" id="t4m-mn-7db"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="top" secondItem="Gb3-cI-Mq1" secondAttribute="bottom" constant="8" symbolic="YES" id="tPe-NG-6b6"/>
+                            <constraint firstItem="VHt-h1-AJt" firstAttribute="top" secondItem="Yba-4E-zIy" secondAttribute="bottom" constant="8" id="u0X-0k-dQm"/>
+                            <constraint firstItem="VHt-h1-AJt" firstAttribute="top" secondItem="Yba-4E-zIy" secondAttribute="bottom" constant="8" id="xjn-zG-zMX"/>
+                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="top" secondItem="VHt-h1-AJt" secondAttribute="bottom" constant="8" id="zke-Pw-3TV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FsQ-bp-e8u"/>
                     </view>
@@ -1383,7 +1384,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="criesHellPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="dGp-Zk-N1g"/>
                                             <action selector="criesOfInsanityPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="4tp-mK-SAP"/>
                                         </connections>
                                     </button>
