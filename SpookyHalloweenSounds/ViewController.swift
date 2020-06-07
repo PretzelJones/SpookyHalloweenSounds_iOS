@@ -13,13 +13,13 @@ import StoreKit
 
 class ViewController: UIViewController {
     
-    var longMixPlayer: AVAudioPlayer?
-    var ultraTerrorPlayer: AVAudioPlayer?
-    var insaneAsylumPlayer: AVAudioPlayer?
     var witchCacklePlayer: AVAudioPlayer?
     var blackCatPlayer: AVAudioPlayer?
+    var creepyLaughPlayer: AVAudioPlayer?
     var creakyDoorPlayer: AVAudioPlayer?
+    var horrorAmbiancePlayer: AVAudioPlayer?
     var monsterGrowlPlayer: AVAudioPlayer?
+    var monsterWalkingPlayer: AVAudioPlayer?
     var spookyChainsPlayer: AVAudioPlayer?
     var thunderStormPlayer: AVAudioPlayer?
     var vampireBatPlayer: AVAudioPlayer?
@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     var wolfCryPlayer: AVAudioPlayer?
     var knockKnockPlayer: AVAudioPlayer?
     var igorGrumblePlayer: AVAudioPlayer?
+    var horrorMoviePlayer: AVAudioPlayer?
     var warningBellsPlayer: AVAudioPlayer?
     var painfulMoanPlayer: AVAudioPlayer?
     var witchesCauldronPlayer: AVAudioPlayer?
@@ -49,39 +50,13 @@ class ViewController: UIViewController {
     var hauntedSwampPlayer: AVAudioPlayer?
     var torturedSoulsPlayer: AVAudioPlayer?
     var chillingHornPlayer: AVAudioPlayer?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        do {
-            
-            ultraTerrorPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ultra_terror", ofType: "mp3")!))
-            ultraTerrorPlayer?.prepareToPlay()
-        }
-        catch {
-            print(error)
-            
-        }
+//        let img = UIImage(named: "titlebar_image_smaller")
+//        navigationController?.navigationBar.setBackgroundImage(img, for: .default)
         
-        do {
-            
-            longMixPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "long_mix", ofType: "mp3")!))
-            longMixPlayer?.prepareToPlay()
-        }
-        catch {
-            print(error)
-            
-        }
-        
-        do {
-            
-            insaneAsylumPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chilling_cries", ofType: "mp3")!))
-            insaneAsylumPlayer?.prepareToPlay()
-        }
-        catch {
-            print(error)
-            
-        }
         
         do {
             
@@ -92,10 +67,21 @@ class ViewController: UIViewController {
             print(error)
             
         }
+        
         do {
             
             blackCatPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "black_cat", ofType: "mp3")!))
             blackCatPlayer?.prepareToPlay()
+        }
+        catch {
+            print(error)
+            
+        }
+        
+        do {
+            
+            creepyLaughPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "evil_man", ofType: "mp3")!))
+            creepyLaughPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -114,6 +100,16 @@ class ViewController: UIViewController {
         
         do {
             
+            monsterWalkingPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "monster_walking", ofType: "mp3")!))
+            monsterWalkingPlayer?.prepareToPlay()
+        }
+        catch {
+            print(error)
+            
+        }
+        
+        do {
+            
             creakyDoorPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "creaky_door", ofType: "mp3")!))
             creakyDoorPlayer?.prepareToPlay()
         }
@@ -121,6 +117,17 @@ class ViewController: UIViewController {
             print(error)
             
         }
+        
+        do {
+             
+             horrorAmbiancePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "horror_ambience", ofType: "mp3")!))
+             horrorAmbiancePlayer?.prepareToPlay()
+         }
+            
+         catch {
+             print(error)
+             
+         }
         
         do {
             
@@ -344,6 +351,16 @@ class ViewController: UIViewController {
         
         do {
             
+            horrorMoviePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "horror_film", ofType: "mp3")!))
+            horrorMoviePlayer?.prepareToPlay()
+        }
+        catch {
+            print(error)
+            
+        }
+
+        do {
+            
             warningBellsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "warning_bells", ofType: "mp3")!))
             warningBellsPlayer?.prepareToPlay()
         }
@@ -413,53 +430,14 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        SKStoreReviewController.requestReview()
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        SKStoreReviewController.requestReview()
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func ultraTerrorPlay(_ sender: Any) {
-        
-        if (ultraTerrorPlayer!.isPlaying)
-        {
-            ultraTerrorPlayer!.pause();
-            
-        }
-        else
-        {
-            ultraTerrorPlayer!.play();
-        }
-    }
-
-    @IBAction func longMixPlay(_ sender: Any) {
-        
-        if (longMixPlayer!.isPlaying)
-        {
-            longMixPlayer!.pause();
-            
-        }
-        else
-        {
-            longMixPlayer!.play();
-        }
-    }
-
-    @IBAction func insaneAsylumPlay(_ sender: Any) {
-        
-        if (insaneAsylumPlayer!.isPlaying)
-        {
-            insaneAsylumPlayer!.pause();
-            
-        }
-        else
-        {
-            insaneAsylumPlayer!.play();
-        }
     }
     
     @IBAction func witchCacklePlay(_ sender: Any) {
@@ -471,10 +449,23 @@ class ViewController: UIViewController {
         
         blackCatPlayer?.play();
     }
+    @IBAction func creepyLaughPlay(_ sender: Any) {
+        
+        creepyLaughPlayer?.play()
+    }
     
+    @IBAction func horrorAmbiancePlay(_ sender: Any) {
+        
+        horrorAmbiancePlayer?.play()
+    }
     @IBAction func monsterGrowlPlay(_ sender: Any) {
         
         monsterGrowlPlayer?.play();
+    }
+    
+    @IBAction func monsterWalkingPlay(_ sender: Any) {
+        
+        monsterWalkingPlayer?.play()
     }
     
     @IBAction func creakyDoorPlay(_ sender: Any) {
@@ -590,6 +581,11 @@ class ViewController: UIViewController {
     @IBAction func igorGrumblePlay(_ sender: Any) {
         
         igorGrumblePlayer?.play();
+    }
+    
+    @IBAction func horrorMoviePlay(_ sender: Any) {
+        
+        horrorMoviePlayer?.play()
     }
     
     @IBAction func warningBellsPlay(_ sender: Any) {

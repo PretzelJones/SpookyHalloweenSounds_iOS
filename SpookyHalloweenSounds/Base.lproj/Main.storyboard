@@ -18,24 +18,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2147"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-Ci-EFb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2064"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2612"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2448"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2600"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73N-uY-Xdd">
-                                                <rect key="frame" x="0.0" y="1284" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1342" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="sZs-aJ-yT7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Scarecrow" image="scarecrow.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -47,14 +48,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-l4-qp2">
-                                                <rect key="frame" x="0.0" y="1052" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1110" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="FGq-9N-Hzn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Spooky Owl" image="spooky_owl.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -66,14 +68,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DED-VW-7xT">
-                                                <rect key="frame" x="0.0" y="1110" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1168" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="bqz-9c-9GT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Chained Ghoul" image="chained_ghoul.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -85,14 +88,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-44-OjK">
-                                                <rect key="frame" x="0.0" y="1226" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1284" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="o1Q-oj-Zsb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Haunted Organ" image="haunted_organ.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -104,14 +108,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twt-zf-07d">
-                                                <rect key="frame" x="0.0" y="994" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1052" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="htv-as-xkl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Wraith Wail" image="wraith_wail.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -123,14 +128,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-UM-s2y">
-                                                <rect key="frame" x="0.0" y="878" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="936" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="OIK-JK-TGv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Zombie Call" image="zombies_three.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -142,14 +148,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-8E-Jgq" userLabel="Poltergeist Voice">
-                                                <rect key="frame" x="0.0" y="820" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="878" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LdC-08-gKQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Poltergeist Voice" image="poltergeist_tv.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -161,14 +168,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TY-Jj-eUn">
-                                                <rect key="frame" x="0.0" y="762" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="820" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c9g-Sc-zM7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Werewolf Howl" image="werewolf.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -180,14 +188,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lP4-hh-rvx">
-                                                <rect key="frame" x="0.0" y="704" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="762" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="HIL-Dz-LgM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Ghost Boo" image="ghost_boo.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -199,14 +208,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-Se-SLz">
-                                                <rect key="frame" x="0.0" y="646" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="704" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="8jg-v6-X5f"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Zombie Groan" image="zombie.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -218,14 +228,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-XV-bXZ">
-                                                <rect key="frame" x="0.0" y="588" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="646" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mw1-Ds-CqW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Scary Scream" image="scream.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -236,34 +247,16 @@
                                                     <action selector="scaryScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="553-rL-pH9"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeZ-kn-hUW">
-                                                <rect key="frame" x="0.0" y="530" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Zbi-Iz-orZ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Vampire Bat" image="vampire_bat.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="vampireBatPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BMv-tx-m00"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke0-6q-0N0">
-                                                <rect key="frame" x="0.0" y="414" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="530" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c9V-zL-aup"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Spooky Chains" image="chains.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -275,14 +268,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-gW-NiH">
-                                                <rect key="frame" x="0.0" y="1342" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1400" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="qnf-Vd-SkR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Blowing Wind" image="blowing_wind.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -294,14 +288,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAM-xK-aic">
-                                                <rect key="frame" x="0.0" y="1400" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1458" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="hfS-Mh-OPf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Ghostly Whisper" image="ghostly_whisper.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -313,14 +308,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-3A-l4N">
-                                                <rect key="frame" x="0.0" y="1458" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1516" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="CcR-96-SGd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Dracula Laugh" image="dracula_laugh.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -332,14 +328,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-Sn-1J5">
-                                                <rect key="frame" x="0.0" y="1516" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1574" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="BpK-KI-ugo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Wolf Cry" image="wolf.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -351,14 +348,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-m9-chY">
-                                                <rect key="frame" x="0.0" y="1574" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1632" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c8P-N7-UoG"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Knock Knock" image="knock.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -370,14 +368,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmX-91-FOB">
-                                                <rect key="frame" x="0.0" y="1632" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1690" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="rBH-Oc-zWq"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Igor Grumble" image="igor.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -388,15 +387,36 @@
                                                     <action selector="igorGrumblePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHv-la-zdb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKc-6q-NMq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-zy-FTl">
                                                 <rect key="frame" x="0.0" y="1748" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dUg-61-me3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Horror Movie" image="film.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="horrorMoviePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esb-ko-rDf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKc-6q-NMq">
+                                                <rect key="frame" x="0.0" y="1864" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c5q-z6-Ad2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Painful Moan" image="grave_stone.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -408,14 +428,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-YQ-ScV">
-                                                <rect key="frame" x="0.0" y="1806" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1922" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="gQs-yS-7jv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Witches Cauldron" image="witches_cauldron.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -427,14 +448,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-hS-dgf">
-                                                <rect key="frame" x="0.0" y="1864" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1980" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="fGO-d5-dL3"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Ghostly Children" image="ghostly_children.jpg">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -446,14 +468,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-rM-CbT">
-                                                <rect key="frame" x="0.0" y="1922" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="2038" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ZUc-Jc-Kqh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Haunted Swamp" image="haunted_swamp.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -465,14 +488,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXR-xM-xy8">
-                                                <rect key="frame" x="0.0" y="298" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="414" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wFQ-jA-NeH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <state key="normal" title="  Monster Growl" image="monster_growl.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -483,15 +506,36 @@
                                                     <action selector="monsterGrowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiU-Xy-q03"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-bF-FK7">
+                                                <rect key="frame" x="0.0" y="472" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Ckm-zT-2jt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Monster Walking" image="monster_walking.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="monsterWalkingPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDT-Ha-rxp"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-2V-Npe">
-                                                <rect key="frame" x="0.0" y="1980" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="2096" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Rly-i1-bBq"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Tortured Souls" image="tortured_souls.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -502,34 +546,16 @@
                                                     <action selector="torturedSoulsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dj2-Kt-Rtl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ek-23-9dX">
-                                                <rect key="frame" x="0.0" y="8" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Rui-8p-PJp"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Ultra Terror Mix" image="loop.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="ultraTerrorPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSH-MS-PSc"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-Rg-vnl">
-                                                <rect key="frame" x="0.0" y="240" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="182" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Zf1-ri-yyr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Black Cat" image="black_cat.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -540,15 +566,36 @@
                                                     <action selector="blackCatPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmM-v7-O6g"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7D-5m-0y7">
+                                                <rect key="frame" x="0.0" y="240" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="M0Q-Zf-PGd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Creepy Laugh" image="evil_man.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="creepyLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTj-1a-U50"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-no-Em0">
-                                                <rect key="frame" x="0.0" y="356" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="298" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wXh-Ng-DIR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Creaky Door" image="creaky_door.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -559,15 +606,16 @@
                                                     <action selector="creakyDoorPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lan-Og-GEV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-3s-Bd6">
-                                                <rect key="frame" x="0.0" y="2038" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12x-sj-Khg">
+                                                <rect key="frame" x="0.0" y="356" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Zti-gJ-DMo"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Wa8-ll-GSJ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Chilling Horn" image="alien.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Horror Ambiance" image="spider.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -575,18 +623,19 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="chillingHornPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-oN-U6I"/>
+                                                    <action selector="horrorAmbiancePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtr-LK-e2e"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6X-H9-h7A">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94m-NW-PO3">
                                                 <rect key="frame" x="0.0" y="66" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="eNe-3e-1tj"/>
+                                                    <constraint firstAttribute="height" constant="50" id="kGa-kT-ggR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Spooky Sounds Mix" image="loop.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Horror Movie Themes" image="film_reel.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -594,18 +643,19 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="longMixPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvg-5u-DuB"/>
+                                                    <segue destination="3dX-ln-9cZ" kind="show" id="4dp-h2-chb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Age-0K-NlH">
-                                                <rect key="frame" x="0.0" y="1168" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1226" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mW3-O1-IGy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Terrified Scream" image="terrified_scream.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -617,14 +667,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvs-tF-XxO">
-                                                <rect key="frame" x="0.0" y="182" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="124" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="K5k-Nz-UEH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Witch Cackle" image="witch_hat.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -636,14 +687,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-3N-V7Q">
-                                                <rect key="frame" x="0.0" y="1690" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="1806" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="HVr-9g-4M9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Warning Bells" image="warning_bells.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -654,34 +706,16 @@
                                                     <action selector="warningBellsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DuA-Wv-bKa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQn-cP-KJy">
-                                                <rect key="frame" x="0.0" y="472" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="4q4-OW-QRQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Thunder Storm" image="thunder.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="thunderStormPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mn-vO-sI9"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-Zj-0Wt">
-                                                <rect key="frame" x="0.0" y="936" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <rect key="frame" x="0.0" y="994" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="UuO-an-w7G"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="  Cat Sceam" image="cat_scream.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -692,15 +726,16 @@
                                                     <action selector="catScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q64-dC-ms3"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfn-nP-t18" userLabel="Insane Asylum Long Play">
-                                                <rect key="frame" x="0.0" y="124" width="375" height="50"/>
-                                                <color key="backgroundColor" red="0.8901960784313725" green="0.52941176470588236" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LM2-LV-woq" userLabel="Insane Asylum Long Play">
+                                                <rect key="frame" x="0.0" y="8" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="aDL-jQ-7RU"/>
+                                                    <constraint firstAttribute="height" constant="50" id="V8c-6H-cNh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Insane Asylum Mix" image="loop.png">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Looping Mixes" image="loop.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -708,96 +743,141 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="insaneAsylumPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30V-Xg-qkh"/>
+                                                    <segue destination="lrZ-Ov-kYt" kind="show" id="maY-aR-zMO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQn-cP-KJy">
+                                                <rect key="frame" x="0.0" y="588" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="4q4-OW-QRQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Thunder Storm" image="thunder.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="thunderStormPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mn-vO-sI9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-3s-Bd6">
+                                                <rect key="frame" x="0.0" y="2154" width="375" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Zti-gJ-DMo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Chilling Horn" image="alien.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="chillingHornPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-oN-U6I"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="YXR-xM-xy8" firstAttribute="leading" secondItem="cUV-bF-FK7" secondAttribute="leading" id="0Ee-cp-pku"/>
                                             <constraint firstItem="Age-0K-NlH" firstAttribute="trailing" secondItem="RoF-44-OjK" secondAttribute="trailing" id="0Te-tK-YpE"/>
-                                            <constraint firstItem="KaL-XV-bXZ" firstAttribute="top" secondItem="HeZ-kn-hUW" secondAttribute="bottom" constant="8" symbolic="YES" id="161-9s-XFf"/>
-                                            <constraint firstItem="HeZ-kn-hUW" firstAttribute="trailing" secondItem="KaL-XV-bXZ" secondAttribute="trailing" id="19v-KH-5Nj"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="trailing" secondItem="gdi-Zj-0Wt" secondAttribute="trailing" id="1P7-kO-nDp"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="leading" secondItem="KmX-91-FOB" secondAttribute="leading" id="1W8-nl-qfI"/>
                                             <constraint firstItem="jfP-2V-Npe" firstAttribute="trailing" secondItem="G1S-3s-Bd6" secondAttribute="trailing" id="42W-FN-zwr"/>
                                             <constraint firstItem="RoF-44-OjK" firstAttribute="trailing" secondItem="73N-uY-Xdd" secondAttribute="trailing" id="55v-u8-Lfq"/>
-                                            <constraint firstItem="OzM-no-Em0" firstAttribute="top" secondItem="YXR-xM-xy8" secondAttribute="bottom" constant="8" symbolic="YES" id="5K7-pN-vQb"/>
-                                            <constraint firstItem="t6X-H9-h7A" firstAttribute="trailing" secondItem="lfn-nP-t18" secondAttribute="trailing" id="5Yj-jx-nXh"/>
+                                            <constraint firstItem="OzM-no-Em0" firstAttribute="top" secondItem="YXR-xM-xy8" secondAttribute="bottom" constant="-166" id="5K7-pN-vQb"/>
+                                            <constraint firstItem="KmX-91-FOB" firstAttribute="leading" secondItem="lAm-zy-FTl" secondAttribute="leading" id="5qz-Dh-z4N"/>
                                             <constraint firstItem="gdi-Zj-0Wt" firstAttribute="leading" secondItem="twt-zf-07d" secondAttribute="leading" id="6Qb-0R-XNO"/>
+                                            <constraint firstItem="OQn-cP-KJy" firstAttribute="leading" secondItem="KaL-XV-bXZ" secondAttribute="leading" id="7Gu-g3-DsE"/>
+                                            <constraint firstItem="LM2-LV-woq" firstAttribute="leading" secondItem="94m-NW-PO3" secondAttribute="leading" id="7L8-Jk-yKy"/>
+                                            <constraint firstItem="LM2-LV-woq" firstAttribute="top" secondItem="c3E-Pm-nch" secondAttribute="top" constant="8" id="90a-fz-7vq"/>
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="leading" secondItem="pp5-UM-s2y" secondAttribute="leading" id="ARj-4x-bFB"/>
-                                            <constraint firstItem="OQn-cP-KJy" firstAttribute="trailing" secondItem="HeZ-kn-hUW" secondAttribute="trailing" id="AhA-2f-dRw"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="top" secondItem="CYb-Sn-1J5" secondAttribute="bottom" constant="8" symbolic="YES" id="BBA-fi-lgl"/>
                                             <constraint firstItem="DED-VW-7xT" firstAttribute="top" secondItem="CQW-l4-qp2" secondAttribute="bottom" constant="8" symbolic="YES" id="BSc-ON-PRk"/>
+                                            <constraint firstAttribute="height" constant="2600" id="C8l-8q-fmG"/>
+                                            <constraint firstItem="P7D-5m-0y7" firstAttribute="top" secondItem="EG4-Rg-vnl" secondAttribute="bottom" constant="8" symbolic="YES" id="CUx-yh-d7b"/>
                                             <constraint firstItem="IWH-3N-V7Q" firstAttribute="trailing" secondItem="TKc-6q-NMq" secondAttribute="trailing" id="DCx-Bz-WeO"/>
-                                            <constraint firstItem="3ek-23-9dX" firstAttribute="leading" secondItem="t6X-H9-h7A" secondAttribute="leading" id="DKn-L3-HCR"/>
+                                            <constraint firstAttribute="trailing" secondItem="LM2-LV-woq" secondAttribute="trailing" id="Erc-0S-axp"/>
                                             <constraint firstItem="2TY-Jj-eUn" firstAttribute="leading" secondItem="off-8E-Jgq" secondAttribute="leading" id="FNU-If-zf0"/>
                                             <constraint firstItem="KmX-91-FOB" firstAttribute="leading" secondItem="IWH-3N-V7Q" secondAttribute="leading" id="GRO-3p-6xb"/>
                                             <constraint firstItem="ke0-6q-0N0" firstAttribute="trailing" secondItem="OQn-cP-KJy" secondAttribute="trailing" id="Gyc-sX-Cbc"/>
                                             <constraint firstItem="gdi-Zj-0Wt" firstAttribute="top" secondItem="pp5-UM-s2y" secondAttribute="bottom" constant="8" symbolic="YES" id="H9f-cz-lPv"/>
-                                            <constraint firstItem="HeZ-kn-hUW" firstAttribute="leading" secondItem="KaL-XV-bXZ" secondAttribute="leading" id="HSD-Ha-QqV"/>
+                                            <constraint firstItem="LM2-LV-woq" firstAttribute="trailing" secondItem="94m-NW-PO3" secondAttribute="trailing" id="ICI-8J-1eY"/>
                                             <constraint firstItem="BAM-xK-aic" firstAttribute="trailing" secondItem="wWQ-3A-l4N" secondAttribute="trailing" id="IYM-9a-vUz"/>
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="top" secondItem="2TY-Jj-eUn" secondAttribute="bottom" constant="8" symbolic="YES" id="IaZ-MZ-j6u"/>
-                                            <constraint firstItem="IWH-3N-V7Q" firstAttribute="top" secondItem="KmX-91-FOB" secondAttribute="bottom" constant="8" symbolic="YES" id="J9M-Hb-Zqg"/>
+                                            <constraint firstItem="IWH-3N-V7Q" firstAttribute="top" secondItem="KmX-91-FOB" secondAttribute="bottom" constant="66" id="J9M-Hb-Zqg"/>
                                             <constraint firstItem="1FT-YQ-ScV" firstAttribute="top" secondItem="TKc-6q-NMq" secondAttribute="bottom" constant="8" symbolic="YES" id="JCi-TT-Ea5"/>
                                             <constraint firstItem="Geq-hS-dgf" firstAttribute="trailing" secondItem="CD0-rM-CbT" secondAttribute="trailing" id="JEx-S8-uUr"/>
+                                            <constraint firstItem="94m-NW-PO3" firstAttribute="top" secondItem="LM2-LV-woq" secondAttribute="bottom" constant="8" symbolic="YES" id="JLO-eP-q5i"/>
                                             <constraint firstItem="CD0-rM-CbT" firstAttribute="top" secondItem="Geq-hS-dgf" secondAttribute="bottom" constant="8" symbolic="YES" id="K3y-YM-r7d"/>
                                             <constraint firstItem="lP4-hh-rvx" firstAttribute="leading" secondItem="2TY-Jj-eUn" secondAttribute="leading" id="KGD-OR-PfA"/>
-                                            <constraint firstItem="OQn-cP-KJy" firstAttribute="leading" secondItem="HeZ-kn-hUW" secondAttribute="leading" id="Kvx-RU-52R"/>
                                             <constraint firstItem="jfP-2V-Npe" firstAttribute="leading" secondItem="G1S-3s-Bd6" secondAttribute="leading" id="LAV-9L-wqD"/>
                                             <constraint firstItem="BAM-xK-aic" firstAttribute="leading" secondItem="wWQ-3A-l4N" secondAttribute="leading" id="LDk-CA-nF3"/>
-                                            <constraint firstItem="lfn-nP-t18" firstAttribute="trailing" secondItem="Lvs-tF-XxO" secondAttribute="trailing" id="LMr-Yf-HR5"/>
                                             <constraint firstItem="CYb-Sn-1J5" firstAttribute="trailing" secondItem="aOv-m9-chY" secondAttribute="trailing" id="LXy-EG-Zu0"/>
                                             <constraint firstItem="ke0-6q-0N0" firstAttribute="leading" secondItem="OQn-cP-KJy" secondAttribute="leading" id="MAg-D4-C9i"/>
+                                            <constraint firstItem="Lvs-tF-XxO" firstAttribute="leading" secondItem="94m-NW-PO3" secondAttribute="leading" id="MxX-cb-5zB"/>
                                             <constraint firstItem="KaL-XV-bXZ" firstAttribute="leading" secondItem="iBm-Se-SLz" secondAttribute="leading" id="N09-jg-vPX"/>
-                                            <constraint firstAttribute="height" constant="2448" id="RUO-O2-qwd"/>
+                                            <constraint firstItem="Lvs-tF-XxO" firstAttribute="trailing" secondItem="94m-NW-PO3" secondAttribute="trailing" id="PeL-ZT-3K2"/>
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="leading" secondItem="lP4-hh-rvx" secondAttribute="leading" id="SQU-PE-t3O"/>
                                             <constraint firstItem="Age-0K-NlH" firstAttribute="top" secondItem="DED-VW-7xT" secondAttribute="bottom" constant="8" symbolic="YES" id="SfS-La-gz8"/>
-                                            <constraint firstItem="3ek-23-9dX" firstAttribute="leading" secondItem="c3E-Pm-nch" secondAttribute="leading" id="T7c-Yp-s9Y"/>
+                                            <constraint firstItem="EG4-Rg-vnl" firstAttribute="trailing" secondItem="P7D-5m-0y7" secondAttribute="trailing" id="SkE-Um-n0R"/>
                                             <constraint firstItem="TKc-6q-NMq" firstAttribute="trailing" secondItem="1FT-YQ-ScV" secondAttribute="trailing" id="TCb-OF-TYw"/>
                                             <constraint firstItem="KmX-91-FOB" firstAttribute="trailing" secondItem="IWH-3N-V7Q" secondAttribute="trailing" id="TE3-Bm-o6T"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="top" secondItem="off-8E-Jgq" secondAttribute="bottom" constant="8" symbolic="YES" id="TTn-NH-dAv"/>
                                             <constraint firstItem="73N-uY-Xdd" firstAttribute="leading" secondItem="FGr-gW-NiH" secondAttribute="leading" id="ThG-Tj-b8B"/>
-                                            <constraint firstItem="t6X-H9-h7A" firstAttribute="leading" secondItem="lfn-nP-t18" secondAttribute="leading" id="U1I-y6-YlU"/>
-                                            <constraint firstItem="YXR-xM-xy8" firstAttribute="top" secondItem="EG4-Rg-vnl" secondAttribute="bottom" constant="8" symbolic="YES" id="UDZ-Is-DgN"/>
+                                            <constraint firstItem="YXR-xM-xy8" firstAttribute="top" secondItem="EG4-Rg-vnl" secondAttribute="bottom" constant="182" id="UDZ-Is-DgN"/>
                                             <constraint firstItem="73N-uY-Xdd" firstAttribute="top" secondItem="RoF-44-OjK" secondAttribute="bottom" constant="8" symbolic="YES" id="UQP-N5-1BJ"/>
-                                            <constraint firstItem="lfn-nP-t18" firstAttribute="top" secondItem="t6X-H9-h7A" secondAttribute="bottom" constant="8" symbolic="YES" id="VZG-xj-6qQ"/>
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="trailing" secondItem="pp5-UM-s2y" secondAttribute="trailing" id="W5Z-Hi-beW"/>
                                             <constraint firstItem="2TY-Jj-eUn" firstAttribute="trailing" secondItem="off-8E-Jgq" secondAttribute="trailing" id="WVw-6j-NVB"/>
+                                            <constraint firstItem="KaL-XV-bXZ" firstAttribute="top" secondItem="OQn-cP-KJy" secondAttribute="bottom" constant="8" symbolic="YES" id="XOu-4I-Fep"/>
                                             <constraint firstItem="lP4-hh-rvx" firstAttribute="trailing" secondItem="2TY-Jj-eUn" secondAttribute="trailing" id="XoY-pg-xAe"/>
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="top" secondItem="KaL-XV-bXZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Y2r-iR-amL"/>
                                             <constraint firstItem="CD0-rM-CbT" firstAttribute="trailing" secondItem="jfP-2V-Npe" secondAttribute="trailing" id="Yd0-dd-tbL"/>
+                                            <constraint firstItem="lAm-zy-FTl" firstAttribute="top" secondItem="KmX-91-FOB" secondAttribute="bottom" constant="8" symbolic="YES" id="ZSb-Ma-8CQ"/>
+                                            <constraint firstItem="OzM-no-Em0" firstAttribute="trailing" secondItem="12x-sj-Khg" secondAttribute="trailing" id="ZjA-Zm-OAh"/>
                                             <constraint firstItem="Geq-hS-dgf" firstAttribute="leading" secondItem="CD0-rM-CbT" secondAttribute="leading" id="ZzE-cX-pX9"/>
                                             <constraint firstItem="OQn-cP-KJy" firstAttribute="top" secondItem="ke0-6q-0N0" secondAttribute="bottom" constant="8" symbolic="YES" id="a3G-nC-KdX"/>
                                             <constraint firstItem="YXR-xM-xy8" firstAttribute="trailing" secondItem="OzM-no-Em0" secondAttribute="trailing" id="aaZ-v1-7jw"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="trailing" secondItem="KmX-91-FOB" secondAttribute="trailing" id="b17-HO-R5X"/>
+                                            <constraint firstItem="LM2-LV-woq" firstAttribute="leading" secondItem="c3E-Pm-nch" secondAttribute="leading" id="b5Q-WL-bje"/>
                                             <constraint firstItem="DED-VW-7xT" firstAttribute="leading" secondItem="Age-0K-NlH" secondAttribute="leading" id="bIx-QW-vlI"/>
                                             <constraint firstItem="RoF-44-OjK" firstAttribute="top" secondItem="Age-0K-NlH" secondAttribute="bottom" constant="8" symbolic="YES" id="bZA-Qo-E0F"/>
                                             <constraint firstItem="CQW-l4-qp2" firstAttribute="trailing" secondItem="DED-VW-7xT" secondAttribute="trailing" id="cEf-XF-ykY"/>
                                             <constraint firstItem="CQW-l4-qp2" firstAttribute="leading" secondItem="DED-VW-7xT" secondAttribute="leading" id="cRc-rp-P8U"/>
                                             <constraint firstItem="FGr-gW-NiH" firstAttribute="trailing" secondItem="BAM-xK-aic" secondAttribute="trailing" id="dVL-Cu-Mtw"/>
                                             <constraint firstItem="OzM-no-Em0" firstAttribute="leading" secondItem="ke0-6q-0N0" secondAttribute="leading" id="dyz-E9-YsX"/>
-                                            <constraint firstItem="3ek-23-9dX" firstAttribute="trailing" secondItem="t6X-H9-h7A" secondAttribute="trailing" id="e0C-tG-g3b"/>
-                                            <constraint firstItem="lfn-nP-t18" firstAttribute="leading" secondItem="Lvs-tF-XxO" secondAttribute="leading" id="eLs-SD-IiJ"/>
                                             <constraint firstItem="Lvs-tF-XxO" firstAttribute="trailing" secondItem="EG4-Rg-vnl" secondAttribute="trailing" id="erF-rw-B0e"/>
-                                            <constraint firstItem="G1S-3s-Bd6" firstAttribute="top" secondItem="jfP-2V-Npe" secondAttribute="bottom" constant="8" symbolic="YES" id="ew9-Lh-fJ7"/>
+                                            <constraint firstItem="G1S-3s-Bd6" firstAttribute="top" secondItem="jfP-2V-Npe" secondAttribute="bottom" constant="8" id="ew9-Lh-fJ7"/>
+                                            <constraint firstItem="OzM-no-Em0" firstAttribute="leading" secondItem="12x-sj-Khg" secondAttribute="leading" id="f8c-oM-DWJ"/>
                                             <constraint firstItem="jfP-2V-Npe" firstAttribute="top" secondItem="CD0-rM-CbT" secondAttribute="bottom" constant="8" symbolic="YES" id="fHi-Yn-Ztc"/>
-                                            <constraint firstItem="ke0-6q-0N0" firstAttribute="top" secondItem="OzM-no-Em0" secondAttribute="bottom" constant="8" symbolic="YES" id="gL1-9y-wNh"/>
+                                            <constraint firstItem="ke0-6q-0N0" firstAttribute="top" secondItem="OzM-no-Em0" secondAttribute="bottom" constant="182" id="gL1-9y-wNh"/>
                                             <constraint firstItem="CYb-Sn-1J5" firstAttribute="leading" secondItem="aOv-m9-chY" secondAttribute="leading" id="gop-SC-aRe"/>
-                                            <constraint firstItem="HeZ-kn-hUW" firstAttribute="top" secondItem="OQn-cP-KJy" secondAttribute="bottom" constant="8" symbolic="YES" id="gyj-jt-rkc"/>
-                                            <constraint firstAttribute="trailing" secondItem="3ek-23-9dX" secondAttribute="trailing" id="h8w-pR-Wo3"/>
                                             <constraint firstItem="OzM-no-Em0" firstAttribute="trailing" secondItem="ke0-6q-0N0" secondAttribute="trailing" id="hkM-TB-D3K"/>
+                                            <constraint firstItem="KmX-91-FOB" firstAttribute="trailing" secondItem="lAm-zy-FTl" secondAttribute="trailing" id="hnr-br-cT1"/>
                                             <constraint firstItem="CQW-l4-qp2" firstAttribute="top" secondItem="twt-zf-07d" secondAttribute="bottom" constant="8" symbolic="YES" id="hyh-tu-riq"/>
                                             <constraint firstItem="TKc-6q-NMq" firstAttribute="top" secondItem="IWH-3N-V7Q" secondAttribute="bottom" constant="8" symbolic="YES" id="ivX-A5-ns6"/>
                                             <constraint firstItem="wWQ-3A-l4N" firstAttribute="trailing" secondItem="CYb-Sn-1J5" secondAttribute="trailing" id="jYP-Zc-8Jt"/>
                                             <constraint firstItem="IWH-3N-V7Q" firstAttribute="leading" secondItem="TKc-6q-NMq" secondAttribute="leading" id="jiQ-Na-PMX"/>
                                             <constraint firstItem="TKc-6q-NMq" firstAttribute="leading" secondItem="1FT-YQ-ScV" secondAttribute="leading" id="jkm-pe-fFI"/>
-                                            <constraint firstItem="3ek-23-9dX" firstAttribute="top" secondItem="c3E-Pm-nch" secondAttribute="topMargin" id="m7e-gf-vbf"/>
+                                            <constraint firstItem="Lvs-tF-XxO" firstAttribute="top" secondItem="94m-NW-PO3" secondAttribute="bottom" constant="8" symbolic="YES" id="kvg-U0-SbI"/>
                                             <constraint firstItem="twt-zf-07d" firstAttribute="top" secondItem="gdi-Zj-0Wt" secondAttribute="bottom" constant="8" symbolic="YES" id="mgE-1b-Buv"/>
                                             <constraint firstItem="1FT-YQ-ScV" firstAttribute="trailing" secondItem="Geq-hS-dgf" secondAttribute="trailing" id="mu7-bm-c18"/>
-                                            <constraint firstItem="t6X-H9-h7A" firstAttribute="top" secondItem="3ek-23-9dX" secondAttribute="bottom" constant="8" symbolic="YES" id="n45-If-KFE"/>
+                                            <constraint firstItem="YXR-xM-xy8" firstAttribute="trailing" secondItem="cUV-bF-FK7" secondAttribute="trailing" id="nQt-Cr-3z5"/>
+                                            <constraint firstItem="12x-sj-Khg" firstAttribute="top" secondItem="OzM-no-Em0" secondAttribute="bottom" constant="8" symbolic="YES" id="nby-oq-nT0"/>
                                             <constraint firstItem="EG4-Rg-vnl" firstAttribute="top" secondItem="Lvs-tF-XxO" secondAttribute="bottom" constant="8" symbolic="YES" id="nk3-bK-YRZ"/>
                                             <constraint firstItem="wWQ-3A-l4N" firstAttribute="top" secondItem="BAM-xK-aic" secondAttribute="bottom" constant="8" symbolic="YES" id="oLL-OM-c4R"/>
                                             <constraint firstItem="CD0-rM-CbT" firstAttribute="leading" secondItem="jfP-2V-Npe" secondAttribute="leading" id="oky-mx-gs6"/>
+                                            <constraint firstItem="EG4-Rg-vnl" firstAttribute="leading" secondItem="P7D-5m-0y7" secondAttribute="leading" id="pGP-go-Suq"/>
                                             <constraint firstItem="twt-zf-07d" firstAttribute="leading" secondItem="CQW-l4-qp2" secondAttribute="leading" id="pJ0-vH-eMo"/>
                                             <constraint firstItem="EG4-Rg-vnl" firstAttribute="leading" secondItem="YXR-xM-xy8" secondAttribute="leading" id="pPT-k0-o9v"/>
                                             <constraint firstItem="CYb-Sn-1J5" firstAttribute="top" secondItem="wWQ-3A-l4N" secondAttribute="bottom" constant="8" symbolic="YES" id="paM-ab-fT8"/>
@@ -808,7 +888,6 @@
                                             <constraint firstItem="Geq-hS-dgf" firstAttribute="top" secondItem="1FT-YQ-ScV" secondAttribute="bottom" constant="8" symbolic="YES" id="sCh-YJ-eGw"/>
                                             <constraint firstItem="2TY-Jj-eUn" firstAttribute="top" secondItem="lP4-hh-rvx" secondAttribute="bottom" constant="8" symbolic="YES" id="sbi-1Y-lgX"/>
                                             <constraint firstItem="lP4-hh-rvx" firstAttribute="top" secondItem="iBm-Se-SLz" secondAttribute="bottom" constant="8" symbolic="YES" id="seU-J5-kaV"/>
-                                            <constraint firstItem="Lvs-tF-XxO" firstAttribute="top" secondItem="lfn-nP-t18" secondAttribute="bottom" constant="8" symbolic="YES" id="tTV-vc-Ifh"/>
                                             <constraint firstItem="wWQ-3A-l4N" firstAttribute="leading" secondItem="CYb-Sn-1J5" secondAttribute="leading" id="u6o-Ez-vZI"/>
                                             <constraint firstItem="FGr-gW-NiH" firstAttribute="top" secondItem="73N-uY-Xdd" secondAttribute="bottom" constant="8" symbolic="YES" id="uNp-h3-L7v"/>
                                             <constraint firstItem="Lvs-tF-XxO" firstAttribute="leading" secondItem="EG4-Rg-vnl" secondAttribute="leading" id="vfW-B2-reP"/>
@@ -818,34 +897,45 @@
                                             <constraint firstItem="DED-VW-7xT" firstAttribute="trailing" secondItem="Age-0K-NlH" secondAttribute="trailing" id="wYL-wE-1dK"/>
                                             <constraint firstItem="BAM-xK-aic" firstAttribute="top" secondItem="FGr-gW-NiH" secondAttribute="bottom" constant="8" symbolic="YES" id="wYg-U4-Wao"/>
                                             <constraint firstItem="1FT-YQ-ScV" firstAttribute="leading" secondItem="Geq-hS-dgf" secondAttribute="leading" id="waS-LJ-Ped"/>
+                                            <constraint firstItem="cUV-bF-FK7" firstAttribute="top" secondItem="YXR-xM-xy8" secondAttribute="bottom" constant="8" symbolic="YES" id="wmV-Rh-Clb"/>
                                             <constraint firstItem="YXR-xM-xy8" firstAttribute="leading" secondItem="OzM-no-Em0" secondAttribute="leading" id="wr1-xn-jQS"/>
                                             <constraint firstItem="RoF-44-OjK" firstAttribute="leading" secondItem="73N-uY-Xdd" secondAttribute="leading" id="xn8-eO-MSa"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="leading" secondItem="gdi-Zj-0Wt" secondAttribute="leading" id="yIj-hc-9qB"/>
+                                            <constraint firstItem="OQn-cP-KJy" firstAttribute="trailing" secondItem="KaL-XV-bXZ" secondAttribute="trailing" id="yOy-xn-yI0"/>
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="trailing" secondItem="lP4-hh-rvx" secondAttribute="trailing" id="yrj-gt-sLA"/>
                                             <constraint firstItem="FGr-gW-NiH" firstAttribute="leading" secondItem="BAM-xK-aic" secondAttribute="leading" id="zau-L5-KTD"/>
                                         </constraints>
                                     </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-jA-jKv">
+                                        <rect key="frame" x="8" y="2209" width="359" height="232"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="232" id="GCp-ib-pUN"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="c3E-Pm-nch" firstAttribute="centerX" secondItem="Am6-Ci-EFb" secondAttribute="centerX" id="1Ak-qQ-WsV"/>
-                                    <constraint firstAttribute="trailing" secondItem="c3E-Pm-nch" secondAttribute="trailing" id="AkH-UI-GAv"/>
-                                    <constraint firstAttribute="bottom" secondItem="c3E-Pm-nch" secondAttribute="bottom" constant="-335" id="FKn-cd-Eck"/>
-                                    <constraint firstItem="c3E-Pm-nch" firstAttribute="leading" secondItem="Am6-Ci-EFb" secondAttribute="leading" id="G1t-zm-7lk"/>
-                                    <constraint firstItem="c3E-Pm-nch" firstAttribute="top" secondItem="Am6-Ci-EFb" secondAttribute="top" id="eim-Vt-zFp"/>
+                                    <constraint firstItem="f1r-jA-jKv" firstAttribute="centerX" secondItem="c3E-Pm-nch" secondAttribute="centerX" id="2L9-si-fX3"/>
+                                    <constraint firstItem="c3E-Pm-nch" firstAttribute="leading" secondItem="Am6-Ci-EFb" secondAttribute="leading" id="2nN-v2-Bg0"/>
+                                    <constraint firstItem="f1r-jA-jKv" firstAttribute="top" secondItem="Am6-Ci-EFb" secondAttribute="top" constant="2209" id="5j2-6k-adA"/>
+                                    <constraint firstItem="c3E-Pm-nch" firstAttribute="top" secondItem="Am6-Ci-EFb" secondAttribute="top" id="cMm-kF-Uv0"/>
+                                    <constraint firstItem="c3E-Pm-nch" firstAttribute="centerX" secondItem="Am6-Ci-EFb" secondAttribute="centerX" id="nga-ey-5d6"/>
+                                    <constraint firstAttribute="bottom" secondItem="c3E-Pm-nch" secondAttribute="bottom" constant="12" id="viz-6W-Mnx"/>
+                                    <constraint firstAttribute="trailing" secondItem="c3E-Pm-nch" secondAttribute="trailing" id="xQM-eC-AGO"/>
+                                    <constraint firstItem="f1r-jA-jKv" firstAttribute="leading" secondItem="Am6-Ci-EFb" secondAttribute="leadingMargin" id="zh1-LW-Xvc"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Am6-Ci-EFb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Efz-0c-IX5"/>
-                            <constraint firstItem="Am6-Ci-EFb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="g4G-WM-vlf"/>
-                            <constraint firstItem="Am6-Ci-EFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gqi-ia-weg"/>
-                            <constraint firstAttribute="trailing" secondItem="Am6-Ci-EFb" secondAttribute="trailing" id="zua-dp-mgi"/>
+                            <constraint firstAttribute="trailing" secondItem="Am6-Ci-EFb" secondAttribute="trailing" id="5q2-iq-gBp"/>
+                            <constraint firstAttribute="bottom" secondItem="Am6-Ci-EFb" secondAttribute="bottom" constant="-88" id="9mM-L5-BFE"/>
+                            <constraint firstItem="Am6-Ci-EFb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jhi-lj-9EH"/>
+                            <constraint firstItem="Am6-Ci-EFb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oCo-yc-7Gd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Spooky Halloween Sounds" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds">
+                    <navigationItem key="navigationItem" title="Spooky Halloween Sounds" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ghost_icon_30px.png" id="USB-oa-mGh">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -853,12 +943,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="2300"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="375" height="2235"/>
+                    <size key="freeformSize" width="375" height="2612"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074.6376811594205" y="132.25446428571428"/>
+            <point key="canvasLocation" x="1074.6376811594205" y="131.91964285714286"/>
         </scene>
         <!--App Information-->
         <scene sceneID="8I4-fq-n0v">
@@ -928,7 +1019,312 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMx-il-2fQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1795.6521739130437" y="354.91071428571428"/>
+            <point key="canvasLocation" x="1993" y="706"/>
+        </scene>
+        <!--Looping Mixes-->
+        <scene sceneID="VMU-GT-qeb">
+            <objects>
+                <viewController id="lrZ-Ov-kYt" customClass="LongMixViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wU3-CW-mrY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-4E-zIy">
+                                <rect key="frame" x="0.0" y="201" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RKh-Gf-Q8P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="  Haunted House" image="haunted_organ.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hauntedHousePlay:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="iXt-zi-5wt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-h1-AJt">
+                                <rect key="frame" x="0.0" y="259" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="czc-em-JSw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="  Spooky Sounds" image="spooky_sounds.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="spookySoundsPlayer:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="xbo-K9-rod"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtT-Uc-9rd">
+                                <rect key="frame" x="0.0" y="317" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QmM-dZ-klV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="  Space Terror" image="space_terrors.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="spaceTerrorPlayer:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="gl2-tz-Xwk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ex-mw-HV9">
+                                <rect key="frame" x="0.0" y="375" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="PIS-9W-GVf"/>
+                                    <constraint firstAttribute="height" constant="50" id="l2d-K4-hyC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="  Don't Let Them In" image="key.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dontLetThemIn:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="Mof-8N-dVv"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-vc-vke">
+                                <rect key="frame" x="0.0" y="433" width="414" height="292"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-Sy-aG0">
+                                <rect key="frame" x="89" y="433" width="256" height="244"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VB-UG-b7Q">
+                                <rect key="frame" x="0.0" y="143" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qGv-hR-glp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="  Ultra Terror" image="ultra_terror.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ultraTerrorPlay:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="iVX-EA-5Iq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-cI-Mq1">
+                                <rect key="frame" x="20" y="20" width="374" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="1QA-u9-pzQ"/>
+                                </constraints>
+                                <string key="text">The loopping sounds will contine to play indefinitely! Press the button a second time to pause or press two or more to mix the sounds together.</string>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="trailing" secondItem="Rqw-vc-vke" secondAttribute="trailing" id="2er-2V-Bai"/>
+                            <constraint firstItem="Rqw-vc-vke" firstAttribute="bottom" secondItem="FsQ-bp-e8u" secondAttribute="bottom" id="CGE-PA-Mao"/>
+                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="leading" secondItem="Rqw-vc-vke" secondAttribute="leading" id="DTu-9o-RPr"/>
+                            <constraint firstItem="VHt-h1-AJt" firstAttribute="leading" secondItem="mtT-Uc-9rd" secondAttribute="leading" id="FWk-xT-y9N"/>
+                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="centerX" secondItem="0VB-UG-b7Q" secondAttribute="centerX" id="IZk-yI-JDe"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="leading" secondItem="Yba-4E-zIy" secondAttribute="leading" id="KA7-F8-1qg"/>
+                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="top" secondItem="wU3-CW-mrY" secondAttribute="top" constant="20" symbolic="YES" id="Osc-H8-0t0"/>
+                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="top" secondItem="VHt-h1-AJt" secondAttribute="bottom" constant="8" symbolic="YES" id="Q9b-6C-HUS"/>
+                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="leading" secondItem="9Ex-mw-HV9" secondAttribute="leading" id="Sj7-b2-byf"/>
+                            <constraint firstItem="Rqw-vc-vke" firstAttribute="top" secondItem="9Ex-mw-HV9" secondAttribute="bottom" constant="8" symbolic="YES" id="U4V-Tn-enn"/>
+                            <constraint firstItem="Yba-4E-zIy" firstAttribute="top" secondItem="0VB-UG-b7Q" secondAttribute="bottom" constant="8" symbolic="YES" id="UyG-DX-2yx"/>
+                            <constraint firstItem="mtT-Uc-9rd" firstAttribute="trailing" secondItem="9Ex-mw-HV9" secondAttribute="trailing" id="VIk-fq-8ou"/>
+                            <constraint firstItem="VHt-h1-AJt" firstAttribute="top" secondItem="Yba-4E-zIy" secondAttribute="bottom" constant="8" symbolic="YES" id="Wip-cJ-9ff"/>
+                            <constraint firstItem="Gb3-cI-Mq1" firstAttribute="leading" secondItem="wU3-CW-mrY" secondAttribute="leadingMargin" id="Ysd-Fj-jmo"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="top" secondItem="Gb3-cI-Mq1" secondAttribute="bottom" constant="8" symbolic="YES" id="dOM-UI-qeD"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="trailing" secondItem="Yba-4E-zIy" secondAttribute="trailing" id="dfe-VW-ztQ"/>
+                            <constraint firstItem="9Ex-mw-HV9" firstAttribute="top" secondItem="mtT-Uc-9rd" secondAttribute="bottom" constant="8" symbolic="YES" id="gVj-Hf-s3v"/>
+                            <constraint firstItem="FsQ-bp-e8u" firstAttribute="bottom" secondItem="gd8-Sy-aG0" secondAttribute="bottom" constant="48" id="gWs-Xd-P04"/>
+                            <constraint firstItem="VHt-h1-AJt" firstAttribute="trailing" secondItem="mtT-Uc-9rd" secondAttribute="trailing" id="gvK-fg-uRv"/>
+                            <constraint firstItem="0VB-UG-b7Q" firstAttribute="leading" secondItem="wU3-CW-mrY" secondAttribute="leading" id="hDo-Gf-scj"/>
+                            <constraint firstItem="gd8-Sy-aG0" firstAttribute="leading" secondItem="FsQ-bp-e8u" secondAttribute="leading" constant="89" id="jgF-j9-l9I"/>
+                            <constraint firstItem="Rqw-vc-vke" firstAttribute="top" secondItem="gd8-Sy-aG0" secondAttribute="top" id="rNq-qD-Guk"/>
+                            <constraint firstItem="Yba-4E-zIy" firstAttribute="trailing" secondItem="VHt-h1-AJt" secondAttribute="trailing" id="uwa-d9-D3q"/>
+                            <constraint firstItem="Yba-4E-zIy" firstAttribute="leading" secondItem="VHt-h1-AJt" secondAttribute="leading" id="z3T-Qc-RoW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FsQ-bp-e8u"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Looping Mixes" id="sKz-1w-qfR">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nlA-Xv-dLw"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dontLetThemInButton" destination="9Ex-mw-HV9" id="bMJ-KY-7dI"/>
+                        <outlet property="hauntedHouseButton" destination="Yba-4E-zIy" id="u4v-HX-dbS"/>
+                        <outlet property="spaceTerrorButton" destination="mtT-Uc-9rd" id="CYy-Bq-Pcb"/>
+                        <outlet property="spookySoundsButton" destination="VHt-h1-AJt" id="GKC-bh-V4T"/>
+                        <outlet property="ultraTerrorButton" destination="0VB-UG-b7Q" id="0no-pC-Jnl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMf-5L-dgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.753623188406" y="-442.63392857142856"/>
+        </scene>
+        <!--Horror Movie Themes-->
+        <scene sceneID="byf-cW-9Dr">
+            <objects>
+                <viewController id="3dX-ln-9cZ" customClass="HorrorMovieViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ly2-QD-7ju">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-ta-iZ0">
+                                <rect key="frame" x="0.0" y="140" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7Dp-g1-Ifb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <state key="normal" title="  Halloween" image="halloween.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="halloweenPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="3v9-e5-q1g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fef-gd-b0I">
+                                <rect key="frame" x="0.0" y="198" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QKs-O3-0qn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <state key="normal" title="  The Exorcist" image="cross.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="exorcistPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="Ef4-PB-ceX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAk-N4-kim">
+                                <rect key="frame" x="0.0" y="256" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aQG-GL-UCR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <state key="normal" title="  The Shining" image="axe.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shiningPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="eUu-Ex-4bm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-ss-dCV">
+                                <rect key="frame" x="0.0" y="372" width="414" height="343"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here lies a collection of some of the most famous theme songs from your favorite horror films. Enjoy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-H0-iiE">
+                                <rect key="frame" x="20" y="20" width="374" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="7F2-CI-qbX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQp-YS-MJU">
+                                <rect key="frame" x="0.0" y="314" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4na-lZ-vAN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <state key="normal" title="  Nightmare on Elm Street" image="freddy.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nightmaterPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="xmU-6k-OWW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tQp-YS-MJU" firstAttribute="top" secondItem="HAk-N4-kim" secondAttribute="bottom" constant="8" symbolic="YES" id="0KD-xa-58C"/>
+                            <constraint firstItem="lgw-ij-bbs" firstAttribute="bottom" secondItem="dcL-ss-dCV" secondAttribute="bottom" constant="10" id="0gV-MP-tGR"/>
+                            <constraint firstItem="Fef-gd-b0I" firstAttribute="leading" secondItem="HAk-N4-kim" secondAttribute="leading" id="3WU-80-D0e"/>
+                            <constraint firstItem="dcL-ss-dCV" firstAttribute="top" secondItem="tQp-YS-MJU" secondAttribute="bottom" constant="8" symbolic="YES" id="4uu-bL-6ht"/>
+                            <constraint firstItem="tQp-YS-MJU" firstAttribute="leading" secondItem="dcL-ss-dCV" secondAttribute="leading" id="CB2-3b-NhS"/>
+                            <constraint firstItem="1Ec-H0-iiE" firstAttribute="centerX" secondItem="9bC-ta-iZ0" secondAttribute="centerX" id="GSS-se-Ia6"/>
+                            <constraint firstItem="tQp-YS-MJU" firstAttribute="trailing" secondItem="dcL-ss-dCV" secondAttribute="trailing" id="H7T-Yi-Maz"/>
+                            <constraint firstItem="9bC-ta-iZ0" firstAttribute="trailing" secondItem="Fef-gd-b0I" secondAttribute="trailing" id="Kuc-JI-1zm"/>
+                            <constraint firstItem="9bC-ta-iZ0" firstAttribute="leading" secondItem="Fef-gd-b0I" secondAttribute="leading" id="OiR-r0-GpX"/>
+                            <constraint firstAttribute="trailing" secondItem="9bC-ta-iZ0" secondAttribute="trailing" id="WjG-gQ-Ip0"/>
+                            <constraint firstItem="9bC-ta-iZ0" firstAttribute="leading" secondItem="ly2-QD-7ju" secondAttribute="leading" id="cH5-a1-T5v"/>
+                            <constraint firstItem="Fef-gd-b0I" firstAttribute="trailing" secondItem="HAk-N4-kim" secondAttribute="trailing" id="cka-fK-pax"/>
+                            <constraint firstItem="HAk-N4-kim" firstAttribute="trailing" secondItem="tQp-YS-MJU" secondAttribute="trailing" id="dCL-jY-JVu"/>
+                            <constraint firstItem="1Ec-H0-iiE" firstAttribute="top" secondItem="ly2-QD-7ju" secondAttribute="top" constant="20" symbolic="YES" id="eSA-V7-w3Q"/>
+                            <constraint firstItem="HAk-N4-kim" firstAttribute="leading" secondItem="tQp-YS-MJU" secondAttribute="leading" id="h6P-CY-5EC"/>
+                            <constraint firstItem="HAk-N4-kim" firstAttribute="top" secondItem="Fef-gd-b0I" secondAttribute="bottom" constant="8" symbolic="YES" id="ibv-IT-emk"/>
+                            <constraint firstItem="9bC-ta-iZ0" firstAttribute="top" secondItem="1Ec-H0-iiE" secondAttribute="bottom" constant="8" symbolic="YES" id="j0P-SC-h8k"/>
+                            <constraint firstItem="Fef-gd-b0I" firstAttribute="top" secondItem="9bC-ta-iZ0" secondAttribute="bottom" constant="8" symbolic="YES" id="jkW-CR-B66"/>
+                            <constraint firstItem="1Ec-H0-iiE" firstAttribute="leading" secondItem="ly2-QD-7ju" secondAttribute="leadingMargin" id="kVf-Zp-zPA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lgw-ij-bbs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Horror Movie Themes" id="xpv-Qt-GW1">
+                        <barButtonItem key="backBarButtonItem" title=" " id="i1s-fj-rq1"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="exorcistButton" destination="Fef-gd-b0I" id="arV-E9-MVg"/>
+                        <outlet property="halloweenButton" destination="9bC-ta-iZ0" id="eVc-E6-XH5"/>
+                        <outlet property="nightmareButton" destination="tQp-YS-MJU" id="io3-DJ-Awp"/>
+                        <outlet property="shiningButton" destination="HAk-N4-kim" id="5yj-6l-eM8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4n-0E-4go" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2892.753623188406" y="-443.30357142857139"/>
         </scene>
         <!--Hidden Sounds-->
         <scene sceneID="lNm-QZ-eeY">
@@ -1067,13 +1463,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WVk-wP-Wdy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hidden Sounds" id="lv5-Jj-tPq" customClass="HiddenViewController">
+                    <navigationItem key="navigationItem" title="Hidden Sounds" largeTitleDisplayMode="always" id="lv5-Jj-tPq" customClass="HiddenViewController">
                         <barButtonItem key="backBarButtonItem" title=" " id="3pb-IQ-FC2"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS1-hv-ZXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785.9259259259259" y="-316.11111111111109"/>
+            <point key="canvasLocation" x="2893" y="706"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N9Z-BK-hCR">
@@ -1106,6 +1502,7 @@
     </scenes>
     <resources>
         <image name="alien.png" width="5.2800002098083496" height="6"/>
+        <image name="axe.png" width="6" height="5"/>
         <image name="black_cat.png" width="25" height="15"/>
         <image name="blowing_wind.png" width="40" height="24"/>
         <image name="cat_scream.png" width="25" height="20"/>
@@ -1113,34 +1510,44 @@
         <image name="chains.png" width="25" height="25"/>
         <image name="creaky_door.png" width="25" height="22"/>
         <image name="cries_hell.png" width="25" height="25"/>
+        <image name="cross.png" width="4.320000171661377" height="6"/>
         <image name="dracula_laugh.png" width="15" height="30"/>
+        <image name="evil_man.png" width="25" height="20"/>
+        <image name="film.png" width="32" height="25"/>
+        <image name="film_reel.png" width="6" height="6.2399997711181641"/>
+        <image name="freddy.png" width="18.75" height="18.75"/>
         <image name="ghost_boo.png" width="25" height="25"/>
         <image name="ghost_icon_30px.png" width="7.1999998092651367" height="7.1999998092651367"/>
         <image name="ghost_song.png" width="25" height="25"/>
         <image name="ghostly_children.jpg" width="25" height="25"/>
         <image name="ghostly_whisper.png" width="22" height="29"/>
         <image name="grave_stone.png" width="24" height="25"/>
+        <image name="halloween.png" width="6" height="6"/>
         <image name="haunted_organ.png" width="6" height="6.7199997901916504"/>
         <image name="haunted_swamp.png" width="25" height="25"/>
         <image name="igor.png" width="17" height="26"/>
+        <image name="key.png" width="25" height="22"/>
         <image name="knock.png" width="25" height="25"/>
         <image name="loop.png" width="25" height="25"/>
         <image name="monster_growl.png" width="16.5" height="20.25"/>
+        <image name="monster_walking.png" width="25" height="25"/>
         <image name="old_tape.png" width="25" height="25"/>
         <image name="orange_skull.png" width="256" height="320"/>
         <image name="poltergeist_tv.png" width="35" height="22"/>
         <image name="scarecrow.png" width="25" height="24"/>
-        <image name="scream.png" width="18.75" height="16.5"/>
+        <image name="scream.png" width="22" height="25"/>
         <image name="small_axe.png" width="30" height="30"/>
         <image name="space_terrors.png" width="11" height="6"/>
+        <image name="spider.png" width="25" height="25"/>
         <image name="spooky_owl.png" width="10.84337329864502" height="10.409638404846191"/>
+        <image name="spooky_sounds.png" width="25" height="23"/>
         <image name="tab_logo.png" width="951" height="858"/>
         <image name="terrified_scream.png" width="25" height="25"/>
         <image name="thunder.png" width="8.1447963714599609" height="8.4705886840820312"/>
         <image name="tortured_souls.png" width="25" height="25"/>
-        <image name="vampire_bat.png" width="28.636363983154297" height="17.181818008422852"/>
+        <image name="ultra_terror.png" width="16" height="25"/>
         <image name="warning_bells.png" width="25" height="25"/>
-        <image name="werewolf.png" width="15.75" height="19.5"/>
+        <image name="werewolf.png" width="23" height="25"/>
         <image name="witch_hat.png" width="6" height="5.2800002098083496"/>
         <image name="witches_cauldron.png" width="25" height="25"/>
         <image name="wolf.png" width="13" height="11.5"/>
