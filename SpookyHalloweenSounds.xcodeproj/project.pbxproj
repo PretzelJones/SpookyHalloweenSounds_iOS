@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142DE3E3248F052800D0006F /* full_moon_bat.png in Resources */ = {isa = PBXBuildFile; fileRef = 142DE3E2248F052800D0006F /* full_moon_bat.png */; };
 		14357AAF234949CA00D9B0D3 /* bosson_full_logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */; };
 		14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14357AB0234A196700D9B0D3 /* tab_logo.png */; };
 		14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */; };
@@ -161,6 +162,7 @@
 
 /* Begin PBXFileReference section */
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
+		142DE3E2248F052800D0006F /* full_moon_bat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_moon_bat.png; sourceTree = "<group>"; };
 		14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bosson_full_logo.PNG; sourceTree = "<group>"; };
 		14357AB0234A196700D9B0D3 /* tab_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_logo.png; sourceTree = "<group>"; };
 		14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 		7B305CBC2132F9FD00B184F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				142DE3E2248F052800D0006F /* full_moon_bat.png */,
 				1447253A248C5C9400A27662 /* key.png */,
 				14472536248C5AC100A27662 /* spooky_sounds.png */,
 				14472534248C59AB00A27662 /* ultra_terror.png */,
@@ -739,6 +742,7 @@
 				7B987D892133718D00743717 /* spooky_owl.wav in Resources */,
 				7B987D932133718D00743717 /* zombie_come.mp3 in Resources */,
 				7B987E02213371FA00743717 /* monster_growl.png in Resources */,
+				142DE3E3248F052800D0006F /* full_moon_bat.png in Resources */,
 				7B987D8D2133718D00743717 /* ghostly_whisper.mp3 in Resources */,
 				7B987DE5213371FA00743717 /* haunted_organ.png in Resources */,
 				14472537248C5AC100A27662 /* spooky_sounds.png in Resources */,

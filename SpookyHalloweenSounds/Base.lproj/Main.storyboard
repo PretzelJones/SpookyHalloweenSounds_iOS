@@ -18,14 +18,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2412"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-Ci-EFb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2612"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2500"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73N-uY-Xdd">
                                                 <rect key="frame" x="0.0" y="1342" width="375" height="50"/>
@@ -804,7 +804,7 @@
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="leading" secondItem="pp5-UM-s2y" secondAttribute="leading" id="ARj-4x-bFB"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="top" secondItem="CYb-Sn-1J5" secondAttribute="bottom" constant="8" symbolic="YES" id="BBA-fi-lgl"/>
                                             <constraint firstItem="DED-VW-7xT" firstAttribute="top" secondItem="CQW-l4-qp2" secondAttribute="bottom" constant="8" symbolic="YES" id="BSc-ON-PRk"/>
-                                            <constraint firstAttribute="height" constant="2600" id="C8l-8q-fmG"/>
+                                            <constraint firstAttribute="height" constant="2500" id="C8l-8q-fmG"/>
                                             <constraint firstItem="P7D-5m-0y7" firstAttribute="top" secondItem="EG4-Rg-vnl" secondAttribute="bottom" constant="8" symbolic="YES" id="CUx-yh-d7b"/>
                                             <constraint firstItem="IWH-3N-V7Q" firstAttribute="trailing" secondItem="TKc-6q-NMq" secondAttribute="trailing" id="DCx-Bz-WeO"/>
                                             <constraint firstAttribute="trailing" secondItem="LM2-LV-woq" secondAttribute="trailing" id="Erc-0S-axp"/>
@@ -906,23 +906,30 @@
                                             <constraint firstItem="FGr-gW-NiH" firstAttribute="leading" secondItem="BAM-xK-aic" secondAttribute="leading" id="zau-L5-KTD"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-jA-jKv">
-                                        <rect key="frame" x="8" y="2209" width="359" height="232"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-jA-jKv">
+                                        <rect key="frame" x="0.0" y="2209" width="375" height="232"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="232" id="GCp-ib-pUN"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="f1r-jA-jKv" secondAttribute="bottom" constant="59" id="1IC-4Z-Tld"/>
                                     <constraint firstItem="f1r-jA-jKv" firstAttribute="centerX" secondItem="c3E-Pm-nch" secondAttribute="centerX" id="2L9-si-fX3"/>
                                     <constraint firstItem="c3E-Pm-nch" firstAttribute="leading" secondItem="Am6-Ci-EFb" secondAttribute="leading" id="2nN-v2-Bg0"/>
+                                    <constraint firstItem="f1r-jA-jKv" firstAttribute="leading" secondItem="Am6-Ci-EFb" secondAttribute="leading" id="3Qu-IK-Ard"/>
                                     <constraint firstItem="f1r-jA-jKv" firstAttribute="top" secondItem="Am6-Ci-EFb" secondAttribute="top" constant="2209" id="5j2-6k-adA"/>
                                     <constraint firstItem="c3E-Pm-nch" firstAttribute="top" secondItem="Am6-Ci-EFb" secondAttribute="top" id="cMm-kF-Uv0"/>
+                                    <constraint firstAttribute="trailing" secondItem="f1r-jA-jKv" secondAttribute="trailing" id="hls-dN-qrW"/>
                                     <constraint firstItem="c3E-Pm-nch" firstAttribute="centerX" secondItem="Am6-Ci-EFb" secondAttribute="centerX" id="nga-ey-5d6"/>
-                                    <constraint firstAttribute="bottom" secondItem="c3E-Pm-nch" secondAttribute="bottom" constant="12" id="viz-6W-Mnx"/>
+                                    <constraint firstAttribute="bottom" secondItem="c3E-Pm-nch" secondAttribute="bottom" id="viz-6W-Mnx"/>
                                     <constraint firstAttribute="trailing" secondItem="c3E-Pm-nch" secondAttribute="trailing" id="xQM-eC-AGO"/>
-                                    <constraint firstItem="f1r-jA-jKv" firstAttribute="leading" secondItem="Am6-Ci-EFb" secondAttribute="leadingMargin" id="zh1-LW-Xvc"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -945,7 +952,7 @@
                     </navigationItem>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="2300"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="375" height="2612"/>
+                    <size key="freeformSize" width="375" height="2500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -1129,7 +1136,7 @@
                                     <action selector="ultraTerrorPlay:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="iVX-EA-5Iq"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-jR-PWl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-jR-PWl">
                                 <rect key="frame" x="0.0" y="434" width="414" height="291"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-cI-Mq1">
@@ -1138,7 +1145,7 @@
                                     <constraint firstAttribute="width" constant="374" id="TCb-Fk-wQE"/>
                                     <constraint firstAttribute="height" constant="128" id="YNe-rN-cDS"/>
                                 </constraints>
-                                <string key="text">The loopping sounds will contine to play indefinitely! Press the button a second time to pause or press two or more to mix the sounds together.</string>
+                                <string key="text">The looping sounds will contine to play indefinitely! Press the button a second time to pause or press two or more to mix the sounds together.</string>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -1257,7 +1264,7 @@
                                     <action selector="shiningPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="eUu-Ex-4bm"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_skull.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-ss-dCV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-ss-dCV">
                                 <rect key="frame" x="0.0" y="372" width="414" height="343"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here lies a collection of some of the most famous theme songs from your favorite horror films. Enjoy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-H0-iiE">
@@ -1524,6 +1531,7 @@
         <image name="ghostly_children.jpg" width="25" height="25"/>
         <image name="ghostly_whisper.png" width="22" height="29"/>
         <image name="grave_stone.png" width="24" height="25"/>
+        <image name="graveyard.png" width="1015" height="447"/>
         <image name="halloween.png" width="6" height="6"/>
         <image name="haunted_organ.png" width="6" height="6.7199997901916504"/>
         <image name="haunted_swamp.png" width="25" height="25"/>
