@@ -28,11 +28,11 @@ class LongMixViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        ultraTerrorButton.startAnimatingPressActions()
-//        hauntedHouseButton.startAnimatingPressActions()
-//        spookySoundsButton.startAnimatingPressActions()
-//        spaceTerrorButton.startAnimatingPressActions()
-//        dontLetThemInButton.startAnimatingPressActions()
+        ultraTerrorButton.startAnimatingPressActions()
+        hauntedHouseButton.startAnimatingPressActions()
+        spookySoundsButton.startAnimatingPressActions()
+        spaceTerrorButton.startAnimatingPressActions()
+        dontLetThemInButton.startAnimatingPressActions()
         
         do {
             

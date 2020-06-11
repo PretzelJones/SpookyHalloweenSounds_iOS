@@ -89,43 +89,43 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        witchCackleButton.startAnimatingPressActions()
-        blackCatButton.startAnimatingPressActions()
-        creepyLaughButton.startAnimatingPressActions()
-        creakyDoorButton.startAnimatingPressActions()
-        horrorAmbianceButton.startAnimatingPressActions()
-        monsterGrowlButton.startAnimatingPressActions()
-        monsterWalkingButton.startAnimatingPressActions()
-        spookyChainsButton.startAnimatingPressActions()
-        thunderStormButton.startAnimatingPressActions()
-        scaryScreamButton.startAnimatingPressActions()
-        zombieGroanButton.startAnimatingPressActions()
-        ghostBooButton.startAnimatingPressActions()
-        werewolfHowlButton.startAnimatingPressActions()
-        poltergeistVoiceButton.startAnimatingPressActions()
-        zombieCallButton.startAnimatingPressActions()
-        catScreamButton.startAnimatingPressActions()
-        wraithWailButton.startAnimatingPressActions()
-        spookyOwlButton.startAnimatingPressActions()
-        chainedGhoulButton.startAnimatingPressActions()
-        terrifiedScreamButton.startAnimatingPressActions()
-        hauntedOrganButton.startAnimatingPressActions()
-        scarecrowButton.startAnimatingPressActions()
-        blowingWindButton.startAnimatingPressActions()
-        ghostlyWhisperButton.startAnimatingPressActions()
-        draculaLaughButton.startAnimatingPressActions()
-        wolfCryButton.startAnimatingPressActions()
-        knockKnockButton.startAnimatingPressActions()
-        igorGrumbleButton.startAnimatingPressActions()
-        horrorMovieButton.startAnimatingPressActions()
-        warningBellsButton.startAnimatingPressActions()
-        painfulMoanButton.startAnimatingPressActions()
-        witchesCauldronButton.startAnimatingPressActions()
-        ghostlyChildrenButton.startAnimatingPressActions()
-        hauntedSwampButton.startAnimatingPressActions()
-        torturedSoulsButton.startAnimatingPressActions()
-        chillingHornButton.startAnimatingPressActions()
+ 
+//        witchCackleButton.startAnimatingPressActions()
+//        blackCatButton.startAnimatingPressActions()
+//        creepyLaughButton.startAnimatingPressActions()
+//        creakyDoorButton.startAnimatingPressActions()
+//        horrorAmbianceButton.startAnimatingPressActions()
+//        monsterGrowlButton.startAnimatingPressActions()
+//        monsterWalkingButton.startAnimatingPressActions()
+//        spookyChainsButton.startAnimatingPressActions()
+//        thunderStormButton.startAnimatingPressActions()
+//        scaryScreamButton.startAnimatingPressActions()
+//        zombieGroanButton.startAnimatingPressActions()
+//        ghostBooButton.startAnimatingPressActions()
+//        werewolfHowlButton.startAnimatingPressActions()
+//        poltergeistVoiceButton.startAnimatingPressActions()
+//        zombieCallButton.startAnimatingPressActions()
+//        catScreamButton.startAnimatingPressActions()
+//        wraithWailButton.startAnimatingPressActions()
+//        spookyOwlButton.startAnimatingPressActions()
+//        chainedGhoulButton.startAnimatingPressActions()
+//        terrifiedScreamButton.startAnimatingPressActions()
+//        hauntedOrganButton.startAnimatingPressActions()
+//        scarecrowButton.startAnimatingPressActions()
+//        blowingWindButton.startAnimatingPressActions()
+//        ghostlyWhisperButton.startAnimatingPressActions()
+//        draculaLaughButton.startAnimatingPressActions()
+//        wolfCryButton.startAnimatingPressActions()
+//        knockKnockButton.startAnimatingPressActions()
+//        igorGrumbleButton.startAnimatingPressActions()
+//        horrorMovieButton.startAnimatingPressActions()
+//        warningBellsButton.startAnimatingPressActions()
+//        painfulMoanButton.startAnimatingPressActions()
+//        witchesCauldronButton.startAnimatingPressActions()
+//        ghostlyChildrenButton.startAnimatingPressActions()
+//        hauntedSwampButton.startAnimatingPressActions()
+//        torturedSoulsButton.startAnimatingPressActions()
+//        chillingHornButton.startAnimatingPressActions()
         
         do {
             
@@ -507,185 +507,220 @@ class ViewController: UIViewController {
     @IBAction func witchCacklePlay(_ sender: UIButton) {
         
         witchCacklePlayer?.play()
-        
+        witchCackleButton.pulsate()
     }
     
     @IBAction func blackCatPlay(_ sender: Any) {
         
-        blackCatPlayer?.play();
+        blackCatPlayer?.play()
+        blackCatButton.pulsate()
     }
     @IBAction func creepyLaughPlay(_ sender: Any) {
         
         creepyLaughPlayer?.play()
+        creepyLaughButton.pulsate()
     }
     
     @IBAction func horrorAmbiancePlay(_ sender: Any) {
         
         horrorAmbiancePlayer?.play()
+        horrorAmbianceButton.pulsate()
     }
     @IBAction func monsterGrowlPlay(_ sender: Any) {
         
-        monsterGrowlPlayer?.play();
+        monsterGrowlPlayer?.play()
+        monsterGrowlButton.pulsate()
     }
     
     @IBAction func monsterWalkingPlay(_ sender: Any) {
         
         monsterWalkingPlayer?.play()
+        monsterWalkingButton.pulsate()
     }
     
     @IBAction func creakyDoorPlay(_ sender: Any) {
         
-        creakyDoorPlayer?.play();
+        creakyDoorPlayer?.play()
+        creakyDoorButton.pulsate()
     }
     
     @IBAction func spookyChainsPlay(_ sender: Any) {
         
-        spookyChainsPlayer?.play();
+        spookyChainsPlayer?.play()
+        spookyChainsButton.pulsate()
     }
     
     @IBAction func thunderStormPlay(_ sender: Any) {
         
-        thunderStormPlayer?.play();
+        thunderStormPlayer?.play()
+        thunderStormButton.pulsate()
     }
     
-    @IBAction func vampireBatPlay(_ sender: Any) {
-        
-        vampireBatPlayer?.play();
-    }
+//    @IBAction func vampireBatPlay(_ sender: Any) {
+//
+//        vampireBatPlayer?.play()
+//    }
     
     @IBAction func scaryScreamPlay(_ sender: Any) {
         
-        scaryScreamPlayer?.play();
+        scaryScreamPlayer?.play()
+        scaryScreamButton.pulsate()
     }
     
     @IBAction func zombieGroanPlay(_ sender: Any) {
         
-        zombieGroanPlayer?.play();
+        zombieGroanPlayer?.play()
+        zombieGroanButton.pulsate()
     }
     
     @IBAction func ghostBooPlay(_ sender: Any) {
         
-        ghostBooPlayer?.play();
+        ghostBooPlayer?.play()
+        ghostBooButton.pulsate()
     }
     
     @IBAction func wereWolfHowlPlay(_ sender: Any) {
         
-        wereWolfHowlPlayer?.play();
+        wereWolfHowlPlayer?.play()
+        werewolfHowlButton.pulsate()
     }
     
     @IBAction func poltergeistVoicePlay(_ sender: Any) {
         
-        poltergeistVoicePlayer?.play();
+        poltergeistVoicePlayer?.play()
+        poltergeistVoiceButton.pulsate()
     }
     
     @IBAction func zombieCallPlay(_ sender: Any) {
         
-        zombieCallPlayer?.play();
+        zombieCallPlayer?.play()
+        zombieCallButton.pulsate()
     }
     
     @IBAction func catScreamPlay(_ sender: Any) {
         
-        catScreamPlayer?.play();
+        catScreamPlayer?.play()
+        catScreamButton.pulsate()
     }
     
     @IBAction func wraithWailPlay(_ sender: Any) {
         
-        wraithWailPlayer?.play();
+        wraithWailPlayer?.play()
+        wraithWailButton.pulsate()
     }
     
     @IBAction func spookyOwlPlay(_ sender: Any) {
         
-        spookyOwlPlayer?.play();
+        spookyOwlPlayer?.play()
+        spookyOwlButton.pulsate()
     }
     
     @IBAction func chainedGhoulPlay(_ sender: Any) {
         
-        chainedGhoulPlayer?.play();
+        chainedGhoulPlayer?.play()
+        chainedGhoulButton.pulsate()
     }
     
     @IBAction func terrifiedScreamPlay(_ sender: Any) {
         
-        terrifiedScreamPlayer?.play();
+        terrifiedScreamPlayer?.play()
+        terrifiedScreamButton.pulsate()
     }
     
     @IBAction func hauntedOrganPlay(_ sender: Any) {
         
-        hauntedOrganPlayer?.play();
+        hauntedOrganPlayer?.play()
+        hauntedOrganButton.pulsate()
     }
     
     @IBAction func scareCrowPlay(_ sender: Any) {
         
-        scareCrowPlayer?.play();
+        scareCrowPlayer?.play()
+        scarecrowButton.pulsate()
     }
     
     @IBAction func blowingWindPlay(_ sender: Any) {
         
-        blowingWindPlayer?.play();
+        blowingWindPlayer?.play()
+        blowingWindButton.pulsate()
     }
     
     @IBAction func ghostlyWhisperPlay(_ sender: Any) {
         
-        ghostlyWhisperPlayer?.play();
+        ghostlyWhisperPlayer?.play()
+        ghostlyWhisperButton.pulsate()
     }
     
     @IBAction func draculaLaughPlay(_ sender: Any) {
         
-        draculaLaughPlayer?.play();
+        draculaLaughPlayer?.play()
+        draculaLaughButton.pulsate()
     }
     
     @IBAction func wolfCryPlay(_ sender: Any) {
         
-        wolfCryPlayer?.play();
+        wolfCryPlayer?.play()
+        wolfCryButton.pulsate()
     }
     
     @IBAction func knockKnockPlay(_ sender: Any) {
         
-        knockKnockPlayer?.play();
+        knockKnockPlayer?.play()
+        knockKnockButton.pulsate()
     }
     
     @IBAction func igorGrumblePlay(_ sender: Any) {
         
-        igorGrumblePlayer?.play();
+        igorGrumblePlayer?.play()
+        igorGrumbleButton.pulsate()
     }
     
     @IBAction func horrorMoviePlay(_ sender: Any) {
         
         horrorMoviePlayer?.play()
+        horrorMovieButton.pulsate()
     }
     
     @IBAction func warningBellsPlay(_ sender: Any) {
         
-        warningBellsPlayer?.play();
+        warningBellsPlayer?.play()
+        warningBellsButton.pulsate()
     }
     
     @IBAction func painfulMoanPlay(_ sender: Any) {
         
-        painfulMoanPlayer?.play();
+        painfulMoanPlayer?.play()
+        painfulMoanButton.pulsate()
     }
     
     @IBAction func witchesCauldronPlay(_ sender: Any) {
         
-        witchesCauldronPlayer?.play();
+        witchesCauldronPlayer?.play()
+        witchesCauldronButton.pulsate()
     }
     
     @IBAction func ghostlyChildrenPlay(_ sender: Any) {
         
-        ghostlyChildrenPlayer?.play();
+        ghostlyChildrenPlayer?.play()
+        ghostlyChildrenButton.pulsate()
     }
     
     @IBAction func hauntedSwampPlay(_ sender: Any) {
         
-        hauntedSwampPlayer?.play();
+        hauntedSwampPlayer?.play()
+        hauntedSwampButton.pulsate()
     }
     
     @IBAction func torturedSoulsPlay(_ sender: Any) {
         
-        torturedSoulsPlayer?.play();
+        torturedSoulsPlayer?.play()
+        torturedSoulsButton.pulsate()
     }
     
     @IBAction func chillingHornPlay(_ sender: Any) {
         
-        chillingHornPlayer?.play();
+        chillingHornPlayer?.play()
+        chillingHornButton.pulsate()
     }
     
 }

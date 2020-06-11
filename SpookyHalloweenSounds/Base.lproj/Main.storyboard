@@ -21,10 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-Ci-EFb">
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-Ci-EFb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73N-uY-Xdd">
@@ -905,6 +905,7 @@
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="trailing" secondItem="lP4-hh-rvx" secondAttribute="trailing" id="yrj-gt-sLA"/>
                                             <constraint firstItem="FGr-gW-NiH" firstAttribute="leading" secondItem="BAM-xK-aic" secondAttribute="leading" id="zau-L5-KTD"/>
                                         </constraints>
+                                        <viewLayoutGuide key="safeArea" id="2tj-bM-dY5"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-jA-jKv">
                                         <rect key="frame" x="0.0" y="2209" width="414" height="232"/>
@@ -931,11 +932,12 @@
                                     <constraint firstAttribute="bottom" secondItem="c3E-Pm-nch" secondAttribute="bottom" id="viz-6W-Mnx"/>
                                     <constraint firstAttribute="trailing" secondItem="c3E-Pm-nch" secondAttribute="trailing" id="xQM-eC-AGO"/>
                                 </constraints>
+                                <viewLayoutGuide key="safeArea" id="XUM-nD-Hxy"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="aVM-hm-aqT"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="9EE-1H-CuW"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Am6-Ci-EFb" secondAttribute="trailing" id="5q2-iq-gBp"/>
                             <constraint firstAttribute="bottom" secondItem="Am6-Ci-EFb" secondAttribute="bottom" constant="-88" id="9mM-L5-BFE"/>
