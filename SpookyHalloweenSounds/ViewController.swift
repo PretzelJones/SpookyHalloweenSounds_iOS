@@ -12,6 +12,43 @@ import StoreKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var witchCackleButton: UIButton!
+    @IBOutlet weak var blackCatButton: UIButton!
+    @IBOutlet weak var creepyLaughButton: UIButton!
+    @IBOutlet weak var creakyDoorButton: UIButton!
+    @IBOutlet weak var horrorAmbianceButton: UIButton!
+    @IBOutlet weak var monsterGrowlButton: UIButton!
+    @IBOutlet weak var monsterWalkingButton: UIButton!
+    @IBOutlet weak var spookyChainsButton: UIButton!
+    @IBOutlet weak var thunderStormButton: UIButton!
+    @IBOutlet weak var scaryScreamButton: UIButton!
+    @IBOutlet weak var zombieGroanButton: UIButton!
+    @IBOutlet weak var ghostBooButton: UIButton!
+    @IBOutlet weak var werewolfHowlButton: UIButton!
+    @IBOutlet weak var poltergeistVoiceButton: UIButton!
+    @IBOutlet weak var zombieCallButton: UIButton!
+    @IBOutlet weak var catScreamButton: UIButton!
+    @IBOutlet weak var wraithWailButton: UIButton!
+    @IBOutlet weak var spookyOwlButton: UIButton!
+    @IBOutlet weak var chainedGhoulButton: UIButton!
+    @IBOutlet weak var terrifiedScreamButton: UIButton!
+    @IBOutlet weak var hauntedOrganButton: UIButton!
+    @IBOutlet weak var scarecrowButton: UIButton!
+    @IBOutlet weak var blowingWindButton: UIButton!
+    @IBOutlet weak var ghostlyWhisperButton: UIButton!
+    @IBOutlet weak var draculaLaughButton: UIButton!
+    @IBOutlet weak var wolfCryButton: UIButton!
+    @IBOutlet weak var knockKnockButton: UIButton!
+    @IBOutlet weak var igorGrumbleButton: UIButton!
+    @IBOutlet weak var horrorMovieButton: UIButton!
+    @IBOutlet weak var warningBellsButton: UIButton!
+    @IBOutlet weak var painfulMoanButton: UIButton!
+    @IBOutlet weak var witchesCauldronButton: UIButton!
+    @IBOutlet weak var ghostlyChildrenButton: UIButton!
+    @IBOutlet weak var hauntedSwampButton: UIButton!
+    @IBOutlet weak var torturedSoulsButton: UIButton!
+    @IBOutlet weak var chillingHornButton: UIButton!
+    
     var witchCacklePlayer: AVAudioPlayer?
     var blackCatPlayer: AVAudioPlayer?
     var creepyLaughPlayer: AVAudioPlayer?
@@ -49,13 +86,46 @@ class ViewController: UIViewController {
     var hauntedSwampPlayer: AVAudioPlayer?
     var torturedSoulsPlayer: AVAudioPlayer?
     var chillingHornPlayer: AVAudioPlayer?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let img = UIImage(named: "titlebar_image_smaller")
-//        navigationController?.navigationBar.setBackgroundImage(img, for: .default)
-        
+        witchCackleButton.startAnimatingPressActions()
+        blackCatButton.startAnimatingPressActions()
+        creepyLaughButton.startAnimatingPressActions()
+        creakyDoorButton.startAnimatingPressActions()
+        horrorAmbianceButton.startAnimatingPressActions()
+        monsterGrowlButton.startAnimatingPressActions()
+        monsterWalkingButton.startAnimatingPressActions()
+        spookyChainsButton.startAnimatingPressActions()
+        thunderStormButton.startAnimatingPressActions()
+        scaryScreamButton.startAnimatingPressActions()
+        zombieGroanButton.startAnimatingPressActions()
+        ghostBooButton.startAnimatingPressActions()
+        werewolfHowlButton.startAnimatingPressActions()
+        poltergeistVoiceButton.startAnimatingPressActions()
+        zombieCallButton.startAnimatingPressActions()
+        catScreamButton.startAnimatingPressActions()
+        wraithWailButton.startAnimatingPressActions()
+        spookyOwlButton.startAnimatingPressActions()
+        chainedGhoulButton.startAnimatingPressActions()
+        terrifiedScreamButton.startAnimatingPressActions()
+        hauntedOrganButton.startAnimatingPressActions()
+        scarecrowButton.startAnimatingPressActions()
+        blowingWindButton.startAnimatingPressActions()
+        ghostlyWhisperButton.startAnimatingPressActions()
+        draculaLaughButton.startAnimatingPressActions()
+        wolfCryButton.startAnimatingPressActions()
+        knockKnockButton.startAnimatingPressActions()
+        igorGrumbleButton.startAnimatingPressActions()
+        horrorMovieButton.startAnimatingPressActions()
+        warningBellsButton.startAnimatingPressActions()
+        painfulMoanButton.startAnimatingPressActions()
+        witchesCauldronButton.startAnimatingPressActions()
+        ghostlyChildrenButton.startAnimatingPressActions()
+        hauntedSwampButton.startAnimatingPressActions()
+        torturedSoulsButton.startAnimatingPressActions()
+        chillingHornButton.startAnimatingPressActions()
         
         do {
             
@@ -118,15 +188,15 @@ class ViewController: UIViewController {
         }
         
         do {
-             
-             horrorAmbiancePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "horror_ambience", ofType: "mp3")!))
-             horrorAmbiancePlayer?.prepareToPlay()
-         }
             
-         catch {
-             print(error)
-             
-         }
+            horrorAmbiancePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "horror_ambience", ofType: "mp3")!))
+            horrorAmbiancePlayer?.prepareToPlay()
+        }
+            
+        catch {
+            print(error)
+            
+        }
         
         do {
             
@@ -357,7 +427,7 @@ class ViewController: UIViewController {
             print(error)
             
         }
-
+        
         do {
             
             warningBellsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "warning_bells", ofType: "mp3")!))
@@ -429,19 +499,15 @@ class ViewController: UIViewController {
         
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        SKStoreReviewController.requestReview()
-//    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        SKStoreReviewController.requestReview()
     }
     
-    @IBAction func witchCacklePlay(_ sender: Any) {
+    @IBAction func witchCacklePlay(_ sender: UIButton) {
         
-        witchCacklePlayer?.play();
+        witchCacklePlayer?.play()
+        
     }
     
     @IBAction func blackCatPlay(_ sender: Any) {
@@ -623,3 +689,5 @@ class ViewController: UIViewController {
     }
     
 }
+
+
