@@ -11,16 +11,27 @@ import UIKit
 
 extension UIButton {
     
-    func pulsate() {
-
-        let pulse = CASpringAnimation(keyPath: "transform.scale")
-        pulse.duration = 0.4
-        pulse.fromValue = 0.94
-        pulse.toValue = 1.0
-        pulse.repeatCount = 0
-        pulse.initialVelocity = 1.0
-        pulse.damping = 0.1
-
-        layer.add(pulse, forKey: nil)
+    @IBAction func pulsate(_ sender: UIButton) {
+        UIButton.animate(withDuration: 0.080,
+                         animations: {
+                            sender.transform = CGAffineTransform(scaleX: 0.975, y: 0.96)
+        },
+                         completion: { finish in
+                            UIButton.animate(withDuration: 0.080, animations: {
+                                sender.transform = CGAffineTransform.identity
+                            })
+        })
+        
+        UIButton.transition(with: sender, duration: 0.3, options: .curveEaseInOut, animations: {
+            
+            self.backgroundColor = halloweenOrangeHighlight
+            
+            if (self.backgroundColor == halloweenOrange) {
+                self.backgroundColor = halloweenOrangeHighlight
+            }else{
+                self.backgroundColor = halloweenOrange
+            }
+        }, completion: nil)
     }
+    
 }
