@@ -23,21 +23,19 @@ extension UIButton {
                             })
         })
         
-        UIButton.transition(with: sender, duration: 0.3, options: .curveEaseInOut, animations: {
-            
-            self.showsTouchWhenHighlighted = false //remove touch glow around image on button
-            
-            self.backgroundColor = halloweenOrangeHighlight
-            if (self.backgroundColor == halloweenOrange) {
-                self.backgroundColor = halloweenOrangeHighlight
-            }else{
-                self.backgroundColor = halloweenOrange
-            }
-        }, completion: nil)
+        self.showsTouchWhenHighlighted = false
+        
+//        UIButton.transition(with: sender, duration: 0.3, options: .curveEaseInOut, animations: {
+//
+//            self.showsTouchWhenHighlighted = false //remove touch glow around image on button
+//
+//            self.backgroundColor = halloweenOrangeHighlight
+//            if (self.backgroundColor == halloweenOrange) {
+//                self.backgroundColor = halloweenOrangeHighlight
+//            }else{
+//
+//            }
+//        }, completion: nil)
     }
-    
+        
 }
-
-
-
-

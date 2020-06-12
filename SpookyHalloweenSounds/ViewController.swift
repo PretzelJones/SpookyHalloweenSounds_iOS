@@ -515,218 +515,364 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func witchCacklePlay(_ sender: UIButton) {
         
+        witchCackleButton.backgroundColor = halloweenOrangeHighlight
+        witchCacklePlayer?.delegate = self
         witchCacklePlayer?.play()
         witchCackleButton.pulsate(witchCackleButton)
     }
     
     @IBAction func blackCatPlay(_ sender: Any) {
         
+        blackCatButton.backgroundColor = halloweenOrangeHighlight
+        blackCatPlayer?.delegate = self
         blackCatPlayer?.play()
         blackCatButton.pulsate(blackCatButton)
     }
     
     @IBAction func creepyLaughPlay(_ sender: Any) {
         
+        creepyLaughButton.backgroundColor = halloweenOrangeHighlight
+        creepyLaughPlayer?.delegate = self
         creepyLaughPlayer?.play()
         creepyLaughButton.pulsate(creepyLaughButton)
     }
     
     @IBAction func horrorAmbiancePlay(_ sender: Any) {
         
+        horrorAmbianceButton.backgroundColor = halloweenOrangeHighlight
+        horrorAmbiancePlayer?.delegate = self
         horrorAmbiancePlayer?.play()
         horrorAmbianceButton.pulsate(horrorAmbianceButton)
     }
     
     @IBAction func monsterGrowlPlay(_ sender: Any) {
         
+        monsterGrowlButton.backgroundColor = halloweenOrangeHighlight
+        monsterGrowlPlayer?.delegate = self
         monsterGrowlPlayer?.play()
         monsterGrowlButton.pulsate(monsterGrowlButton)
     }
     
     @IBAction func monsterWalkingPlay(_ sender: Any) {
         
+        monsterWalkingButton.backgroundColor = halloweenOrangeHighlight
+        monsterWalkingPlayer?.delegate = self
         monsterWalkingPlayer?.play()
         monsterWalkingButton.pulsate(monsterWalkingButton)
     }
     
     @IBAction func creakyDoorPlay(_ sender: Any) {
         
+        creakyDoorButton.backgroundColor = halloweenOrangeHighlight
+        creakyDoorPlayer?.delegate = self
         creakyDoorPlayer?.play()
         creakyDoorButton.pulsate(creakyDoorButton)
     }
     
     @IBAction func spookyChainsPlay(_ sender: Any) {
         
+        spookyChainsButton.backgroundColor = halloweenOrangeHighlight
+        spookyChainsPlayer?.delegate = self
         spookyChainsPlayer?.play()
         spookyChainsButton.pulsate(spookyChainsButton)
     }
     
     @IBAction func thunderStormPlay(_ sender: Any) {
         
+        thunderStormButton.backgroundColor = halloweenOrangeHighlight
+        thunderStormPlayer?.delegate = self
         thunderStormPlayer?.play()
         thunderStormButton.pulsate(thunderStormButton)
     }
     
     @IBAction func scaryScreamPlay(_ sender: Any) {
         
+        scaryScreamButton.backgroundColor = halloweenOrangeHighlight
+        scaryScreamPlayer?.delegate = self
         scaryScreamPlayer?.play()
         scaryScreamButton.pulsate(scaryScreamButton)
     }
     
     @IBAction func zombieGroanPlay(_ sender: Any) {
         
+        zombieGroanButton.backgroundColor = halloweenOrangeHighlight
+        zombieGroanPlayer?.delegate = self
         zombieGroanPlayer?.play()
         zombieGroanButton.pulsate(zombieGroanButton)
     }
     
     @IBAction func ghostBooPlay(_ sender: Any) {
         
+        ghostBooButton.backgroundColor = halloweenOrangeHighlight
+        ghostBooPlayer?.delegate = self
         ghostBooPlayer?.play()
         ghostBooButton.pulsate(ghostBooButton)
     }
     
     @IBAction func wereWolfHowlPlay(_ sender: Any) {
         
+        werewolfHowlButton.backgroundColor = halloweenOrangeHighlight
+        wereWolfHowlPlayer?.delegate = self
         wereWolfHowlPlayer?.play()
         werewolfHowlButton.pulsate(werewolfHowlButton)
     }
     
     @IBAction func poltergeistVoicePlay(_ sender: Any) {
         
+        poltergeistVoiceButton.backgroundColor = halloweenOrangeHighlight
+        poltergeistVoicePlayer?.delegate = self
         poltergeistVoicePlayer?.play()
         poltergeistVoiceButton.pulsate(poltergeistVoiceButton)
     }
     
     @IBAction func zombieCallPlay(_ sender: Any) {
         
+        zombieCallButton.backgroundColor = halloweenOrangeHighlight
+        zombieCallPlayer?.delegate = self
         zombieCallPlayer?.play()
         zombieCallButton.pulsate(zombieCallButton)
     }
     
     @IBAction func catScreamPlay(_ sender: Any) {
         
+        catScreamButton.backgroundColor = halloweenOrangeHighlight
+        catScreamPlayer?.delegate = self
         catScreamPlayer?.play()
         catScreamButton.pulsate(catScreamButton)
     }
     
     @IBAction func wraithWailPlay(_ sender: Any) {
         
+        wraithWailButton.backgroundColor = halloweenOrangeHighlight
+        wraithWailPlayer?.delegate = self
         wraithWailPlayer?.play()
         wraithWailButton.pulsate(wraithWailButton)
     }
     
     @IBAction func spookyOwlPlay(_ sender: Any) {
         
+        spookyOwlButton.backgroundColor = halloweenOrangeHighlight
+        spookyOwlPlayer?.delegate = self
         spookyOwlPlayer?.play()
         spookyOwlButton.pulsate(spookyOwlButton)
     }
     
     @IBAction func chainedGhoulPlay(_ sender: Any) {
         
+        chainedGhoulButton.backgroundColor = halloweenOrangeHighlight
+        chainedGhoulPlayer?.delegate = self
         chainedGhoulPlayer?.play()
         chainedGhoulButton.pulsate(chainedGhoulButton)
     }
     
     @IBAction func terrifiedScreamPlay(_ sender: Any) {
         
+        terrifiedScreamButton.backgroundColor = halloweenOrangeHighlight
+        terrifiedScreamPlayer?.delegate = self
         terrifiedScreamPlayer?.play()
         terrifiedScreamButton.pulsate(terrifiedScreamButton)
     }
     
     @IBAction func hauntedOrganPlay(_ sender: Any) {
         
+        hauntedOrganButton.backgroundColor = halloweenOrangeHighlight
+        hauntedOrganPlayer?.delegate = self
         hauntedOrganPlayer?.play()
         hauntedOrganButton.pulsate(hauntedOrganButton)
     }
     
     @IBAction func scareCrowPlay(_ sender: Any) {
         
+        scarecrowButton.backgroundColor = halloweenOrangeHighlight
+        scareCrowPlayer?.delegate = self
         scareCrowPlayer?.play()
         scarecrowButton.pulsate(scarecrowButton)
     }
     
     @IBAction func blowingWindPlay(_ sender: Any) {
         
+        blowingWindButton.backgroundColor = halloweenOrangeHighlight
+        blowingWindPlayer?.delegate = self
         blowingWindPlayer?.play()
         blowingWindButton.pulsate(blowingWindButton)
     }
     
     @IBAction func ghostlyWhisperPlay(_ sender: Any) {
         
+        ghostlyWhisperButton.backgroundColor = halloweenOrangeHighlight
+        ghostlyWhisperPlayer?.delegate = self
         ghostlyWhisperPlayer?.play()
         ghostlyWhisperButton.pulsate(ghostlyWhisperButton)
     }
     
     @IBAction func draculaLaughPlay(_ sender: Any) {
         
+        draculaLaughButton.backgroundColor = halloweenOrangeHighlight
+        draculaLaughPlayer?.delegate = self
         draculaLaughPlayer?.play()
         draculaLaughButton.pulsate(draculaLaughButton)
     }
     
     @IBAction func wolfCryPlay(_ sender: Any) {
         
+        wolfCryButton.backgroundColor = halloweenOrangeHighlight
+        wolfCryPlayer?.delegate = self
         wolfCryPlayer?.play()
         wolfCryButton.pulsate(wolfCryButton)
     }
     
     @IBAction func knockKnockPlay(_ sender: Any) {
         
+        knockKnockButton.backgroundColor = halloweenOrangeHighlight
+        knockKnockPlayer?.delegate = self
         knockKnockPlayer?.play()
         knockKnockButton.pulsate(knockKnockButton)
     }
     
     @IBAction func igorGrumblePlay(_ sender: Any) {
         
+        igorGrumbleButton.backgroundColor = halloweenOrangeHighlight
+        igorGrumblePlayer?.delegate = self
         igorGrumblePlayer?.play()
         igorGrumbleButton.pulsate(igorGrumbleButton)
     }
     
     @IBAction func horrorMoviePlay(_ sender: Any) {
         
+        horrorMovieButton.backgroundColor = halloweenOrangeHighlight
+        horrorMoviePlayer?.delegate = self
         horrorMoviePlayer?.play()
         horrorMovieButton.pulsate(horrorMovieButton)
     }
     
     @IBAction func warningBellsPlay(_ sender: Any) {
         
+        warningBellsButton.backgroundColor = halloweenOrangeHighlight
+        warningBellsPlayer?.delegate = self
         warningBellsPlayer?.play()
         warningBellsButton.pulsate(warningBellsButton)
     }
     
     @IBAction func painfulMoanPlay(_ sender: Any) {
         
+        painfulMoanButton.backgroundColor = halloweenOrangeHighlight
+        painfulMoanPlayer?.delegate = self
         painfulMoanPlayer?.play()
         painfulMoanButton.pulsate(painfulMoanButton)
     }
     
     @IBAction func witchesCauldronPlay(_ sender: Any) {
         
+        witchesCauldronButton.backgroundColor = halloweenOrangeHighlight
+        witchesCauldronPlayer?.delegate = self
         witchesCauldronPlayer?.play()
         witchesCauldronButton.pulsate(witchesCauldronButton)
     }
     
     @IBAction func ghostlyChildrenPlay(_ sender: Any) {
         
+        ghostlyChildrenButton.backgroundColor = halloweenOrangeHighlight
+        ghostlyChildrenPlayer?.delegate = self
         ghostlyChildrenPlayer?.play()
         ghostlyChildrenButton.pulsate(ghostlyChildrenButton)
     }
     
     @IBAction func hauntedSwampPlay(_ sender: Any) {
         
+        hauntedSwampButton.backgroundColor = halloweenOrangeHighlight
+        hauntedSwampPlayer?.delegate = self
         hauntedSwampPlayer?.play()
         hauntedSwampButton.pulsate(hauntedSwampButton)
     }
     
     @IBAction func torturedSoulsPlay(_ sender: Any) {
         
+        torturedSoulsButton.backgroundColor = halloweenOrangeHighlight
+        torturedSoulsPlayer?.delegate = self
         torturedSoulsPlayer?.play()
         torturedSoulsButton.pulsate(torturedSoulsButton)
     }
     
     @IBAction func chillingHornPlay(_ sender: Any) {
         
+        chillingHornButton.backgroundColor = halloweenOrangeHighlight
+        chillingHornPlayer?.delegate = self
         chillingHornPlayer?.play()
         chillingHornButton.pulsate(chillingHornButton)
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if (player === witchCacklePlayer) {
+            witchCackleButton.backgroundColor = halloweenOrange
+        } else if (player === blackCatPlayer) {
+            blackCatButton.backgroundColor = halloweenOrange
+        } else if (player === creepyLaughPlayer) {
+            creepyLaughButton.backgroundColor = halloweenOrange
+        } else if (player === horrorAmbiancePlayer) {
+            horrorAmbianceButton.backgroundColor = halloweenOrange
+        } else if (player === monsterGrowlPlayer) {
+            monsterGrowlButton.backgroundColor = halloweenOrange
+        } else if (player === monsterWalkingPlayer) {
+            monsterWalkingButton.backgroundColor = halloweenOrange
+        } else if (player === creakyDoorPlayer) {
+            creakyDoorButton.backgroundColor = halloweenOrange
+        } else if (player === spookyChainsPlayer) {
+            spookyChainsButton.backgroundColor = halloweenOrange
+        } else if (player === thunderStormPlayer) {
+            thunderStormButton.backgroundColor = halloweenOrange
+        } else if (player === scaryScreamPlayer) {
+            scaryScreamButton.backgroundColor = halloweenOrange
+        } else if (player === zombieGroanPlayer) {
+            zombieGroanButton.backgroundColor = halloweenOrange
+        } else if (player === ghostBooPlayer) {
+            ghostBooButton.backgroundColor = halloweenOrange
+        } else if (player === wereWolfHowlPlayer) {
+            werewolfHowlButton.backgroundColor = halloweenOrange
+        } else if (player === poltergeistVoicePlayer) {
+            poltergeistVoiceButton.backgroundColor = halloweenOrange
+        } else if (player === zombieCallPlayer) {
+            zombieCallButton.backgroundColor = halloweenOrange
+        } else if (player === catScreamPlayer) {
+            catScreamButton.backgroundColor = halloweenOrange
+        } else if (player === wraithWailPlayer) {
+            wraithWailButton.backgroundColor = halloweenOrange
+        } else if (player === spookyOwlPlayer) {
+            spookyOwlButton.backgroundColor = halloweenOrange
+        } else if (player === chainedGhoulPlayer) {
+            chainedGhoulButton.backgroundColor = halloweenOrange
+        } else if (player === hauntedOrganPlayer) {
+            hauntedOrganButton.backgroundColor = halloweenOrange
+        } else if (player === scareCrowPlayer) {
+            scarecrowButton.backgroundColor = halloweenOrange
+        } else if (player === blowingWindPlayer) {
+            blowingWindButton.backgroundColor = halloweenOrange
+        } else if (player === ghostlyWhisperPlayer) {
+            ghostlyWhisperButton.backgroundColor = halloweenOrange
+        } else if (player === draculaLaughPlayer) {
+            draculaLaughButton.backgroundColor = halloweenOrange
+        } else if (player === wolfCryPlayer) {
+            wolfCryButton.backgroundColor = halloweenOrange
+        } else if (player === knockKnockPlayer) {
+            knockKnockButton.backgroundColor = halloweenOrange
+        } else if (player === igorGrumblePlayer) {
+            igorGrumbleButton.backgroundColor = halloweenOrange
+        } else if (player === horrorMoviePlayer) {
+            horrorMovieButton.backgroundColor = halloweenOrange
+        } else if (player === warningBellsPlayer) {
+            warningBellsButton.backgroundColor = halloweenOrange
+        } else if (player === painfulMoanPlayer) {
+            painfulMoanButton.backgroundColor = halloweenOrange
+        } else if (player === witchesCauldronPlayer) {
+            witchesCauldronButton.backgroundColor = halloweenOrange
+        } else if (player === ghostlyChildrenPlayer) {
+            ghostlyChildrenButton.backgroundColor = halloweenOrange
+        } else if (player === hauntedSwampPlayer) {
+            hauntedSwampButton.backgroundColor = halloweenOrange
+        } else if (player === torturedSoulsPlayer) {
+            torturedSoulsButton.backgroundColor = halloweenOrange
+        } else if (player === chillingHornPlayer) {
+            chillingHornButton.backgroundColor = halloweenOrange
+        }
     }
     
 }

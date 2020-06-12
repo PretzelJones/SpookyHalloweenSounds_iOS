@@ -972,6 +972,7 @@
                         <outlet property="hauntedOrganButton" destination="RoF-44-OjK" id="OZO-5G-1VJ"/>
                         <outlet property="hauntedSwampButton" destination="CD0-rM-CbT" id="w9S-fc-ofW"/>
                         <outlet property="horrorAmbianceButton" destination="12x-sj-Khg" id="pwg-Fv-VtH"/>
+                        <outlet property="horrorMovieButton" destination="lAm-zy-FTl" id="H48-xg-M5Y"/>
                         <outlet property="horrorThemeButton" destination="94m-NW-PO3" id="1Zo-4X-C23"/>
                         <outlet property="igorGrumbleButton" destination="KmX-91-FOB" id="nVl-Bk-CcY"/>
                         <outlet property="knockKnockButton" destination="aOv-m9-chY" id="CW0-ei-iwB"/>
