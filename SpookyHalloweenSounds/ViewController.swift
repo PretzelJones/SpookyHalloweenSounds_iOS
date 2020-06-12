@@ -10,8 +10,10 @@ import UIKit
 import AVFoundation
 import StoreKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
+    @IBOutlet weak var loopingMixButton: UIButton!
+    @IBOutlet weak var horrorThemeButton: UIButton!
     @IBOutlet weak var witchCackleButton: UIButton!
     @IBOutlet weak var blackCatButton: UIButton!
     @IBOutlet weak var creepyLaughButton: UIButton!
@@ -90,48 +92,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        witchCackleButton.startAnimatingPressActions()
-        //        blackCatButton.startAnimatingPressActions()
-        //        creepyLaughButton.startAnimatingPressActions()
-        //        creakyDoorButton.startAnimatingPressActions()
-        //        horrorAmbianceButton.startAnimatingPressActions()
-        //        monsterGrowlButton.startAnimatingPressActions()
-        //        monsterWalkingButton.startAnimatingPressActions()
-        //        spookyChainsButton.startAnimatingPressActions()
-        //        thunderStormButton.startAnimatingPressActions()
-        //        scaryScreamButton.startAnimatingPressActions()
-        //        zombieGroanButton.startAnimatingPressActions()
-        //        ghostBooButton.startAnimatingPressActions()
-        //        werewolfHowlButton.startAnimatingPressActions()
-        //        poltergeistVoiceButton.startAnimatingPressActions()
-        //        zombieCallButton.startAnimatingPressActions()
-        //        catScreamButton.startAnimatingPressActions()
-        //        wraithWailButton.startAnimatingPressActions()
-        //        spookyOwlButton.startAnimatingPressActions()
-        //        chainedGhoulButton.startAnimatingPressActions()
-        //        terrifiedScreamButton.startAnimatingPressActions()
-        //        hauntedOrganButton.startAnimatingPressActions()
-        //        scarecrowButton.startAnimatingPressActions()
-        //        blowingWindButton.startAnimatingPressActions()
-        //        ghostlyWhisperButton.startAnimatingPressActions()
-        //        draculaLaughButton.startAnimatingPressActions()
-        //        wolfCryButton.startAnimatingPressActions()
-        //        knockKnockButton.startAnimatingPressActions()
-        //        igorGrumbleButton.startAnimatingPressActions()
-        //        horrorMovieButton.startAnimatingPressActions()
-        //        warningBellsButton.startAnimatingPressActions()
-        //        painfulMoanButton.startAnimatingPressActions()
-        //        witchesCauldronButton.startAnimatingPressActions()
-        //        ghostlyChildrenButton.startAnimatingPressActions()
-        //        hauntedSwampButton.startAnimatingPressActions()
-        //        torturedSoulsButton.startAnimatingPressActions()
-        //        chillingHornButton.startAnimatingPressActions()
-        
         do {
             
             witchCacklePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "witch_laugh", ofType: "mp3")!))
             witchCacklePlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -142,6 +108,7 @@ class ViewController: UIViewController {
             blackCatPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "black_cat", ofType: "mp3")!))
             blackCatPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -152,6 +119,7 @@ class ViewController: UIViewController {
             creepyLaughPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "evil_man", ofType: "mp3")!))
             creepyLaughPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -162,6 +130,7 @@ class ViewController: UIViewController {
             monsterGrowlPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "monster_growl", ofType: "mp3")!))
             monsterGrowlPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -172,6 +141,7 @@ class ViewController: UIViewController {
             monsterWalkingPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "monster_walking", ofType: "mp3")!))
             monsterWalkingPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -182,6 +152,7 @@ class ViewController: UIViewController {
             creakyDoorPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "creaky_door", ofType: "mp3")!))
             creakyDoorPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -203,6 +174,7 @@ class ViewController: UIViewController {
             spookyChainsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "spooky_chains", ofType: "mp3")!))
             spookyChainsPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -213,6 +185,7 @@ class ViewController: UIViewController {
             thunderStormPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "thunder", ofType: "mp3")!))
             thunderStormPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -223,6 +196,7 @@ class ViewController: UIViewController {
             vampireBatPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "vampire_bat", ofType: "mp3")!))
             vampireBatPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -233,6 +207,7 @@ class ViewController: UIViewController {
             scaryScreamPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "scary_scream", ofType: "mp3")!))
             scaryScreamPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -243,6 +218,7 @@ class ViewController: UIViewController {
             zombieGroanPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "zombie", ofType: "mp3")!))
             zombieGroanPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -253,6 +229,7 @@ class ViewController: UIViewController {
             ghostBooPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ghost_boo", ofType: "mp3")!))
             ghostBooPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -263,6 +240,7 @@ class ViewController: UIViewController {
             wereWolfHowlPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "werewolf_howl", ofType: "mp3")!))
             wereWolfHowlPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -273,6 +251,7 @@ class ViewController: UIViewController {
             poltergeistVoicePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "poltergeist_voice", ofType: "mp3")!))
             poltergeistVoicePlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -283,6 +262,7 @@ class ViewController: UIViewController {
             zombieCallPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "zombie_come", ofType: "mp3")!))
             zombieCallPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -293,6 +273,7 @@ class ViewController: UIViewController {
             catScreamPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cat_scream", ofType: "mp3")!))
             catScreamPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -303,6 +284,7 @@ class ViewController: UIViewController {
             wraithWailPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "wraith_wail", ofType: "wav")!))
             wraithWailPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -313,6 +295,7 @@ class ViewController: UIViewController {
             spookyOwlPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "spooky_owl", ofType: "wav")!))
             spookyOwlPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -323,6 +306,7 @@ class ViewController: UIViewController {
             chainedGhoulPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chained_ghoul", ofType: "wav")!))
             chainedGhoulPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -333,6 +317,7 @@ class ViewController: UIViewController {
             terrifiedScreamPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "terrified_scream", ofType: "mp3")!))
             terrifiedScreamPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -343,6 +328,7 @@ class ViewController: UIViewController {
             hauntedOrganPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "haunted_organ", ofType: "mp3")!))
             hauntedOrganPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -353,6 +339,7 @@ class ViewController: UIViewController {
             scareCrowPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "scarecrow", ofType: "mp3")!))
             scareCrowPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -363,6 +350,7 @@ class ViewController: UIViewController {
             blowingWindPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "blowing_wind", ofType: "wav")!))
             blowingWindPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -373,6 +361,7 @@ class ViewController: UIViewController {
             ghostlyWhisperPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ghostly_whisper", ofType: "mp3")!))
             ghostlyWhisperPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -403,6 +392,7 @@ class ViewController: UIViewController {
             knockKnockPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "knock_knock", ofType: "mp3")!))
             knockKnockPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -413,6 +403,7 @@ class ViewController: UIViewController {
             igorGrumblePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "igor_grumble", ofType: "mp3")!))
             igorGrumblePlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -423,6 +414,7 @@ class ViewController: UIViewController {
             horrorMoviePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "horror_film", ofType: "mp3")!))
             horrorMoviePlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -433,6 +425,7 @@ class ViewController: UIViewController {
             warningBellsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "warning_bells", ofType: "mp3")!))
             warningBellsPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -453,6 +446,7 @@ class ViewController: UIViewController {
             witchesCauldronPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "bubbles", ofType: "wav")!))
             witchesCauldronPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -463,6 +457,7 @@ class ViewController: UIViewController {
             ghostlyChildrenPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "scary_nursery", ofType: "mp3")!))
             ghostlyChildrenPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -473,6 +468,7 @@ class ViewController: UIViewController {
             hauntedSwampPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "haunted_swamp", ofType: "mp3")!))
             hauntedSwampPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -483,15 +479,18 @@ class ViewController: UIViewController {
             torturedSoulsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "tortured_souls", ofType: "mp3")!))
             torturedSoulsPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
         }
+        
         do {
             
             chillingHornPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chilling_horn", ofType: "mp3")!))
             chillingHornPlayer?.prepareToPlay()
         }
+            
         catch {
             print(error)
             
@@ -504,11 +503,20 @@ class ViewController: UIViewController {
         SKStoreReviewController.requestReview()
     }
     
+    @IBAction func loopingMixesPlay(_ sender: Any) {
+        
+        loopingMixButton.pulsate(loopingMixButton)
+    }
+    
+    @IBAction func horrorThemePlay(_ sender: Any) {
+        
+        horrorThemeButton.pulsate(horrorThemeButton)
+    }
+    
     @IBAction func witchCacklePlay(_ sender: UIButton) {
         
         witchCacklePlayer?.play()
         witchCackleButton.pulsate(witchCackleButton)
-        
     }
     
     @IBAction func blackCatPlay(_ sender: Any) {
@@ -516,6 +524,7 @@ class ViewController: UIViewController {
         blackCatPlayer?.play()
         blackCatButton.pulsate(blackCatButton)
     }
+    
     @IBAction func creepyLaughPlay(_ sender: Any) {
         
         creepyLaughPlayer?.play()
@@ -527,6 +536,7 @@ class ViewController: UIViewController {
         horrorAmbiancePlayer?.play()
         horrorAmbianceButton.pulsate(horrorAmbianceButton)
     }
+    
     @IBAction func monsterGrowlPlay(_ sender: Any) {
         
         monsterGrowlPlayer?.play()
@@ -556,11 +566,6 @@ class ViewController: UIViewController {
         thunderStormPlayer?.play()
         thunderStormButton.pulsate(thunderStormButton)
     }
-    
-    //    @IBAction func vampireBatPlay(_ sender: Any) {
-    //
-    //        vampireBatPlayer?.play()
-    //    }
     
     @IBAction func scaryScreamPlay(_ sender: Any) {
         

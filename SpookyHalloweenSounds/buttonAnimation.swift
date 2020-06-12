@@ -12,6 +12,9 @@ import UIKit
 extension UIButton {
     
     func startAnimatingPressActions() {
+        
+        self.showsTouchWhenHighlighted = false //remove touch glow around image on button
+        
         addTarget(self, action: #selector(animateDown), for: [.touchDown, .touchDragEnter])
         addTarget(self, action: #selector(animateUp), for: [.touchDragExit, .touchCancel, .touchUpInside, .touchUpOutside])
     }

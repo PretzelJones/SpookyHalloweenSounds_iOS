@@ -387,7 +387,7 @@
                                                     <action selector="igorGrumblePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHv-la-zdb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-zy-FTl">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-zy-FTl" userLabel="Horror Movie Button">
                                                 <rect key="frame" x="0.0" y="1748" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -626,8 +626,8 @@
                                                     <action selector="horrorAmbiancePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtr-LK-e2e"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94m-NW-PO3">
-                                                <rect key="frame" x="0.0" y="66" width="414" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94m-NW-PO3" userLabel="Horror Theme Button">
+                                                <rect key="frame" x="0.0" y="62" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="kGa-kT-ggR"/>
@@ -643,7 +643,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="3dX-ln-9cZ" kind="show" id="4dp-h2-chb"/>
+                                                    <action selector="horrorThemePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jL8-c4-jbS"/>
+                                                    <segue destination="3dX-ln-9cZ" kind="show" id="bEN-zN-Aa7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Age-0K-NlH">
@@ -743,6 +744,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="loopingMixesPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62M-rP-30T"/>
                                                     <segue destination="lrZ-Ov-kYt" kind="show" id="maY-aR-zMO"/>
                                                 </connections>
                                             </button>
@@ -970,9 +972,10 @@
                         <outlet property="hauntedOrganButton" destination="RoF-44-OjK" id="OZO-5G-1VJ"/>
                         <outlet property="hauntedSwampButton" destination="CD0-rM-CbT" id="w9S-fc-ofW"/>
                         <outlet property="horrorAmbianceButton" destination="12x-sj-Khg" id="pwg-Fv-VtH"/>
-                        <outlet property="horrorMovieButton" destination="lAm-zy-FTl" id="Rzt-c8-OTt"/>
+                        <outlet property="horrorThemeButton" destination="94m-NW-PO3" id="1Zo-4X-C23"/>
                         <outlet property="igorGrumbleButton" destination="KmX-91-FOB" id="nVl-Bk-CcY"/>
                         <outlet property="knockKnockButton" destination="aOv-m9-chY" id="CW0-ei-iwB"/>
+                        <outlet property="loopingMixButton" destination="LM2-LV-woq" id="jce-Sh-MKH"/>
                         <outlet property="monsterGrowlButton" destination="YXR-xM-xy8" id="yQV-ze-YF3"/>
                         <outlet property="monsterWalkingButton" destination="cUV-bF-FK7" id="PgU-gA-JXj"/>
                         <outlet property="painfulMoanButton" destination="TKc-6q-NMq" id="Wsu-JX-591"/>
@@ -1022,12 +1025,15 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.bosson.design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRn-uh-ifg">
                                 <rect key="frame" x="8" y="413" width="398" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version 1.0.7-6.7.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ya-BJe">
-                                <rect key="frame" x="8" y="723" width="185.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version 1.0.8-6.11.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ya-BJe">
+                                <rect key="frame" x="8" y="723" width="193" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1065,7 +1071,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMx-il-2fQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1993" y="706"/>
+            <point key="canvasLocation" x="1993" y="475"/>
         </scene>
         <!--Looping Mixes-->
         <scene sceneID="VMU-GT-qeb">
@@ -1234,7 +1240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMf-5L-dgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.753623188406" y="-442.63392857142856"/>
+            <point key="canvasLocation" x="1993" y="-176"/>
         </scene>
         <!--Horror Movie Themes-->
         <scene sceneID="byf-cW-9Dr">
@@ -1367,7 +1373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4n-0E-4go" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2892.753623188406" y="-443.30357142857139"/>
+            <point key="canvasLocation" x="2893" y="-176"/>
         </scene>
         <!--Hidden Sounds-->
         <scene sceneID="lNm-QZ-eeY">
@@ -1385,7 +1391,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="177" id="fzh-so-FNy"/>
                                         </constraints>
-                                        <string key="text">Congratulations! You’ve found the hidden sounds. We’ve saved the best for here. The sounds below are audio recordings found deep in the web. These are genuine recordings of mysterious origin and meaning. They are not for the faint of heart and may leave you feeling uneasy, frightened, and paranoid. You have been warned. </string>
+                                        <string key="text">You curious little devil! You’ve found the hidden sounds. We’ve saved the best for here. The sounds below are audio recordings found deep in the web. These are genuine recordings of mysterious origin and meaning. They are not for the faint of heart and may leave you feeling uneasy, frightened, and paranoid. You have been warned. </string>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="20"/>
                                         <color key="textColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1516,7 +1522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oS1-hv-ZXY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2893" y="706"/>
+            <point key="canvasLocation" x="2893" y="475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N9Z-BK-hCR">
