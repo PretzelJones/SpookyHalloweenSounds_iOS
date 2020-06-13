@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class HiddenViewController: UIViewController {
+class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
     
     var ghostSongPlayer: AVAudioPlayer?
     var oldTapePlayer: AVAudioPlayer?
@@ -24,10 +24,10 @@ class HiddenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ghostSongButton.startAnimatingPressActions()
-        oldTapeButton.startAnimatingPressActions()
-        criesOfInsanityButton.startAnimatingPressActions()
-        criesHellButton.startAnimatingPressActions()
+//        ghostSongButton.startAnimatingPressActions()
+//        oldTapeButton.startAnimatingPressActions()
+//        criesOfInsanityButton.startAnimatingPressActions()
+//        criesHellButton.startAnimatingPressActions()
         
         do {
             
@@ -70,21 +70,14 @@ class HiddenViewController: UIViewController {
             
         }
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//
-//    }
-    
+
     @IBAction func ghostSongPlay(_ sender: Any) {
+        
+        ghostSongButton.pulsate(ghostSongButton)
         
         if (ghostSongPlayer!.isPlaying)
         {
+            ghostSongPlayer?.delegate = self
             ghostSongPlayer!.pause();
             ghostSongButton.backgroundColor = halloweenOrange
             ghostSongButton.setTitleColor(UIColor.black, for: .normal)
@@ -92,6 +85,7 @@ class HiddenViewController: UIViewController {
         }
         else
         {
+            ghostSongPlayer?.delegate = self
             ghostSongPlayer!.play();
             ghostSongButton.backgroundColor = halloweenOrangeHighlight
             ghostSongButton.setImage(UIImage(named: "pause"), for: .normal)
@@ -100,8 +94,11 @@ class HiddenViewController: UIViewController {
     
     @IBAction func oldTapePlay(_ sender: Any) {
         
+        oldTapeButton.pulsate(oldTapeButton)
+        
         if (oldTapePlayer!.isPlaying)
         {
+            oldTapePlayer?.delegate = self
             oldTapePlayer!.pause();
             oldTapeButton.backgroundColor = halloweenOrange
             oldTapeButton.setTitleColor(UIColor.black, for: .normal)
@@ -109,6 +106,7 @@ class HiddenViewController: UIViewController {
         }
         else
         {
+            oldTapePlayer?.delegate = self
             oldTapePlayer!.play();
             oldTapeButton.backgroundColor = halloweenOrangeHighlight
             oldTapeButton.setImage(UIImage(named: "pause"), for: .normal)
@@ -117,8 +115,11 @@ class HiddenViewController: UIViewController {
     
     @IBAction func criesOfInsanityPlay(_ sender: Any) {
         
+        criesOfInsanityButton.pulsate(criesOfInsanityButton)
+        
         if (criesOfInsanityPlayer!.isPlaying)
         {
+            criesOfInsanityPlayer?.delegate = self
             criesOfInsanityPlayer!.pause();
             criesOfInsanityButton.backgroundColor = halloweenOrange
             criesOfInsanityButton.setTitleColor(UIColor.black, for: .normal)
@@ -126,17 +127,20 @@ class HiddenViewController: UIViewController {
         }
         else
         {
+            criesOfInsanityPlayer?.delegate = self
             criesOfInsanityPlayer!.play();
             criesOfInsanityButton.backgroundColor = halloweenOrangeHighlight
             criesOfInsanityButton.setImage(UIImage(named: "pause"), for: .normal)
         }
     }
     
-    
     @IBAction func criesHellPlay(_ sender: Any) {
+        
+        criesHellButton.pulsate(criesHellButton)
         
         if (criesHellPlayer!.isPlaying)
         {
+            criesHellPlayer?.delegate = self
             criesHellPlayer!.pause();
             criesHellButton.backgroundColor = halloweenOrange
             criesHellButton.setTitleColor(UIColor.black, for: .normal)
@@ -144,9 +148,26 @@ class HiddenViewController: UIViewController {
         }
         else
         {
+            criesHellPlayer?.delegate = self
             criesHellPlayer!.play();
             criesHellButton.backgroundColor = halloweenOrangeHighlight
             criesHellButton.setImage(UIImage(named: "pause"), for: .normal)
+        }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if (player === ghostSongPlayer) {
+            ghostSongButton.backgroundColor = halloweenOrange
+            ghostSongButton.setImage(UIImage(named: "ghost_song"), for: .normal)
+        } else if (player === oldTapePlayer) {
+            oldTapeButton.backgroundColor = halloweenOrange
+            oldTapeButton.setImage(UIImage(named: "old_tape"), for: .normal)
+        } else if (player === criesOfInsanityPlayer) {
+            criesOfInsanityButton.backgroundColor = halloweenOrange
+            criesOfInsanityButton.setImage(UIImage(named: "dispair"), for: .normal)
+        } else if (player === criesHellPlayer) {
+            criesHellButton.backgroundColor = halloweenOrange
+            criesHellButton.setImage(UIImage(named: "cries_hell"), for: .normal)
         }
     }
     

@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class LongMixViewController: UIViewController {
+class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var ultraTerrorButton: UIButton!
     @IBOutlet weak var hauntedHouseButton: UIButton!
@@ -28,11 +28,11 @@ class LongMixViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ultraTerrorButton.startAnimatingPressActions()
-        hauntedHouseButton.startAnimatingPressActions()
-        spookySoundsButton.startAnimatingPressActions()
-        spaceTerrorButton.startAnimatingPressActions()
-        dontLetThemInButton.startAnimatingPressActions()
+//        ultraTerrorButton.startAnimatingPressActions()
+//        hauntedHouseButton.startAnimatingPressActions()
+//        spookySoundsButton.startAnimatingPressActions()
+//        spaceTerrorButton.startAnimatingPressActions()
+//        dontLetThemInButton.startAnimatingPressActions()
         
         do {
             
@@ -88,16 +88,20 @@ class LongMixViewController: UIViewController {
     
     @IBAction func ultraTerrorPlay(_ sender: UIButton) {
         
+        ultraTerrorButton.pulsate(ultraTerrorButton)
+        
         if (ultraTerrorPlayer!.isPlaying)
         {
+            ultraTerrorPlayer?.delegate = self
             ultraTerrorPlayer!.pause();
             ultraTerrorButton.backgroundColor = halloweenOrange
-            ultraTerrorButton.setTitleColor(UIColor.black, for: .normal)
+//            ultraTerrorButton.setTitleColor(UIColor.black, for: .normal)
             ultraTerrorButton.setImage(UIImage(named: "ultra_terror"), for: .normal)
             
         }
         else
         {
+            ultraTerrorPlayer?.delegate = self
             ultraTerrorPlayer!.play();
             ultraTerrorButton.backgroundColor = halloweenOrangeHighlight
             ultraTerrorButton.setImage(UIImage(named: "pause"), for: .normal)
@@ -107,16 +111,20 @@ class LongMixViewController: UIViewController {
     
     @IBAction func hauntedHousePlay(_ sender: UIButton) {
         
+        hauntedHouseButton.pulsate(hauntedHouseButton)
+        
         if (hauntedHousePlayer!.isPlaying)
         {
+            hauntedHousePlayer?.delegate = self
             hauntedHousePlayer!.pause();
             hauntedHouseButton.backgroundColor = halloweenOrange
-            hauntedHouseButton.setTitleColor(UIColor.black, for: .normal)
+//            hauntedHouseButton.setTitleColor(UIColor.black, for: .normal)
             hauntedHouseButton.setImage(UIImage(named: "haunted_organ"), for: .normal)
             
         }
         else
         {
+            hauntedHousePlayer?.delegate = self
             hauntedHousePlayer!.play();
             hauntedHouseButton.backgroundColor = halloweenOrangeHighlight
             hauntedHouseButton.setImage(UIImage(named: "pause"), for: .normal)
@@ -125,11 +133,13 @@ class LongMixViewController: UIViewController {
     
     @IBAction func spookySoundsPlayer(_ sender: UIButton) {
         
+        spookySoundsButton.pulsate(spookySoundsButton)
+        
         if (spookySoundsPlayer!.isPlaying)
         {
             spookySoundsPlayer!.pause();
             spookySoundsButton.backgroundColor = halloweenOrange
-            spookySoundsButton.setTitleColor(UIColor.black, for: .normal)
+//            spookySoundsButton.setTitleColor(UIColor.black, for: .normal)
             spookySoundsButton.setImage(UIImage(named: "spooky_sounds"), for: .normal)
             
         }
@@ -144,11 +154,13 @@ class LongMixViewController: UIViewController {
     
     @IBAction func spaceTerrorPlayer(_ sender: UIButton) {
         
+        spaceTerrorButton.pulsate(spaceTerrorButton)
+        
         if (spaceTerrorPlayer!.isPlaying)
         {
             spaceTerrorPlayer!.pause();
             spaceTerrorButton.backgroundColor = halloweenOrange
-            spaceTerrorButton.setTitleColor(UIColor.black, for: .normal)
+//            spaceTerrorButton.setTitleColor(UIColor.black, for: .normal)
             spaceTerrorButton.setImage(UIImage(named: "space_terrors"), for: .normal)
             
         }
@@ -162,11 +174,13 @@ class LongMixViewController: UIViewController {
     
     @IBAction func dontLetThemIn(_ sender: UIButton) {
         
+        dontLetThemInButton.pulsate(dontLetThemInButton)
+        
         if (dontLetThemInPlayer!.isPlaying)
         {
             dontLetThemInPlayer!.pause();
             dontLetThemInButton.backgroundColor = halloweenOrange
-            dontLetThemInButton.setTitleColor(UIColor.black, for: .normal)
+//            dontLetThemInButton.setTitleColor(UIColor.black, for: .normal)
             dontLetThemInButton.setImage(UIImage(named: "key"), for: .normal)
             
         }
@@ -178,4 +192,22 @@ class LongMixViewController: UIViewController {
         }
     }
     
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if (player === ultraTerrorPlayer) {
+            ultraTerrorButton.backgroundColor = halloweenOrange
+            ultraTerrorButton.setImage(UIImage(named: "ultra_terror"), for: .normal)
+        } else if (player === hauntedHousePlayer) {
+            hauntedHouseButton.backgroundColor = halloweenOrange
+            hauntedHouseButton.setImage(UIImage(named: "haunted_organ"), for: .normal)
+        } else if (player === spookySoundsPlayer) {
+            spookySoundsButton.backgroundColor = halloweenOrange
+            spookySoundsButton.setImage(UIImage(named: "spooky_sounds"), for: .normal)
+        } else if (player === spaceTerrorPlayer) {
+            spaceTerrorButton.backgroundColor = halloweenOrange
+            spaceTerrorButton.setImage(UIImage(named: "space_terrors"), for: .normal)
+        } else if (player === dontLetThemInPlayer) {
+            dontLetThemInButton.backgroundColor = halloweenOrange
+            dontLetThemInButton.setImage(UIImage(named: "key"), for: .normal)
+        }
+    }
 }

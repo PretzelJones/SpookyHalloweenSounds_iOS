@@ -626,27 +626,6 @@
                                                     <action selector="horrorAmbiancePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtr-LK-e2e"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94m-NW-PO3" userLabel="Horror Theme Button">
-                                                <rect key="frame" x="0.0" y="62" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="kGa-kT-ggR"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Horror Movie Themes" image="film_reel.png">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="horrorThemePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jL8-c4-jbS"/>
-                                                    <segue destination="3dX-ln-9cZ" kind="show" id="bEN-zN-Aa7"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Age-0K-NlH">
                                                 <rect key="frame" x="0.0" y="1226" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -788,6 +767,27 @@
                                                     <action selector="chillingHornPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-oN-U6I"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94m-NW-PO3" userLabel="Horror Theme Button">
+                                                <rect key="frame" x="0.0" y="66" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="kGa-kT-ggR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Horror Movie Themes" image="film_reel.png">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="horrorThemePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jL8-c4-jbS"/>
+                                                    <segue destination="3dX-ln-9cZ" kind="show" id="bEN-zN-Aa7"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -820,7 +820,7 @@
                                             <constraint firstItem="IWH-3N-V7Q" firstAttribute="top" secondItem="KmX-91-FOB" secondAttribute="bottom" constant="66" id="J9M-Hb-Zqg"/>
                                             <constraint firstItem="1FT-YQ-ScV" firstAttribute="top" secondItem="TKc-6q-NMq" secondAttribute="bottom" constant="8" symbolic="YES" id="JCi-TT-Ea5"/>
                                             <constraint firstItem="Geq-hS-dgf" firstAttribute="trailing" secondItem="CD0-rM-CbT" secondAttribute="trailing" id="JEx-S8-uUr"/>
-                                            <constraint firstItem="94m-NW-PO3" firstAttribute="top" secondItem="LM2-LV-woq" secondAttribute="bottom" constant="8" symbolic="YES" id="JLO-eP-q5i"/>
+                                            <constraint firstItem="94m-NW-PO3" firstAttribute="top" secondItem="LM2-LV-woq" secondAttribute="bottom" constant="8" id="JLO-eP-q5i"/>
                                             <constraint firstItem="CD0-rM-CbT" firstAttribute="top" secondItem="Geq-hS-dgf" secondAttribute="bottom" constant="8" symbolic="YES" id="K3y-YM-r7d"/>
                                             <constraint firstItem="lP4-hh-rvx" firstAttribute="leading" secondItem="2TY-Jj-eUn" secondAttribute="leading" id="KGD-OR-PfA"/>
                                             <constraint firstItem="jfP-2V-Npe" firstAttribute="leading" secondItem="G1S-3s-Bd6" secondAttribute="leading" id="LAV-9L-wqD"/>
@@ -871,7 +871,7 @@
                                             <constraint firstItem="wWQ-3A-l4N" firstAttribute="trailing" secondItem="CYb-Sn-1J5" secondAttribute="trailing" id="jYP-Zc-8Jt"/>
                                             <constraint firstItem="IWH-3N-V7Q" firstAttribute="leading" secondItem="TKc-6q-NMq" secondAttribute="leading" id="jiQ-Na-PMX"/>
                                             <constraint firstItem="TKc-6q-NMq" firstAttribute="leading" secondItem="1FT-YQ-ScV" secondAttribute="leading" id="jkm-pe-fFI"/>
-                                            <constraint firstItem="Lvs-tF-XxO" firstAttribute="top" secondItem="94m-NW-PO3" secondAttribute="bottom" constant="8" symbolic="YES" id="kvg-U0-SbI"/>
+                                            <constraint firstItem="Lvs-tF-XxO" firstAttribute="top" secondItem="94m-NW-PO3" secondAttribute="bottom" constant="8" id="kvg-U0-SbI"/>
                                             <constraint firstItem="twt-zf-07d" firstAttribute="top" secondItem="gdi-Zj-0Wt" secondAttribute="bottom" constant="8" symbolic="YES" id="mgE-1b-Buv"/>
                                             <constraint firstItem="1FT-YQ-ScV" firstAttribute="trailing" secondItem="Geq-hS-dgf" secondAttribute="trailing" id="mu7-bm-c18"/>
                                             <constraint firstItem="YXR-xM-xy8" firstAttribute="trailing" secondItem="cUV-bF-FK7" secondAttribute="trailing" id="nQt-Cr-3z5"/>
