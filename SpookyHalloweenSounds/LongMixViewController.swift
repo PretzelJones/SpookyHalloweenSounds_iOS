@@ -196,18 +196,23 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         if (player === ultraTerrorPlayer) {
             ultraTerrorButton.backgroundColor = halloweenOrange
             ultraTerrorButton.setImage(UIImage(named: "ultra_terror"), for: .normal)
+            ultraTerrorButton.pulsate(ultraTerrorButton)
         } else if (player === hauntedHousePlayer) {
             hauntedHouseButton.backgroundColor = halloweenOrange
             hauntedHouseButton.setImage(UIImage(named: "haunted_organ"), for: .normal)
+            hauntedHouseButton.pulsate(hauntedHouseButton)
         } else if (player === spookySoundsPlayer) {
             spookySoundsButton.backgroundColor = halloweenOrange
             spookySoundsButton.setImage(UIImage(named: "spooky_sounds"), for: .normal)
+            spookySoundsButton.pulsate(spookySoundsButton)
         } else if (player === spaceTerrorPlayer) {
             spaceTerrorButton.backgroundColor = halloweenOrange
             spaceTerrorButton.setImage(UIImage(named: "space_terrors"), for: .normal)
+            spaceTerrorButton.pulsate(spaceTerrorButton)
         } else if (player === dontLetThemInPlayer) {
             dontLetThemInButton.backgroundColor = halloweenOrange
             dontLetThemInButton.setImage(UIImage(named: "key"), for: .normal)
+            dontLetThemInButton.pulsate(dontLetThemInButton)
         }
     }
 }

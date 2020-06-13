@@ -1273,108 +1273,147 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         if (player === witchCacklePlayer) {
             witchCackleButton.backgroundColor = halloweenOrange
             witchCackleButton.setImage(UIImage(named: "witch_hat"), for: .normal)
+            witchCackleButton.pulsate(witchCackleButton)
         } else if (player === blackCatPlayer) {
             blackCatButton.backgroundColor = halloweenOrange
             blackCatButton.setImage(UIImage(named: "black_cat"), for: .normal)
+            blackCatButton.pulsate(blackCatButton)
         } else if (player === creepyLaughPlayer) {
             creepyLaughButton.backgroundColor = halloweenOrange
             creepyLaughButton.setImage(UIImage(named: "evil_man"), for: .normal)
+            creepyLaughButton.pulsate(creepyLaughButton)
         } else if (player === horrorAmbiancePlayer) {
             horrorAmbianceButton.backgroundColor = halloweenOrange
             horrorAmbianceButton.setImage(UIImage(named: "spider"), for: .normal)
+            horrorAmbianceButton.pulsate(horrorAmbianceButton)
         } else if (player === monsterGrowlPlayer) {
             monsterGrowlButton.backgroundColor = halloweenOrange
             monsterGrowlButton.setImage(UIImage(named: "monster_growl"), for: .normal)
+            monsterGrowlButton.pulsate(monsterGrowlButton)
         } else if (player === monsterWalkingPlayer) {
             monsterWalkingButton.backgroundColor = halloweenOrange
             monsterWalkingButton.setImage(UIImage(named: "monster_walking"), for: .normal)
+            monsterWalkingButton.pulsate(monsterWalkingButton)
         } else if (player === creakyDoorPlayer) {
             creakyDoorButton.backgroundColor = halloweenOrange
             creakyDoorButton.setImage(UIImage(named: "creaky_door"), for: .normal)
+            creakyDoorButton.pulsate(creakyDoorButton)
         } else if (player === spookyChainsPlayer) {
             spookyChainsButton.backgroundColor = halloweenOrange
             spookyChainsButton.setImage(UIImage(named: "chains"), for: .normal)
+            spookyChainsButton.pulsate(spookyChainsButton)
         } else if (player === thunderStormPlayer) {
             thunderStormButton.backgroundColor = halloweenOrange
             thunderStormButton.setImage(UIImage(named: "thunder"), for: .normal)
+            thunderStormButton.pulsate(thunderStormButton)
         } else if (player === scaryScreamPlayer) {
             scaryScreamButton.backgroundColor = halloweenOrange
             scaryScreamButton.setImage(UIImage(named: "scream"), for: .normal)
+            scaryScreamButton.pulsate(scaryScreamButton)
         } else if (player === zombieGroanPlayer) {
             zombieGroanButton.backgroundColor = halloweenOrange
             zombieGroanButton.setImage(UIImage(named: "zombie"), for: .normal)
+            zombieGroanButton.pulsate(zombieGroanButton)
         } else if (player === ghostBooPlayer) {
             ghostBooButton.backgroundColor = halloweenOrange
             ghostBooButton.setImage(UIImage(named: "ghost_boo"), for: .normal)
+            ghostBooButton.pulsate(ghostBooButton)
         } else if (player === wereWolfHowlPlayer) {
             werewolfHowlButton.backgroundColor = halloweenOrange
             werewolfHowlButton.setImage(UIImage(named: "werewolf"), for: .normal)
+            werewolfHowlButton.pulsate(werewolfHowlButton)
         } else if (player === poltergeistVoicePlayer) {
             poltergeistVoiceButton.backgroundColor = halloweenOrange
             poltergeistVoiceButton.setImage(UIImage(named: "poltergeist_tv"), for: .normal)
+            poltergeistVoiceButton.pulsate(poltergeistVoiceButton)
         } else if (player === zombieCallPlayer) {
             zombieCallButton.backgroundColor = halloweenOrange
             zombieCallButton.setImage(UIImage(named: "zombies_three"), for: .normal)
+            zombieCallButton.pulsate(zombieCallButton)
         } else if (player === catScreamPlayer) {
             catScreamButton.backgroundColor = halloweenOrange
             catScreamButton.setImage(UIImage(named: "cat_scream"), for: .normal)
+            catScreamButton.pulsate(catScreamButton)
         } else if (player === wraithWailPlayer) {
             wraithWailButton.backgroundColor = halloweenOrange
             wraithWailButton.setImage(UIImage(named: "wraith_wail"), for: .normal)
+            wraithWailButton.pulsate(wraithWailButton)
         } else if (player === spookyOwlPlayer) {
             spookyOwlButton.backgroundColor = halloweenOrange
             spookyOwlButton.setImage(UIImage(named: "spooky_owl"), for: .normal)
+            spookyOwlButton.pulsate(spookyOwlButton)
         } else if (player === chainedGhoulPlayer) {
             chainedGhoulButton.backgroundColor = halloweenOrange
             chainedGhoulButton.setImage(UIImage(named: "chained_ghoul"), for: .normal)
+            chainedGhoulButton.pulsate(chainedGhoulButton)
+        }else if (player === terrifiedScreamPlayer) {
+            terrifiedScreamButton.backgroundColor = halloweenOrange
+            terrifiedScreamButton.setImage(UIImage(named: "terrified_scream"), for: .normal)
+            terrifiedScreamButton.pulsate(terrifiedScreamButton)
         } else if (player === hauntedOrganPlayer) {
             hauntedOrganButton.backgroundColor = halloweenOrange
             hauntedOrganButton.setImage(UIImage(named: "haunted_organ"), for: .normal)
+            hauntedOrganButton.pulsate(hauntedOrganButton)
         } else if (player === scareCrowPlayer) {
             scarecrowButton.backgroundColor = halloweenOrange
             scarecrowButton.setImage(UIImage(named: "scarecrow"), for: .normal)
+            scarecrowButton.pulsate(scarecrowButton)
         } else if (player === blowingWindPlayer) {
             blowingWindButton.backgroundColor = halloweenOrange
             blowingWindButton.setImage(UIImage(named: "blowing_wind"), for: .normal)
+            blowingWindButton.pulsate(blowingWindButton)
         } else if (player === ghostlyWhisperPlayer) {
             ghostlyWhisperButton.backgroundColor = halloweenOrange
             ghostlyWhisperButton.setImage(UIImage(named: "ghostly_whisper"), for: .normal)
+            ghostlyWhisperButton.pulsate(ghostlyWhisperButton)
         } else if (player === draculaLaughPlayer) {
             draculaLaughButton.backgroundColor = halloweenOrange
             draculaLaughButton.setImage(UIImage(named: "dracula_laugh"), for: .normal)
+            draculaLaughButton.pulsate(draculaLaughButton)
         } else if (player === wolfCryPlayer) {
             wolfCryButton.backgroundColor = halloweenOrange
             wolfCryButton.setImage(UIImage(named: "wolf"), for: .normal)
+            wolfCryButton.pulsate(wolfCryButton)
         } else if (player === knockKnockPlayer) {
             knockKnockButton.backgroundColor = halloweenOrange
             knockKnockButton.setImage(UIImage(named: "knock"), for: .normal)
+            knockKnockButton.pulsate(knockKnockButton)
         } else if (player === igorGrumblePlayer) {
             igorGrumbleButton.backgroundColor = halloweenOrange
             igorGrumbleButton.setImage(UIImage(named: "igor"), for: .normal)
+            igorGrumbleButton.pulsate(igorGrumbleButton)
         } else if (player === horrorMoviePlayer) {
             horrorMovieButton.backgroundColor = halloweenOrange
             horrorMovieButton.setImage(UIImage(named: "film"), for: .normal)
+            horrorMovieButton.pulsate(horrorMovieButton)
         } else if (player === warningBellsPlayer) {
             warningBellsButton.backgroundColor = halloweenOrange
             warningBellsButton.setImage(UIImage(named: "warning_bells"), for: .normal)
+            warningBellsButton.pulsate(warningBellsButton)
         } else if (player === painfulMoanPlayer) {
             painfulMoanButton.backgroundColor = halloweenOrange
             painfulMoanButton.setImage(UIImage(named: "grave_stone"), for: .normal)
+            painfulMoanButton.pulsate(painfulMoanButton)
         } else if (player === witchesCauldronPlayer) {
             witchesCauldronButton.backgroundColor = halloweenOrange
             witchesCauldronButton.setImage(UIImage(named: "witches_cauldron"), for: .normal)
+            witchesCauldronButton.pulsate(witchesCauldronButton)
         } else if (player === ghostlyChildrenPlayer) {
             ghostlyChildrenButton.backgroundColor = halloweenOrange
             ghostlyChildrenButton.setImage(UIImage(named: "ghostly_children.jpg"), for: .normal)
+            ghostlyChildrenButton.pulsate(ghostlyChildrenButton)
         } else if (player === hauntedSwampPlayer) {
             hauntedSwampButton.backgroundColor = halloweenOrange
             hauntedSwampButton.setImage(UIImage(named: "haunted_swamp"), for: .normal)
+            hauntedSwampButton.pulsate(hauntedSwampButton)
         } else if (player === torturedSoulsPlayer) {
             torturedSoulsButton.backgroundColor = halloweenOrange
             torturedSoulsButton.setImage(UIImage(named: "tortured_souls"), for: .normal)
+            torturedSoulsButton.pulsate(torturedSoulsButton)
         } else if (player === chillingHornPlayer) {
             chillingHornButton.backgroundColor = halloweenOrange
             chillingHornButton.setImage(UIImage(named: "alien"), for: .normal)
+            chillingHornButton.pulsate(chillingHornButton)
         }
     }
     

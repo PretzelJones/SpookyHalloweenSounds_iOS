@@ -159,15 +159,19 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         if (player === ghostSongPlayer) {
             ghostSongButton.backgroundColor = halloweenOrange
             ghostSongButton.setImage(UIImage(named: "ghost_song"), for: .normal)
+            ghostSongButton.pulsate(ghostSongButton)
         } else if (player === oldTapePlayer) {
             oldTapeButton.backgroundColor = halloweenOrange
             oldTapeButton.setImage(UIImage(named: "old_tape"), for: .normal)
+            oldTapeButton.pulsate(oldTapeButton)
         } else if (player === criesOfInsanityPlayer) {
             criesOfInsanityButton.backgroundColor = halloweenOrange
             criesOfInsanityButton.setImage(UIImage(named: "dispair"), for: .normal)
+            criesOfInsanityButton.pulsate(criesOfInsanityButton)
         } else if (player === criesHellPlayer) {
             criesHellButton.backgroundColor = halloweenOrange
             criesHellButton.setImage(UIImage(named: "cries_hell"), for: .normal)
+            criesHellButton.pulsate(criesHellButton)
         }
     }
     
