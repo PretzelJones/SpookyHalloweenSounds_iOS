@@ -30,10 +30,10 @@
 		14472535248C59AC00A27662 /* ultra_terror.png in Resources */ = {isa = PBXBuildFile; fileRef = 14472534248C59AB00A27662 /* ultra_terror.png */; };
 		14472537248C5AC100A27662 /* spooky_sounds.png in Resources */ = {isa = PBXBuildFile; fileRef = 14472536248C5AC100A27662 /* spooky_sounds.png */; };
 		1447253B248C5C9500A27662 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 1447253A248C5C9400A27662 /* key.png */; };
-		1451D9F42491AC660094053E /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9F32491AC660094053E /* ButtonAnimation.swift */; };
 		1451D9FA24925CE20094053E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9F924925CE20094053E /* Colors.swift */; };
 		1451D9FC24925D320094053E /* elm_street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451D9FB24925D320094053E /* elm_street.mp3 */; };
 		1451D9FE24925F920094053E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9FD24925F920094053E /* PulseAnimation.swift */; };
+		1451DA04249589630094053E /* NoHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA03249589630094053E /* NoHighlightButton.swift */; };
 		145204AE234BFBB900B94BDE /* small_axe.png in Resources */ = {isa = PBXBuildFile; fileRef = 145204AD234BFBB900B94BDE /* small_axe.png */; };
 		1455C2AD234D32480053D99C /* old_tape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AA234D32450053D99C /* old_tape.png */; };
 		1455C2AE234D32480053D99C /* ghost_song.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AB234D32470053D99C /* ghost_song.png */; };
@@ -187,10 +187,10 @@
 		14472534248C59AB00A27662 /* ultra_terror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ultra_terror.png; sourceTree = "<group>"; };
 		14472536248C5AC100A27662 /* spooky_sounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spooky_sounds.png; sourceTree = "<group>"; };
 		1447253A248C5C9400A27662 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
-		1451D9F32491AC660094053E /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		1451D9F924925CE20094053E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		1451D9FB24925D320094053E /* elm_street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elm_street.mp3; sourceTree = "<group>"; };
 		1451D9FD24925F920094053E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
+		1451DA03249589630094053E /* NoHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHighlightButton.swift; sourceTree = "<group>"; };
 		145204AD234BFBB900B94BDE /* small_axe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_axe.png; sourceTree = "<group>"; };
 		1455C2AA234D32450053D99C /* old_tape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_tape.png; sourceTree = "<group>"; };
 		1455C2AB234D32470053D99C /* ghost_song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_song.png; sourceTree = "<group>"; };
@@ -367,13 +367,13 @@
 				14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */,
 				1447250A248C1EF600A27662 /* HorrorMovieViewController.swift */,
 				14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */,
-				1451D9F32491AC660094053E /* ButtonAnimation.swift */,
 				1451D9FD24925F920094053E /* PulseAnimation.swift */,
 				1451D9F924925CE20094053E /* Colors.swift */,
 				7B305C902132F25300B184F5 /* Main.storyboard */,
 				7B305C952132F25500B184F5 /* LaunchScreen.storyboard */,
 				7B305C982132F25500B184F5 /* Info.plist */,
 				140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */,
+				1451DA03249589630094053E /* NoHighlightButton.swift */,
 			);
 			path = SpookyHalloweenSounds;
 			sourceTree = "<group>";
@@ -806,7 +806,7 @@
 			files = (
 				14357AB5234A8C2F00D9B0D3 /* HiddenViewController.swift in Sources */,
 				1451D9FA24925CE20094053E /* Colors.swift in Sources */,
-				1451D9F42491AC660094053E /* ButtonAnimation.swift in Sources */,
+				1451DA04249589630094053E /* NoHighlightButton.swift in Sources */,
 				1447250B248C1EF600A27662 /* HorrorMovieViewController.swift in Sources */,
 				14FE01E4248B260A00E1B0B0 /* LongMixViewController.swift in Sources */,
 				14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */,

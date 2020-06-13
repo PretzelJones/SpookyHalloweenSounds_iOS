@@ -24,10 +24,10 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        ghostSongButton.startAnimatingPressActions()
-//        oldTapeButton.startAnimatingPressActions()
-//        criesOfInsanityButton.startAnimatingPressActions()
-//        criesHellButton.startAnimatingPressActions()
+        ghostSongButton.noHighlight(ghostSongButton)
+        oldTapeButton.noHighlight(oldTapeButton)
+        criesHellButton.noHighlight(criesHellButton)
+        criesOfInsanityButton.noHighlight(criesOfInsanityButton)
         
         do {
             
@@ -80,7 +80,6 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             ghostSongPlayer?.delegate = self
             ghostSongPlayer!.pause();
             ghostSongButton.backgroundColor = halloweenOrange
-            ghostSongButton.setTitleColor(UIColor.black, for: .normal)
             ghostSongButton.setImage(UIImage(named: "ghost_song"), for: .normal)
         }
         else
@@ -101,7 +100,6 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             oldTapePlayer?.delegate = self
             oldTapePlayer!.pause();
             oldTapeButton.backgroundColor = halloweenOrange
-            oldTapeButton.setTitleColor(UIColor.black, for: .normal)
             oldTapeButton.setImage(UIImage(named: "old_tape"), for: .normal)
         }
         else
@@ -122,7 +120,6 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             criesOfInsanityPlayer?.delegate = self
             criesOfInsanityPlayer!.pause();
             criesOfInsanityButton.backgroundColor = halloweenOrange
-            criesOfInsanityButton.setTitleColor(UIColor.black, for: .normal)
             criesOfInsanityButton.setImage(UIImage(named: "dispair"), for: .normal)
         }
         else
@@ -143,7 +140,6 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             criesHellPlayer?.delegate = self
             criesHellPlayer!.pause();
             criesHellButton.backgroundColor = halloweenOrange
-            criesHellButton.setTitleColor(UIColor.black, for: .normal)
             criesHellButton.setImage(UIImage(named: "cries_hell"), for: .normal)
         }
         else

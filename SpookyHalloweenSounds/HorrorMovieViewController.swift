@@ -24,10 +24,10 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        halloweenButton.startAnimatingPressActions()
-        //        exorcistButton.startAnimatingPressActions()
-        //        shiningButton.startAnimatingPressActions()
-        //        nightmareButton.startAnimatingPressActions()
+        halloweenButton.noHighlight(halloweenButton)
+        exorcistButton.noHighlight(exorcistButton)
+        shiningButton.noHighlight(shiningButton)
+        nightmareButton.noHighlight(nightmareButton)
         
         do {
             
@@ -80,7 +80,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             halloweenPlayer?.delegate = self
             halloweenPlayer!.pause();
             halloweenButton.backgroundColor = halloweenOrange
-//            halloweenButton.setTitleColor(UIColor.black, for: .normal)
             halloweenButton.setImage(UIImage(named: "halloween"), for: .normal)
             
         }
@@ -102,7 +101,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             exorcistPlayer?.delegate = self
             exorcistPlayer!.pause();
             exorcistButton.backgroundColor = halloweenOrange
-//            exorcistButton.setTitleColor(UIColor.black, for: .normal)
             exorcistButton.setImage(UIImage(named: "cross"), for: .normal)
             
         }
@@ -124,7 +122,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             shiningPlayer?.delegate = self
             shiningPlayer!.pause();
             shiningButton.backgroundColor = halloweenOrange
-//            shiningButton.setTitleColor(UIColor.black, for: .normal)
             shiningButton.setImage(UIImage(named: "axe"), for: .normal)
             
         }
@@ -146,7 +143,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             nightmarePlayer?.delegate = self
             nightmarePlayer!.pause();
             nightmareButton.backgroundColor = halloweenOrange
-//            nightmareButton.setTitleColor(UIColor.black, for: .normal)
             nightmareButton.setImage(UIImage(named: "freddy"), for: .normal)
         }
         else
@@ -155,7 +151,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             nightmarePlayer!.play();
             nightmareButton.backgroundColor = halloweenOrangeHighlight
             nightmareButton.setImage(UIImage(named: "pause"), for: .normal)
-            
         }
         
     }

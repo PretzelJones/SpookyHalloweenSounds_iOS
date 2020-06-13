@@ -13,9 +13,11 @@ import AVFoundation
 extension UIButton {
     
     @IBAction func pulsate(_ sender: UIButton) {
+        
         UIButton.animate(withDuration: 0.080,
                          animations: {
                             sender.transform = CGAffineTransform(scaleX: 0.97, y: 0.96)
+                            self.showsTouchWhenHighlighted = false
         },
                          completion: { finish in
                             UIButton.animate(withDuration: 0.080, animations: {
@@ -23,19 +25,19 @@ extension UIButton {
                             })
         })
         
-        self.showsTouchWhenHighlighted = false
+//        self.showsTouchWhenHighlighted = false
         
-//        UIButton.transition(with: sender, duration: 0.3, options: .curveEaseInOut, animations: {
-//
-//            self.showsTouchWhenHighlighted = false //remove touch glow around image on button
-//
-//            self.backgroundColor = halloweenOrangeHighlight
-//            if (self.backgroundColor == halloweenOrange) {
-//                self.backgroundColor = halloweenOrangeHighlight
-//            }else{
-//
-//            }
-//        }, completion: nil)
+        //        UIButton.transition(with: sender, duration: 0.3, options: .curveEaseInOut, animations: {
+        //
+        //            self.showsTouchWhenHighlighted = false //remove touch glow around image on button
+        //
+        //            self.backgroundColor = halloweenOrangeHighlight
+        //            if (self.backgroundColor == halloweenOrange) {
+        //                self.backgroundColor = halloweenOrangeHighlight
+        //            }else{
+        //
+        //            }
+        //        }, completion: nil)
     }
-        
+    
 }
