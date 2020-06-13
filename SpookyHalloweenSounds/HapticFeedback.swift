@@ -1,5 +1,5 @@
 //
-//  NoHighlightButton.swift
+//  HapticFeedback.swift
 //  SpookyHalloweenSounds
 //
 //  Created by Sean Patterson on 6/13/20.
@@ -11,9 +11,10 @@ import UIKit
 
 extension UIButton {
     
-     @IBAction func noHighlight(_ sender: UIButton) {
+    @IBAction func haptic(_ sender: UIButton) {
         
-        self.showsTouchWhenHighlighted = false
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
         
     }
     

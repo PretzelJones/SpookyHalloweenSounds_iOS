@@ -15,7 +15,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
     var oldTapePlayer: AVAudioPlayer?
     var criesOfInsanityPlayer: AVAudioPlayer?
     var criesHellPlayer: AVAudioPlayer?
-
+    
     @IBOutlet weak var ghostSongButton: UIButton!
     @IBOutlet weak var oldTapeButton: UIButton!
     @IBOutlet weak var criesOfInsanityButton: UIButton!
@@ -70,10 +70,11 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             
         }
     }
-
+    
     @IBAction func ghostSongPlay(_ sender: Any) {
         
         ghostSongButton.pulsate(ghostSongButton)
+        ghostSongButton.haptic(ghostSongButton)
         
         if (ghostSongPlayer!.isPlaying)
         {
@@ -94,6 +95,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func oldTapePlay(_ sender: Any) {
         
         oldTapeButton.pulsate(oldTapeButton)
+        oldTapeButton.haptic(oldTapeButton)
         
         if (oldTapePlayer!.isPlaying)
         {
@@ -114,6 +116,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func criesOfInsanityPlay(_ sender: Any) {
         
         criesOfInsanityButton.pulsate(criesOfInsanityButton)
+        criesOfInsanityButton.haptic(criesOfInsanityButton)
         
         if (criesOfInsanityPlayer!.isPlaying)
         {
@@ -134,6 +137,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func criesHellPlay(_ sender: Any) {
         
         criesHellButton.pulsate(criesHellButton)
+        criesHellButton.haptic(criesHellButton)
         
         if (criesHellPlayer!.isPlaying)
         {
@@ -155,19 +159,19 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         if (player === ghostSongPlayer) {
             ghostSongButton.backgroundColor = halloweenOrange
             ghostSongButton.setImage(UIImage(named: "ghost_song"), for: .normal)
-            ghostSongButton.pulsate(ghostSongButton)
+            ghostSongButton.pulsate2(ghostSongButton)
         } else if (player === oldTapePlayer) {
             oldTapeButton.backgroundColor = halloweenOrange
             oldTapeButton.setImage(UIImage(named: "old_tape"), for: .normal)
-            oldTapeButton.pulsate(oldTapeButton)
+            oldTapeButton.pulsate2(oldTapeButton)
         } else if (player === criesOfInsanityPlayer) {
             criesOfInsanityButton.backgroundColor = halloweenOrange
             criesOfInsanityButton.setImage(UIImage(named: "dispair"), for: .normal)
-            criesOfInsanityButton.pulsate(criesOfInsanityButton)
+            criesOfInsanityButton.pulsate2(criesOfInsanityButton)
         } else if (player === criesHellPlayer) {
             criesHellButton.backgroundColor = halloweenOrange
             criesHellButton.setImage(UIImage(named: "cries_hell"), for: .normal)
-            criesHellButton.pulsate(criesHellButton)
+            criesHellButton.pulsate2(criesHellButton)
         }
     }
     

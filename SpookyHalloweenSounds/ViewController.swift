@@ -506,16 +506,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func loopingMixesPlay(_ sender: Any) {
         
         loopingMixButton.pulsate(loopingMixButton)
+        loopingMixButton.haptic(loopingMixButton)
     }
     
     @IBAction func horrorThemePlay(_ sender: Any) {
         
         horrorThemeButton.pulsate(horrorThemeButton)
+        horrorThemeButton.haptic(horrorThemeButton)
     }
     
     @IBAction func witchCacklePlay(_ sender: UIButton) {
         
         witchCackleButton.pulsate(witchCackleButton)
+        witchCackleButton.haptic(witchCackleButton)
         
         if (witchCacklePlayer!.isPlaying)
         {
@@ -537,6 +540,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func blackCatPlay(_ sender: Any) {
         
         blackCatButton.pulsate(blackCatButton)
+        blackCatButton.haptic(blackCatButton)
         
         if (blackCatPlayer!.isPlaying)
         {
@@ -558,6 +562,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func creepyLaughPlay(_ sender: Any) {
         
         creepyLaughButton.pulsate(creepyLaughButton)
+        creepyLaughButton.haptic(creepyLaughButton)
         
         if (creepyLaughPlayer!.isPlaying)
         {
@@ -579,6 +584,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func horrorAmbiancePlay(_ sender: Any) {
         
         horrorAmbianceButton.pulsate(horrorAmbianceButton)
+        horrorAmbianceButton.haptic(horrorAmbianceButton)
         
         if (horrorAmbiancePlayer!.isPlaying)
         {
@@ -600,6 +606,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func monsterGrowlPlay(_ sender: Any) {
         
         monsterGrowlButton.pulsate(monsterGrowlButton)
+        monsterGrowlButton.haptic(monsterGrowlButton)
         
         if (monsterGrowlPlayer!.isPlaying)
         {
@@ -621,6 +628,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func monsterWalkingPlay(_ sender: Any) {
         
         monsterWalkingButton.pulsate(monsterWalkingButton)
+        monsterWalkingButton.haptic(monsterWalkingButton)
         
         if (monsterWalkingPlayer!.isPlaying)
         {
@@ -642,6 +650,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func creakyDoorPlay(_ sender: Any) {
         
         creakyDoorButton.pulsate(creakyDoorButton)
+        creakyDoorButton.haptic(creakyDoorButton)
         
         if (creakyDoorPlayer!.isPlaying)
         {
@@ -663,6 +672,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func spookyChainsPlay(_ sender: Any) {
         
         spookyChainsButton.pulsate(spookyChainsButton)
+        spookyChainsButton.haptic(spookyChainsButton)
         
         if (spookyChainsPlayer!.isPlaying)
         {
@@ -684,6 +694,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func thunderStormPlay(_ sender: Any) {
         
         thunderStormButton.pulsate(thunderStormButton)
+        thunderStormButton.haptic(thunderStormButton)
         
         if (thunderStormPlayer!.isPlaying)
         {
@@ -705,6 +716,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func scaryScreamPlay(_ sender: Any) {
         
         scaryScreamButton.pulsate(scaryScreamButton)
+        scaryScreamButton.haptic(scaryScreamButton)
         
         if (scaryScreamPlayer!.isPlaying)
         {
@@ -726,6 +738,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func zombieGroanPlay(_ sender: Any) {
         
         zombieGroanButton.pulsate(zombieGroanButton)
+        zombieGroanButton.haptic(zombieGroanButton)
         
         if (zombieGroanPlayer!.isPlaying)
         {
@@ -747,6 +760,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func ghostBooPlay(_ sender: Any) {
         
         ghostBooButton.pulsate(ghostBooButton)
+        ghostBooButton.haptic(ghostBooButton)
         
         if (ghostBooPlayer!.isPlaying)
         {
@@ -768,6 +782,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func wereWolfHowlPlay(_ sender: Any) {
         
         werewolfHowlButton.pulsate(werewolfHowlButton)
+        werewolfHowlButton.haptic(werewolfHowlButton)
         
         if (wereWolfHowlPlayer!.isPlaying)
         {
@@ -789,6 +804,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func poltergeistVoicePlay(_ sender: Any) {
         
         poltergeistVoiceButton.pulsate(poltergeistVoiceButton)
+        poltergeistVoiceButton.haptic(poltergeistVoiceButton)
         
         if (poltergeistVoicePlayer!.isPlaying)
         {
@@ -810,6 +826,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func zombieCallPlay(_ sender: Any) {
         
         zombieCallButton.pulsate(zombieCallButton)
+        zombieCallButton.haptic(zombieCallButton)
         
         if (zombieCallPlayer!.isPlaying)
         {
@@ -831,6 +848,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func catScreamPlay(_ sender: Any) {
         
         catScreamButton.pulsate(catScreamButton)
+        catScreamButton.haptic(catScreamButton)
         
         if (catScreamPlayer!.isPlaying)
         {
@@ -852,6 +870,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func wraithWailPlay(_ sender: Any) {
         
         wraithWailButton.pulsate(wraithWailButton)
+        wraithWailButton.haptic(wraithWailButton)
         
         if (wraithWailPlayer!.isPlaying)
         {
@@ -873,6 +892,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func spookyOwlPlay(_ sender: Any) {
         
         spookyOwlButton.pulsate(spookyOwlButton)
+        spookyOwlButton.haptic(spookyOwlButton)
         
         if (spookyOwlPlayer!.isPlaying)
         {
@@ -894,6 +914,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func chainedGhoulPlay(_ sender: Any) {
         
         chainedGhoulButton.pulsate(chainedGhoulButton)
+        chainedGhoulButton.haptic(chainedGhoulButton)
         
         if (chainedGhoulPlayer!.isPlaying)
         {
@@ -915,6 +936,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func terrifiedScreamPlay(_ sender: Any) {
         
         terrifiedScreamButton.pulsate(terrifiedScreamButton)
+        terrifiedScreamButton.haptic(terrifiedScreamButton)
         
         if (terrifiedScreamPlayer!.isPlaying)
         {
@@ -936,6 +958,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func hauntedOrganPlay(_ sender: Any) {
         
         hauntedOrganButton.pulsate(hauntedOrganButton)
+        hauntedOrganButton.haptic(hauntedOrganButton)
         
         if (hauntedOrganPlayer!.isPlaying)
         {
@@ -957,6 +980,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func scareCrowPlay(_ sender: Any) {
         
         scarecrowButton.pulsate(scarecrowButton)
+        scarecrowButton.haptic(scarecrowButton)
         
         if (scareCrowPlayer!.isPlaying)
         {
@@ -978,6 +1002,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func blowingWindPlay(_ sender: Any) {
         
         blowingWindButton.pulsate(blowingWindButton)
+        blowingWindButton.haptic(blowingWindButton)
         
         if (blowingWindPlayer!.isPlaying)
         {
@@ -999,6 +1024,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func ghostlyWhisperPlay(_ sender: Any) {
         
         ghostlyWhisperButton.pulsate(ghostlyWhisperButton)
+        ghostlyWhisperButton.haptic(ghostlyWhisperButton)
         
         if (ghostlyWhisperPlayer!.isPlaying)
         {
@@ -1020,6 +1046,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func draculaLaughPlay(_ sender: Any) {
         
         draculaLaughButton.pulsate(draculaLaughButton)
+        draculaLaughButton.haptic(draculaLaughButton)
         
         if (draculaLaughPlayer!.isPlaying)
         {
@@ -1041,6 +1068,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func wolfCryPlay(_ sender: Any) {
         
         wolfCryButton.pulsate(draculaLaughButton)
+        wolfCryButton.haptic(wolfCryButton)
         
         if (wolfCryPlayer!.isPlaying)
         {
@@ -1062,6 +1090,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func knockKnockPlay(_ sender: Any) {
         
         knockKnockButton.pulsate(knockKnockButton)
+        knockKnockButton.haptic(knockKnockButton)
         
         if (knockKnockPlayer!.isPlaying)
         {
@@ -1083,6 +1112,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func igorGrumblePlay(_ sender: Any) {
         
         igorGrumbleButton.pulsate(igorGrumbleButton)
+        igorGrumbleButton.haptic(igorGrumbleButton)
         
         if (igorGrumblePlayer!.isPlaying)
         {
@@ -1104,6 +1134,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func horrorMoviePlay(_ sender: Any) {
         
         horrorMovieButton.pulsate(horrorMovieButton)
+        horrorMovieButton.haptic(horrorMovieButton)
         
         if (horrorMoviePlayer!.isPlaying)
         {
@@ -1125,6 +1156,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func warningBellsPlay(_ sender: Any) {
         
         warningBellsButton.pulsate(warningBellsButton)
+        warningBellsButton.haptic(warningBellsButton)
         
         if (warningBellsPlayer!.isPlaying)
         {
@@ -1146,6 +1178,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func painfulMoanPlay(_ sender: Any) {
         
         painfulMoanButton.pulsate(painfulMoanButton)
+        painfulMoanButton.haptic(painfulMoanButton)
         
         if (painfulMoanPlayer!.isPlaying)
         {
@@ -1167,6 +1200,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func witchesCauldronPlay(_ sender: Any) {
         
         witchesCauldronButton.pulsate(witchesCauldronButton)
+        witchesCauldronButton.haptic(witchesCauldronButton)
         
         if (witchesCauldronPlayer!.isPlaying)
         {
@@ -1188,6 +1222,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func ghostlyChildrenPlay(_ sender: Any) {
         
         ghostlyChildrenButton.pulsate(ghostlyChildrenButton)
+        ghostlyChildrenButton.haptic(ghostlyChildrenButton)
         
         if (ghostlyChildrenPlayer!.isPlaying)
         {
@@ -1209,6 +1244,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func hauntedSwampPlay(_ sender: Any) {
         
         hauntedSwampButton.pulsate(hauntedSwampButton)
+        hauntedSwampButton.haptic(hauntedSwampButton)
         
         if (hauntedSwampPlayer!.isPlaying)
         {
@@ -1230,6 +1266,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func torturedSoulsPlay(_ sender: Any) {
         
         torturedSoulsButton.pulsate(torturedSoulsButton)
+        torturedSoulsButton.haptic(torturedSoulsButton)
         
         if (torturedSoulsPlayer!.isPlaying)
         {
@@ -1251,6 +1288,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBAction func chillingHornPlay(_ sender: Any) {
         
         chillingHornButton.pulsate(chillingHornButton)
+        chillingHornButton.haptic(chillingHornButton)
         
         if (chillingHornPlayer!.isPlaying)
         {
@@ -1273,147 +1311,147 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         if (player === witchCacklePlayer) {
             witchCackleButton.backgroundColor = halloweenOrange
             witchCackleButton.setImage(UIImage(named: "witch_hat"), for: .normal)
-            witchCackleButton.pulsate(witchCackleButton)
+            witchCackleButton.pulsate2(witchCackleButton)
         } else if (player === blackCatPlayer) {
             blackCatButton.backgroundColor = halloweenOrange
             blackCatButton.setImage(UIImage(named: "black_cat"), for: .normal)
-            blackCatButton.pulsate(blackCatButton)
+            blackCatButton.pulsate2(blackCatButton)
         } else if (player === creepyLaughPlayer) {
             creepyLaughButton.backgroundColor = halloweenOrange
             creepyLaughButton.setImage(UIImage(named: "evil_man"), for: .normal)
-            creepyLaughButton.pulsate(creepyLaughButton)
+            creepyLaughButton.pulsate2(creepyLaughButton)
         } else if (player === horrorAmbiancePlayer) {
             horrorAmbianceButton.backgroundColor = halloweenOrange
             horrorAmbianceButton.setImage(UIImage(named: "spider"), for: .normal)
-            horrorAmbianceButton.pulsate(horrorAmbianceButton)
+            horrorAmbianceButton.pulsate2(horrorAmbianceButton)
         } else if (player === monsterGrowlPlayer) {
             monsterGrowlButton.backgroundColor = halloweenOrange
             monsterGrowlButton.setImage(UIImage(named: "monster_growl"), for: .normal)
-            monsterGrowlButton.pulsate(monsterGrowlButton)
+            monsterGrowlButton.pulsate2(monsterGrowlButton)
         } else if (player === monsterWalkingPlayer) {
             monsterWalkingButton.backgroundColor = halloweenOrange
             monsterWalkingButton.setImage(UIImage(named: "monster_walking"), for: .normal)
-            monsterWalkingButton.pulsate(monsterWalkingButton)
+            monsterWalkingButton.pulsate2(monsterWalkingButton)
         } else if (player === creakyDoorPlayer) {
             creakyDoorButton.backgroundColor = halloweenOrange
             creakyDoorButton.setImage(UIImage(named: "creaky_door"), for: .normal)
-            creakyDoorButton.pulsate(creakyDoorButton)
+            creakyDoorButton.pulsate2(creakyDoorButton)
         } else if (player === spookyChainsPlayer) {
             spookyChainsButton.backgroundColor = halloweenOrange
             spookyChainsButton.setImage(UIImage(named: "chains"), for: .normal)
-            spookyChainsButton.pulsate(spookyChainsButton)
+            spookyChainsButton.pulsate2(spookyChainsButton)
         } else if (player === thunderStormPlayer) {
             thunderStormButton.backgroundColor = halloweenOrange
             thunderStormButton.setImage(UIImage(named: "thunder"), for: .normal)
-            thunderStormButton.pulsate(thunderStormButton)
+            thunderStormButton.pulsate2(thunderStormButton)
         } else if (player === scaryScreamPlayer) {
             scaryScreamButton.backgroundColor = halloweenOrange
             scaryScreamButton.setImage(UIImage(named: "scream"), for: .normal)
-            scaryScreamButton.pulsate(scaryScreamButton)
+            scaryScreamButton.pulsate2(scaryScreamButton)
         } else if (player === zombieGroanPlayer) {
             zombieGroanButton.backgroundColor = halloweenOrange
             zombieGroanButton.setImage(UIImage(named: "zombie"), for: .normal)
-            zombieGroanButton.pulsate(zombieGroanButton)
+            zombieGroanButton.pulsate2(zombieGroanButton)
         } else if (player === ghostBooPlayer) {
             ghostBooButton.backgroundColor = halloweenOrange
             ghostBooButton.setImage(UIImage(named: "ghost_boo"), for: .normal)
-            ghostBooButton.pulsate(ghostBooButton)
+            ghostBooButton.pulsate2(ghostBooButton)
         } else if (player === wereWolfHowlPlayer) {
             werewolfHowlButton.backgroundColor = halloweenOrange
             werewolfHowlButton.setImage(UIImage(named: "werewolf"), for: .normal)
-            werewolfHowlButton.pulsate(werewolfHowlButton)
+            werewolfHowlButton.pulsate2(werewolfHowlButton)
         } else if (player === poltergeistVoicePlayer) {
             poltergeistVoiceButton.backgroundColor = halloweenOrange
             poltergeistVoiceButton.setImage(UIImage(named: "poltergeist_tv"), for: .normal)
-            poltergeistVoiceButton.pulsate(poltergeistVoiceButton)
+            poltergeistVoiceButton.pulsate2(poltergeistVoiceButton)
         } else if (player === zombieCallPlayer) {
             zombieCallButton.backgroundColor = halloweenOrange
             zombieCallButton.setImage(UIImage(named: "zombies_three"), for: .normal)
-            zombieCallButton.pulsate(zombieCallButton)
+            zombieCallButton.pulsate2(zombieCallButton)
         } else if (player === catScreamPlayer) {
             catScreamButton.backgroundColor = halloweenOrange
             catScreamButton.setImage(UIImage(named: "cat_scream"), for: .normal)
-            catScreamButton.pulsate(catScreamButton)
+            catScreamButton.pulsate2(catScreamButton)
         } else if (player === wraithWailPlayer) {
             wraithWailButton.backgroundColor = halloweenOrange
             wraithWailButton.setImage(UIImage(named: "wraith_wail"), for: .normal)
-            wraithWailButton.pulsate(wraithWailButton)
+            wraithWailButton.pulsate2(wraithWailButton)
         } else if (player === spookyOwlPlayer) {
             spookyOwlButton.backgroundColor = halloweenOrange
             spookyOwlButton.setImage(UIImage(named: "spooky_owl"), for: .normal)
-            spookyOwlButton.pulsate(spookyOwlButton)
+            spookyOwlButton.pulsate2(spookyOwlButton)
         } else if (player === chainedGhoulPlayer) {
             chainedGhoulButton.backgroundColor = halloweenOrange
             chainedGhoulButton.setImage(UIImage(named: "chained_ghoul"), for: .normal)
-            chainedGhoulButton.pulsate(chainedGhoulButton)
+            chainedGhoulButton.pulsate2(chainedGhoulButton)
         }else if (player === terrifiedScreamPlayer) {
             terrifiedScreamButton.backgroundColor = halloweenOrange
             terrifiedScreamButton.setImage(UIImage(named: "terrified_scream"), for: .normal)
-            terrifiedScreamButton.pulsate(terrifiedScreamButton)
+            terrifiedScreamButton.pulsate2(terrifiedScreamButton)
         } else if (player === hauntedOrganPlayer) {
             hauntedOrganButton.backgroundColor = halloweenOrange
             hauntedOrganButton.setImage(UIImage(named: "haunted_organ"), for: .normal)
-            hauntedOrganButton.pulsate(hauntedOrganButton)
+            hauntedOrganButton.pulsate2(hauntedOrganButton)
         } else if (player === scareCrowPlayer) {
             scarecrowButton.backgroundColor = halloweenOrange
             scarecrowButton.setImage(UIImage(named: "scarecrow"), for: .normal)
-            scarecrowButton.pulsate(scarecrowButton)
+            scarecrowButton.pulsate2(scarecrowButton)
         } else if (player === blowingWindPlayer) {
             blowingWindButton.backgroundColor = halloweenOrange
             blowingWindButton.setImage(UIImage(named: "blowing_wind"), for: .normal)
-            blowingWindButton.pulsate(blowingWindButton)
+            blowingWindButton.pulsate2(blowingWindButton)
         } else if (player === ghostlyWhisperPlayer) {
             ghostlyWhisperButton.backgroundColor = halloweenOrange
             ghostlyWhisperButton.setImage(UIImage(named: "ghostly_whisper"), for: .normal)
-            ghostlyWhisperButton.pulsate(ghostlyWhisperButton)
+            ghostlyWhisperButton.pulsate2(ghostlyWhisperButton)
         } else if (player === draculaLaughPlayer) {
             draculaLaughButton.backgroundColor = halloweenOrange
             draculaLaughButton.setImage(UIImage(named: "dracula_laugh"), for: .normal)
-            draculaLaughButton.pulsate(draculaLaughButton)
+            draculaLaughButton.pulsate2(draculaLaughButton)
         } else if (player === wolfCryPlayer) {
             wolfCryButton.backgroundColor = halloweenOrange
             wolfCryButton.setImage(UIImage(named: "wolf"), for: .normal)
-            wolfCryButton.pulsate(wolfCryButton)
+            wolfCryButton.pulsate2(wolfCryButton)
         } else if (player === knockKnockPlayer) {
             knockKnockButton.backgroundColor = halloweenOrange
             knockKnockButton.setImage(UIImage(named: "knock"), for: .normal)
-            knockKnockButton.pulsate(knockKnockButton)
+            knockKnockButton.pulsate2(knockKnockButton)
         } else if (player === igorGrumblePlayer) {
             igorGrumbleButton.backgroundColor = halloweenOrange
             igorGrumbleButton.setImage(UIImage(named: "igor"), for: .normal)
-            igorGrumbleButton.pulsate(igorGrumbleButton)
+            igorGrumbleButton.pulsate2(igorGrumbleButton)
         } else if (player === horrorMoviePlayer) {
             horrorMovieButton.backgroundColor = halloweenOrange
             horrorMovieButton.setImage(UIImage(named: "film"), for: .normal)
-            horrorMovieButton.pulsate(horrorMovieButton)
+            horrorMovieButton.pulsate2(horrorMovieButton)
         } else if (player === warningBellsPlayer) {
             warningBellsButton.backgroundColor = halloweenOrange
             warningBellsButton.setImage(UIImage(named: "warning_bells"), for: .normal)
-            warningBellsButton.pulsate(warningBellsButton)
+            warningBellsButton.pulsate2(warningBellsButton)
         } else if (player === painfulMoanPlayer) {
             painfulMoanButton.backgroundColor = halloweenOrange
             painfulMoanButton.setImage(UIImage(named: "grave_stone"), for: .normal)
-            painfulMoanButton.pulsate(painfulMoanButton)
+            painfulMoanButton.pulsate2(painfulMoanButton)
         } else if (player === witchesCauldronPlayer) {
             witchesCauldronButton.backgroundColor = halloweenOrange
             witchesCauldronButton.setImage(UIImage(named: "witches_cauldron"), for: .normal)
-            witchesCauldronButton.pulsate(witchesCauldronButton)
+            witchesCauldronButton.pulsate2(witchesCauldronButton)
         } else if (player === ghostlyChildrenPlayer) {
             ghostlyChildrenButton.backgroundColor = halloweenOrange
             ghostlyChildrenButton.setImage(UIImage(named: "ghostly_children.jpg"), for: .normal)
-            ghostlyChildrenButton.pulsate(ghostlyChildrenButton)
+            ghostlyChildrenButton.pulsate2(ghostlyChildrenButton)
         } else if (player === hauntedSwampPlayer) {
             hauntedSwampButton.backgroundColor = halloweenOrange
             hauntedSwampButton.setImage(UIImage(named: "haunted_swamp"), for: .normal)
-            hauntedSwampButton.pulsate(hauntedSwampButton)
+            hauntedSwampButton.pulsate2(hauntedSwampButton)
         } else if (player === torturedSoulsPlayer) {
             torturedSoulsButton.backgroundColor = halloweenOrange
             torturedSoulsButton.setImage(UIImage(named: "tortured_souls"), for: .normal)
-            torturedSoulsButton.pulsate(torturedSoulsButton)
+            torturedSoulsButton.pulsate2(torturedSoulsButton)
         } else if (player === chillingHornPlayer) {
             chillingHornButton.backgroundColor = halloweenOrange
             chillingHornButton.setImage(UIImage(named: "alien"), for: .normal)
-            chillingHornButton.pulsate(chillingHornButton)
+            chillingHornButton.pulsate2(chillingHornButton)
         }
     }
     
