@@ -16,7 +16,7 @@
         <!--Spooky Halloween Sounds-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1004,7 +1004,7 @@
         <!--App Information-->
         <scene sceneID="8I4-fq-n0v">
             <objects>
-                <viewController id="YAK-Zu-roR" customClass="AboutViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YAK-Zu-roR" customClass="AboutViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6b-IE-eF6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1077,7 +1077,7 @@
         <!--Looping Mixes-->
         <scene sceneID="VMU-GT-qeb">
             <objects>
-                <viewController id="lrZ-Ov-kYt" customClass="LongMixViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lrZ-Ov-kYt" customClass="LongMixViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wU3-CW-mrY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1251,7 +1251,7 @@
         <!--Horror Movie Themes-->
         <scene sceneID="byf-cW-9Dr">
             <objects>
-                <viewController id="3dX-ln-9cZ" customClass="HorrorMovieViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3dX-ln-9cZ" customClass="HorrorMovieViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ly2-QD-7ju">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1389,7 +1389,7 @@
         <!--Hidden Sounds-->
         <scene sceneID="lNm-QZ-eeY">
             <objects>
-                <viewController id="t1I-FK-ggP" customClass="HiddenViewController" customModule="SpookyHalloweenSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t1I-FK-ggP" customClass="HiddenViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEb-Jn-bmi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
