@@ -36,6 +36,7 @@
 		1451DA04249589630094053E /* NoHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA03249589630094053E /* NoHighlightButton.swift */; };
 		1451DA0624958B9F0094053E /* PulseAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA0524958B9F0094053E /* PulseAnimation2.swift */; };
 		1451DA08249592BB0094053E /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA07249592BB0094053E /* HapticFeedback.swift */; };
+		1451DA0A24965AFC0094053E /* haunted_circus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA0924965AFC0094053E /* haunted_circus.png */; };
 		145204AE234BFBB900B94BDE /* small_axe.png in Resources */ = {isa = PBXBuildFile; fileRef = 145204AD234BFBB900B94BDE /* small_axe.png */; };
 		1455C2AD234D32480053D99C /* old_tape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AA234D32450053D99C /* old_tape.png */; };
 		1455C2AE234D32480053D99C /* ghost_song.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AB234D32470053D99C /* ghost_song.png */; };
@@ -195,6 +196,7 @@
 		1451DA03249589630094053E /* NoHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHighlightButton.swift; sourceTree = "<group>"; };
 		1451DA0524958B9F0094053E /* PulseAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation2.swift; sourceTree = "<group>"; };
 		1451DA07249592BB0094053E /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		1451DA0924965AFC0094053E /* haunted_circus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haunted_circus.png; sourceTree = "<group>"; };
 		145204AD234BFBB900B94BDE /* small_axe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_axe.png; sourceTree = "<group>"; };
 		1455C2AA234D32450053D99C /* old_tape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_tape.png; sourceTree = "<group>"; };
 		1455C2AB234D32470053D99C /* ghost_song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_song.png; sourceTree = "<group>"; };
@@ -215,7 +217,7 @@
 		7B05DEA12136234200BAC058 /* tickrtreat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickrtreat.png; sourceTree = "<group>"; };
 		7B05DEA32137665A00BAC058 /* graveyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graveyard.png; sourceTree = "<group>"; };
 		7B05DEA52139EAF100BAC058 /* chilling_cries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chilling_cries.mp3; sourceTree = "<group>"; };
-		7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpookyHalloweenSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B305C892132F25300B184F5 /* Halloween.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halloween.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B305C8C2132F25300B184F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B305C8E2132F25300B184F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B305C912132F25300B184F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -351,7 +353,7 @@
 		7B305C8A2132F25300B184F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */,
+				7B305C892132F25300B184F5 /* Halloween.app */,
 				7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */,
 				7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */,
 			);
@@ -464,6 +466,7 @@
 		7B305CBC2132F9FD00B184F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1451DA0924965AFC0094053E /* haunted_circus.png */,
 				1447253A248C5C9400A27662 /* key.png */,
 				14472536248C5AC100A27662 /* spooky_sounds.png */,
 				14472534248C59AB00A27662 /* ultra_terror.png */,
@@ -563,7 +566,7 @@
 			);
 			name = SpookyHalloweenSounds;
 			productName = SpookyHalloweenSounds;
-			productReference = 7B305C892132F25300B184F5 /* SpookyHalloweenSounds.app */;
+			productReference = 7B305C892132F25300B184F5 /* Halloween.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B305C9C2132F25500B184F5 /* SpookyHalloweenSoundsTests */ = {
@@ -783,6 +786,7 @@
 				7B987D9A2133718D00743717 /* ultra_terror.mp3 in Resources */,
 				14472512248C220C00A27662 /* halloween.mp3 in Resources */,
 				7B987D942133718D00743717 /* blowing_wind.wav in Resources */,
+				1451DA0A24965AFC0094053E /* haunted_circus.png in Resources */,
 				7B987D982133718D00743717 /* haunted_swamp.mp3 in Resources */,
 				7B987DF2213371FA00743717 /* black_cat.png in Resources */,
 				7B987DDE213371FA00743717 /* dispair.png in Resources */,
@@ -1006,7 +1010,7 @@
 				);
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1031,7 +1035,7 @@
 				);
 				MARKETING_VERSION = 1.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;

@@ -1090,7 +1090,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Haunted House" image="haunted_organ.png">
+                                <state key="normal" title="  Haunted Circus" image="haunted_circus.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1589,6 +1589,7 @@
         <image name="grave_stone.png" width="24" height="25"/>
         <image name="graveyard.png" width="1015" height="447"/>
         <image name="halloween.png" width="6" height="6"/>
+        <image name="haunted_circus.png" width="25" height="25"/>
         <image name="haunted_organ.png" width="6" height="6.7199997901916504"/>
         <image name="haunted_swamp.png" width="25" height="25"/>
         <image name="igor.png" width="17" height="26"/>
