@@ -498,10 +498,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        SKStoreReviewController.requestReview()
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        SKStoreReviewController.requestReview()
+//    }
     
     @IBAction func loopingMixesPlay(_ sender: Any) {
         
