@@ -1,6 +1,0 @@
-framework module Pods_SpookyHalloweenSoundsUITests {
-  umbrella header "Pods-SpookyHalloweenSoundsUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
