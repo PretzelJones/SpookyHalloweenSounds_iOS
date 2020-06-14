@@ -34,9 +34,9 @@
 		1451DA0624958B9F0094053E /* PulseAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA0524958B9F0094053E /* PulseAnimation2.swift */; };
 		1451DA08249592BB0094053E /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA07249592BB0094053E /* HapticFeedback.swift */; };
 		1451DA0A24965AFC0094053E /* haunted_circus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA0924965AFC0094053E /* haunted_circus.png */; };
-		1451DA0E24966E0D0094053E /* shining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA0B24966E0D0094053E /* shining.mp3 */; };
-		1451DA0F24966E0D0094053E /* exorcist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA0C24966E0D0094053E /* exorcist.mp3 */; };
-		1451DA1024966E0D0094053E /* halloween.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA0D24966E0D0094053E /* halloween.mp3 */; };
+		1451DA14249670C50094053E /* shining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA11249670C40094053E /* shining.mp3 */; };
+		1451DA15249670C50094053E /* exorcist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA12249670C50094053E /* exorcist.mp3 */; };
+		1451DA16249670C50094053E /* halloween.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451DA13249670C50094053E /* halloween.mp3 */; };
 		145204AE234BFBB900B94BDE /* small_axe.png in Resources */ = {isa = PBXBuildFile; fileRef = 145204AD234BFBB900B94BDE /* small_axe.png */; };
 		1455C2AD234D32480053D99C /* old_tape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AA234D32450053D99C /* old_tape.png */; };
 		1455C2AE234D32480053D99C /* ghost_song.png in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2AB234D32470053D99C /* ghost_song.png */; };
@@ -194,9 +194,9 @@
 		1451DA0524958B9F0094053E /* PulseAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation2.swift; sourceTree = "<group>"; };
 		1451DA07249592BB0094053E /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		1451DA0924965AFC0094053E /* haunted_circus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haunted_circus.png; sourceTree = "<group>"; };
-		1451DA0B24966E0D0094053E /* shining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shining.mp3; path = ../../../../Downloads/shining.mp3; sourceTree = "<group>"; };
-		1451DA0C24966E0D0094053E /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = exorcist.mp3; path = ../../../../Downloads/exorcist.mp3; sourceTree = "<group>"; };
-		1451DA0D24966E0D0094053E /* halloween.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = halloween.mp3; path = ../../../../Downloads/halloween.mp3; sourceTree = "<group>"; };
+		1451DA11249670C40094053E /* shining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shining.mp3; path = ../../../../../Downloads/shining.mp3; sourceTree = "<group>"; };
+		1451DA12249670C50094053E /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = exorcist.mp3; path = ../../../../../Downloads/exorcist.mp3; sourceTree = "<group>"; };
+		1451DA13249670C50094053E /* halloween.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = halloween.mp3; path = ../../../../../Downloads/halloween.mp3; sourceTree = "<group>"; };
 		145204AD234BFBB900B94BDE /* small_axe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_axe.png; sourceTree = "<group>"; };
 		1455C2AA234D32450053D99C /* old_tape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_tape.png; sourceTree = "<group>"; };
 		1455C2AB234D32470053D99C /* ghost_song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_song.png; sourceTree = "<group>"; };
@@ -407,13 +407,13 @@
 		7B305CBB2132F9F300B184F5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				1451DA12249670C50094053E /* exorcist.mp3 */,
+				1451DA13249670C50094053E /* halloween.mp3 */,
+				1451DA11249670C40094053E /* shining.mp3 */,
 				1451D9FB24925D320094053E /* elm_street.mp3 */,
 				14472518248C306A00A27662 /* monster_walking.mp3 */,
 				1441C99B2482CE5800EF2586 /* cries_from_hell.mp3 */,
 				1455C2B4234E8AD60053D99C /* space_terror.mp3 */,
-				1451DA0C24966E0D0094053E /* exorcist.mp3 */,
-				1451DA0D24966E0D0094053E /* halloween.mp3 */,
-				1451DA0B24966E0D0094053E /* shining.mp3 */,
 				14472516248C244600A27662 /* dont_let_in.mp3 */,
 				14995ACA234AA6350042E5F1 /* the_old_tape.mp3 */,
 				14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */,
@@ -734,7 +734,7 @@
 				14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */,
 				7B987D8A2133718D00743717 /* witch_laugh.mp3 in Resources */,
 				14FE01E8248C184C00E1B0B0 /* film_reel.png in Resources */,
-				1451DA1024966E0D0094053E /* halloween.mp3 in Resources */,
+				1451DA16249670C50094053E /* halloween.mp3 in Resources */,
 				7B987DE0213371FA00743717 /* play_all.png in Resources */,
 				1455C2B5234E8AD60053D99C /* space_terror.mp3 in Resources */,
 				7B05DEA62139EAF200BAC058 /* chilling_cries.mp3 in Resources */,
@@ -750,13 +750,13 @@
 				7B987D922133718D00743717 /* evil_man.mp3 in Resources */,
 				7B305C922132F25300B184F5 /* Main.storyboard in Resources */,
 				7B987DA12133718D00743717 /* thunder.mp3 in Resources */,
-				1451DA0E24966E0D0094053E /* shining.mp3 in Resources */,
+				1451DA14249670C50094053E /* shining.mp3 in Resources */,
 				7B987DEC213371FA00743717 /* spooky_owl.png in Resources */,
 				7B987DDB213371FA00743717 /* cat_scream.png in Resources */,
 				7B987D852133718D00743717 /* warning_bells.mp3 in Resources */,
 				7B987D892133718D00743717 /* spooky_owl.wav in Resources */,
 				7B987D932133718D00743717 /* zombie_come.mp3 in Resources */,
-				1451DA0F24966E0D0094053E /* exorcist.mp3 in Resources */,
+				1451DA15249670C50094053E /* exorcist.mp3 in Resources */,
 				7B987E02213371FA00743717 /* monster_growl.png in Resources */,
 				7B987D8D2133718D00743717 /* ghostly_whisper.mp3 in Resources */,
 				7B987DE5213371FA00743717 /* haunted_organ.png in Resources */,
