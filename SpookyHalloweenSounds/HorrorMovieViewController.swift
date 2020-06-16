@@ -15,11 +15,13 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     var exorcistPlayer: AVAudioPlayer?
     var shiningPlayer: AVAudioPlayer?
     var nightmarePlayer: AVAudioPlayer?
+    var fridayPlayer: AVAudioPlayer?
     
     @IBOutlet weak var halloweenButton: UIButton!
     @IBOutlet weak var exorcistButton: UIButton!
     @IBOutlet weak var shiningButton: UIButton!
     @IBOutlet weak var nightmareButton: UIButton!
+    @IBOutlet weak var fridayButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +30,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         exorcistButton.noHighlight(exorcistButton)
         shiningButton.noHighlight(shiningButton)
         nightmareButton.noHighlight(nightmareButton)
-        
-//        func selectionButtonTapped(_ sender: UIButton) {
-//            let generator = UISelectionFeedbackGenerator()
-//            generator.selectionChanged()
-//        }
         
         do {
             
@@ -68,6 +65,16 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             nightmarePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "elm_street", ofType: "mp3")!))
             nightmarePlayer?.prepareToPlay()
+        }
+        catch {
+            print(error)
+            
+        }
+        
+        do {
+            
+            fridayPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "vorhees", ofType: "mp3")!))
+            fridayPlayer?.prepareToPlay()
         }
         catch {
             print(error)
@@ -163,6 +170,27 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
     }
+    @IBAction func fridayPlay(_ sender: Any) {
+        
+        fridayButton.pulsate(nightmareButton)
+        fridayButton.haptic(nightmareButton)
+        
+        if (fridayPlayer!.isPlaying)
+        {
+            fridayPlayer?.delegate = self
+            fridayPlayer!.pause();
+            fridayButton.backgroundColor = halloweenOrange
+            fridayButton.setImage(UIImage(named: "vorhees"), for: .normal)
+        }
+        else
+        {
+            fridayPlayer?.delegate = self
+            fridayPlayer!.play();
+            fridayButton.backgroundColor = halloweenOrangeHighlight
+            fridayButton.setImage(UIImage(named: "pause"), for: .normal)
+        }
+        
+    }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if (player === halloweenPlayer) {
@@ -181,6 +209,10 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             nightmareButton.backgroundColor = halloweenOrange
             nightmareButton.setImage(UIImage(named: "freddy"), for: .normal)
             nightmareButton.pulsate2(nightmareButton)
+        } else if (player === fridayPlayer) {
+            fridayButton.backgroundColor = halloweenOrange
+            fridayButton.setImage(UIImage(named: "vorhees"), for: .normal)
+            fridayButton.pulsate2(nightmareButton)
         }
     }
     

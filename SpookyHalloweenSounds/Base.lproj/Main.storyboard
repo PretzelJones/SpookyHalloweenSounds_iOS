@@ -1314,7 +1314,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-ss-dCV">
-                                <rect key="frame" x="0.0" y="372" width="414" height="392"/>
+                                <rect key="frame" x="0.0" y="430" width="414" height="334"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -1349,19 +1349,40 @@
                                     <action selector="nightmaterPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="xmU-6k-OWW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-t8-Dej">
+                                <rect key="frame" x="0.0" y="372" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pH5-Ac-2NV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <state key="normal" title="  Friday the 13th" image="vorhees.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="fridayPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="nEE-gi-rSC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="tQp-YS-MJU" firstAttribute="top" secondItem="HAk-N4-kim" secondAttribute="bottom" constant="8" symbolic="YES" id="0KD-xa-58C"/>
                             <constraint firstItem="lgw-ij-bbs" firstAttribute="bottom" secondItem="dcL-ss-dCV" secondAttribute="bottom" constant="10" id="0gV-MP-tGR"/>
                             <constraint firstItem="Fef-gd-b0I" firstAttribute="leading" secondItem="HAk-N4-kim" secondAttribute="leading" id="3WU-80-D0e"/>
-                            <constraint firstItem="dcL-ss-dCV" firstAttribute="top" secondItem="tQp-YS-MJU" secondAttribute="bottom" constant="8" symbolic="YES" id="4uu-bL-6ht"/>
+                            <constraint firstItem="dcL-ss-dCV" firstAttribute="top" secondItem="tQp-YS-MJU" secondAttribute="bottom" constant="66" id="4uu-bL-6ht"/>
                             <constraint firstItem="tQp-YS-MJU" firstAttribute="leading" secondItem="dcL-ss-dCV" secondAttribute="leading" id="CB2-3b-NhS"/>
                             <constraint firstItem="1Ec-H0-iiE" firstAttribute="centerX" secondItem="9bC-ta-iZ0" secondAttribute="centerX" id="GSS-se-Ia6"/>
                             <constraint firstItem="tQp-YS-MJU" firstAttribute="trailing" secondItem="dcL-ss-dCV" secondAttribute="trailing" id="H7T-Yi-Maz"/>
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="trailing" secondItem="Fef-gd-b0I" secondAttribute="trailing" id="Kuc-JI-1zm"/>
+                            <constraint firstItem="9hR-t8-Dej" firstAttribute="trailing" secondItem="tQp-YS-MJU" secondAttribute="trailing" id="LyW-9O-Bba"/>
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="leading" secondItem="Fef-gd-b0I" secondAttribute="leading" id="OiR-r0-GpX"/>
                             <constraint firstAttribute="trailing" secondItem="9bC-ta-iZ0" secondAttribute="trailing" id="WjG-gQ-Ip0"/>
+                            <constraint firstItem="9hR-t8-Dej" firstAttribute="top" secondItem="tQp-YS-MJU" secondAttribute="bottom" constant="8" symbolic="YES" id="ZzX-oM-zLh"/>
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="leading" secondItem="ly2-QD-7ju" secondAttribute="leading" id="cH5-a1-T5v"/>
                             <constraint firstItem="Fef-gd-b0I" firstAttribute="trailing" secondItem="HAk-N4-kim" secondAttribute="trailing" id="cka-fK-pax"/>
                             <constraint firstItem="HAk-N4-kim" firstAttribute="trailing" secondItem="tQp-YS-MJU" secondAttribute="trailing" id="dCL-jY-JVu"/>
@@ -1371,12 +1392,14 @@
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="top" secondItem="1Ec-H0-iiE" secondAttribute="bottom" constant="8" symbolic="YES" id="j0P-SC-h8k"/>
                             <constraint firstItem="Fef-gd-b0I" firstAttribute="top" secondItem="9bC-ta-iZ0" secondAttribute="bottom" constant="8" symbolic="YES" id="jkW-CR-B66"/>
                             <constraint firstItem="1Ec-H0-iiE" firstAttribute="leading" secondItem="ly2-QD-7ju" secondAttribute="leadingMargin" id="kVf-Zp-zPA"/>
+                            <constraint firstItem="9hR-t8-Dej" firstAttribute="leading" secondItem="tQp-YS-MJU" secondAttribute="leading" id="oF9-bA-CxW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lgw-ij-bbs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Horror Movie Themes" id="xpv-Qt-GW1"/>
                     <connections>
                         <outlet property="exorcistButton" destination="Fef-gd-b0I" id="arV-E9-MVg"/>
+                        <outlet property="fridayButton" destination="9hR-t8-Dej" id="my5-dV-8ly"/>
                         <outlet property="halloweenButton" destination="9bC-ta-iZ0" id="eVc-E6-XH5"/>
                         <outlet property="nightmareButton" destination="tQp-YS-MJU" id="io3-DJ-Awp"/>
                         <outlet property="shiningButton" destination="HAk-N4-kim" id="5yj-6l-eM8"/>
@@ -1384,7 +1407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4n-0E-4go" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2893" y="-176"/>
+            <point key="canvasLocation" x="2892.753623188406" y="-176.11607142857142"/>
         </scene>
         <!--Hidden Sounds-->
         <scene sceneID="lNm-QZ-eeY">
@@ -1613,6 +1636,7 @@
         <image name="thunder.png" width="8.1447963714599609" height="8.4705886840820312"/>
         <image name="tortured_souls.png" width="25" height="25"/>
         <image name="ultra_terror.png" width="16" height="25"/>
+        <image name="vorhees.png" width="25" height="25"/>
         <image name="warning_bells.png" width="25" height="25"/>
         <image name="werewolf.png" width="23" height="25"/>
         <image name="witch_hat.png" width="6" height="5.2800002098083496"/>
