@@ -30,6 +30,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         exorcistButton.noHighlight(exorcistButton)
         shiningButton.noHighlight(shiningButton)
         nightmareButton.noHighlight(nightmareButton)
+        fridayButton.noHighlight(fridayButton)
         
         do {
             
@@ -172,8 +173,8 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     }
     @IBAction func fridayPlay(_ sender: Any) {
         
-        fridayButton.pulsate(nightmareButton)
-        fridayButton.haptic(nightmareButton)
+        fridayButton.pulsate(fridayButton)
+        fridayButton.haptic(fridayButton)
         
         if (fridayPlayer!.isPlaying)
         {
@@ -212,7 +213,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         } else if (player === fridayPlayer) {
             fridayButton.backgroundColor = halloweenOrange
             fridayButton.setImage(UIImage(named: "vorhees"), for: .normal)
-            fridayButton.pulsate2(nightmareButton)
+            fridayButton.pulsate2(fridayButton)
         }
     }
     
