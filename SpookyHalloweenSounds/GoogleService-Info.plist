@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>264313001758-ocut4ki2ntraigbpsc9hli33so5u99kd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.264313001758-ocut4ki2ntraigbpsc9hli33so5u99kd</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>264313001758-hq8iompvrbk4f1tevdsprlmfmjamdtr1.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA2S-0vWvxf0maEky6twbRHff83OQJurAU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>264313001758</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bossondesign.SpookyHalloweenSounds</string>
+	<key>PROJECT_ID</key>
+	<string>spooky-halloween-sounds</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spooky-halloween-sounds.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:264313001758:ios:19fc332f44cfbef3</string>
+	<key>DATABASE_URL</key>
+	<string>https://spooky-halloween-sounds.firebaseio.com</string>
+</dict>
+</plist>
