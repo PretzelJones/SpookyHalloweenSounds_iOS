@@ -149,6 +149,9 @@
 		8DC9309C24A76943008C189D /* shining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9309924A76943008C189D /* shining.mp3 */; };
 		8DC9309D24A76943008C189D /* exorcist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9309A24A76943008C189D /* exorcist.mp3 */; };
 		8DC9309E24A76943008C189D /* halloween.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9309B24A76943008C189D /* halloween.mp3 */; };
+		AD583B6F824133B718C288AB /* Pods_SpookyHalloweenSoundsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E643C4557D38D4F6A4E83706 /* Pods_SpookyHalloweenSoundsTests.framework */; };
+		D6E26D5A4B2B600966CABAA5 /* Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD631482F5B4176DD8612C5B /* Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework */; };
+		E8FFE8FE8A948434D07C473A /* Pods_SpookyHalloweenSounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5A0743CCE83A7079B1B572 /* Pods_SpookyHalloweenSounds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +172,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
 		14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bosson_full_logo.PNG; sourceTree = "<group>"; };
 		14357AB0234A196700D9B0D3 /* tab_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_logo.png; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 		14FE01E1248B1CE900E1B0B0 /* titlebar_image_smaller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar_image_smaller.png; sourceTree = "<group>"; };
 		14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongMixViewController.swift; sourceTree = "<group>"; };
 		14FE01E7248C184C00E1B0B0 /* film_reel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = film_reel.png; sourceTree = "<group>"; };
+		657E2B627565A6A319342E84 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.release.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B05DE9F21361BB300BAC058 /* grave_stones_source_shadows_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grave_stones_source_shadows_title.png; sourceTree = "<group>"; };
 		7B05DEA12136234200BAC058 /* tickrtreat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickrtreat.png; sourceTree = "<group>"; };
 		7B05DEA32137665A00BAC058 /* graveyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graveyard.png; sourceTree = "<group>"; };
@@ -315,10 +320,17 @@
 		7B987E082134961D00743717 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		7BCD372F213F1C3000B27F54 /* witch_laugh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = witch_laugh.m4a; sourceTree = "<group>"; };
 		7BCD3730213F4DBC00B27F54 /* Creepster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Creepster.ttf; sourceTree = "<group>"; };
+		88424C1216665D37FDD9A68E /* Pods-SpookyHalloweenSounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds.release.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds.release.xcconfig"; sourceTree = "<group>"; };
 		8DC9309724A768B8008C189D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DC9309924A76943008C189D /* shining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shining.mp3; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/iCloud Projects/Material/Spooky Halloween Sounds/Sounds/shining.mp3"; sourceTree = "<group>"; };
 		8DC9309A24A76943008C189D /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = exorcist.mp3; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/iCloud Projects/Material/Spooky Halloween Sounds/Sounds/exorcist.mp3"; sourceTree = "<group>"; };
 		8DC9309B24A76943008C189D /* halloween.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = halloween.mp3; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/iCloud Projects/Material/Spooky Halloween Sounds/Sounds/halloween.mp3"; sourceTree = "<group>"; };
+		B5549817C05168A8BD8C0042 /* Pods-SpookyHalloweenSounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5A0743CCE83A7079B1B572 /* Pods_SpookyHalloweenSounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpookyHalloweenSounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E643C4557D38D4F6A4E83706 /* Pods_SpookyHalloweenSoundsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpookyHalloweenSoundsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D0CFB91A07E9484B9C871D /* Pods-SpookyHalloweenSoundsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSoundsTests.release.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSoundsTests/Pods-SpookyHalloweenSoundsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F97D34FBC65CCDE2D0658D7E /* Pods-SpookyHalloweenSoundsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSoundsTests.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSoundsTests/Pods-SpookyHalloweenSoundsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD631482F5B4176DD8612C5B /* Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +338,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FFE8FE8A948434D07C473A /* Pods_SpookyHalloweenSounds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD583B6F824133B718C288AB /* Pods_SpookyHalloweenSoundsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +354,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E26D5A4B2B600966CABAA5 /* Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +368,8 @@
 				7B305CA02132F25500B184F5 /* SpookyHalloweenSoundsTests */,
 				7B305CAB2132F25500B184F5 /* SpookyHalloweenSoundsUITests */,
 				7B305C8A2132F25300B184F5 /* Products */,
+				F3A2236FE0EDE91A0BAAF736 /* Pods */,
+				9607FA2F19C1477936D0F4B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -558,6 +575,30 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		9607FA2F19C1477936D0F4B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC5A0743CCE83A7079B1B572 /* Pods_SpookyHalloweenSounds.framework */,
+				FD631482F5B4176DD8612C5B /* Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework */,
+				E643C4557D38D4F6A4E83706 /* Pods_SpookyHalloweenSoundsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3A2236FE0EDE91A0BAAF736 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5549817C05168A8BD8C0042 /* Pods-SpookyHalloweenSounds.debug.xcconfig */,
+				88424C1216665D37FDD9A68E /* Pods-SpookyHalloweenSounds.release.xcconfig */,
+				09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */,
+				657E2B627565A6A319342E84 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.release.xcconfig */,
+				F97D34FBC65CCDE2D0658D7E /* Pods-SpookyHalloweenSoundsTests.debug.xcconfig */,
+				F7D0CFB91A07E9484B9C871D /* Pods-SpookyHalloweenSoundsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -565,9 +606,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSounds" */;
 			buildPhases = (
+				31864E261531EF8FCD04A365 /* [CP] Check Pods Manifest.lock */,
 				7B305C852132F25300B184F5 /* Sources */,
 				7B305C862132F25300B184F5 /* Frameworks */,
 				7B305C872132F25300B184F5 /* Resources */,
+				68D361EB30BD873A30766CC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -582,6 +625,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B305CB42132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsTests" */;
 			buildPhases = (
+				91681075B22C3D570370337F /* [CP] Check Pods Manifest.lock */,
 				7B305C992132F25500B184F5 /* Sources */,
 				7B305C9A2132F25500B184F5 /* Frameworks */,
 				7B305C9B2132F25500B184F5 /* Resources */,
@@ -600,9 +644,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B305CB72132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSoundsUITests" */;
 			buildPhases = (
+				6C01DDBB2B0872D853BDF72C /* [CP] Check Pods Manifest.lock */,
 				7B305CA42132F25500B184F5 /* Sources */,
 				7B305CA52132F25500B184F5 /* Frameworks */,
 				7B305CA62132F25500B184F5 /* Resources */,
+				D7D9D9A78B252D270F191656 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -821,6 +867,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31864E261531EF8FCD04A365 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpookyHalloweenSounds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68D361EB30BD873A30766CC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C01DDBB2B0872D853BDF72C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91681075B22C3D570370337F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpookyHalloweenSoundsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D9D9A78B252D270F191656 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B305C852132F25300B184F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1007,6 +1156,7 @@
 		};
 		7B305CB22132F25500B184F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5549817C05168A8BD8C0042 /* Pods-SpookyHalloweenSounds.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1032,6 +1182,7 @@
 		};
 		7B305CB32132F25500B184F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88424C1216665D37FDD9A68E /* Pods-SpookyHalloweenSounds.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1057,6 +1208,7 @@
 		};
 		7B305CB52132F25500B184F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97D34FBC65CCDE2D0658D7E /* Pods-SpookyHalloweenSoundsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1078,6 +1230,7 @@
 		};
 		7B305CB62132F25500B184F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D0CFB91A07E9484B9C871D /* Pods-SpookyHalloweenSoundsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1099,6 +1252,7 @@
 		};
 		7B305CB82132F25500B184F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1119,6 +1273,7 @@
 		};
 		7B305CB92132F25500B184F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657E2B627565A6A319342E84 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
