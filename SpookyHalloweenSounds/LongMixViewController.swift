@@ -24,7 +24,6 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
     var spaceTerrorPlayer: AVAudioPlayer?
     var dontLetThemInPlayer: AVAudioPlayer?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

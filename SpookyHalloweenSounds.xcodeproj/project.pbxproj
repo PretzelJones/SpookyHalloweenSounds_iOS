@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040F5D8624C91FF9004BE726 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 040F5D8524C91FF9004BE726 /* arrow.png */; };
 		14357AAF234949CA00D9B0D3 /* bosson_full_logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */; };
 		14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14357AB0234A196700D9B0D3 /* tab_logo.png */; };
 		14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */; };
@@ -172,6 +173,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040F5D8524C91FF9004BE726 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
 		14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bosson_full_logo.PNG; sourceTree = "<group>"; };
@@ -399,13 +401,13 @@
 				1451D9FD24925F920094053E /* PulseAnimation.swift */,
 				1451DA0524958B9F0094053E /* PulseAnimation2.swift */,
 				1451DA03249589630094053E /* NoHighlightButton.swift */,
+				1451DA07249592BB0094053E /* HapticFeedback.swift */,
 				1451D9F924925CE20094053E /* Colors.swift */,
 				7B305C902132F25300B184F5 /* Main.storyboard */,
 				7B305C952132F25500B184F5 /* LaunchScreen.storyboard */,
 				8DC9309724A768B8008C189D /* GoogleService-Info.plist */,
 				7B305C982132F25500B184F5 /* Info.plist */,
 				140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */,
-				1451DA07249592BB0094053E /* HapticFeedback.swift */,
 			);
 			path = SpookyHalloweenSounds;
 			sourceTree = "<group>";
@@ -491,6 +493,7 @@
 		7B305CBC2132F9FD00B184F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				040F5D8524C91FF9004BE726 /* arrow.png */,
 				14ED5BF12499605F00D11869 /* vorhees.png */,
 				1451DA0924965AFC0094053E /* haunted_circus.png */,
 				1447253A248C5C9400A27662 /* key.png */,
@@ -595,7 +598,6 @@
 				F97D34FBC65CCDE2D0658D7E /* Pods-SpookyHalloweenSoundsTests.debug.xcconfig */,
 				F7D0CFB91A07E9484B9C871D /* Pods-SpookyHalloweenSoundsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -802,6 +804,7 @@
 				7B987DE6213371FA00743717 /* scarecrow.png in Resources */,
 				14FE01E2248B1CE900E1B0B0 /* titlebar_image_smaller.png in Resources */,
 				7B987DFA213371FA00743717 /* knock.png in Resources */,
+				040F5D8624C91FF9004BE726 /* arrow.png in Resources */,
 				14995AC9234AA6220042E5F1 /* the_ghost_song.mp3 in Resources */,
 				1447253B248C5C9500A27662 /* key.png in Resources */,
 				7B05DEA22136234300BAC058 /* tickrtreat.png in Resources */,

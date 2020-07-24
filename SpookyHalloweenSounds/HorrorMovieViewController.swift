@@ -84,6 +84,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
+    
     @IBAction func halloweenPlay(_ sender: UIButton) {
         
         halloweenButton.pulsate(halloweenButton)
