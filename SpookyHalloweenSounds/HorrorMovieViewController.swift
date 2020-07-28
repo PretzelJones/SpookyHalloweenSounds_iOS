@@ -8,8 +8,9 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 
-class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
+class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, MPMediaPickerControllerDelegate {
     
     var halloweenPlayer: AVAudioPlayer?
     var exorcistPlayer: AVAudioPlayer?
@@ -36,16 +37,29 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             halloweenPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "halloween", ofType: "mp3")!))
             halloweenPlayer?.prepareToPlay()
+          
+            //code for background play
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
-            
+
         }
         
         do {
             
             exorcistPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "exorcist", ofType: "mp3")!))
             exorcistPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -56,6 +70,12 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             shiningPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "shining", ofType: "mp3")!))
             shiningPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -66,6 +86,12 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             nightmarePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "elm_street", ofType: "mp3")!))
             nightmarePlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -76,6 +102,12 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             fridayPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "vorhees", ofType: "mp3")!))
             fridayPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -83,7 +115,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
     }
-    
     
     @IBAction func halloweenPlay(_ sender: UIButton) {
         

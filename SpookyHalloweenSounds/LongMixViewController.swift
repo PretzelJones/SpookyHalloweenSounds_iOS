@@ -37,6 +37,12 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             
             ultraTerrorPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "ultra_terror", ofType: "mp3")!))
             ultraTerrorPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -47,6 +53,12 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             
             spookySoundsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "long_mix", ofType: "mp3")!))
             spookySoundsPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -57,6 +69,12 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             
             hauntedHousePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "haunted_house", ofType: "mp3")!))
             hauntedHousePlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -67,6 +85,12 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             
             spaceTerrorPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "space_terror", ofType: "mp3")!))
             spaceTerrorPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)
@@ -77,6 +101,12 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             
             dontLetThemInPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "dont_let_in", ofType: "mp3")!))
             dontLetThemInPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
         }
         catch {
             print(error)

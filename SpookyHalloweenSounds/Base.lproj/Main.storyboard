@@ -1337,7 +1337,7 @@
                                     <constraint firstAttribute="height" constant="50" id="4na-lZ-vAN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  Nightmare on Elm Street" image="freddy.png">
+                                <state key="normal" title="  Nightmare on Elm Street" image="krueger.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1603,7 +1603,6 @@
         <image name="evil_man.png" width="25" height="20"/>
         <image name="film.png" width="32" height="25"/>
         <image name="film_reel.png" width="6" height="6.2399997711181641"/>
-        <image name="freddy.png" width="18.75" height="18.75"/>
         <image name="ghost_boo.png" width="25" height="25"/>
         <image name="ghost_icon_30px.png" width="7.1999998092651367" height="7.1999998092651367"/>
         <image name="ghost_song.png" width="25" height="25"/>
@@ -1618,6 +1617,7 @@
         <image name="igor.png" width="17" height="26"/>
         <image name="key.png" width="25" height="22"/>
         <image name="knock.png" width="25" height="25"/>
+        <image name="krueger.png" width="25" height="27"/>
         <image name="loop.png" width="25" height="25"/>
         <image name="monster_growl.png" width="16.5" height="20.25"/>
         <image name="monster_walking.png" width="25" height="25"/>

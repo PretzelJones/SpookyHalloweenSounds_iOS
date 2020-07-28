@@ -95,9 +95,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
         
-        let yourBackImage = UIImage(named: "arrow")
-        self.navigationController?.navigationBar.backIndicatorImage = yourBackImage
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
+        let arrowImage = UIImage(named: "arrow")
+        self.navigationController?.navigationBar.backIndicatorImage = arrowImage
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = arrowImage
         self.navigationController?.navigationBar.backItem?.title = "Custom"
         
         do {
@@ -508,7 +508,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        SKStoreReviewController.requestReview()
+//        SKStoreReviewController.requestReview()
     }
     
     @IBAction func loopingMixesPlay(_ sender: Any) {
@@ -1462,5 +1462,5 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             chillingHornButton.pulsate2(chillingHornButton)
         }
     }
-    
+
 }
