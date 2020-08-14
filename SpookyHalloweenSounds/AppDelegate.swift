@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 //import FirebaseMessaging
 import UserNotifications
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //code for lock screen controls
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
+        } catch let error as NSError {
+            print("Setting category to AVAudioSessionCategoryPlayback failed: \(error)")
+        }
+        // Other project setup
+        
         // Override point for customization after application launch.
         FirebaseApp.configure()
         //used for Firebase Messaging

@@ -1075,7 +1075,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBAction func wolfCryPlay(_ sender: Any) {
         
-        wolfCryButton.pulsate(draculaLaughButton)
+        wolfCryButton.pulsate(wolfCryButton)
         wolfCryButton.haptic(wolfCryButton)
         
         if (wolfCryPlayer!.isPlaying)
@@ -1464,3 +1464,5 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
 
 }
+
+

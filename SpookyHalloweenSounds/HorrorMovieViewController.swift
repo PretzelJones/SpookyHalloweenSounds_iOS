@@ -8,9 +8,10 @@
 
 import UIKit
 import AVFoundation
-import MediaPlayer
 
-class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, MPMediaPickerControllerDelegate {
+var player: AVAudioPlayer?
+
+class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     
     var halloweenPlayer: AVAudioPlayer?
     var exorcistPlayer: AVAudioPlayer?
@@ -47,7 +48,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, MPMedi
         }
         catch {
             print(error)
-
         }
         
         do {
@@ -63,7 +63,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, MPMedi
         }
         catch {
             print(error)
-            
         }
         
         do {
@@ -79,7 +78,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, MPMedi
         }
         catch {
             print(error)
-            
         }
         
         do {
@@ -95,7 +93,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, MPMedi
         }
         catch {
             print(error)
-            
         }
         
         do {
@@ -110,9 +107,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, MPMedi
             }
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
         
     }
     

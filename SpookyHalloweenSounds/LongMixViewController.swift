@@ -46,7 +46,6 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         }
         catch {
             print(error)
-            
         }
         
         do {
@@ -61,9 +60,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
         
         do {
             
@@ -77,9 +74,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
         
         do {
             
@@ -93,9 +88,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
         
         do {
             
@@ -109,9 +102,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
     }
     
     @IBAction func ultraTerrorPlay(_ sender: UIButton) {

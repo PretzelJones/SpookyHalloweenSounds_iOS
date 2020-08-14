@@ -45,9 +45,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             oldTapePlayer?.prepareToPlay()
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
         
         
         do {
@@ -56,9 +54,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             criesOfInsanityPlayer?.prepareToPlay()
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
         
         do {
             
@@ -66,9 +62,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
             criesHellPlayer?.prepareToPlay()
         }
         catch {
-            print(error)
-            
-        }
+            print(error)        }
     }
     
     @IBAction func ghostSongPlay(_ sender: Any) {
