@@ -101,7 +101,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             fridayPlayer?.prepareToPlay()
             
             let audioSession = AVAudioSession.sharedInstance()
-
+            
             do{
                 try audioSession.setCategory(AVAudioSession.Category.playback)
             }
@@ -122,12 +122,12 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             halloweenPlayer!.pause();
             halloweenButton.backgroundColor = halloweenOrange
             halloweenButton.setImage(UIImage(named: "halloween"), for: .normal)
-            
         }
         else
         {
             halloweenPlayer?.delegate = self
             halloweenPlayer!.play();
+            halloweenPlayer!.numberOfLoops = -1
             halloweenButton.backgroundColor = halloweenOrangeHighlight
             halloweenButton.setImage(UIImage(named: "pause"), for: .normal)
         }
@@ -144,12 +144,12 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             exorcistPlayer!.pause();
             exorcistButton.backgroundColor = halloweenOrange
             exorcistButton.setImage(UIImage(named: "cross"), for: .normal)
-            
         }
         else
         {
             exorcistPlayer?.delegate = self
             exorcistPlayer!.play();
+            exorcistPlayer!.numberOfLoops = -1
             exorcistButton.backgroundColor = halloweenOrangeHighlight
             exorcistButton.setImage(UIImage(named: "pause"), for: .normal)
         }
@@ -166,12 +166,12 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             shiningPlayer!.pause();
             shiningButton.backgroundColor = halloweenOrange
             shiningButton.setImage(UIImage(named: "axe"), for: .normal)
-            
         }
         else
         {
             shiningPlayer?.delegate = self
             shiningPlayer!.play();
+            shiningPlayer!.numberOfLoops = -1
             shiningButton.backgroundColor = halloweenOrangeHighlight
             shiningButton.setImage(UIImage(named: "pause"), for: .normal)
         }
@@ -193,6 +193,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         {
             nightmarePlayer?.delegate = self
             nightmarePlayer!.play();
+            nightmarePlayer!.numberOfLoops = -1
             nightmareButton.backgroundColor = halloweenOrangeHighlight
             nightmareButton.setImage(UIImage(named: "pause"), for: .normal)
         }
@@ -214,6 +215,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         {
             fridayPlayer?.delegate = self
             fridayPlayer!.play();
+            fridayPlayer!.numberOfLoops = -1
             fridayButton.backgroundColor = halloweenOrangeHighlight
             fridayButton.setImage(UIImage(named: "pause"), for: .normal)
         }

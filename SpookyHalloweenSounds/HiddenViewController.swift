@@ -81,6 +81,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         {
             ghostSongPlayer?.delegate = self
             ghostSongPlayer!.play();
+            ghostSongPlayer!.numberOfLoops = -1
             ghostSongButton.backgroundColor = halloweenOrangeHighlight
             ghostSongButton.setImage(UIImage(named: "pause"), for: .normal)
         }
@@ -102,6 +103,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         {
             oldTapePlayer?.delegate = self
             oldTapePlayer!.play();
+            oldTapePlayer!.numberOfLoops = -1
             oldTapeButton.backgroundColor = halloweenOrangeHighlight
             oldTapeButton.setImage(UIImage(named: "pause"), for: .normal)
         }
@@ -123,6 +125,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         {
             criesOfInsanityPlayer?.delegate = self
             criesOfInsanityPlayer!.play();
+            criesOfInsanityPlayer!.numberOfLoops = -1
             criesOfInsanityButton.backgroundColor = halloweenOrangeHighlight
             criesOfInsanityButton.setImage(UIImage(named: "pause"), for: .normal)
         }
@@ -144,6 +147,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         {
             criesHellPlayer?.delegate = self
             criesHellPlayer!.play();
+            criesHellPlayer!.numberOfLoops = -1
             criesHellButton.backgroundColor = halloweenOrangeHighlight
             criesHellButton.setImage(UIImage(named: "pause"), for: .normal)
         }

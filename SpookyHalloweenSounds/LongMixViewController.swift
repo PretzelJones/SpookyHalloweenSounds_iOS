@@ -192,6 +192,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         {
             spaceTerrorPlayer?.delegate = self
             spaceTerrorPlayer!.play();
+            spaceTerrorPlayer!.numberOfLoops = -1
             spaceTerrorButton.backgroundColor = halloweenOrangeHighlight
             spaceTerrorButton.setImage(UIImage(named: "pause"), for: .normal)
         }

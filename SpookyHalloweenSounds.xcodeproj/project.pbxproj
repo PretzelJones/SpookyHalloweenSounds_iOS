@@ -404,6 +404,7 @@
 				14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */,
 				1451D9FD24925F920094053E /* PulseAnimation.swift */,
 				1451DA0524958B9F0094053E /* PulseAnimation2.swift */,
+				040F5D8924CDB5BB004BE726 /* BatAnimatonController.swift */,
 				1451DA03249589630094053E /* NoHighlightButton.swift */,
 				1451DA07249592BB0094053E /* HapticFeedback.swift */,
 				1451D9F924925CE20094053E /* Colors.swift */,
@@ -412,7 +413,6 @@
 				8DC9309724A768B8008C189D /* GoogleService-Info.plist */,
 				7B305C982132F25500B184F5 /* Info.plist */,
 				140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */,
-				040F5D8924CDB5BB004BE726 /* BatAnimatonController.swift */,
 			);
 			path = SpookyHalloweenSounds;
 			sourceTree = "<group>";
@@ -1174,14 +1174,14 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1200,14 +1200,14 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
