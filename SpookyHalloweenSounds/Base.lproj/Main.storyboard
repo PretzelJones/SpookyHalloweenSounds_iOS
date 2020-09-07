@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -135,7 +135,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Zombie Call" image="zombies_three.png">
+                                                <state key="normal" title="  Zombie Call" image="zombie_three">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -514,7 +514,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Monster Walking" image="monster_walking.png">
+                                                <state key="normal" title="  Monster Walking" image="bigfoot">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -949,7 +949,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Spooky Halloween Sounds" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ghost_icon_30px.png" id="USB-oa-mGh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ghost" id="USB-oa-mGh">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="YAK-Zu-roR" kind="show" id="6db-NU-499"/>
@@ -1063,7 +1063,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="App Information" id="IIL-Uw-Z61">
                         <barButtonItem key="backBarButtonItem" title=" " id="i7U-R3-Cef"/>
-                        <barButtonItem key="rightBarButtonItem" image="small_axe.png" id="h2M-QW-YoB">
+                        <barButtonItem key="rightBarButtonItem" image="key.png" id="h2M-QW-YoB">
                             <connections>
                                 <segue destination="t1I-FK-ggP" kind="show" id="EfQ-Pl-L5d"/>
                             </connections>
@@ -1130,7 +1130,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Space Terror" image="space_terrors.png">
+                                <state key="normal" title="  Space Terror" image="planet">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1170,7 +1170,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Ultra Terror" image="ultra_terror.png">
+                                <state key="normal" title="  Ultra Terror" image="ultra_terror">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1263,7 +1263,7 @@
                                     <constraint firstAttribute="height" constant="50" id="7Dp-g1-Ifb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  Halloween" image="halloween.png">
+                                <state key="normal" title="  Halloween" image="knife">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1282,7 +1282,7 @@
                                     <constraint firstAttribute="height" constant="50" id="QKs-O3-0qn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  The Exorcist" image="cross.png">
+                                <state key="normal" title="  The Exorcist" image="cross">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1301,7 +1301,7 @@
                                     <constraint firstAttribute="height" constant="50" id="aQG-GL-UCR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  The Shining" image="axe.png">
+                                <state key="normal" title="  The Shining" image="left_axe">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1337,7 +1337,7 @@
                                     <constraint firstAttribute="height" constant="50" id="4na-lZ-vAN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  Nightmare on Elm Street" image="krueger.png">
+                                <state key="normal" title="  Nightmare on Elm Street" image="freddy">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1356,7 +1356,7 @@
                                     <constraint firstAttribute="height" constant="50" id="pH5-Ac-2NV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  Friday the 13th" image="vorhees.png">
+                                <state key="normal" title="  Friday the 13th" image="vorhees">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1476,7 +1476,7 @@
                                             <constraint firstAttribute="height" constant="50" id="gpb-R6-N3e"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                        <state key="normal" title="   Cries from Hell" image="cries_hell.png">
+                                        <state key="normal" title="   Cries from Hell" image="cries_hell">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1589,45 +1589,44 @@
     </scenes>
     <resources>
         <image name="alien.png" width="5.2800002098083496" height="6"/>
-        <image name="axe.png" width="6" height="5"/>
+        <image name="bigfoot" width="29" height="29"/>
         <image name="black_cat.png" width="25" height="15"/>
         <image name="blowing_wind.png" width="40" height="24"/>
         <image name="cat_scream.png" width="25" height="20"/>
         <image name="chained_ghoul.png" width="6" height="5.7600002288818359"/>
         <image name="chains.png" width="25" height="25"/>
         <image name="creaky_door.png" width="25" height="22"/>
-        <image name="cries_hell.png" width="25" height="25"/>
-        <image name="cross.png" width="4.320000171661377" height="6"/>
+        <image name="cries_hell" width="29" height="29"/>
+        <image name="cross" width="29" height="29"/>
         <image name="dispair.png" width="25" height="25"/>
         <image name="dracula_laugh.png" width="15" height="30"/>
         <image name="evil_man.png" width="25" height="20"/>
         <image name="film.png" width="32" height="25"/>
         <image name="film_reel.png" width="6" height="6.2399997711181641"/>
+        <image name="freddy" width="29" height="29"/>
+        <image name="ghost" width="40" height="40"/>
         <image name="ghost_boo.png" width="25" height="25"/>
-        <image name="ghost_icon_30px.png" width="7.1999998092651367" height="7.1999998092651367"/>
         <image name="ghost_song.png" width="25" height="25"/>
         <image name="ghostly_children.jpg" width="25" height="25"/>
         <image name="ghostly_whisper.png" width="22" height="29"/>
         <image name="grave_stone.png" width="24" height="25"/>
         <image name="graveyard.png" width="1015" height="447"/>
-        <image name="halloween.png" width="6" height="6"/>
         <image name="haunted_circus.png" width="25" height="25"/>
         <image name="haunted_organ.png" width="6" height="6.7199997901916504"/>
         <image name="haunted_swamp.png" width="25" height="25"/>
         <image name="igor.png" width="17" height="26"/>
         <image name="key.png" width="25" height="22"/>
+        <image name="knife" width="29" height="29"/>
         <image name="knock.png" width="25" height="25"/>
-        <image name="krueger.png" width="25" height="27"/>
+        <image name="left_axe" width="29" height="29"/>
         <image name="loop.png" width="25" height="25"/>
         <image name="monster_growl.png" width="16.5" height="20.25"/>
-        <image name="monster_walking.png" width="25" height="25"/>
         <image name="old_tape.png" width="25" height="25"/>
         <image name="orange_skull.png" width="256" height="320"/>
+        <image name="planet" width="29" height="29"/>
         <image name="poltergeist_tv.png" width="35" height="22"/>
         <image name="scarecrow.png" width="25" height="24"/>
         <image name="scream.png" width="22" height="25"/>
-        <image name="small_axe.png" width="30" height="30"/>
-        <image name="space_terrors.png" width="11" height="6"/>
         <image name="spider.png" width="25" height="25"/>
         <image name="spooky_owl.png" width="10.84337329864502" height="10.409638404846191"/>
         <image name="spooky_sounds.png" width="25" height="23"/>
@@ -1635,8 +1634,8 @@
         <image name="terrified_scream.png" width="25" height="25"/>
         <image name="thunder.png" width="8.1447963714599609" height="8.4705886840820312"/>
         <image name="tortured_souls.png" width="25" height="25"/>
-        <image name="ultra_terror.png" width="16" height="25"/>
-        <image name="vorhees.png" width="25" height="25"/>
+        <image name="ultra_terror" width="29" height="29"/>
+        <image name="vorhees" width="29" height="29"/>
         <image name="warning_bells.png" width="25" height="25"/>
         <image name="werewolf.png" width="23" height="25"/>
         <image name="witch_hat.png" width="6" height="5.2800002098083496"/>
@@ -1644,6 +1643,6 @@
         <image name="wolf.png" width="13" height="11.5"/>
         <image name="wraith_wail.png" width="22" height="28"/>
         <image name="zombie.png" width="50" height="25"/>
-        <image name="zombies_three.png" width="22" height="25"/>
+        <image name="zombie_three" width="29" height="29"/>
     </resources>
 </document>

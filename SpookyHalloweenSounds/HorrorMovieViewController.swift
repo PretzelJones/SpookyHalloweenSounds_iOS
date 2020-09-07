@@ -121,7 +121,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             halloweenPlayer?.delegate = self
             halloweenPlayer!.pause();
             halloweenButton.backgroundColor = halloweenOrange
-            halloweenButton.setImage(UIImage(named: "halloween"), for: .normal)
+            halloweenButton.setImage(UIImage(named: "knife"), for: .normal)
         }
         else
         {
@@ -225,7 +225,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if (player === halloweenPlayer) {
             halloweenButton.backgroundColor = halloweenOrange
-            halloweenButton.setImage(UIImage(named: "halloween"), for: .normal)
+            halloweenButton.setImage(UIImage(named: "knife"), for: .normal)
             halloweenButton.pulsate2(halloweenButton)
         } else if (player === exorcistPlayer) {
             exorcistButton.backgroundColor = halloweenOrange

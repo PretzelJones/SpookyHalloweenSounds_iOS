@@ -95,7 +95,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
         
-        let arrowImage = UIImage(named: "arrow")
+        let arrowImage = UIImage(named: "left_arrow")
         self.navigationController?.navigationBar.backIndicatorImage = arrowImage
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = arrowImage
         self.navigationController?.navigationBar.backItem?.title = "Custom"
