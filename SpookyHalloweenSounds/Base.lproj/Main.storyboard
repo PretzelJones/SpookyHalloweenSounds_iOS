@@ -35,7 +35,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Scarecrow" image="scarecrow.png">
+                                                <state key="normal" title="  Scarecrow" image="scarecrow">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -55,7 +55,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Spooky Owl" image="spooky_owl.png">
+                                                <state key="normal" title="  Spooky Owl" image="spooky_owl">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -75,7 +75,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Chained Ghoul" image="chained_ghoul.png">
+                                                <state key="normal" title="  Chained Ghoul" image="chained_ghoul">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -95,7 +95,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Haunted Organ" image="haunted_organ.png">
+                                                <state key="normal" title="  Haunted Organ" image="haunted_organ">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -115,7 +115,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Wraith Wail" image="wraith_wail.png">
+                                                <state key="normal" title="  Wraith Wail" image="wraith_wail">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -135,7 +135,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Zombie Call" image="zombie_three">
+                                                <state key="normal" title="  Zombie Call" image="zombie_call">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -155,7 +155,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Poltergeist Voice" image="poltergeist_tv.png">
+                                                <state key="normal" title="  Poltergeist Voice" image="poltergeist_tv">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -175,7 +175,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Werewolf Howl" image="werewolf.png">
+                                                <state key="normal" title="  Werewolf Howl" image="werewolf">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -195,7 +195,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Ghost Boo" image="ghost_boo.png">
+                                                <state key="normal" title="  Ghost Boo" image="ghost_boo">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -215,7 +215,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Zombie Groan" image="zombie.png">
+                                                <state key="normal" title="  Zombie Groan" image="zombie">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -235,7 +235,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Scary Scream" image="scream.png">
+                                                <state key="normal" title="  Scary Scream" image="scream">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -255,7 +255,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Spooky Chains" image="chains.png">
+                                                <state key="normal" title="  Spooky Chains" image="chains">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -275,7 +275,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Blowing Wind" image="blowing_wind.png">
+                                                <state key="normal" title="  Blowing Wind" image="blowing_wind">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -295,7 +295,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Ghostly Whisper" image="ghostly_whisper.png">
+                                                <state key="normal" title="  Ghostly Whisper" image="ghostly_whisper">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -315,7 +315,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Dracula Laugh" image="dracula_laugh.png">
+                                                <state key="normal" title="  Dracula Laugh" image="dracula_laugh">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -335,7 +335,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Wolf Cry" image="wolf.png">
+                                                <state key="normal" title="  Wolf Cry" image="wolf">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -355,7 +355,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Knock Knock" image="knock.png">
+                                                <state key="normal" title="  Knock Knock" image="knock">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -375,7 +375,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Igor Grumble" image="igor.png">
+                                                <state key="normal" title="  Frankenstein" image="igor">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -395,7 +395,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Horror Movie" image="film.png">
+                                                <state key="normal" title="  Horror Movie" image="film">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -415,7 +415,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Painful Moan" image="grave_stone.png">
+                                                <state key="normal" title="  Painful Moan" image="grave_stone">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -435,7 +435,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Witches Cauldron" image="witches_cauldron.png">
+                                                <state key="normal" title="  Witches Cauldron" image="witches_cauldron">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -455,7 +455,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Ghostly Children" image="ghostly_children.jpg">
+                                                <state key="normal" title="  Ghostly Children" image="ghostly_children">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -475,7 +475,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Haunted Swamp" image="haunted_swamp.png">
+                                                <state key="normal" title="  Haunted Swamp" image="haunted_swamp">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -494,7 +494,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="wFQ-jA-NeH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Monster Growl" image="monster_growl.png">
+                                                <state key="normal" title="  Monster Growl" image="monster_growl">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -534,7 +534,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Tortured Souls" image="tortured_souls.png">
+                                                <state key="normal" title="  Tortured Souls" image="tortured_souls">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -554,7 +554,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Black Cat" image="black_cat.png">
+                                                <state key="normal" title="  Black Cat" image="black_cat">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -574,7 +574,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Creepy Laugh" image="evil_man.png">
+                                                <state key="normal" title="  Creepy Laugh" image="evil_man">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -594,7 +594,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Creaky Door" image="creaky_door.png">
+                                                <state key="normal" title="  Creaky Door" image="creaky_door">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -634,7 +634,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Terrified Scream" image="terrified_scream.png">
+                                                <state key="normal" title="  Terrified Scream" image="terrified_scream">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -654,7 +654,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Witch Cackle" image="witch_hat.png">
+                                                <state key="normal" title="  Witch Cackle" image="witch">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -674,7 +674,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Warning Bells" image="warning_bells.png">
+                                                <state key="normal" title="  Warning Bell" image="warning_bells">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -694,7 +694,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Cat Sceam" image="cat_scream.png">
+                                                <state key="normal" title="  Cat Sceam" image="cat_scream">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -714,7 +714,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Looping Mixes" image="loop.png">
+                                                <state key="normal" title="  Looping Mixes" image="loop">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -735,7 +735,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Thunder Storm" image="thunder.png">
+                                                <state key="normal" title="  Thunder Storm" image="thunder">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -755,7 +755,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Chilling Horn" image="alien.png">
+                                                <state key="normal" title="  Chilling Horn" image="alien">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -775,7 +775,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Horror Movie Themes" image="film_reel.png">
+                                                <state key="normal" title="  Horror Movie Themes" image="projector_big">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -949,7 +949,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Spooky Halloween Sounds" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="ghost" id="USB-oa-mGh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="pumpkin" id="USB-oa-mGh">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="YAK-Zu-roR" kind="show" id="6db-NU-499"/>
@@ -1063,7 +1063,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="App Information" id="IIL-Uw-Z61">
                         <barButtonItem key="backBarButtonItem" title=" " id="i7U-R3-Cef"/>
-                        <barButtonItem key="rightBarButtonItem" image="key.png" id="h2M-QW-YoB">
+                        <barButtonItem key="rightBarButtonItem" image="plain_key" id="h2M-QW-YoB">
                             <connections>
                                 <segue destination="t1I-FK-ggP" kind="show" id="EfQ-Pl-L5d"/>
                             </connections>
@@ -1090,7 +1090,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Haunted Circus" image="haunted_circus.png">
+                                <state key="normal" title="  Haunted Circus" image="scary_clown">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1110,7 +1110,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Spooky Sounds" image="spooky_sounds.png">
+                                <state key="normal" title="  Spooky Sounds" image="spooky_sounds">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1150,7 +1150,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Don't Let Them In" image="key.png">
+                                <state key="normal" title="  Don't Let Them In" image="key">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1170,7 +1170,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Ultra Terror" image="ultra_terror">
+                                <state key="normal" title="  Ultra Terror" image="ultra_terror_big">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1438,7 +1438,7 @@
                                             <constraint firstAttribute="height" constant="50" id="sUB-N6-6eJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                        <state key="normal" title="  The Old Tape" image="old_tape.png">
+                                        <state key="normal" title="  The Old Tape" image="old_tape">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1457,7 +1457,7 @@
                                             <constraint firstAttribute="height" constant="50" id="Llk-Hy-zUf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                        <state key="normal" title="  Cries of Insanity" image="dispair.png">
+                                        <state key="normal" title="  Wails of Dispair" image="dispair">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1498,7 +1498,7 @@
                                             <constraint firstAttribute="height" constant="50" id="t3Z-US-tuA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                        <state key="normal" title="  The Ghost Song" image="ghost_song.png">
+                                        <state key="normal" title="  The Ghost Song" image="ghost_song">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1588,61 +1588,62 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alien.png" width="5.2800002098083496" height="6"/>
-        <image name="bigfoot" width="29" height="29"/>
-        <image name="black_cat.png" width="25" height="15"/>
-        <image name="blowing_wind.png" width="40" height="24"/>
-        <image name="cat_scream.png" width="25" height="20"/>
-        <image name="chained_ghoul.png" width="6" height="5.7600002288818359"/>
-        <image name="chains.png" width="25" height="25"/>
-        <image name="creaky_door.png" width="25" height="22"/>
+        <image name="alien" width="29" height="29"/>
+        <image name="bigfoot" width="40" height="40"/>
+        <image name="black_cat" width="40" height="40"/>
+        <image name="blowing_wind" width="40" height="40"/>
+        <image name="cat_scream" width="40" height="40"/>
+        <image name="chained_ghoul" width="29" height="29"/>
+        <image name="chains" width="40" height="40"/>
+        <image name="creaky_door" width="29" height="29"/>
         <image name="cries_hell" width="29" height="29"/>
         <image name="cross" width="29" height="29"/>
-        <image name="dispair.png" width="25" height="25"/>
-        <image name="dracula_laugh.png" width="15" height="30"/>
-        <image name="evil_man.png" width="25" height="20"/>
-        <image name="film.png" width="32" height="25"/>
-        <image name="film_reel.png" width="6" height="6.2399997711181641"/>
+        <image name="dispair" width="29" height="29"/>
+        <image name="dracula_laugh" width="29" height="29"/>
+        <image name="evil_man" width="40" height="40"/>
+        <image name="film" width="29" height="29"/>
         <image name="freddy" width="29" height="29"/>
-        <image name="ghost" width="40" height="40"/>
-        <image name="ghost_boo.png" width="25" height="25"/>
-        <image name="ghost_song.png" width="25" height="25"/>
-        <image name="ghostly_children.jpg" width="25" height="25"/>
-        <image name="ghostly_whisper.png" width="22" height="29"/>
-        <image name="grave_stone.png" width="24" height="25"/>
+        <image name="ghost_boo" width="29" height="29"/>
+        <image name="ghost_song" width="29" height="29"/>
+        <image name="ghostly_children" width="29" height="29"/>
+        <image name="ghostly_whisper" width="29" height="29"/>
+        <image name="grave_stone" width="29" height="29"/>
         <image name="graveyard.png" width="1015" height="447"/>
-        <image name="haunted_circus.png" width="25" height="25"/>
-        <image name="haunted_organ.png" width="6" height="6.7199997901916504"/>
-        <image name="haunted_swamp.png" width="25" height="25"/>
-        <image name="igor.png" width="17" height="26"/>
-        <image name="key.png" width="25" height="22"/>
+        <image name="haunted_organ" width="29" height="29"/>
+        <image name="haunted_swamp" width="29" height="29"/>
+        <image name="igor" width="29" height="29"/>
+        <image name="key" width="29" height="29"/>
         <image name="knife" width="29" height="29"/>
-        <image name="knock.png" width="25" height="25"/>
+        <image name="knock" width="29" height="29"/>
         <image name="left_axe" width="29" height="29"/>
-        <image name="loop.png" width="25" height="25"/>
-        <image name="monster_growl.png" width="16.5" height="20.25"/>
-        <image name="old_tape.png" width="25" height="25"/>
+        <image name="loop" width="29" height="29"/>
+        <image name="monster_growl" width="29" height="29"/>
+        <image name="old_tape" width="29" height="29"/>
         <image name="orange_skull.png" width="256" height="320"/>
-        <image name="planet" width="29" height="29"/>
-        <image name="poltergeist_tv.png" width="35" height="22"/>
-        <image name="scarecrow.png" width="25" height="24"/>
-        <image name="scream.png" width="22" height="25"/>
+        <image name="plain_key" width="20" height="20"/>
+        <image name="planet" width="40" height="40"/>
+        <image name="poltergeist_tv" width="40" height="40"/>
+        <image name="projector_big" width="40" height="40"/>
+        <image name="pumpkin" width="29" height="29"/>
+        <image name="scarecrow" width="40" height="40"/>
+        <image name="scary_clown" width="40" height="40"/>
+        <image name="scream" width="29" height="29"/>
         <image name="spider.png" width="25" height="25"/>
-        <image name="spooky_owl.png" width="10.84337329864502" height="10.409638404846191"/>
-        <image name="spooky_sounds.png" width="25" height="23"/>
+        <image name="spooky_owl" width="40" height="40"/>
+        <image name="spooky_sounds" width="40" height="40"/>
         <image name="tab_logo.png" width="951" height="858"/>
-        <image name="terrified_scream.png" width="25" height="25"/>
-        <image name="thunder.png" width="8.1447963714599609" height="8.4705886840820312"/>
-        <image name="tortured_souls.png" width="25" height="25"/>
-        <image name="ultra_terror" width="29" height="29"/>
+        <image name="terrified_scream" width="29" height="29"/>
+        <image name="thunder" width="29" height="29"/>
+        <image name="tortured_souls" width="29" height="29"/>
+        <image name="ultra_terror_big" width="40" height="40"/>
         <image name="vorhees" width="29" height="29"/>
-        <image name="warning_bells.png" width="25" height="25"/>
-        <image name="werewolf.png" width="23" height="25"/>
-        <image name="witch_hat.png" width="6" height="5.2800002098083496"/>
-        <image name="witches_cauldron.png" width="25" height="25"/>
-        <image name="wolf.png" width="13" height="11.5"/>
-        <image name="wraith_wail.png" width="22" height="28"/>
-        <image name="zombie.png" width="50" height="25"/>
-        <image name="zombie_three" width="29" height="29"/>
+        <image name="warning_bells" width="29" height="29"/>
+        <image name="werewolf" width="29" height="29"/>
+        <image name="witch" width="40" height="40"/>
+        <image name="witches_cauldron" width="29" height="29"/>
+        <image name="wolf" width="40" height="40"/>
+        <image name="wraith_wail" width="29" height="29"/>
+        <image name="zombie" width="29" height="29"/>
+        <image name="zombie_call" width="40" height="40"/>
     </resources>
 </document>

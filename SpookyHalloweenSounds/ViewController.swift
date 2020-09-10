@@ -533,7 +533,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             witchCacklePlayer?.delegate = self
             witchCacklePlayer!.pause();
             witchCackleButton.backgroundColor = halloweenOrange
-            witchCackleButton.setImage(UIImage(named: "witch_hat"), for: .normal)
+            witchCackleButton.setImage(UIImage(named: "witch"), for: .normal)
             
         }
         else
@@ -841,7 +841,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             zombieCallPlayer?.delegate = self
             zombieCallPlayer!.pause();
             zombieCallButton.backgroundColor = halloweenOrange
-            zombieCallButton.setImage(UIImage(named: "zombies_three"), for: .normal)
+            zombieCallButton.setImage(UIImage(named: "zombie_call"), for: .normal)
             
         }
         else
@@ -1318,7 +1318,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if (player === witchCacklePlayer) {
             witchCackleButton.backgroundColor = halloweenOrange
-            witchCackleButton.setImage(UIImage(named: "witch_hat"), for: .normal)
+            witchCackleButton.setImage(UIImage(named: "witch"), for: .normal)
             witchCackleButton.pulsate2(witchCackleButton)
         } else if (player === blackCatPlayer) {
             blackCatButton.backgroundColor = halloweenOrange
@@ -1374,7 +1374,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             poltergeistVoiceButton.pulsate2(poltergeistVoiceButton)
         } else if (player === zombieCallPlayer) {
             zombieCallButton.backgroundColor = halloweenOrange
-            zombieCallButton.setImage(UIImage(named: "zombies_three"), for: .normal)
+            zombieCallButton.setImage(UIImage(named: "zombie_call"), for: .normal)
             zombieCallButton.pulsate2(zombieCallButton)
         } else if (player === catScreamPlayer) {
             catScreamButton.backgroundColor = halloweenOrange
