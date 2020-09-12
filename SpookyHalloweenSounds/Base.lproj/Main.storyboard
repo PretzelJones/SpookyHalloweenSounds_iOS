@@ -514,7 +514,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Monster Walking" image="bigfoot">
+                                                <state key="normal" title="  Monster Walking" image="monster_walking">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -614,7 +614,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Horror Ambiance" image="spider.png">
+                                                <state key="normal" title="  Horror Ambiance" image="spider">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -1090,7 +1090,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Haunted Circus" image="scary_clown">
+                                <state key="normal" title="  Haunted Circus" image="haunted_circus">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1130,7 +1130,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Space Terror" image="planet">
+                                <state key="normal" title="  Space Terror" image="space_terrors">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1263,7 +1263,7 @@
                                     <constraint firstAttribute="height" constant="50" id="7Dp-g1-Ifb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  Halloween" image="knife">
+                                <state key="normal" title="  Halloween" image="halloween">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1301,7 +1301,7 @@
                                     <constraint firstAttribute="height" constant="50" id="aQG-GL-UCR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <state key="normal" title="  The Shining" image="left_axe">
+                                <state key="normal" title="  The Shining" image="shining">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1589,7 +1589,6 @@
     </scenes>
     <resources>
         <image name="alien" width="29" height="29"/>
-        <image name="bigfoot" width="40" height="40"/>
         <image name="black_cat" width="40" height="40"/>
         <image name="blowing_wind" width="40" height="40"/>
         <image name="cat_scream" width="40" height="40"/>
@@ -1609,26 +1608,27 @@
         <image name="ghostly_whisper" width="29" height="29"/>
         <image name="grave_stone" width="29" height="29"/>
         <image name="graveyard.png" width="1015" height="447"/>
+        <image name="halloween" width="29" height="29"/>
+        <image name="haunted_circus" width="40" height="40"/>
         <image name="haunted_organ" width="29" height="29"/>
         <image name="haunted_swamp" width="29" height="29"/>
         <image name="igor" width="29" height="29"/>
         <image name="key" width="29" height="29"/>
-        <image name="knife" width="29" height="29"/>
         <image name="knock" width="29" height="29"/>
-        <image name="left_axe" width="29" height="29"/>
         <image name="loop" width="29" height="29"/>
         <image name="monster_growl" width="29" height="29"/>
+        <image name="monster_walking" width="40" height="40"/>
         <image name="old_tape" width="40" height="40"/>
         <image name="orange_skull.png" width="256" height="320"/>
         <image name="plain_key" width="20" height="20"/>
-        <image name="planet" width="40" height="40"/>
         <image name="poltergeist_tv" width="40" height="40"/>
         <image name="projector" width="40" height="40"/>
         <image name="pumpkin" width="29" height="29"/>
         <image name="scarecrow" width="40" height="40"/>
-        <image name="scary_clown" width="40" height="40"/>
         <image name="scream" width="29" height="29"/>
-        <image name="spider.png" width="25" height="25"/>
+        <image name="shining" width="29" height="29"/>
+        <image name="space_terrors" width="40" height="40"/>
+        <image name="spider" width="40" height="40"/>
         <image name="spooky_owl" width="40" height="40"/>
         <image name="spooky_sounds" width="40" height="40"/>
         <image name="tab_logo.png" width="951" height="858"/>

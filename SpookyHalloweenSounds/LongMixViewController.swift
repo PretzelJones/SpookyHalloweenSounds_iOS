@@ -228,11 +228,11 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             ultraTerrorButton.pulsate2(ultraTerrorButton)
         } else if (player === hauntedHousePlayer) {
             hauntedHouseButton.backgroundColor = halloweenOrange
-            hauntedHouseButton.setImage(UIImage(named: "haunted_circus"), for: .normal)
+            hauntedHouseButton.setImage(UIImage(named: "scary_clown"), for: .normal)
             hauntedHouseButton.pulsate2(hauntedHouseButton)
         } else if (player === spookySoundsPlayer) {
             spookySoundsButton.backgroundColor = halloweenOrange
-            spookySoundsButton.setImage(UIImage(named: "spooky_sounds"), for: .normal)
+            spookySoundsButton.setImage(UIImage(named: "haunted_circus"), for: .normal)
             spookySoundsButton.pulsate2(spookySoundsButton)
         } else if (player === spaceTerrorPlayer) {
             spaceTerrorButton.backgroundColor = halloweenOrange

@@ -121,7 +121,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             halloweenPlayer?.delegate = self
             halloweenPlayer!.pause();
             halloweenButton.backgroundColor = halloweenOrange
-            halloweenButton.setImage(UIImage(named: "knife"), for: .normal)
+            halloweenButton.setImage(UIImage(named: "halloween"), for: .normal)
         }
         else
         {
@@ -165,7 +165,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             shiningPlayer?.delegate = self
             shiningPlayer!.pause();
             shiningButton.backgroundColor = halloweenOrange
-            shiningButton.setImage(UIImage(named: "axe"), for: .normal)
+            shiningButton.setImage(UIImage(named: "shining"), for: .normal)
         }
         else
         {
@@ -187,7 +187,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             nightmarePlayer?.delegate = self
             nightmarePlayer!.pause();
             nightmareButton.backgroundColor = halloweenOrange
-            nightmareButton.setImage(UIImage(named: "krueger"), for: .normal)
+            nightmareButton.setImage(UIImage(named: "freddy"), for: .normal)
         }
         else
         {
@@ -225,7 +225,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if (player === halloweenPlayer) {
             halloweenButton.backgroundColor = halloweenOrange
-            halloweenButton.setImage(UIImage(named: "knife"), for: .normal)
+            halloweenButton.setImage(UIImage(named: "halloween"), for: .normal)
             halloweenButton.pulsate2(halloweenButton)
         } else if (player === exorcistPlayer) {
             exorcistButton.backgroundColor = halloweenOrange
@@ -233,11 +233,11 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             exorcistButton.pulsate2(exorcistButton)
         } else if (player === shiningPlayer) {
             shiningButton.backgroundColor = halloweenOrange
-            shiningButton.setImage(UIImage(named: "axe"), for: .normal)
+            shiningButton.setImage(UIImage(named: "shining"), for: .normal)
             shiningButton.pulsate2(shiningButton)
         } else if (player === nightmarePlayer) {
             nightmareButton.backgroundColor = halloweenOrange
-            nightmareButton.setImage(UIImage(named: "kreuger"), for: .normal)
+            nightmareButton.setImage(UIImage(named: "freddy"), for: .normal)
             nightmareButton.pulsate2(nightmareButton)
         } else if (player === fridayPlayer) {
             fridayButton.backgroundColor = halloweenOrange
