@@ -775,7 +775,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Horror Movie Themes" image="projector_big">
+                                                <state key="normal" title="  Horror Movie Themes" image="projector">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -1033,8 +1033,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version 1.1.2 Build Date 8.22.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ya-BJe">
-                                <rect key="frame" x="8" y="723" width="275" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version 1.1.4 Build Date 9.10.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ya-BJe">
+                                <rect key="frame" x="8" y="723" width="273" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1598,10 +1598,10 @@
         <image name="creaky_door" width="29" height="29"/>
         <image name="cries_hell" width="29" height="29"/>
         <image name="cross" width="29" height="29"/>
-        <image name="dispair" width="29" height="29"/>
+        <image name="dispair" width="40" height="40"/>
         <image name="dracula_laugh" width="29" height="29"/>
         <image name="evil_man" width="40" height="40"/>
-        <image name="film" width="29" height="29"/>
+        <image name="film" width="40" height="40"/>
         <image name="freddy" width="29" height="29"/>
         <image name="ghost_boo" width="29" height="29"/>
         <image name="ghost_song" width="29" height="29"/>
@@ -1618,12 +1618,12 @@
         <image name="left_axe" width="29" height="29"/>
         <image name="loop" width="29" height="29"/>
         <image name="monster_growl" width="29" height="29"/>
-        <image name="old_tape" width="29" height="29"/>
+        <image name="old_tape" width="40" height="40"/>
         <image name="orange_skull.png" width="256" height="320"/>
         <image name="plain_key" width="20" height="20"/>
         <image name="planet" width="40" height="40"/>
         <image name="poltergeist_tv" width="40" height="40"/>
-        <image name="projector_big" width="40" height="40"/>
+        <image name="projector" width="40" height="40"/>
         <image name="pumpkin" width="29" height="29"/>
         <image name="scarecrow" width="40" height="40"/>
         <image name="scary_clown" width="40" height="40"/>
