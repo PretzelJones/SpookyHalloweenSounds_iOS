@@ -12,6 +12,7 @@ import StoreKit
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
+//    @IBOutlet weak var daysLabel: UILabel!
     @IBOutlet weak var loopingMixButton: UIButton!
     @IBOutlet weak var horrorThemeButton: UIButton!
     @IBOutlet weak var witchCackleButton: UIButton!
@@ -88,9 +89,43 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var hauntedSwampPlayer: AVAudioPlayer?
     var torturedSoulsPlayer: AVAudioPlayer?
     var chillingHornPlayer: AVAudioPlayer?
+       
+//    var Halloween: Date {
+//           let currentYear = Date()
+//           let userCalendar = Calendar.current
+//           var components = DateComponents()
+//           //        components.year = 2020
+//           components.year = userCalendar.component(.year, from: currentYear)
+//           components.day = 25
+//           components.month = 12
+//
+//           return userCalendar.date(from: components)!
+//       }
+//
+//       var today: Date {
+//           let now = Date()
+//           let userCalendar = Calendar.current
+//           var components = DateComponents()
+//           components.year = userCalendar.component(.year, from: now)
+//           components.day = userCalendar.component(.day, from: now)
+//           components.month = userCalendar.component(.month, from: now)
+//
+//           return userCalendar.date(from: components)!
+//    }
+//
+//    func daysBetweenDates(startDate: Date, endDate: Date) -> Int {
+//        let calendar = Calendar.current
+//        let components = calendar.dateComponents([.day], from: startDate, to: endDate)
+//        return components.day!
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+//        let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
+//        daysLabel.text = "\(daysTillHalloween)"
+//
+//        UIApplication.shared.applicationIconBadgeNumber = daysTillHalloween
         
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
@@ -508,7 +543,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        SKStoreReviewController.requestReview()
+        SKStoreReviewController.requestReview()
     }
     
     @IBAction func loopingMixesPlay(_ sender: Any) {

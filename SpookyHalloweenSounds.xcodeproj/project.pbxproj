@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040F5D8A24CDB5BB004BE726 /* BatAnimatonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F5D8924CDB5BB004BE726 /* BatAnimatonController.swift */; };
+		0476EC5E250D3ACF007ED260 /* peak.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC5D250D3ACE007ED260 /* peak.png */; };
 		14357AAF234949CA00D9B0D3 /* bosson_full_logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */; };
 		14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14357AB0234A196700D9B0D3 /* tab_logo.png */; };
 		14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */; };
@@ -109,6 +110,7 @@
 
 /* Begin PBXFileReference section */
 		040F5D8924CDB5BB004BE726 /* BatAnimatonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatAnimatonController.swift; sourceTree = "<group>"; };
+		0476EC5D250D3ACE007ED260 /* peak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peak.png; sourceTree = "<group>"; };
 		09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
 		14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bosson_full_logo.PNG; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 		7B305CBC2132F9FD00B184F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0476EC5D250D3ACE007ED260 /* peak.png */,
 				14FE01E1248B1CE900E1B0B0 /* titlebar_image_smaller.png */,
 				14FE01DF248B0F6400E1B0B0 /* titlebar_image.png */,
 				148A187B2360F8BC00CA2493 /* orange_skull.png */,
@@ -542,6 +545,7 @@
 				7B987D842133718D00743717 /* haunted_organ.mp3 in Resources */,
 				7B987D972133718D00743717 /* black_cat.mp3 in Resources */,
 				1451D9FC24925D320094053E /* elm_street.mp3 in Resources */,
+				0476EC5E250D3ACF007ED260 /* peak.png in Resources */,
 				7B305C942132F25500B184F5 /* Assets.xcassets in Resources */,
 				7B987D872133718D00743717 /* poltergeist_voice.mp3 in Resources */,
 				7B987D9F2133718D00743717 /* dracula_laugh.mp3 in Resources */,
