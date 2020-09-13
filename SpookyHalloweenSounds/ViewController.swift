@@ -120,7 +120,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
         daysLabel.text = "\(daysTillHalloween) days till Halloween"
 
