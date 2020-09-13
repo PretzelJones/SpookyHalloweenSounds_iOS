@@ -27,687 +27,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73N-uY-Xdd">
-                                                <rect key="frame" x="0.0" y="1342" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="sZs-aJ-yT7"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Scarecrow" image="scarecrow">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="scareCrowPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yoK-JW-S9e"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-l4-qp2">
-                                                <rect key="frame" x="0.0" y="1110" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="FGq-9N-Hzn"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Spooky Owl" image="spooky_owl">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="spookyOwlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtN-Ni-A6c"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DED-VW-7xT">
-                                                <rect key="frame" x="0.0" y="1168" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="bqz-9c-9GT"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Chained Ghoul" image="chained_ghoul">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="chainedGhoulPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z81-Go-IhI"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-44-OjK">
-                                                <rect key="frame" x="0.0" y="1284" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="o1Q-oj-Zsb"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Haunted Organ" image="haunted_organ">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="hauntedOrganPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhb-5S-k5h"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twt-zf-07d">
-                                                <rect key="frame" x="0.0" y="1052" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="htv-as-xkl"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Wraith Wail" image="wraith_wail">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wraithWailPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgY-YS-lZf"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-UM-s2y">
-                                                <rect key="frame" x="0.0" y="936" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="OIK-JK-TGv"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Zombie Call" image="zombie_call">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="zombieCallPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ad-rd-H5t"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-8E-Jgq" userLabel="Poltergeist Voice">
-                                                <rect key="frame" x="0.0" y="878" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="LdC-08-gKQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Poltergeist Voice" image="poltergeist_tv">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="poltergeistVoicePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4X-ef-TFb"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TY-Jj-eUn">
-                                                <rect key="frame" x="0.0" y="820" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="c9g-Sc-zM7"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Werewolf Howl" image="werewolf">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wereWolfHowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5f-M5-chs"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lP4-hh-rvx">
-                                                <rect key="frame" x="0.0" y="762" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="HIL-Dz-LgM"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Ghost Boo" image="ghost_boo">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="ghostBooPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h56-qM-qto"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-Se-SLz">
-                                                <rect key="frame" x="0.0" y="704" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="8jg-v6-X5f"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Zombie Groan" image="zombie">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="zombieGroanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gai-eX-y7Y"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-XV-bXZ">
-                                                <rect key="frame" x="0.0" y="646" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="mw1-Ds-CqW"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Scary Scream" image="scream">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="scaryScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="553-rL-pH9"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke0-6q-0N0">
-                                                <rect key="frame" x="0.0" y="530" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="c9V-zL-aup"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Spooky Chains" image="chains">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="spookyChainsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vq-2F-8mA"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-gW-NiH">
-                                                <rect key="frame" x="0.0" y="1400" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="qnf-Vd-SkR"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Blowing Wind" image="blowing_wind">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="blowingWindPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdU-OF-cCm"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAM-xK-aic">
-                                                <rect key="frame" x="0.0" y="1458" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="hfS-Mh-OPf"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Ghostly Whisper" image="ghostly_whisper">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="ghostlyWhisperPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAK-7i-KoX"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-3A-l4N">
-                                                <rect key="frame" x="0.0" y="1516" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="CcR-96-SGd"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Dracula Laugh" image="dracula_laugh">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="draculaLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVs-Vc-PsT"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-Sn-1J5">
-                                                <rect key="frame" x="0.0" y="1574" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="BpK-KI-ugo"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Wolf Cry" image="wolf">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="wolfCryPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yS-Lk-SR0"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-m9-chY">
-                                                <rect key="frame" x="0.0" y="1632" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="c8P-N7-UoG"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Knock Knock" image="knock">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="knockKnockPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRB-5b-yjL"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmX-91-FOB">
-                                                <rect key="frame" x="0.0" y="1690" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="rBH-Oc-zWq"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Frankenstein" image="igor">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="igorGrumblePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHv-la-zdb"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-zy-FTl" userLabel="Horror Movie Button">
-                                                <rect key="frame" x="0.0" y="1748" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="dUg-61-me3"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Horror Movie" image="film">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="horrorMoviePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esb-ko-rDf"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKc-6q-NMq">
-                                                <rect key="frame" x="0.0" y="1864" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="c5q-z6-Ad2"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Painful Moan" image="grave_stone">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="painfulMoanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qer-1U-qZY"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-YQ-ScV">
-                                                <rect key="frame" x="0.0" y="1922" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="gQs-yS-7jv"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Witches Cauldron" image="witches_cauldron">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="witchesCauldronPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snq-Uy-6r8"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-hS-dgf">
-                                                <rect key="frame" x="0.0" y="1980" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="fGO-d5-dL3"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Ghostly Children" image="ghostly_children">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="ghostlyChildrenPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6e-Bp-F4C"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-rM-CbT">
-                                                <rect key="frame" x="0.0" y="2038" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="ZUc-Jc-Kqh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Haunted Swamp" image="haunted_swamp">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="hauntedSwampPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nh9-17-4gg"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXR-xM-xy8">
-                                                <rect key="frame" x="0.0" y="414" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="wFQ-jA-NeH"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <state key="normal" title="  Monster Growl" image="monster_growl">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="monsterGrowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiU-Xy-q03"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-bF-FK7">
-                                                <rect key="frame" x="0.0" y="472" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Ckm-zT-2jt"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Monster Walking" image="monster_walking">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="monsterWalkingPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDT-Ha-rxp"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-2V-Npe">
-                                                <rect key="frame" x="0.0" y="2096" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Rly-i1-bBq"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Tortured Souls" image="tortured_souls">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="torturedSoulsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dj2-Kt-Rtl"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-Rg-vnl">
-                                                <rect key="frame" x="0.0" y="182" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Zf1-ri-yyr"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Black Cat" image="black_cat">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="blackCatPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmM-v7-O6g"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7D-5m-0y7">
-                                                <rect key="frame" x="0.0" y="240" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="M0Q-Zf-PGd"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Creepy Laugh" image="evil_man">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="creepyLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTj-1a-U50"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-no-Em0">
-                                                <rect key="frame" x="0.0" y="298" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="wXh-Ng-DIR"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Creaky Door" image="creaky_door">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="creakyDoorPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lan-Og-GEV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12x-sj-Khg">
-                                                <rect key="frame" x="0.0" y="356" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Wa8-ll-GSJ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Horror Ambiance" image="spider">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="horrorAmbiancePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtr-LK-e2e"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Age-0K-NlH">
-                                                <rect key="frame" x="0.0" y="1226" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="mW3-O1-IGy"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Terrified Scream" image="terrified_scream">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="terrifiedScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTQ-u3-pCm"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvs-tF-XxO">
-                                                <rect key="frame" x="0.0" y="124" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="K5k-Nz-UEH"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Witch Cackle" image="witch">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="witchCacklePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEI-09-LBO"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-3N-V7Q">
-                                                <rect key="frame" x="0.0" y="1806" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="HVr-9g-4M9"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Warning Bell" image="warning_bells">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="warningBellsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DuA-Wv-bKa"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-Zj-0Wt">
-                                                <rect key="frame" x="0.0" y="994" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="UuO-an-w7G"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Cat Sceam" image="cat_scream">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="catScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q64-dC-ms3"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LM2-LV-woq" userLabel="Insane Asylum Long Play">
-                                                <rect key="frame" x="0.0" y="8" width="414" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LM2-LV-woq" userLabel="Looping Mixes Button">
+                                                <rect key="frame" x="0.0" y="64" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="V8c-6H-cNh"/>
@@ -727,48 +48,8 @@
                                                     <segue destination="lrZ-Ov-kYt" kind="show" id="maY-aR-zMO"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQn-cP-KJy">
-                                                <rect key="frame" x="0.0" y="588" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="4q4-OW-QRQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Thunder Storm" image="thunder">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="thunderStormPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mn-vO-sI9"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-3s-Bd6">
-                                                <rect key="frame" x="0.0" y="2154" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Zti-gJ-DMo"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="  Chilling Horn" image="alien">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="chillingHornPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-oN-U6I"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94m-NW-PO3" userLabel="Horror Theme Button">
-                                                <rect key="frame" x="0.0" y="66" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="122" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="kGa-kT-ggR"/>
@@ -788,8 +69,727 @@
                                                     <segue destination="3dX-ln-9cZ" kind="show" id="bEN-zN-Aa7"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-jA-jKv">
-                                                <rect key="frame" x="0.0" y="2212" width="414" height="232"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvs-tF-XxO">
+                                                <rect key="frame" x="0.0" y="180" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="K5k-Nz-UEH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Witch Cackle" image="witch">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="witchCacklePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEI-09-LBO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-Rg-vnl">
+                                                <rect key="frame" x="0.0" y="238" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Zf1-ri-yyr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Black Cat" image="black_cat">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="blackCatPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmM-v7-O6g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7D-5m-0y7">
+                                                <rect key="frame" x="0.0" y="296" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="M0Q-Zf-PGd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Creepy Laugh" image="evil_man">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="creepyLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTj-1a-U50"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-no-Em0">
+                                                <rect key="frame" x="0.0" y="354" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="wXh-Ng-DIR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Creaky Door" image="creaky_door">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="creakyDoorPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lan-Og-GEV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12x-sj-Khg">
+                                                <rect key="frame" x="0.0" y="412" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Wa8-ll-GSJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Horror Ambiance" image="spider">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="horrorAmbiancePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtr-LK-e2e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXR-xM-xy8">
+                                                <rect key="frame" x="0.0" y="470" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="wFQ-jA-NeH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <state key="normal" title="  Monster Growl" image="monster_growl">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="monsterGrowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiU-Xy-q03"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-bF-FK7">
+                                                <rect key="frame" x="0.0" y="528" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Ckm-zT-2jt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Monster Walking" image="monster_walking">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="monsterWalkingPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDT-Ha-rxp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke0-6q-0N0">
+                                                <rect key="frame" x="0.0" y="586" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="c9V-zL-aup"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Spooky Chains" image="chains">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="spookyChainsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vq-2F-8mA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQn-cP-KJy">
+                                                <rect key="frame" x="0.0" y="644" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="4q4-OW-QRQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Thunder Storm" image="thunder">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="thunderStormPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mn-vO-sI9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-XV-bXZ">
+                                                <rect key="frame" x="0.0" y="702" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="mw1-Ds-CqW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Scary Scream" image="scream">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="scaryScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="553-rL-pH9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-Se-SLz">
+                                                <rect key="frame" x="0.0" y="760" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="8jg-v6-X5f"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Zombie Groan" image="zombie">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="zombieGroanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gai-eX-y7Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lP4-hh-rvx">
+                                                <rect key="frame" x="0.0" y="818" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="HIL-Dz-LgM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Ghost Boo" image="ghost_boo">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ghostBooPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h56-qM-qto"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TY-Jj-eUn">
+                                                <rect key="frame" x="0.0" y="876" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="c9g-Sc-zM7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Werewolf Howl" image="werewolf">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="wereWolfHowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5f-M5-chs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-8E-Jgq" userLabel="Poltergeist Voice">
+                                                <rect key="frame" x="0.0" y="934" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LdC-08-gKQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Poltergeist Voice" image="poltergeist_tv">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="poltergeistVoicePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4X-ef-TFb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-UM-s2y">
+                                                <rect key="frame" x="0.0" y="992" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="OIK-JK-TGv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Zombie Call" image="zombie_call">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="zombieCallPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ad-rd-H5t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-Zj-0Wt">
+                                                <rect key="frame" x="0.0" y="1050" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="UuO-an-w7G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Cat Sceam" image="cat_scream">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="catScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q64-dC-ms3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twt-zf-07d">
+                                                <rect key="frame" x="0.0" y="1108" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="htv-as-xkl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Wraith Wail" image="wraith_wail">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="wraithWailPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgY-YS-lZf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-l4-qp2">
+                                                <rect key="frame" x="0.0" y="1166" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="FGq-9N-Hzn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Spooky Owl" image="spooky_owl">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="spookyOwlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtN-Ni-A6c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DED-VW-7xT">
+                                                <rect key="frame" x="0.0" y="1224" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bqz-9c-9GT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Chained Ghoul" image="chained_ghoul">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="chainedGhoulPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z81-Go-IhI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Age-0K-NlH">
+                                                <rect key="frame" x="0.0" y="1282" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="mW3-O1-IGy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Terrified Scream" image="terrified_scream">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="terrifiedScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTQ-u3-pCm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-44-OjK">
+                                                <rect key="frame" x="0.0" y="1340" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="o1Q-oj-Zsb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Haunted Organ" image="haunted_organ">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="hauntedOrganPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhb-5S-k5h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73N-uY-Xdd">
+                                                <rect key="frame" x="0.0" y="1398" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="sZs-aJ-yT7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Scarecrow" image="scarecrow">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="scareCrowPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yoK-JW-S9e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-gW-NiH">
+                                                <rect key="frame" x="0.0" y="1456" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="qnf-Vd-SkR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Blowing Wind" image="blowing_wind">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="blowingWindPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdU-OF-cCm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAM-xK-aic">
+                                                <rect key="frame" x="0.0" y="1514" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="hfS-Mh-OPf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Ghostly Whisper" image="ghostly_whisper">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ghostlyWhisperPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAK-7i-KoX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-3A-l4N">
+                                                <rect key="frame" x="0.0" y="1572" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="CcR-96-SGd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Dracula Laugh" image="dracula_laugh">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="draculaLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVs-Vc-PsT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-Sn-1J5">
+                                                <rect key="frame" x="0.0" y="1630" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="BpK-KI-ugo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Wolf Cry" image="wolf">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="wolfCryPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yS-Lk-SR0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-m9-chY">
+                                                <rect key="frame" x="0.0" y="1688" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="c8P-N7-UoG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Knock Knock" image="knock">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="knockKnockPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRB-5b-yjL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmX-91-FOB" userLabel="Frankenstein Button">
+                                                <rect key="frame" x="0.0" y="1746" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="rBH-Oc-zWq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Frankenstein" image="igor">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="igorGrumblePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHv-la-zdb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-zy-FTl" userLabel="Horror Movie Button">
+                                                <rect key="frame" x="0.0" y="1804" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dUg-61-me3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Horror Movie" image="film">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="horrorMoviePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esb-ko-rDf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-3N-V7Q">
+                                                <rect key="frame" x="0.0" y="1862" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="HVr-9g-4M9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Warning Bell" image="warning_bells">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="warningBellsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DuA-Wv-bKa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKc-6q-NMq">
+                                                <rect key="frame" x="0.0" y="1920" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="c5q-z6-Ad2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Painful Moan" image="grave_stone">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="painfulMoanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qer-1U-qZY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-YQ-ScV">
+                                                <rect key="frame" x="0.0" y="1978" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gQs-yS-7jv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Witches Cauldron" image="witches_cauldron">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="witchesCauldronPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snq-Uy-6r8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-hS-dgf">
+                                                <rect key="frame" x="0.0" y="2036" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="fGO-d5-dL3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Ghostly Children" image="ghostly_children">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ghostlyChildrenPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6e-Bp-F4C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-rM-CbT">
+                                                <rect key="frame" x="0.0" y="2094" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ZUc-Jc-Kqh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Haunted Swamp" image="haunted_swamp">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="hauntedSwampPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nh9-17-4gg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-2V-Npe">
+                                                <rect key="frame" x="0.0" y="2152" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Rly-i1-bBq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Tortured Souls" image="tortured_souls">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="torturedSoulsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dj2-Kt-Rtl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-3s-Bd6">
+                                                <rect key="frame" x="0.0" y="2210" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Zti-gJ-DMo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="  Chilling Horn" image="alien">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="chillingHornPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-oN-U6I"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-jA-jKv">
+                                                <rect key="frame" x="0.0" y="2268" width="414" height="232"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="232" id="GCp-ib-pUN"/>
                                                 </constraints>
@@ -799,6 +799,24 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 DAYS TILL HALLOWEEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdC-dQ-HZw">
+                                                <rect key="frame" x="84" y="8" width="252" height="48"/>
+                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="24"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.50588235290000005" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bats_flipped" translatesAutoresizingMaskIntoConstraints="NO" id="f0d-yD-HXi">
+                                                <rect key="frame" x="344" y="8" width="70" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="Fxc-VO-3LI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bats" translatesAutoresizingMaskIntoConstraints="NO" id="sOi-ZW-jr9">
+                                                <rect key="frame" x="0.0" y="8" width="76" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="76" id="ZMc-xT-st2"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -806,6 +824,7 @@
                                             <constraint firstItem="Age-0K-NlH" firstAttribute="trailing" secondItem="RoF-44-OjK" secondAttribute="trailing" id="0Te-tK-YpE"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="trailing" secondItem="gdi-Zj-0Wt" secondAttribute="trailing" id="1P7-kO-nDp"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="leading" secondItem="KmX-91-FOB" secondAttribute="leading" id="1W8-nl-qfI"/>
+                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="top" secondItem="tdC-dQ-HZw" secondAttribute="top" id="41s-Uv-dPa"/>
                                             <constraint firstItem="jfP-2V-Npe" firstAttribute="trailing" secondItem="G1S-3s-Bd6" secondAttribute="trailing" id="42W-FN-zwr"/>
                                             <constraint firstItem="RoF-44-OjK" firstAttribute="trailing" secondItem="73N-uY-Xdd" secondAttribute="trailing" id="55v-u8-Lfq"/>
                                             <constraint firstItem="OzM-no-Em0" firstAttribute="top" secondItem="YXR-xM-xy8" secondAttribute="bottom" constant="-166" id="5K7-pN-vQb"/>
@@ -813,7 +832,8 @@
                                             <constraint firstItem="gdi-Zj-0Wt" firstAttribute="leading" secondItem="twt-zf-07d" secondAttribute="leading" id="6Qb-0R-XNO"/>
                                             <constraint firstItem="OQn-cP-KJy" firstAttribute="leading" secondItem="KaL-XV-bXZ" secondAttribute="leading" id="7Gu-g3-DsE"/>
                                             <constraint firstItem="LM2-LV-woq" firstAttribute="leading" secondItem="94m-NW-PO3" secondAttribute="leading" id="7L8-Jk-yKy"/>
-                                            <constraint firstItem="LM2-LV-woq" firstAttribute="top" secondItem="c3E-Pm-nch" secondAttribute="top" constant="8" id="90a-fz-7vq"/>
+                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="top" secondItem="c3E-Pm-nch" secondAttribute="topMargin" id="7QU-gU-Y7R"/>
+                                            <constraint firstItem="LM2-LV-woq" firstAttribute="top" secondItem="c3E-Pm-nch" secondAttribute="top" constant="64" id="90a-fz-7vq"/>
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="leading" secondItem="pp5-UM-s2y" secondAttribute="leading" id="ARj-4x-bFB"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="top" secondItem="CYb-Sn-1J5" secondAttribute="bottom" constant="8" symbolic="YES" id="BBA-fi-lgl"/>
                                             <constraint firstItem="DED-VW-7xT" firstAttribute="top" secondItem="CQW-l4-qp2" secondAttribute="bottom" constant="8" symbolic="YES" id="BSc-ON-PRk"/>
@@ -842,6 +862,7 @@
                                             <constraint firstItem="Lvs-tF-XxO" firstAttribute="leading" secondItem="94m-NW-PO3" secondAttribute="leading" id="MxX-cb-5zB"/>
                                             <constraint firstItem="KaL-XV-bXZ" firstAttribute="leading" secondItem="iBm-Se-SLz" secondAttribute="leading" id="N09-jg-vPX"/>
                                             <constraint firstItem="Lvs-tF-XxO" firstAttribute="trailing" secondItem="94m-NW-PO3" secondAttribute="trailing" id="PeL-ZT-3K2"/>
+                                            <constraint firstItem="tdC-dQ-HZw" firstAttribute="leading" secondItem="sOi-ZW-jr9" secondAttribute="trailing" constant="8" id="Pji-a8-cA0"/>
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="leading" secondItem="lP4-hh-rvx" secondAttribute="leading" id="SQU-PE-t3O"/>
                                             <constraint firstItem="Age-0K-NlH" firstAttribute="top" secondItem="DED-VW-7xT" secondAttribute="bottom" constant="8" symbolic="YES" id="SfS-La-gz8"/>
                                             <constraint firstItem="EG4-Rg-vnl" firstAttribute="trailing" secondItem="P7D-5m-0y7" secondAttribute="trailing" id="SkE-Um-n0R"/>
@@ -849,14 +870,20 @@
                                             <constraint firstItem="KmX-91-FOB" firstAttribute="trailing" secondItem="IWH-3N-V7Q" secondAttribute="trailing" id="TE3-Bm-o6T"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="top" secondItem="off-8E-Jgq" secondAttribute="bottom" constant="8" symbolic="YES" id="TTn-NH-dAv"/>
                                             <constraint firstItem="73N-uY-Xdd" firstAttribute="leading" secondItem="FGr-gW-NiH" secondAttribute="leading" id="ThG-Tj-b8B"/>
+                                            <constraint firstItem="LM2-LV-woq" firstAttribute="top" secondItem="sOi-ZW-jr9" secondAttribute="bottom" constant="8" id="Tno-E3-i4C"/>
+                                            <constraint firstItem="f0d-yD-HXi" firstAttribute="trailing" secondItem="LM2-LV-woq" secondAttribute="trailing" id="TyY-ts-8yo"/>
                                             <constraint firstItem="YXR-xM-xy8" firstAttribute="top" secondItem="EG4-Rg-vnl" secondAttribute="bottom" constant="182" id="UDZ-Is-DgN"/>
                                             <constraint firstItem="73N-uY-Xdd" firstAttribute="top" secondItem="RoF-44-OjK" secondAttribute="bottom" constant="8" symbolic="YES" id="UQP-N5-1BJ"/>
+                                            <constraint firstItem="tdC-dQ-HZw" firstAttribute="bottom" secondItem="f0d-yD-HXi" secondAttribute="bottom" id="VG9-sv-RfZ"/>
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="trailing" secondItem="pp5-UM-s2y" secondAttribute="trailing" id="W5Z-Hi-beW"/>
                                             <constraint firstItem="2TY-Jj-eUn" firstAttribute="trailing" secondItem="off-8E-Jgq" secondAttribute="trailing" id="WVw-6j-NVB"/>
                                             <constraint firstItem="KaL-XV-bXZ" firstAttribute="top" secondItem="OQn-cP-KJy" secondAttribute="bottom" constant="8" symbolic="YES" id="XOu-4I-Fep"/>
                                             <constraint firstItem="lP4-hh-rvx" firstAttribute="trailing" secondItem="2TY-Jj-eUn" secondAttribute="trailing" id="XoY-pg-xAe"/>
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="top" secondItem="KaL-XV-bXZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Y2r-iR-amL"/>
+                                            <constraint firstItem="f0d-yD-HXi" firstAttribute="leading" secondItem="tdC-dQ-HZw" secondAttribute="trailing" constant="8" id="YKW-8w-9Y9"/>
+                                            <constraint firstItem="tdC-dQ-HZw" firstAttribute="top" secondItem="f0d-yD-HXi" secondAttribute="top" id="YMt-Ar-sC9"/>
                                             <constraint firstItem="CD0-rM-CbT" firstAttribute="trailing" secondItem="jfP-2V-Npe" secondAttribute="trailing" id="Yd0-dd-tbL"/>
+                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="leading" secondItem="LM2-LV-woq" secondAttribute="leading" id="Yda-je-g6E"/>
                                             <constraint firstItem="lAm-zy-FTl" firstAttribute="top" secondItem="KmX-91-FOB" secondAttribute="bottom" constant="8" symbolic="YES" id="ZSb-Ma-8CQ"/>
                                             <constraint firstItem="OzM-no-Em0" firstAttribute="trailing" secondItem="12x-sj-Khg" secondAttribute="trailing" id="ZjA-Zm-OAh"/>
                                             <constraint firstItem="Geq-hS-dgf" firstAttribute="leading" secondItem="CD0-rM-CbT" secondAttribute="leading" id="ZzE-cX-pX9"/>
@@ -917,6 +944,7 @@
                                             <constraint firstItem="1FT-YQ-ScV" firstAttribute="leading" secondItem="Geq-hS-dgf" secondAttribute="leading" id="waS-LJ-Ped"/>
                                             <constraint firstItem="cUV-bF-FK7" firstAttribute="top" secondItem="YXR-xM-xy8" secondAttribute="bottom" constant="8" symbolic="YES" id="wmV-Rh-Clb"/>
                                             <constraint firstItem="YXR-xM-xy8" firstAttribute="leading" secondItem="OzM-no-Em0" secondAttribute="leading" id="wr1-xn-jQS"/>
+                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="bottom" secondItem="tdC-dQ-HZw" secondAttribute="bottom" id="xcR-WG-fa5"/>
                                             <constraint firstItem="RoF-44-OjK" firstAttribute="leading" secondItem="73N-uY-Xdd" secondAttribute="leading" id="xn8-eO-MSa"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="leading" secondItem="gdi-Zj-0Wt" secondAttribute="leading" id="yIj-hc-9qB"/>
                                             <constraint firstItem="OQn-cP-KJy" firstAttribute="trailing" secondItem="KaL-XV-bXZ" secondAttribute="trailing" id="yOy-xn-yI0"/>
@@ -965,6 +993,7 @@
                         <outlet property="chillingHornButton" destination="G1S-3s-Bd6" id="oey-ug-UsL"/>
                         <outlet property="creakyDoorButton" destination="OzM-no-Em0" id="hpV-UF-uN6"/>
                         <outlet property="creepyLaughButton" destination="P7D-5m-0y7" id="u99-uf-mGL"/>
+                        <outlet property="daysLabel" destination="tdC-dQ-HZw" id="Gz6-bW-0Eq"/>
                         <outlet property="draculaLaughButton" destination="wWQ-3A-l4N" id="LoH-pU-55a"/>
                         <outlet property="ghostBooButton" destination="lP4-hh-rvx" id="RWf-os-S9M"/>
                         <outlet property="ghostlyChildrenButton" destination="Geq-hS-dgf" id="ldo-g2-nSv"/>
@@ -1589,6 +1618,8 @@
     </scenes>
     <resources>
         <image name="alien" width="29" height="29"/>
+        <image name="bats" width="20" height="20"/>
+        <image name="bats_flipped" width="20" height="20"/>
         <image name="black_cat" width="40" height="40"/>
         <image name="blowing_wind" width="40" height="40"/>
         <image name="cat_scream" width="40" height="40"/>

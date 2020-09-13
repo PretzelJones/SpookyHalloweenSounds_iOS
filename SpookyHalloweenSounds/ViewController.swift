@@ -12,7 +12,7 @@ import StoreKit
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
-//    @IBOutlet weak var daysLabel: UILabel!
+    @IBOutlet weak var daysLabel: UILabel!
     @IBOutlet weak var loopingMixButton: UIButton!
     @IBOutlet weak var horrorThemeButton: UIButton!
     @IBOutlet weak var witchCackleButton: UIButton!
@@ -90,42 +90,42 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var torturedSoulsPlayer: AVAudioPlayer?
     var chillingHornPlayer: AVAudioPlayer?
        
-//    var Halloween: Date {
-//           let currentYear = Date()
-//           let userCalendar = Calendar.current
-//           var components = DateComponents()
-//           //        components.year = 2020
-//           components.year = userCalendar.component(.year, from: currentYear)
-//           components.day = 25
-//           components.month = 12
-//
-//           return userCalendar.date(from: components)!
-//       }
-//
-//       var today: Date {
-//           let now = Date()
-//           let userCalendar = Calendar.current
-//           var components = DateComponents()
-//           components.year = userCalendar.component(.year, from: now)
-//           components.day = userCalendar.component(.day, from: now)
-//           components.month = userCalendar.component(.month, from: now)
-//
-//           return userCalendar.date(from: components)!
-//    }
-//
-//    func daysBetweenDates(startDate: Date, endDate: Date) -> Int {
-//        let calendar = Calendar.current
-//        let components = calendar.dateComponents([.day], from: startDate, to: endDate)
-//        return components.day!
-//    }
+    var Halloween: Date {
+           let currentYear = Date()
+           let userCalendar = Calendar.current
+           var components = DateComponents()
+           components.year = userCalendar.component(.year, from: currentYear)
+           components.day = 31
+           components.month = 10
+
+           return userCalendar.date(from: components)!
+       }
+
+       var today: Date {
+           let now = Date()
+           let userCalendar = Calendar.current
+           var components = DateComponents()
+           components.year = userCalendar.component(.year, from: now)
+           components.day = userCalendar.component(.day, from: now)
+           components.month = userCalendar.component(.month, from: now)
+
+           return userCalendar.date(from: components)!
+    }
+
+    func daysBetweenDates(startDate: Date, endDate: Date) -> Int {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day], from: startDate, to: endDate)
+        return components.day!
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
-//        daysLabel.text = "\(daysTillHalloween)"
-//
+        let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
+        daysLabel.text = "\(daysTillHalloween) days till Halloween"
+
 //        UIApplication.shared.applicationIconBadgeNumber = daysTillHalloween
+        UIApplication.shared.applicationIconBadgeNumber = 0
         
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
