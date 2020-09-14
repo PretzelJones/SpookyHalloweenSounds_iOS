@@ -1,1 +1,1 @@
-This is a simple Halloween themed app that plays 31+ Halloween based sounds.
+Halloween/Horror themed soundboard app that plays 31+ sounds.
