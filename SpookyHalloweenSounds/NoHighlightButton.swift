@@ -13,7 +13,7 @@ extension UIButton {
     
      @IBAction func noHighlight(_ sender: UIButton) {
         
-        self.showsTouchWhenHighlighted = false
+        showsTouchWhenHighlighted = false
         
     }
     

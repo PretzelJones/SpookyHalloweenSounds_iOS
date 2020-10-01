@@ -562,6 +562,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         witchCackleButton.pulsate(witchCackleButton)
         witchCackleButton.haptic(witchCackleButton)
+        witchCackleButton.showsTouchWhenHighlighted = true
         
         if (witchCacklePlayer!.isPlaying)
         {
@@ -584,6 +585,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         blackCatButton.pulsate(blackCatButton)
         blackCatButton.haptic(blackCatButton)
+        blackCatButton.showsTouchWhenHighlighted = true
         
         if (blackCatPlayer!.isPlaying)
         {
@@ -606,6 +608,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         creepyLaughButton.pulsate(creepyLaughButton)
         creepyLaughButton.haptic(creepyLaughButton)
+        creepyLaughButton.showsTouchWhenHighlighted = true
         
         if (creepyLaughPlayer!.isPlaying)
         {
@@ -628,6 +631,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         horrorAmbianceButton.pulsate(horrorAmbianceButton)
         horrorAmbianceButton.haptic(horrorAmbianceButton)
+        horrorAmbianceButton.showsTouchWhenHighlighted = true
         
         if (horrorAmbiancePlayer!.isPlaying)
         {
@@ -650,6 +654,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         monsterGrowlButton.pulsate(monsterGrowlButton)
         monsterGrowlButton.haptic(monsterGrowlButton)
+        monsterGrowlButton.showsTouchWhenHighlighted = true
         
         if (monsterGrowlPlayer!.isPlaying)
         {
@@ -672,6 +677,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         monsterWalkingButton.pulsate(monsterWalkingButton)
         monsterWalkingButton.haptic(monsterWalkingButton)
+        monsterWalkingButton.showsTouchWhenHighlighted = true
         
         if (monsterWalkingPlayer!.isPlaying)
         {
@@ -694,6 +700,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         creakyDoorButton.pulsate(creakyDoorButton)
         creakyDoorButton.haptic(creakyDoorButton)
+        creakyDoorButton.showsTouchWhenHighlighted = true
         
         if (creakyDoorPlayer!.isPlaying)
         {
@@ -716,6 +723,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         spookyChainsButton.pulsate(spookyChainsButton)
         spookyChainsButton.haptic(spookyChainsButton)
+        spookyChainsButton.showsTouchWhenHighlighted = true
         
         if (spookyChainsPlayer!.isPlaying)
         {
@@ -738,6 +746,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         thunderStormButton.pulsate(thunderStormButton)
         thunderStormButton.haptic(thunderStormButton)
+        thunderStormButton.showsTouchWhenHighlighted = true
         
         if (thunderStormPlayer!.isPlaying)
         {
@@ -760,6 +769,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         scaryScreamButton.pulsate(scaryScreamButton)
         scaryScreamButton.haptic(scaryScreamButton)
+        scaryScreamButton.showsTouchWhenHighlighted = true
         
         if (scaryScreamPlayer!.isPlaying)
         {
@@ -782,6 +792,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         zombieGroanButton.pulsate(zombieGroanButton)
         zombieGroanButton.haptic(zombieGroanButton)
+        zombieGroanButton.showsTouchWhenHighlighted = true
         
         if (zombieGroanPlayer!.isPlaying)
         {
@@ -804,6 +815,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         ghostBooButton.pulsate(ghostBooButton)
         ghostBooButton.haptic(ghostBooButton)
+        ghostBooButton.showsTouchWhenHighlighted = true
         
         if (ghostBooPlayer!.isPlaying)
         {
@@ -826,6 +838,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         werewolfHowlButton.pulsate(werewolfHowlButton)
         werewolfHowlButton.haptic(werewolfHowlButton)
+        werewolfHowlButton.showsTouchWhenHighlighted = true
         
         if (wereWolfHowlPlayer!.isPlaying)
         {
@@ -848,6 +861,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         poltergeistVoiceButton.pulsate(poltergeistVoiceButton)
         poltergeistVoiceButton.haptic(poltergeistVoiceButton)
+        poltergeistVoiceButton.showsTouchWhenHighlighted = true
         
         if (poltergeistVoicePlayer!.isPlaying)
         {
@@ -870,6 +884,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         zombieCallButton.pulsate(zombieCallButton)
         zombieCallButton.haptic(zombieCallButton)
+        zombieCallButton.showsTouchWhenHighlighted = true
         
         if (zombieCallPlayer!.isPlaying)
         {
@@ -892,6 +907,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         catScreamButton.pulsate(catScreamButton)
         catScreamButton.haptic(catScreamButton)
+        catScreamButton.showsTouchWhenHighlighted = true
         
         if (catScreamPlayer!.isPlaying)
         {
@@ -914,6 +930,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         wraithWailButton.pulsate(wraithWailButton)
         wraithWailButton.haptic(wraithWailButton)
+        wraithWailButton.showsTouchWhenHighlighted = true
         
         if (wraithWailPlayer!.isPlaying)
         {
@@ -936,6 +953,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         spookyOwlButton.pulsate(spookyOwlButton)
         spookyOwlButton.haptic(spookyOwlButton)
+        spookyOwlButton.showsTouchWhenHighlighted = true
         
         if (spookyOwlPlayer!.isPlaying)
         {
@@ -958,6 +976,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         chainedGhoulButton.pulsate(chainedGhoulButton)
         chainedGhoulButton.haptic(chainedGhoulButton)
+        chainedGhoulButton.showsTouchWhenHighlighted = true
         
         if (chainedGhoulPlayer!.isPlaying)
         {
@@ -980,6 +999,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         terrifiedScreamButton.pulsate(terrifiedScreamButton)
         terrifiedScreamButton.haptic(terrifiedScreamButton)
+        terrifiedScreamButton.showsTouchWhenHighlighted = true
         
         if (terrifiedScreamPlayer!.isPlaying)
         {
@@ -1002,6 +1022,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         hauntedOrganButton.pulsate(hauntedOrganButton)
         hauntedOrganButton.haptic(hauntedOrganButton)
+        hauntedOrganButton.showsTouchWhenHighlighted = true
         
         if (hauntedOrganPlayer!.isPlaying)
         {
@@ -1024,6 +1045,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         scarecrowButton.pulsate(scarecrowButton)
         scarecrowButton.haptic(scarecrowButton)
+        scarecrowButton.showsTouchWhenHighlighted = true
         
         if (scareCrowPlayer!.isPlaying)
         {
@@ -1046,6 +1068,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         blowingWindButton.pulsate(blowingWindButton)
         blowingWindButton.haptic(blowingWindButton)
+        blowingWindButton.showsTouchWhenHighlighted = true
         
         if (blowingWindPlayer!.isPlaying)
         {
@@ -1068,6 +1091,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         ghostlyWhisperButton.pulsate(ghostlyWhisperButton)
         ghostlyWhisperButton.haptic(ghostlyWhisperButton)
+        ghostlyWhisperButton.showsTouchWhenHighlighted = true
         
         if (ghostlyWhisperPlayer!.isPlaying)
         {
@@ -1090,6 +1114,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         draculaLaughButton.pulsate(draculaLaughButton)
         draculaLaughButton.haptic(draculaLaughButton)
+        draculaLaughButton.showsTouchWhenHighlighted = true
         
         if (draculaLaughPlayer!.isPlaying)
         {
@@ -1112,6 +1137,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         wolfCryButton.pulsate(wolfCryButton)
         wolfCryButton.haptic(wolfCryButton)
+        wolfCryButton.showsTouchWhenHighlighted = true
         
         if (wolfCryPlayer!.isPlaying)
         {
@@ -1134,6 +1160,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         knockKnockButton.pulsate(knockKnockButton)
         knockKnockButton.haptic(knockKnockButton)
+        knockKnockButton.showsTouchWhenHighlighted = true
         
         if (knockKnockPlayer!.isPlaying)
         {
@@ -1156,6 +1183,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         igorGrumbleButton.pulsate(igorGrumbleButton)
         igorGrumbleButton.haptic(igorGrumbleButton)
+        igorGrumbleButton.showsTouchWhenHighlighted = true
         
         if (igorGrumblePlayer!.isPlaying)
         {
@@ -1178,6 +1206,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         horrorMovieButton.pulsate(horrorMovieButton)
         horrorMovieButton.haptic(horrorMovieButton)
+        horrorMovieButton.showsTouchWhenHighlighted = true
         
         if (horrorMoviePlayer!.isPlaying)
         {
@@ -1200,6 +1229,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         warningBellsButton.pulsate(warningBellsButton)
         warningBellsButton.haptic(warningBellsButton)
+        warningBellsButton.showsTouchWhenHighlighted = true
         
         if (warningBellsPlayer!.isPlaying)
         {
@@ -1222,6 +1252,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         painfulMoanButton.pulsate(painfulMoanButton)
         painfulMoanButton.haptic(painfulMoanButton)
+        painfulMoanButton.showsTouchWhenHighlighted = true
         
         if (painfulMoanPlayer!.isPlaying)
         {
@@ -1244,6 +1275,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         witchesCauldronButton.pulsate(witchesCauldronButton)
         witchesCauldronButton.haptic(witchesCauldronButton)
+        witchesCauldronButton.showsTouchWhenHighlighted = true
         
         if (witchesCauldronPlayer!.isPlaying)
         {
@@ -1266,6 +1298,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         ghostlyChildrenButton.pulsate(ghostlyChildrenButton)
         ghostlyChildrenButton.haptic(ghostlyChildrenButton)
+        ghostlyChildrenButton.showsTouchWhenHighlighted = true
         
         if (ghostlyChildrenPlayer!.isPlaying)
         {
@@ -1288,6 +1321,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         hauntedSwampButton.pulsate(hauntedSwampButton)
         hauntedSwampButton.haptic(hauntedSwampButton)
+        hauntedSwampButton.showsTouchWhenHighlighted = true
         
         if (hauntedSwampPlayer!.isPlaying)
         {
@@ -1310,6 +1344,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         torturedSoulsButton.pulsate(torturedSoulsButton)
         torturedSoulsButton.haptic(torturedSoulsButton)
+        torturedSoulsButton.showsTouchWhenHighlighted = true
         
         if (torturedSoulsPlayer!.isPlaying)
         {
@@ -1332,6 +1367,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         chillingHornButton.pulsate(chillingHornButton)
         chillingHornButton.haptic(chillingHornButton)
+        chillingHornButton.showsTouchWhenHighlighted = true
         
         if (chillingHornPlayer!.isPlaying)
         {

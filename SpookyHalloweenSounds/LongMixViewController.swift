@@ -109,6 +109,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         
         ultraTerrorButton.pulsate(ultraTerrorButton)
         ultraTerrorButton.haptic(ultraTerrorButton)
+        ultraTerrorButton.showsTouchWhenHighlighted = true
         
         if (ultraTerrorPlayer!.isPlaying)
         {
@@ -133,6 +134,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         
         hauntedHouseButton.pulsate(hauntedHouseButton)
         hauntedHouseButton.haptic(hauntedHouseButton)
+        hauntedHouseButton.showsTouchWhenHighlighted = true
         
         if (hauntedHousePlayer!.isPlaying)
         {
@@ -156,6 +158,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         
         spookySoundsButton.pulsate(spookySoundsButton)
         spookySoundsButton.haptic(spookySoundsButton)
+        spookySoundsButton.showsTouchWhenHighlighted = true
         
         if (spookySoundsPlayer!.isPlaying)
         {
@@ -179,6 +182,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         
         spaceTerrorButton.pulsate(spaceTerrorButton)
         spaceTerrorButton.haptic(spaceTerrorButton)
+        spaceTerrorButton.showsTouchWhenHighlighted = true
         
         if (spaceTerrorPlayer!.isPlaying)
         {
@@ -202,6 +206,7 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         
         dontLetThemInButton.pulsate(dontLetThemInButton)
         dontLetThemInButton.haptic(dontLetThemInButton)
+        dontLetThemInButton.showsTouchWhenHighlighted = true
         
         if (dontLetThemInPlayer!.isPlaying)
         {

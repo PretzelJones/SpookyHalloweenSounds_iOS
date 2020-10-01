@@ -69,6 +69,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         
         ghostSongButton.pulsate(ghostSongButton)
         ghostSongButton.haptic(ghostSongButton)
+        ghostSongButton.showsTouchWhenHighlighted = true
         
         if (ghostSongPlayer!.isPlaying)
         {
@@ -91,6 +92,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         
         oldTapeButton.pulsate(oldTapeButton)
         oldTapeButton.haptic(oldTapeButton)
+        oldTapeButton.showsTouchWhenHighlighted = true
         
         if (oldTapePlayer!.isPlaying)
         {
@@ -113,6 +115,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         
         criesOfInsanityButton.pulsate(criesOfInsanityButton)
         criesOfInsanityButton.haptic(criesOfInsanityButton)
+        criesOfInsanityButton.showsTouchWhenHighlighted = true
         
         if (criesOfInsanityPlayer!.isPlaying)
         {
@@ -135,6 +138,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         
         criesHellButton.pulsate(criesHellButton)
         criesHellButton.haptic(criesHellButton)
+        criesHellButton.showsTouchWhenHighlighted = true
         
         if (criesHellPlayer!.isPlaying)
         {

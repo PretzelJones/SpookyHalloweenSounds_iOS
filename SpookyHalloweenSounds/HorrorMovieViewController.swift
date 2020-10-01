@@ -115,6 +115,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
         halloweenButton.pulsate(halloweenButton)
         halloweenButton.haptic(halloweenButton)
+        halloweenButton.showsTouchWhenHighlighted = true
         
         if (halloweenPlayer!.isPlaying)
         {
@@ -137,6 +138,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
         exorcistButton.pulsate(exorcistButton)
         exorcistButton.haptic(exorcistButton)
+        exorcistButton.showsTouchWhenHighlighted = true
         
         if (exorcistPlayer!.isPlaying)
         {
@@ -159,6 +161,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
         shiningButton.pulsate(shiningButton)
         shiningButton.haptic(shiningButton)
+        shiningButton.showsTouchWhenHighlighted = true
         
         if (shiningPlayer!.isPlaying)
         {
@@ -181,6 +184,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
         nightmareButton.pulsate(nightmareButton)
         nightmareButton.haptic(nightmareButton)
+        nightmareButton.showsTouchWhenHighlighted = true
         
         if (nightmarePlayer!.isPlaying)
         {
@@ -203,6 +207,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
         fridayButton.pulsate(fridayButton)
         fridayButton.haptic(fridayButton)
+        fridayButton.showsTouchWhenHighlighted = true
         
         if (fridayPlayer!.isPlaying)
         {
