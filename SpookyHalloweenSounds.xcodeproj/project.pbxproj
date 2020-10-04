@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040F5D8A24CDB5BB004BE726 /* BatAnimatonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F5D8924CDB5BB004BE726 /* BatAnimatonController.swift */; };
 		0476EC60250D3BCC007ED260 /* peak.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC5F250D3BCB007ED260 /* peak.png */; };
 		0476EC64250D3CA6007ED260 /* eyes_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC62250D3CA6007ED260 /* eyes_orange.png */; };
 		14357AAF234949CA00D9B0D3 /* bosson_full_logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */; };
@@ -110,7 +109,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		040F5D8924CDB5BB004BE726 /* BatAnimatonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatAnimatonController.swift; sourceTree = "<group>"; };
 		0476EC5F250D3BCB007ED260 /* peak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peak.png; sourceTree = "<group>"; };
 		0476EC62250D3CA6007ED260 /* eyes_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes_orange.png; sourceTree = "<group>"; };
 		09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 				14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */,
 				1451D9FD24925F920094053E /* PulseAnimation.swift */,
 				1451DA0524958B9F0094053E /* PulseAnimation2.swift */,
-				040F5D8924CDB5BB004BE726 /* BatAnimatonController.swift */,
 				1451DA03249589630094053E /* NoHighlightButton.swift */,
 				1451DA07249592BB0094053E /* HapticFeedback.swift */,
 				1451D9F924925CE20094053E /* Colors.swift */,
@@ -729,7 +726,6 @@
 				1451D9FA24925CE20094053E /* Colors.swift in Sources */,
 				1451DA08249592BB0094053E /* HapticFeedback.swift in Sources */,
 				1451DA04249589630094053E /* NoHighlightButton.swift in Sources */,
-				040F5D8A24CDB5BB004BE726 /* BatAnimatonController.swift in Sources */,
 				1447250B248C1EF600A27662 /* HorrorMovieViewController.swift in Sources */,
 				14FE01E4248B260A00E1B0B0 /* LongMixViewController.swift in Sources */,
 				1451DA0624958B9F0094053E /* PulseAnimation2.swift in Sources */,
@@ -916,14 +912,14 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -942,14 +938,14 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.6;
+				MARKETING_VERSION = 1.1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";

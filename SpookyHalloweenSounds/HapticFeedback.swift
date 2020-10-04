@@ -13,8 +13,11 @@ extension UIButton {
     
     @IBAction func haptic(_ sender: UIButton) {
         
-        let generator = UISelectionFeedbackGenerator()
-        generator.selectionChanged()
+        //        let generator = UISelectionFeedbackGenerator()
+        //        generator.selectionChanged()
+        
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
         
     }
     
