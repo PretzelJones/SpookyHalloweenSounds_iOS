@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 //import FirebaseMessaging
 import UserNotifications
 import AVFoundation
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Other project setup
         
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         //used for Firebase Messaging
         //        Messaging.messaging().delegate = self as? MessagingDelegate
         
