@@ -7,8 +7,8 @@
 //
 
 import UIKit
-//import Firebase
-//import FirebaseMessaging
+import Firebase
+import FirebaseMessaging
 import UserNotifications
 import AVFoundation
 
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Other project setup
         
         // Override point for customization after application launch.
-//        FirebaseApp.configure()
+        FirebaseApp.configure()
         //used for Firebase Messaging
         //        Messaging.messaging().delegate = self as? MessagingDelegate
         
@@ -56,21 +56,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    //used for Firebase Messaging
-    //    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-    //        print("Firebase registration token: \(fcmToken)")
-    //
-    //        let dataDict:[String: String] = ["token": fcmToken]
-    //        NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
-    //        // TODO: If necessary send token to application server.
-    //        // Note: This callback is fired at each app startup and whenever a new token is generated.
-    //    }
-    //
-    //    //used for Firebase Messaging
-    //    private func application(application: UIApplication,
-    //                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    //        Messaging.messaging().apnsToken = deviceToken
-    //    }
+////    used for Firebase Messaging
+//        func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+//            print("Firebase registration token: \(fcmToken)")
+//
+//            let dataDict:[String: String] = ["token": fcmToken]
+//            NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
+//            // TODO: If necessary send token to application server.
+//            // Note: This callback is fired at each app startup and whenever a new token is generated.
+//        }
+//
+//        //used for Firebase Messaging
+//        private func application(application: UIApplication,
+//                         didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+//            Messaging.messaging().apnsToken = deviceToken
+//        }
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

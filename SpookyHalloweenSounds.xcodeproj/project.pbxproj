@@ -420,7 +420,7 @@
 				7B305C852132F25300B184F5 /* Sources */,
 				7B305C862132F25300B184F5 /* Frameworks */,
 				7B305C872132F25300B184F5 /* Resources */,
-				2633D3B3F45AC438C9FC4C65 /* [CP] Embed Pods Frameworks */,
+				8FBEEB418EF09C0E01959D66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -458,7 +458,7 @@
 				7B305CA42132F25500B184F5 /* Sources */,
 				7B305CA52132F25500B184F5 /* Frameworks */,
 				7B305CA62132F25500B184F5 /* Resources */,
-				7E339CE2643B782909F4EE57 /* [CP] Embed Pods Frameworks */,
+				71C05FEA933EB253063E37DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -615,23 +615,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2633D3B3F45AC438C9FC4C65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		31864E261531EF8FCD04A365 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,7 +659,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E339CE2643B782909F4EE57 /* [CP] Embed Pods Frameworks */ = {
+		71C05FEA933EB253063E37DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -691,6 +674,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FBEEB418EF09C0E01959D66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpookyHalloweenSounds/Pods-SpookyHalloweenSounds-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91681075B22C3D570370337F /* [CP] Check Pods Manifest.lock */ = {
