@@ -1343,7 +1343,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-ss-dCV">
-                                <rect key="frame" x="0.0" y="430" width="414" height="334"/>
+                                <rect key="frame" x="0.0" y="488" width="414" height="276"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -1397,26 +1397,48 @@
                                     <action selector="fridayPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="nEE-gi-rSC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTV-Fu-Gb5">
+                                <rect key="frame" x="0.0" y="430" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qIg-sV-hlK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <state key="normal" title="  Amityville Horror" image="amityville">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="amityPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="J6O-6G-LDe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lgw-ij-bbs"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="tQp-YS-MJU" firstAttribute="top" secondItem="HAk-N4-kim" secondAttribute="bottom" constant="8" symbolic="YES" id="0KD-xa-58C"/>
                             <constraint firstItem="lgw-ij-bbs" firstAttribute="bottom" secondItem="dcL-ss-dCV" secondAttribute="bottom" constant="10" id="0gV-MP-tGR"/>
+                            <constraint firstItem="hTV-Fu-Gb5" firstAttribute="leading" secondItem="9hR-t8-Dej" secondAttribute="leading" id="3K7-n1-h9T"/>
                             <constraint firstItem="Fef-gd-b0I" firstAttribute="leading" secondItem="HAk-N4-kim" secondAttribute="leading" id="3WU-80-D0e"/>
-                            <constraint firstItem="dcL-ss-dCV" firstAttribute="top" secondItem="tQp-YS-MJU" secondAttribute="bottom" constant="66" id="4uu-bL-6ht"/>
                             <constraint firstItem="tQp-YS-MJU" firstAttribute="leading" secondItem="dcL-ss-dCV" secondAttribute="leading" id="CB2-3b-NhS"/>
                             <constraint firstItem="1Ec-H0-iiE" firstAttribute="centerX" secondItem="9bC-ta-iZ0" secondAttribute="centerX" id="GSS-se-Ia6"/>
                             <constraint firstItem="tQp-YS-MJU" firstAttribute="trailing" secondItem="dcL-ss-dCV" secondAttribute="trailing" id="H7T-Yi-Maz"/>
+                            <constraint firstItem="dcL-ss-dCV" firstAttribute="top" secondItem="hTV-Fu-Gb5" secondAttribute="bottom" constant="8" id="JBn-zq-vCn"/>
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="trailing" secondItem="Fef-gd-b0I" secondAttribute="trailing" id="Kuc-JI-1zm"/>
                             <constraint firstItem="9hR-t8-Dej" firstAttribute="trailing" secondItem="tQp-YS-MJU" secondAttribute="trailing" id="LyW-9O-Bba"/>
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="leading" secondItem="Fef-gd-b0I" secondAttribute="leading" id="OiR-r0-GpX"/>
                             <constraint firstAttribute="trailing" secondItem="9bC-ta-iZ0" secondAttribute="trailing" id="WjG-gQ-Ip0"/>
                             <constraint firstItem="9hR-t8-Dej" firstAttribute="top" secondItem="tQp-YS-MJU" secondAttribute="bottom" constant="8" symbolic="YES" id="ZzX-oM-zLh"/>
+                            <constraint firstItem="hTV-Fu-Gb5" firstAttribute="top" secondItem="9hR-t8-Dej" secondAttribute="bottom" constant="8" symbolic="YES" id="btS-ao-gUM"/>
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="leading" secondItem="ly2-QD-7ju" secondAttribute="leading" id="cH5-a1-T5v"/>
                             <constraint firstItem="Fef-gd-b0I" firstAttribute="trailing" secondItem="HAk-N4-kim" secondAttribute="trailing" id="cka-fK-pax"/>
                             <constraint firstItem="HAk-N4-kim" firstAttribute="trailing" secondItem="tQp-YS-MJU" secondAttribute="trailing" id="dCL-jY-JVu"/>
                             <constraint firstItem="1Ec-H0-iiE" firstAttribute="top" secondItem="ly2-QD-7ju" secondAttribute="top" constant="20" symbolic="YES" id="eSA-V7-w3Q"/>
+                            <constraint firstItem="hTV-Fu-Gb5" firstAttribute="trailing" secondItem="9hR-t8-Dej" secondAttribute="trailing" id="grU-vE-vsa"/>
                             <constraint firstItem="HAk-N4-kim" firstAttribute="leading" secondItem="tQp-YS-MJU" secondAttribute="leading" id="h6P-CY-5EC"/>
                             <constraint firstItem="HAk-N4-kim" firstAttribute="top" secondItem="Fef-gd-b0I" secondAttribute="bottom" constant="8" symbolic="YES" id="ibv-IT-emk"/>
                             <constraint firstItem="9bC-ta-iZ0" firstAttribute="top" secondItem="1Ec-H0-iiE" secondAttribute="bottom" constant="8" symbolic="YES" id="j0P-SC-h8k"/>
@@ -1427,6 +1449,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Horror Movie Themes" id="xpv-Qt-GW1"/>
                     <connections>
+                        <outlet property="amityvilleButton" destination="hTV-Fu-Gb5" id="ggf-bP-qXJ"/>
                         <outlet property="exorcistButton" destination="Fef-gd-b0I" id="arV-E9-MVg"/>
                         <outlet property="fridayButton" destination="9hR-t8-Dej" id="my5-dV-8ly"/>
                         <outlet property="halloweenButton" destination="9bC-ta-iZ0" id="eVc-E6-XH5"/>
@@ -1618,6 +1641,7 @@
     </scenes>
     <resources>
         <image name="alien" width="29" height="29"/>
+        <image name="amityville" width="40" height="40"/>
         <image name="bats" width="20" height="20"/>
         <image name="bats_flipped" width="20" height="20"/>
         <image name="black_cat" width="40" height="40"/>

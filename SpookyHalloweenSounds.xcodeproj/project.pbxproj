@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0476EC60250D3BCC007ED260 /* peak.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC5F250D3BCB007ED260 /* peak.png */; };
 		0476EC64250D3CA6007ED260 /* eyes_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC62250D3CA6007ED260 /* eyes_orange.png */; };
+		04AA90D8252E4A1C00343F7E /* amityville.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04AA90D7252E4A1C00343F7E /* amityville.mp3 */; };
 		14357AAF234949CA00D9B0D3 /* bosson_full_logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */; };
 		14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14357AB0234A196700D9B0D3 /* tab_logo.png */; };
 		14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */; };
@@ -111,6 +112,7 @@
 /* Begin PBXFileReference section */
 		0476EC5F250D3BCB007ED260 /* peak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peak.png; sourceTree = "<group>"; };
 		0476EC62250D3CA6007ED260 /* eyes_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes_orange.png; sourceTree = "<group>"; };
+		04AA90D7252E4A1C00343F7E /* amityville.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = amityville.mp3; sourceTree = "<group>"; };
 		09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
 		14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bosson_full_logo.PNG; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 		7B305CBB2132F9F300B184F5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				04AA90D7252E4A1C00343F7E /* amityville.mp3 */,
 				8DC9309A24A76943008C189D /* exorcist.mp3 */,
 				8DC9309B24A76943008C189D /* halloween.mp3 */,
 				8DC9309924A76943008C189D /* shining.mp3 */,
@@ -547,6 +550,7 @@
 				1451D9FC24925D320094053E /* elm_street.mp3 in Resources */,
 				0476EC60250D3BCC007ED260 /* peak.png in Resources */,
 				7B305C942132F25500B184F5 /* Assets.xcassets in Resources */,
+				04AA90D8252E4A1C00343F7E /* amityville.mp3 in Resources */,
 				7B987D872133718D00743717 /* poltergeist_voice.mp3 in Resources */,
 				7B987D9F2133718D00743717 /* dracula_laugh.mp3 in Resources */,
 				7B987D902133718D00743717 /* wolf_cry.mp3 in Resources */,
