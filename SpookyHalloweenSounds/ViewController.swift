@@ -121,10 +121,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
-        daysLabel.text = "\(daysTillHalloween) days till Halloween"
         
-        //        UIApplication.shared.applicationIconBadgeNumber = daysTillHalloween
+        let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
+        if (daysTillHalloween == 0){
+            daysLabel.text = "Happy Halloween"
+        }else{
+        daysLabel.text = "\(daysTillHalloween) days till Halloween"
+        }
+           
+                UIApplication.shared.applicationIconBadgeNumber = daysTillHalloween
         UIApplication.shared.applicationIconBadgeNumber = 0
         
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
