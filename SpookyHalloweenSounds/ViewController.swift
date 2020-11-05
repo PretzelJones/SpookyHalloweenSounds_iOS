@@ -90,47 +90,66 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var torturedSoulsPlayer: AVAudioPlayer?
     var chillingHornPlayer: AVAudioPlayer?
     
-    var Halloween: Date {
-        let currentYear = Date()
-        let userCalendar = Calendar.current
-        var components = DateComponents()
-        components.year = userCalendar.component(.year, from: currentYear)
-        components.day = 31
-        components.month = 10
-        
-        return userCalendar.date(from: components)!
+    func daysUntilNextDate(matching components: DateComponents) -> Int {
+        let date = Date()
+        guard let calendar = components.calendar,
+              let nextDate = calendar.nextDate(after: date, matching: components, matchingPolicy: .strict) else { return .zero }
+        return calendar.dateComponents([.day], from: date, to: nextDate).day!
     }
     
-    var today: Date {
-        let now = Date()
-        let userCalendar = Calendar.current
-        var components = DateComponents()
-        components.year = userCalendar.component(.year, from: now)
-        components.day = userCalendar.component(.day, from: now)
-        components.month = userCalendar.component(.month, from: now)
-        
-        return userCalendar.date(from: components)!
-    }
+    //    let holiday: DateComponents = .init(calendar: .current, month: 11, day: 2)
+    let halloween: DateComponents = .init(calendar: .current, month: 11, day:6)
     
-    func daysBetweenDates(startDate: Date, endDate: Date) -> Int {
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.day], from: startDate, to: endDate)
-        return components.day!
-    }
+    //    var Halloween: Date {
+    //        let currentYear = Date()
+    //        let userCalendar = Calendar.current
+    //        var components = DateComponents()
+    //        components.year = userCalendar.component(.year, from: currentYear)
+    //        components.day = 31
+    //        components.month = 10
+    //
+    //        return userCalendar.date(from: components)!
+    //    }
+    //
+    //    var today: Date {
+    //        let now = Date()
+    //        let userCalendar = Calendar.current
+    //        var components = DateComponents()
+    //        components.year = userCalendar.component(.year, from: now)
+    //        components.day = userCalendar.component(.day, from: now)
+    //        components.month = userCalendar.component(.month, from: now)
+    //
+    //        return userCalendar.date(from: components)!
+    //    }
+    //
+    //    func daysBetweenDates(startDate: Date, endDate: Date) -> Int {
+    //        let calendar = Calendar.current
+    //        let components = calendar.dateComponents([.day], from: startDate, to: endDate)
+    //        return components.day!
+    //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //        let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
+//
+//                if (daysTillHalloween == 0){
+//                    daysLabel.text = "Happy Halloween"
+//                }else{
+//                    daysLabel.text = "\(daysTillHalloween) days till Halloween"
+//                }
         
-        let daysTillHalloween = daysBetweenDates(startDate: today, endDate: Halloween)
-        if (daysTillHalloween == 0){
+        //needs work
+        if (daysUntilNextDate(matching: halloween) == 0){
             daysLabel.text = "Happy Halloween"
         }else{
-        daysLabel.text = "\(daysTillHalloween) days till Halloween"
+            daysLabel.text = "\(daysUntilNextDate(matching: halloween)) days till Halloween"
         }
-           
-                UIApplication.shared.applicationIconBadgeNumber = daysTillHalloween
-        UIApplication.shared.applicationIconBadgeNumber = 0
+        
+//        daysLabel.text = "\(daysUntilNextDate(matching: halloween)) days till Halloween"
+        
+        //        UIApplication.shared.applicationIconBadgeNumber = daysTillHalloween
+        //        UIApplication.shared.applicationIconBadgeNumber = 0
         
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
