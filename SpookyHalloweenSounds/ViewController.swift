@@ -97,7 +97,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         return calendar.dateComponents([.day], from: date, to: nextDate).day!
     }
     
-    let halloween: DateComponents = .init(calendar: .current, month: 11, day:6)
+    let halloween: DateComponents = .init(calendar: .current, month: 11, day:1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,7 +109,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
         
         UIApplication.shared.applicationIconBadgeNumber = (daysUntilNextDate(matching: halloween))
-        //        UIApplication.shared.applicationIconBadgeNumber = 0
         
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
