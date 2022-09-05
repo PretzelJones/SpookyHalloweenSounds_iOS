@@ -108,7 +108,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             daysLabel.text = "\(daysUntilNextDate(matching: halloween)) days till Halloween"
         }
         
-        UIApplication.shared.applicationIconBadgeNumber = (daysUntilNextDate(matching: halloween))
+        //UIApplication.shared.applicationIconBadgeNumber = (daysUntilNextDate(matching: halloween))
         
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
