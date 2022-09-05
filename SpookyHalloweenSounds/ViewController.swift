@@ -10,6 +10,44 @@ import UIKit
 import AVFoundation
 import StoreKit
 
+var witchCacklePlayer: AVAudioPlayer?
+var blackCatPlayer: AVAudioPlayer?
+var creepyLaughPlayer: AVAudioPlayer?
+var creakyDoorPlayer: AVAudioPlayer?
+var horrorAmbiancePlayer: AVAudioPlayer?
+var monsterGrowlPlayer: AVAudioPlayer?
+var monsterWalkingPlayer: AVAudioPlayer?
+var spookyChainsPlayer: AVAudioPlayer?
+var thunderStormPlayer: AVAudioPlayer?
+var vampireBatPlayer: AVAudioPlayer?
+var scaryScreamPlayer: AVAudioPlayer?
+var zombieGroanPlayer: AVAudioPlayer?
+var ghostBooPlayer: AVAudioPlayer?
+var wereWolfHowlPlayer: AVAudioPlayer?
+var poltergeistVoicePlayer: AVAudioPlayer?
+var zombieCallPlayer: AVAudioPlayer?
+var catScreamPlayer: AVAudioPlayer?
+var wraithWailPlayer: AVAudioPlayer?
+var spookyOwlPlayer: AVAudioPlayer?
+var chainedGhoulPlayer: AVAudioPlayer?
+var terrifiedScreamPlayer: AVAudioPlayer?
+var hauntedOrganPlayer: AVAudioPlayer?
+var scareCrowPlayer: AVAudioPlayer?
+var blowingWindPlayer: AVAudioPlayer?
+var ghostlyWhisperPlayer: AVAudioPlayer?
+var draculaLaughPlayer: AVAudioPlayer?
+var wolfCryPlayer: AVAudioPlayer?
+var knockKnockPlayer: AVAudioPlayer?
+var igorGrumblePlayer: AVAudioPlayer?
+var horrorMoviePlayer: AVAudioPlayer?
+var warningBellsPlayer: AVAudioPlayer?
+var painfulMoanPlayer: AVAudioPlayer?
+var witchesCauldronPlayer: AVAudioPlayer?
+var ghostlyChildrenPlayer: AVAudioPlayer?
+var hauntedSwampPlayer: AVAudioPlayer?
+var torturedSoulsPlayer: AVAudioPlayer?
+var chillingHornPlayer: AVAudioPlayer?
+
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var daysLabel: UILabel!
@@ -51,44 +89,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var hauntedSwampButton: UIButton!
     @IBOutlet weak var torturedSoulsButton: UIButton!
     @IBOutlet weak var chillingHornButton: UIButton!
-    
-    var witchCacklePlayer: AVAudioPlayer?
-    var blackCatPlayer: AVAudioPlayer?
-    var creepyLaughPlayer: AVAudioPlayer?
-    var creakyDoorPlayer: AVAudioPlayer?
-    var horrorAmbiancePlayer: AVAudioPlayer?
-    var monsterGrowlPlayer: AVAudioPlayer?
-    var monsterWalkingPlayer: AVAudioPlayer?
-    var spookyChainsPlayer: AVAudioPlayer?
-    var thunderStormPlayer: AVAudioPlayer?
-    var vampireBatPlayer: AVAudioPlayer?
-    var scaryScreamPlayer: AVAudioPlayer?
-    var zombieGroanPlayer: AVAudioPlayer?
-    var ghostBooPlayer: AVAudioPlayer?
-    var wereWolfHowlPlayer: AVAudioPlayer?
-    var poltergeistVoicePlayer: AVAudioPlayer?
-    var zombieCallPlayer: AVAudioPlayer?
-    var catScreamPlayer: AVAudioPlayer?
-    var wraithWailPlayer: AVAudioPlayer?
-    var spookyOwlPlayer: AVAudioPlayer?
-    var chainedGhoulPlayer: AVAudioPlayer?
-    var terrifiedScreamPlayer: AVAudioPlayer?
-    var hauntedOrganPlayer: AVAudioPlayer?
-    var scareCrowPlayer: AVAudioPlayer?
-    var blowingWindPlayer: AVAudioPlayer?
-    var ghostlyWhisperPlayer: AVAudioPlayer?
-    var draculaLaughPlayer: AVAudioPlayer?
-    var wolfCryPlayer: AVAudioPlayer?
-    var knockKnockPlayer: AVAudioPlayer?
-    var igorGrumblePlayer: AVAudioPlayer?
-    var horrorMoviePlayer: AVAudioPlayer?
-    var warningBellsPlayer: AVAudioPlayer?
-    var painfulMoanPlayer: AVAudioPlayer?
-    var witchesCauldronPlayer: AVAudioPlayer?
-    var ghostlyChildrenPlayer: AVAudioPlayer?
-    var hauntedSwampPlayer: AVAudioPlayer?
-    var torturedSoulsPlayer: AVAudioPlayer?
-    var chillingHornPlayer: AVAudioPlayer?
     
     func daysUntilNextDate(matching components: DateComponents) -> Int {
         let date = Date()
