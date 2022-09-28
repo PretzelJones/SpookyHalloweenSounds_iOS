@@ -48,6 +48,9 @@ var hauntedSwampPlayer: AVAudioPlayer?
 var torturedSoulsPlayer: AVAudioPlayer?
 var chillingHornPlayer: AVAudioPlayer?
 
+var audioPlayer = [ witchCacklePlayer, blackCatPlayer, creepyLaughPlayer ]
+var audioSoundFile = URL.init(fileURLWithPath: Bundle.main.path(forResource: [ witch_laugh, black_cat, ] ) )
+
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var daysLabel: UILabel!
@@ -118,6 +121,17 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = arrowImage
         self.navigationController?.navigationBar.backItem?.title = "Custom"
         
+        for audioPlayer in audioPlayer {
+            do {
+                
+                audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "witch_laugh", ofType: "mp3")!))
+                audioPlayer?.prepareToPlay()
+            }
+            
+            catch {
+                print(error)
+        }
+        /*
         do {
             
             witchCacklePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "witch_laugh", ofType: "mp3")!))
@@ -150,7 +164,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             print(error)
             
         }
-        
+        */
         do {
             
             monsterGrowlPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "monster_growl", ofType: "mp3")!))
