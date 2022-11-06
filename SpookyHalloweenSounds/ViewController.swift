@@ -102,9 +102,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (daysUntilNextDate(matching: halloween) == 0){
+        if (daysUntilNextDate(matching: halloween) == 0) {
             daysLabel.text = "Happy Halloween"
-        }else{
+        } else {
             daysLabel.text = "\(daysUntilNextDate(matching: halloween)) days till Halloween"
         }
         

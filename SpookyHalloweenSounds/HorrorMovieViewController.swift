@@ -97,7 +97,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         catch {
             print(error)
         }
-        
+
         do {
             
             fridayPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "vorhees", ofType: "mp3")!))
@@ -181,8 +181,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         shiningButton.haptic(shiningButton)
         shiningButton.showsTouchWhenHighlighted = true
         
-        if (shiningPlayer!.isPlaying)
-        {
+        if (shiningPlayer!.isPlaying){
             shiningPlayer?.delegate = self
             shiningPlayer!.pause();
             shiningButton.backgroundColor = halloweenOrange
@@ -222,7 +221,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    @IBAction func fridayPlay(_ sender: Any) {
+    @IBAction func fridayPlay(_ sender: Any){
         
         fridayButton.pulsate(fridayButton)
         fridayButton.haptic(fridayButton)
@@ -246,7 +245,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    @IBAction func amityPlay(_ sender: Any) {
+    @IBAction func amityPlay(_ sender: Any){
         
         amityvilleButton.pulsate(amityvilleButton)
         amityvilleButton.haptic(amityvilleButton)
