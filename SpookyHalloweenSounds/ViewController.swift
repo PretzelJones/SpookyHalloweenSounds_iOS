@@ -103,7 +103,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
         
         if (daysUntilNextDate(matching: halloween) == 0) {
-            daysLabel.text = "Happy Halloween"
+            daysLabel.text = "Happy Halloween!"
+        } else if (daysUntilNextDate(matching: halloween) == 1) {
+            daysLabel.text = "Tomorrow is Halloween!"
         } else {
             daysLabel.text = "\(daysUntilNextDate(matching: halloween)) days till Halloween"
         }
@@ -1517,5 +1519,3 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
 }
-
-
