@@ -11,27 +11,49 @@ import AVFoundation
 
 class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
     
+    var ultraTerrorPlayer: AVAudioPlayer?
+    var hauntedHousePlayer: AVAudioPlayer?
+    var spookySoundsPlayer: AVAudioPlayer?
+    var spaceTerrorPlayer: AVAudioPlayer?
+    var dontLetThemInPlayer: AVAudioPlayer?
+    
     @IBOutlet weak var ultraTerrorButton: UIButton!
     @IBOutlet weak var hauntedHouseButton: UIButton!
     @IBOutlet weak var spookySoundsButton: UIButton!
     @IBOutlet weak var spaceTerrorButton: UIButton!
     @IBOutlet weak var dontLetThemInButton: UIButton!
     
-    var ultraTerrorPlayer: AVAudioPlayer?
-    var hauntedHousePlayer: AVAudioPlayer?
-    var spookySoundsPlayer: AVAudioPlayer?
-    var insaneAsylumPlayer: AVAudioPlayer?
-    var spaceTerrorPlayer: AVAudioPlayer?
-    var dontLetThemInPlayer: AVAudioPlayer?
+    let ultraTerrorLongPress = UILongPressGestureRecognizer()
+    let hauntedHouseLongPress = UILongPressGestureRecognizer()
+    let spookySoundsLongPress = UILongPressGestureRecognizer()
+    let spaceTerrorLongPress = UILongPressGestureRecognizer()
+    let dontLetThemInLongPress = UILongPressGestureRecognizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        PopupManager.shared.showPopup(inViewController: self)
         
         ultraTerrorButton.noHighlight(ultraTerrorButton)
         spookySoundsButton.noHighlight(spookySoundsButton)
         hauntedHouseButton.noHighlight(hauntedHouseButton)
         spaceTerrorButton.noHighlight(spaceTerrorButton)
         dontLetThemInButton.noHighlight(dontLetThemInButton)
+        
+        // Set the target and action for each gesture recognizer
+        ultraTerrorLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        hauntedHouseLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        spookySoundsLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        hauntedHouseLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        spaceTerrorLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        dontLetThemInLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        
+        // Add the gesture recognizers to the buttons
+        ultraTerrorButton.addGestureRecognizer(ultraTerrorLongPress)
+        hauntedHouseButton.addGestureRecognizer(hauntedHouseLongPress)
+        spookySoundsButton.addGestureRecognizer(spookySoundsLongPress)
+        spaceTerrorButton.addGestureRecognizer(spaceTerrorLongPress)
+        dontLetThemInButton.addGestureRecognizer(dontLetThemInLongPress)
         
         do {
             
@@ -50,20 +72,6 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
         
         do {
             
-            spookySoundsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "long_mix", ofType: "mp3")!))
-            spookySoundsPlayer?.prepareToPlay()
-            
-            let audioSession = AVAudioSession.sharedInstance()
-
-            do{
-                try audioSession.setCategory(AVAudioSession.Category.playback)
-            }
-        }
-        catch {
-            print(error)        }
-        
-        do {
-            
             hauntedHousePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "haunted_house", ofType: "mp3")!))
             hauntedHousePlayer?.prepareToPlay()
             
@@ -74,7 +82,25 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         catch {
-            print(error)        }
+            print(error)
+            
+        }
+        
+        do {
+            
+            spookySoundsPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "long_mix", ofType: "mp3")!))
+            spookySoundsPlayer?.prepareToPlay()
+            
+            let audioSession = AVAudioSession.sharedInstance()
+
+            do{
+                try audioSession.setCategory(AVAudioSession.Category.playback)
+            }
+        }
+        catch {
+            print(error)
+            
+        }
         
         do {
             
@@ -88,7 +114,9 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         catch {
-            print(error)        }
+            print(error)
+            
+        }
         
         do {
             
@@ -102,7 +130,28 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
         catch {
-            print(error)        }
+            print(error)
+            
+        }
+    }
+    
+    @objc func replayButtonLongPressed(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state == .began {
+            switch gestureRecognizer {
+            case ultraTerrorLongPress:
+                handleReplay(for: ultraTerrorButton, with: ultraTerrorPlayer)
+            case hauntedHouseLongPress:
+                handleReplay(for: hauntedHouseButton, with: hauntedHousePlayer)
+            case spookySoundsLongPress:
+                handleReplay(for: spookySoundsButton, with: spookySoundsPlayer)
+            case spaceTerrorLongPress:
+                handleReplay(for: spaceTerrorButton, with: spaceTerrorPlayer)
+            case dontLetThemInLongPress:
+                handleReplay(for: dontLetThemInButton, with: dontLetThemInPlayer)
+            default:
+                break
+            }
+        }
     }
     
     @IBAction func ultraTerrorPlay(_ sender: UIButton) {

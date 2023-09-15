@@ -6,20 +6,17 @@
 //  Copyright © 2022 Bosson Design. All rights reserved.
 //
 
-import Foundation
+import AVFoundation
+//import Foundation
 import UIKit
 
-extension UIButton {
-    
-    @IBAction func replay(_ gestureRecognizer: UILongPressGestureRecognizer) {
-
-       if gestureRecognizer.state == .began {
-           if ((player?.isPlaying) != nil) {
-               player?.pause()
-           }
-           player?.currentTime = 0
-           player?.play()
-           
-       }
+func handleReplay(for button: UIButton, with player: AVAudioPlayer?) {
+    if player?.isPlaying == true {
+        player?.stop()
     }
+    player?.currentTime = 0
+    player!.play();
+    player!.numberOfLoops = -1
+    button.backgroundColor = halloweenOrangeHighlight
+    button.setImage(UIImage(named: "pause"), for: .normal)
 }

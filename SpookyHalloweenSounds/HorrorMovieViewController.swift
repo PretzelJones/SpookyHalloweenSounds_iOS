@@ -9,8 +9,6 @@
 import UIKit
 import AVFoundation
 
-var player: AVAudioPlayer?
-
 class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     
     var halloweenPlayer: AVAudioPlayer?
@@ -27,8 +25,17 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var fridayButton: UIButton!
     @IBOutlet weak var amityvilleButton: UIButton!
     
+    let halloweenLongPress = UILongPressGestureRecognizer()
+    let exorcistLongPress = UILongPressGestureRecognizer()
+    let shiningLongPress = UILongPressGestureRecognizer()
+    let nightmareLongPress = UILongPressGestureRecognizer()
+    let fridayLongPress = UILongPressGestureRecognizer()
+    let amityvilleLongPress = UILongPressGestureRecognizer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        PopupManager.shared.showPopup(inViewController: self)
         
         halloweenButton.noHighlight(halloweenButton)
         exorcistButton.noHighlight(exorcistButton)
@@ -37,15 +44,30 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         fridayButton.noHighlight(fridayButton)
         amityvilleButton.noHighlight(amityvilleButton)
         
+        // Set the target and action for each gesture recognizer
+        halloweenLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        exorcistLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        shiningLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        nightmareLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        fridayLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        amityvilleLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        
+        // Add the gesture recognizers to the buttons
+        halloweenButton.addGestureRecognizer(halloweenLongPress)
+        exorcistButton.addGestureRecognizer(exorcistLongPress)
+        shiningButton.addGestureRecognizer(shiningLongPress)
+        nightmareButton.addGestureRecognizer(nightmareLongPress)
+        fridayButton.addGestureRecognizer(fridayLongPress)
+        amityvilleButton.addGestureRecognizer(amityvilleLongPress)
+        
         do {
             
             halloweenPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "halloween", ofType: "mp3")!))
             halloweenPlayer?.prepareToPlay()
             
-            //code for background play
             let audioSession = AVAudioSession.sharedInstance()
             
-            do{
+            do {
                 try audioSession.setCategory(AVAudioSession.Category.playback)
             }
         }
@@ -60,7 +82,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             let audioSession = AVAudioSession.sharedInstance()
             
-            do{
+            do {
                 try audioSession.setCategory(AVAudioSession.Category.playback)
             }
         }
@@ -75,7 +97,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             let audioSession = AVAudioSession.sharedInstance()
             
-            do{
+            do {
                 try audioSession.setCategory(AVAudioSession.Category.playback)
             }
         }
@@ -90,14 +112,14 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             
             let audioSession = AVAudioSession.sharedInstance()
             
-            do{
+            do {
                 try audioSession.setCategory(AVAudioSession.Category.playback)
             }
         }
         catch {
             print(error)
         }
-
+        
         do {
             
             fridayPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "vorhees", ofType: "mp3")!))
@@ -117,18 +139,39 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             amityvillePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "amityville", ofType: "mp3")!))
             amityvillePlayer?.prepareToPlay()
             
-            //code for background play
             let audioSession = AVAudioSession.sharedInstance()
             
-            do{
+            do {
                 try audioSession.setCategory(AVAudioSession.Category.playback)
             }
         }
         catch {
             print(error)
         }
+        
     }
     
+    @objc func replayButtonLongPressed(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state == .began {
+            switch gestureRecognizer {
+            case halloweenLongPress:
+                handleReplay(for: halloweenButton, with: halloweenPlayer)
+            case exorcistLongPress:
+                handleReplay(for: exorcistButton, with: exorcistPlayer)
+            case shiningLongPress:
+                handleReplay(for: shiningButton, with: shiningPlayer)
+            case nightmareLongPress:
+                handleReplay(for: nightmareButton, with: nightmarePlayer)
+            case fridayLongPress:
+                handleReplay(for: fridayButton, with: fridayPlayer)
+            case amityvilleLongPress:
+                handleReplay(for: amityvilleButton, with: amityvillePlayer)
+            default:
+                break
+            }
+        }
+    }
+
     @IBAction func halloweenPlay(_ sender: UIButton) {
         
         halloweenButton.pulsate(halloweenButton)
@@ -218,7 +261,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             nightmareButton.backgroundColor = halloweenOrangeHighlight
             nightmareButton.setImage(UIImage(named: "pause"), for: .normal)
         }
-        
     }
     
     @IBAction func fridayPlay(_ sender: Any){
@@ -242,7 +284,6 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             fridayButton.backgroundColor = halloweenOrangeHighlight
             fridayButton.setImage(UIImage(named: "pause"), for: .normal)
         }
-        
     }
     
     @IBAction func amityPlay(_ sender: Any){
@@ -265,9 +306,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
             amityvillePlayer!.numberOfLoops = -1
             amityvilleButton.backgroundColor = halloweenOrangeHighlight
             amityvilleButton.setImage(UIImage(named: "pause"), for: .normal)
-            
         }
-        
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
@@ -298,4 +337,3 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
 }
-

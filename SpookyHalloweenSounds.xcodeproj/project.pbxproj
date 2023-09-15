@@ -18,6 +18,7 @@
 		04F2C3D328D9159C003C63A2 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		04F2C3D628D915B2003C63A2 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		04F2C3D728D915B2003C63A2 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		04FBA75C2AB5062C00378E59 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBA75B2AB5062C00378E59 /* PopupManager.swift */; };
 		14357AAF234949CA00D9B0D3 /* bosson_full_logo.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */; };
 		14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 14357AB0234A196700D9B0D3 /* tab_logo.png */; };
 		14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */; };
@@ -126,6 +127,7 @@
 		04E463DD28C64130006F06DD /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = exorcist.mp3; path = ../../../old/SpookyHalloweenSounds_iOS_bak/SpookyHalloweenSounds/Audio/exorcist.mp3; sourceTree = "<group>"; };
 		04E463DF28C64138006F06DD /* halloween.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = halloween.mp3; path = ../../../old/SpookyHalloweenSounds_iOS_bak/SpookyHalloweenSounds/Audio/halloween.mp3; sourceTree = "<group>"; };
 		04E463E128C64149006F06DD /* shining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shining.mp3; path = ../../../old/SpookyHalloweenSounds_iOS_bak/SpookyHalloweenSounds/Audio/shining.mp3; sourceTree = "<group>"; };
+		04FBA75B2AB5062C00378E59 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		09A1184FFF06698EA51E5920 /* Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests/Pods-SpookyHalloweenSounds-SpookyHalloweenSoundsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
 		14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bosson_full_logo.PNG; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				1451DA07249592BB0094053E /* HapticFeedback.swift */,
 				1451D9F924925CE20094053E /* Colors.swift */,
 				04E463DB28C63CCB006F06DD /* Replay.swift */,
+				04FBA75B2AB5062C00378E59 /* PopupManager.swift */,
 				7B305C902132F25300B184F5 /* Main.storyboard */,
 				7B305C952132F25500B184F5 /* LaunchScreen.storyboard */,
 				8DC9309724A768B8008C189D /* GoogleService-Info.plist */,
@@ -746,6 +749,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14357AB5234A8C2F00D9B0D3 /* HiddenViewController.swift in Sources */,
+				04FBA75C2AB5062C00378E59 /* PopupManager.swift in Sources */,
 				1451D9FA24925CE20094053E /* Colors.swift in Sources */,
 				1451DA08249592BB0094053E /* HapticFeedback.swift in Sources */,
 				1451DA04249589630094053E /* NoHighlightButton.swift in Sources */,

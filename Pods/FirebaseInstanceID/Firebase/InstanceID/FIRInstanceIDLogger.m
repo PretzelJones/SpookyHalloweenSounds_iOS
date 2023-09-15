@@ -81,7 +81,7 @@ NSString *const kFIRInstanceIDLoggerService = @"[Firebase/InstanceID]";
 
 @end
 
-FIRInstanceIDLogger *FIRInstanceIDSharedLogger() {
+FIRInstanceIDLogger *FIRInstanceIDSharedLogger(void) {
   static dispatch_once_t onceToken;
   static FIRInstanceIDLogger *logger;
   dispatch_once(&onceToken, ^{

@@ -21,14 +21,33 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var criesOfInsanityButton: UIButton!
     @IBOutlet weak var criesHellButton: UIButton!
     
+    let ghostSongLongPress = UILongPressGestureRecognizer()
+    let oldTapeLongPress = UILongPressGestureRecognizer()
+    let criesOfInsanityLongPress = UILongPressGestureRecognizer()
+    let criesHellLongPress = UILongPressGestureRecognizer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        PopupManager.shared.showPopup(inViewController: self)
+        
         ghostSongButton.noHighlight(ghostSongButton)
         oldTapeButton.noHighlight(oldTapeButton)
-        criesHellButton.noHighlight(criesHellButton)
         criesOfInsanityButton.noHighlight(criesOfInsanityButton)
+        criesHellButton.noHighlight(criesHellButton)
         
+        // Set the target and action for each gesture recognizer
+        ghostSongLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        oldTapeLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        criesOfInsanityLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        criesHellLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+
+        // Add the gesture recognizers to the buttons
+        ghostSongButton.addGestureRecognizer(ghostSongLongPress)
+        oldTapeButton.addGestureRecognizer(oldTapeLongPress)
+        criesOfInsanityButton.addGestureRecognizer(criesOfInsanityLongPress)
+        criesHellButton.addGestureRecognizer(criesHellLongPress)
+    
         do {
             
             ghostSongPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "the_ghost_song", ofType: "mp3")!))
@@ -63,6 +82,23 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
         }
         catch {
             print(error)        }
+    }
+    
+    @objc func replayButtonLongPressed(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state == .began {
+            switch gestureRecognizer {
+            case ghostSongLongPress:
+                handleReplay(for: ghostSongButton, with: ghostSongPlayer)
+            case oldTapeLongPress:
+                handleReplay(for: oldTapeButton, with: oldTapePlayer)
+            case criesOfInsanityLongPress:
+                handleReplay(for: criesOfInsanityButton, with: criesOfInsanityPlayer)
+            case criesHellLongPress:
+                handleReplay(for: criesHellButton, with: criesHellPlayer)
+            default:
+                break
+            }
+        }
     }
     
     @IBAction func ghostSongPlay(_ sender: Any) {
