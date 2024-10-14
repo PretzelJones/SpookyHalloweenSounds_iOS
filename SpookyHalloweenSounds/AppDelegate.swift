@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // This will clear UserDefaults data. Use this ONLY for testing.
+                UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+                UserDefaults.standard.synchronize()
         //code for lock screen controls
         let audioSession = AVAudioSession.sharedInstance()
         do {

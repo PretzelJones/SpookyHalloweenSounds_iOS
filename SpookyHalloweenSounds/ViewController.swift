@@ -90,27 +90,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var torturedSoulsButton: UIButton!
     @IBOutlet weak var chillingHornButton: UIButton!
     
-    func daysUntilNextDate(matching components: DateComponents) -> Int {
-        let date = Date()
-        guard let calendar = components.calendar,
-              let nextDate = calendar.nextDate(after: date, matching: components, matchingPolicy: .strict) else { return .zero }
-        return calendar.dateComponents([.day], from: date, to: nextDate).day!
-    }
-    
-    let halloween: DateComponents = .init(calendar: .current, month: 11, day:1)
+    var countdownTimer: Timer?
+    let countdownManager = CountdownManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (daysUntilNextDate(matching: halloween) == 0) {
-            daysLabel.text = "Happy Halloween!"
-        } else if (daysUntilNextDate(matching: halloween) == 1) {
-            daysLabel.text = "Tomorrow is Halloween!"
-        } else {
-            daysLabel.text = "\(daysUntilNextDate(matching: halloween)) days till Halloween"
-        }
+        let countdownManager = CountdownManager()
         
-        //UIApplication.shared.applicationIconBadgeNumber = (daysUntilNextDate(matching: halloween))
+        // Update the countdown text using CountdownManager
+        daysLabel.text = countdownManager.getCountdownText()
+        
+        // Start the countdown timer
+        startCountdownTimer()
         
         let backBarButtton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtton
@@ -119,7 +111,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.navigationController?.navigationBar.backIndicatorImage = arrowImage
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = arrowImage
         self.navigationController?.navigationBar.backItem?.title = "Custom"
- 
+        
         do {
             
             witchCacklePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "witch_laugh", ofType: "mp3")!))
@@ -526,8 +518,22 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
+    func startCountdownTimer() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1800.0, target: self, selector: #selector(updateCountdownText), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateCountdownText() {
+        daysLabel.text = countdownManager.getCountdownText()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        countdownTimer?.invalidate() // Stop the timer to avoid memory leaks
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        startCountdownTimer()
         SKStoreReviewController.requestReview()
     }
     

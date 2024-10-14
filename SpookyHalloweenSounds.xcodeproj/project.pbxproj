@@ -11,9 +11,11 @@
 		0465560728EF87D70036842D /* exorcist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0465560628EF87D70036842D /* exorcist.mp3 */; };
 		0465560928EF87E50036842D /* shining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0465560828EF87E50036842D /* shining.mp3 */; };
 		0465560B28EF88250036842D /* freddy_coming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0465560A28EF88250036842D /* freddy_coming.mp3 */; };
+		046DACA52CBC12930071822F /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DACA42CBC12930071822F /* CountdownManager.swift */; };
 		0476EC60250D3BCC007ED260 /* peak.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC5F250D3BCB007ED260 /* peak.png */; };
 		0476EC64250D3CA6007ED260 /* eyes_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC62250D3CA6007ED260 /* eyes_orange.png */; };
 		04AA90D8252E4A1C00343F7E /* amityville.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04AA90D7252E4A1C00343F7E /* amityville.mp3 */; };
+		04BF57302C791FC40027560F /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF572F2C791FC40027560F /* AudioPlayerManager.swift */; };
 		04E463DC28C63CCB006F06DD /* Replay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E463DB28C63CCB006F06DD /* Replay.swift */; };
 		04F2C3D328D9159C003C63A2 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		04F2C3D628D915B2003C63A2 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -120,9 +122,11 @@
 		0465560628EF87D70036842D /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exorcist.mp3; sourceTree = "<group>"; };
 		0465560828EF87E50036842D /* shining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shining.mp3; sourceTree = "<group>"; };
 		0465560A28EF88250036842D /* freddy_coming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = freddy_coming.mp3; path = ../../../../../Downloads/freddy_coming.mp3; sourceTree = "<group>"; };
+		046DACA42CBC12930071822F /* CountdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownManager.swift; sourceTree = "<group>"; };
 		0476EC5F250D3BCB007ED260 /* peak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peak.png; sourceTree = "<group>"; };
 		0476EC62250D3CA6007ED260 /* eyes_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes_orange.png; sourceTree = "<group>"; };
 		04AA90D7252E4A1C00343F7E /* amityville.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = amityville.mp3; sourceTree = "<group>"; };
+		04BF572F2C791FC40027560F /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		04E463DB28C63CCB006F06DD /* Replay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Replay.swift; sourceTree = "<group>"; };
 		04E463DD28C64130006F06DD /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = exorcist.mp3; path = ../../../old/SpookyHalloweenSounds_iOS_bak/SpookyHalloweenSounds/Audio/exorcist.mp3; sourceTree = "<group>"; };
 		04E463DF28C64138006F06DD /* halloween.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = halloween.mp3; path = ../../../old/SpookyHalloweenSounds_iOS_bak/SpookyHalloweenSounds/Audio/halloween.mp3; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 				14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */,
 				1447250A248C1EF600A27662 /* HorrorMovieViewController.swift */,
 				14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */,
+				046DACA42CBC12930071822F /* CountdownManager.swift */,
+				04BF572F2C791FC40027560F /* AudioPlayerManager.swift */,
 				1451D9FD24925F920094053E /* PulseAnimation.swift */,
 				1451DA0524958B9F0094053E /* PulseAnimation2.swift */,
 				1451DA03249589630094053E /* NoHighlightButton.swift */,
@@ -753,10 +759,12 @@
 				1451D9FA24925CE20094053E /* Colors.swift in Sources */,
 				1451DA08249592BB0094053E /* HapticFeedback.swift in Sources */,
 				1451DA04249589630094053E /* NoHighlightButton.swift in Sources */,
+				04BF57302C791FC40027560F /* AudioPlayerManager.swift in Sources */,
 				04E463DC28C63CCB006F06DD /* Replay.swift in Sources */,
 				1447250B248C1EF600A27662 /* HorrorMovieViewController.swift in Sources */,
 				14FE01E4248B260A00E1B0B0 /* LongMixViewController.swift in Sources */,
 				1451DA0624958B9F0094053E /* PulseAnimation2.swift in Sources */,
+				046DACA52CBC12930071822F /* CountdownManager.swift in Sources */,
 				14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */,
 				7B305C8F2132F25300B184F5 /* ViewController.swift in Sources */,
 				1451D9FE24925F920094053E /* PulseAnimation.swift in Sources */,
@@ -867,7 +875,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -922,7 +930,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -940,15 +948,16 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -967,15 +976,16 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
