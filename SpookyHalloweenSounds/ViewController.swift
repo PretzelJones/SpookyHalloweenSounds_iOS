@@ -56,10 +56,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var loopingMixButton: UIButton!
     @IBOutlet weak var horrorThemeButton: UIButton!
-
+    
     var countdownTimer: Timer?
     let countdownManager = CountdownManager()
-
+    
     // viewDidLoad method, override to customize your ViewController behavior
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +72,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         // Initialize all sounds with helper function
         initializeAudioPlayers()
-
+        
         // Set up back button customization
         setupBackButton()
     }
@@ -81,46 +81,46 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     func initializeAudioPlayers() {
         let soundFiles = [
             witchCackleButton: "witch_laugh",
-                    blackCatButton: "black_cat",
-                    creepyLaughButton: "evil_man",
-                    creakyDoorButton: "creaky_door",
-                    horrorAmbianceButton: "horror_ambience",
-                    monsterGrowlButton: "monster_growl",
-                    monsterWalkingButton: "monster_walking",
-                    spookyChainsButton: "spooky_chains",
-                    thunderStormButton: "thunder",
-                    scaryScreamButton: "scary_scream",
-                    zombieGroanButton: "zombie",
-                    ghostBooButton: "ghost_boo",
-                    werewolfHowlButton: "werewolf_howl",
-                    poltergeistVoiceButton: "poltergeist_voice",
-                    zombieCallButton: "zombie_come",
-                    catScreamButton: "cat_scream",
-                    wraithWailButton: "wraith_wail",
-                    spookyOwlButton: "spooky_owl",
-                    chainedGhoulButton: "chained_ghoul",
-                    terrifiedScreamButton: "terrified_scream",
-                    hauntedOrganButton: "haunted_organ",
-                    scarecrowButton: "scarecrow",
-                    blowingWindButton: "blowing_wind",
-                    ghostlyWhisperButton: "ghostly_whisper",
-                    draculaLaughButton: "dracula_laugh",
-                    wolfCryButton: "wolf_cry",
-                    knockKnockButton: "knock_knock",
-                    igorGrumbleButton: "igor_grumble",
-                    horrorMovieButton: "horror_film",
-                    warningBellsButton: "warning_bells",
-                    painfulMoanButton: "painful_moan",
-                    witchesCauldronButton: "bubbles",
-                    ghostlyChildrenButton: "scary_nursery",
-                    hauntedSwampButton: "haunted_swamp",
-                    torturedSoulsButton: "tortured_souls",
-                    chillingHornButton: "chilling_horn"
+            blackCatButton: "black_cat",
+            creepyLaughButton: "evil_man",
+            creakyDoorButton: "creaky_door",
+            horrorAmbianceButton: "horror_ambience",
+            monsterGrowlButton: "monster_growl",
+            monsterWalkingButton: "monster_walking",
+            spookyChainsButton: "spooky_chains",
+            thunderStormButton: "thunder",
+            scaryScreamButton: "scary_scream",
+            zombieGroanButton: "zombie",
+            ghostBooButton: "ghost_boo",
+            werewolfHowlButton: "werewolf_howl",
+            poltergeistVoiceButton: "poltergeist_voice",
+            zombieCallButton: "zombie_come",
+            catScreamButton: "cat_scream",
+            wraithWailButton: "wraith_wail",
+            spookyOwlButton: "spooky_owl",
+            chainedGhoulButton: "chained_ghoul",
+            terrifiedScreamButton: "terrified_scream",
+            hauntedOrganButton: "haunted_organ",
+            scarecrowButton: "scarecrow",
+            blowingWindButton: "blowing_wind",
+            ghostlyWhisperButton: "ghostly_whisper",
+            draculaLaughButton: "dracula_laugh",
+            wolfCryButton: "wolf_cry",
+            knockKnockButton: "knock_knock",
+            igorGrumbleButton: "igor_grumble",
+            horrorMovieButton: "horror_film",
+            warningBellsButton: "warning_bells",
+            painfulMoanButton: "painful_moan",
+            witchesCauldronButton: "bubbles",
+            ghostlyChildrenButton: "scary_nursery",
+            hauntedSwampButton: "haunted_swamp",
+            torturedSoulsButton: "tortured_souls",
+            chillingHornButton: "chilling_horn"
         ]
         
         for (button, sound) in soundFiles {
             guard let button = button else { continue }  // Safely unwrap button
-
+            
             var player: AVAudioPlayer?
             
             // Try to load as mp3 first, if not found, try wav
@@ -152,7 +152,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // Single handler for sound button interactions
     @IBAction func soundButtonPressed(_ sender: UIButton) {
         guard let player = audioPlayers[sender] else { return }
-
+        
         sender.pulsate(sender)
         sender.haptic(sender)
         sender.showsTouchWhenHighlighted = true
@@ -227,10 +227,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         default: return "default_icon" // Fallback in case a button is not matched
         }
     }
-
+    
     // Start countdown timer
     func startCountdownTimer() {
-        countdownTimer = Timer.scheduledTimer(timeInterval: 1800.0, target: self, selector: #selector(updateCountdownText), userInfo: nil, repeats: true)
+        countdownTimer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(updateCountdownText), userInfo: nil, repeats: true)
     }
     
     // Helper function to set the daysLabel as the titleView
@@ -240,12 +240,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let batsImageView = UIImageView(image: batsImage)
         batsImageView.contentMode = .scaleAspectFit
         batsImageView.translatesAutoresizingMaskIntoConstraints = false
-
+        
         // Create a container view to hold the bats image
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.addSubview(batsImageView)
-
+        
         // Set Auto Layout constraints for the bats image to ensure proper scaling within container
         NSLayoutConstraint.activate([
             batsImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
@@ -253,50 +253,62 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             batsImageView.topAnchor.constraint(equalTo: containerView.topAnchor),
             batsImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
-
+        
         // Set a specific height and width for the container view relative to the navigation bar height
         NSLayoutConstraint.activate([
             containerView.widthAnchor.constraint(equalToConstant: 50),  // Set a dynamic width; increase this to make it larger
             containerView.heightAnchor.constraint(equalToConstant: 40)  // Set height based on navigation bar height
         ])
-
+        
         // Create a UIBarButtonItem with the container view holding the bats image
         let imageItem = UIBarButtonItem(customView: containerView)
-
+        
         // Create a negative spacer to move the image to the far left
         let negativeSpacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         negativeSpacer.width = -15  // Adjust this value to fine-tune the alignment
-
+        
         // Set the left bar button items to include the negative spacer and the image item
         self.navigationItem.leftBarButtonItems = [negativeSpacer, imageItem]
-
+        
         // Create the countdown label for the title view
+        
         let countdownLabel = UILabel()
+        // Add these lines to enable text resizing
+        countdownLabel.adjustsFontSizeToFitWidth = true
+        countdownLabel.minimumScaleFactor = 0.5  // Set the minimum scale factor to 50% of original size
+        countdownLabel.lineBreakMode = .byTruncatingTail  // Ensure text truncates with an ellipsis if it gets too small
         countdownLabel.text = countdownManager.getCountdownText()  // Get the countdown text directly from countdownManager
         countdownLabel.font = UIFont(name: "Creepster", size: 28)
         countdownLabel.textColor = halloweenOrange
         countdownLabel.textAlignment = .center
         countdownLabel.sizeToFit()
-
+        
         // Set the countdown label as the titleView
         self.navigationItem.titleView = countdownLabel
     }
-
+    
     @objc func updateCountdownText() {
-        // Update both the main label and the title view label
-        let countdownText = countdownManager.getCountdownText()
-        //daysLabel.text = countdownText
-        if let containerView = self.navigationItem.titleView as? UIView,
-           let stackView = containerView.subviews.first as? UIStackView,
-           let countdownLabel = stackView.arrangedSubviews.last as? UILabel {
-            countdownLabel.text = countdownText
+        // Update the countdown label in the navigation bar title view
+        if let countdownLabel = self.navigationItem.titleView as? UILabel {
+            countdownLabel.text = countdownManager.getCountdownText()
         }
     }
-
     /*
-    @objc func updateCountdownText() {
-        daysLabel.text = countdownManager.getCountdownText()
-    } */
+     @objc func updateCountdownText() {
+     // Update both the main label and the title view label
+     let countdownText = countdownManager.getCountdownText()
+     //daysLabel.text = countdownText
+     if let containerView = self.navigationItem.titleView as? UIView,
+     let stackView = containerView.subviews.first as? UIStackView,
+     let countdownLabel = stackView.arrangedSubviews.last as? UILabel {
+     countdownLabel.text = countdownText
+     }
+     } */
+    
+    /*
+     @objc func updateCountdownText() {
+     daysLabel.text = countdownManager.getCountdownText()
+     } */
     
     // Customize back button
     func setupBackButton() {
@@ -308,7 +320,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = arrowImage
         self.navigationController?.navigationBar.backItem?.title = "Custom"
     }
-
+    
     // Audio player finished playing
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         DispatchQueue.main.async {
@@ -339,7 +351,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             updateButtonUI(button, isPlaying: false)
         }
     }
-
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

@@ -96,6 +96,7 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
             if let player = player {
                 player.prepareToPlay()
                 player.delegate = self
+                player.numberOfLoops = -1
                 horrorMovieAudioPlayers[button] = player
             }
         }

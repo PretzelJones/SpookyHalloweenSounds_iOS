@@ -10,15 +10,16 @@ import Foundation
 
 class CountdownManager {
     
-    private let halloween: DateComponents = .init(calendar: .current, month: 11, day: 1)
-    
+    private let halloween: DateComponents = .init(calendar: .current, month: 11, day: 1)  // Set to November 1st
+
     func daysUntilNextDate() -> Int {
         let date = Date()
         guard let calendar = halloween.calendar,
               let nextDate = calendar.nextDate(after: date, matching: halloween, matchingPolicy: .strict) else {
             return .zero
         }
-        return calendar.dateComponents([.day], from: date, to: nextDate).day!
+        let remainingDays = calendar.dateComponents([.day], from: date, to: nextDate).day ?? 0
+        return max(remainingDays, 0)
     }
     
     func getCountdownText() -> String {
@@ -32,3 +33,5 @@ class CountdownManager {
         }
     }
 }
+
+

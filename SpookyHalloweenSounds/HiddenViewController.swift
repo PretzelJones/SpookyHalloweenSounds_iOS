@@ -88,6 +88,7 @@ class HiddenViewController: UIViewController, AVAudioPlayerDelegate, UIGestureRe
             if let player = player {
                 player.prepareToPlay()
                 player.delegate = self
+                player.numberOfLoops = -1
                 hiddenAudioPlayers[button] = player
             }
         }

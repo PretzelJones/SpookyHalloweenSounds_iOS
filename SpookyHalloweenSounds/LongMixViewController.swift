@@ -91,7 +91,8 @@ class LongMixViewController: UIViewController, AVAudioPlayerDelegate, UIGestureR
             // If the player is successfully created, store it in the dictionary
             if let player = player {
                 player.prepareToPlay()
-                player.delegate = self // Assign delegate to self
+                player.delegate = self
+                player.numberOfLoops = -1
                 longMixAudioPlayers[button] = player
             }
         }
