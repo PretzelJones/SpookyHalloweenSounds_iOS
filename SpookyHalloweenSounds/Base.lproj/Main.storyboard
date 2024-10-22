@@ -799,24 +799,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 DAYS TILL HALLOWEEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="tdC-dQ-HZw">
-                                                <rect key="frame" x="84" y="8" width="231" height="48"/>
-                                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="30"/>
-                                                <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bats_flipped" translatesAutoresizingMaskIntoConstraints="NO" id="f0d-yD-HXi">
-                                                <rect key="frame" x="323" y="8" width="70" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="70" id="Fxc-VO-3LI"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bats" translatesAutoresizingMaskIntoConstraints="NO" id="sOi-ZW-jr9">
-                                                <rect key="frame" x="0.0" y="8" width="76" height="48"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="76" id="ZMc-xT-st2"/>
-                                                </constraints>
-                                            </imageView>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="2tj-bM-dY5"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -825,7 +807,6 @@
                                             <constraint firstItem="Age-0K-NlH" firstAttribute="trailing" secondItem="RoF-44-OjK" secondAttribute="trailing" id="0Te-tK-YpE"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="trailing" secondItem="gdi-Zj-0Wt" secondAttribute="trailing" id="1P7-kO-nDp"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="leading" secondItem="KmX-91-FOB" secondAttribute="leading" id="1W8-nl-qfI"/>
-                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="top" secondItem="tdC-dQ-HZw" secondAttribute="top" id="41s-Uv-dPa"/>
                                             <constraint firstItem="jfP-2V-Npe" firstAttribute="trailing" secondItem="G1S-3s-Bd6" secondAttribute="trailing" id="42W-FN-zwr"/>
                                             <constraint firstItem="RoF-44-OjK" firstAttribute="trailing" secondItem="73N-uY-Xdd" secondAttribute="trailing" id="55v-u8-Lfq"/>
                                             <constraint firstItem="OzM-no-Em0" firstAttribute="top" secondItem="YXR-xM-xy8" secondAttribute="bottom" constant="-166" id="5K7-pN-vQb"/>
@@ -833,7 +814,6 @@
                                             <constraint firstItem="gdi-Zj-0Wt" firstAttribute="leading" secondItem="twt-zf-07d" secondAttribute="leading" id="6Qb-0R-XNO"/>
                                             <constraint firstItem="OQn-cP-KJy" firstAttribute="leading" secondItem="KaL-XV-bXZ" secondAttribute="leading" id="7Gu-g3-DsE"/>
                                             <constraint firstItem="LM2-LV-woq" firstAttribute="leading" secondItem="94m-NW-PO3" secondAttribute="leading" id="7L8-Jk-yKy"/>
-                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="top" secondItem="c3E-Pm-nch" secondAttribute="topMargin" id="7QU-gU-Y7R"/>
                                             <constraint firstItem="LM2-LV-woq" firstAttribute="top" secondItem="c3E-Pm-nch" secondAttribute="top" constant="64" id="90a-fz-7vq"/>
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="leading" secondItem="pp5-UM-s2y" secondAttribute="leading" id="ARj-4x-bFB"/>
                                             <constraint firstItem="aOv-m9-chY" firstAttribute="top" secondItem="CYb-Sn-1J5" secondAttribute="bottom" constant="8" symbolic="YES" id="BBA-fi-lgl"/>
@@ -863,7 +843,6 @@
                                             <constraint firstItem="Lvs-tF-XxO" firstAttribute="leading" secondItem="94m-NW-PO3" secondAttribute="leading" id="MxX-cb-5zB"/>
                                             <constraint firstItem="KaL-XV-bXZ" firstAttribute="leading" secondItem="iBm-Se-SLz" secondAttribute="leading" id="N09-jg-vPX"/>
                                             <constraint firstItem="Lvs-tF-XxO" firstAttribute="trailing" secondItem="94m-NW-PO3" secondAttribute="trailing" id="PeL-ZT-3K2"/>
-                                            <constraint firstItem="tdC-dQ-HZw" firstAttribute="leading" secondItem="sOi-ZW-jr9" secondAttribute="trailing" constant="8" id="Pji-a8-cA0"/>
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="leading" secondItem="lP4-hh-rvx" secondAttribute="leading" id="SQU-PE-t3O"/>
                                             <constraint firstItem="Age-0K-NlH" firstAttribute="top" secondItem="DED-VW-7xT" secondAttribute="bottom" constant="8" symbolic="YES" id="SfS-La-gz8"/>
                                             <constraint firstItem="EG4-Rg-vnl" firstAttribute="trailing" secondItem="P7D-5m-0y7" secondAttribute="trailing" id="SkE-Um-n0R"/>
@@ -871,20 +850,14 @@
                                             <constraint firstItem="KmX-91-FOB" firstAttribute="trailing" secondItem="IWH-3N-V7Q" secondAttribute="trailing" id="TE3-Bm-o6T"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="top" secondItem="off-8E-Jgq" secondAttribute="bottom" constant="8" symbolic="YES" id="TTn-NH-dAv"/>
                                             <constraint firstItem="73N-uY-Xdd" firstAttribute="leading" secondItem="FGr-gW-NiH" secondAttribute="leading" id="ThG-Tj-b8B"/>
-                                            <constraint firstItem="LM2-LV-woq" firstAttribute="top" secondItem="sOi-ZW-jr9" secondAttribute="bottom" constant="8" id="Tno-E3-i4C"/>
-                                            <constraint firstItem="f0d-yD-HXi" firstAttribute="trailing" secondItem="LM2-LV-woq" secondAttribute="trailing" id="TyY-ts-8yo"/>
                                             <constraint firstItem="YXR-xM-xy8" firstAttribute="top" secondItem="EG4-Rg-vnl" secondAttribute="bottom" constant="182" id="UDZ-Is-DgN"/>
                                             <constraint firstItem="73N-uY-Xdd" firstAttribute="top" secondItem="RoF-44-OjK" secondAttribute="bottom" constant="8" symbolic="YES" id="UQP-N5-1BJ"/>
-                                            <constraint firstItem="tdC-dQ-HZw" firstAttribute="bottom" secondItem="f0d-yD-HXi" secondAttribute="bottom" id="VG9-sv-RfZ"/>
                                             <constraint firstItem="off-8E-Jgq" firstAttribute="trailing" secondItem="pp5-UM-s2y" secondAttribute="trailing" id="W5Z-Hi-beW"/>
                                             <constraint firstItem="2TY-Jj-eUn" firstAttribute="trailing" secondItem="off-8E-Jgq" secondAttribute="trailing" id="WVw-6j-NVB"/>
                                             <constraint firstItem="KaL-XV-bXZ" firstAttribute="top" secondItem="OQn-cP-KJy" secondAttribute="bottom" constant="8" symbolic="YES" id="XOu-4I-Fep"/>
                                             <constraint firstItem="lP4-hh-rvx" firstAttribute="trailing" secondItem="2TY-Jj-eUn" secondAttribute="trailing" id="XoY-pg-xAe"/>
                                             <constraint firstItem="iBm-Se-SLz" firstAttribute="top" secondItem="KaL-XV-bXZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Y2r-iR-amL"/>
-                                            <constraint firstItem="f0d-yD-HXi" firstAttribute="leading" secondItem="tdC-dQ-HZw" secondAttribute="trailing" constant="8" id="YKW-8w-9Y9"/>
-                                            <constraint firstItem="tdC-dQ-HZw" firstAttribute="top" secondItem="f0d-yD-HXi" secondAttribute="top" id="YMt-Ar-sC9"/>
                                             <constraint firstItem="CD0-rM-CbT" firstAttribute="trailing" secondItem="jfP-2V-Npe" secondAttribute="trailing" id="Yd0-dd-tbL"/>
-                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="leading" secondItem="LM2-LV-woq" secondAttribute="leading" id="Yda-je-g6E"/>
                                             <constraint firstItem="lAm-zy-FTl" firstAttribute="top" secondItem="KmX-91-FOB" secondAttribute="bottom" constant="8" symbolic="YES" id="ZSb-Ma-8CQ"/>
                                             <constraint firstItem="OzM-no-Em0" firstAttribute="trailing" secondItem="12x-sj-Khg" secondAttribute="trailing" id="ZjA-Zm-OAh"/>
                                             <constraint firstItem="Geq-hS-dgf" firstAttribute="leading" secondItem="CD0-rM-CbT" secondAttribute="leading" id="ZzE-cX-pX9"/>
@@ -945,7 +918,6 @@
                                             <constraint firstItem="1FT-YQ-ScV" firstAttribute="leading" secondItem="Geq-hS-dgf" secondAttribute="leading" id="waS-LJ-Ped"/>
                                             <constraint firstItem="cUV-bF-FK7" firstAttribute="top" secondItem="YXR-xM-xy8" secondAttribute="bottom" constant="8" symbolic="YES" id="wmV-Rh-Clb"/>
                                             <constraint firstItem="YXR-xM-xy8" firstAttribute="leading" secondItem="OzM-no-Em0" secondAttribute="leading" id="wr1-xn-jQS"/>
-                                            <constraint firstItem="sOi-ZW-jr9" firstAttribute="bottom" secondItem="tdC-dQ-HZw" secondAttribute="bottom" id="xcR-WG-fa5"/>
                                             <constraint firstItem="RoF-44-OjK" firstAttribute="leading" secondItem="73N-uY-Xdd" secondAttribute="leading" id="xn8-eO-MSa"/>
                                             <constraint firstItem="pp5-UM-s2y" firstAttribute="leading" secondItem="gdi-Zj-0Wt" secondAttribute="leading" id="yIj-hc-9qB"/>
                                             <constraint firstItem="OQn-cP-KJy" firstAttribute="trailing" secondItem="KaL-XV-bXZ" secondAttribute="trailing" id="yOy-xn-yI0"/>
@@ -993,7 +965,6 @@
                         <outlet property="chillingHornButton" destination="G1S-3s-Bd6" id="oey-ug-UsL"/>
                         <outlet property="creakyDoorButton" destination="OzM-no-Em0" id="hpV-UF-uN6"/>
                         <outlet property="creepyLaughButton" destination="P7D-5m-0y7" id="u99-uf-mGL"/>
-                        <outlet property="daysLabel" destination="tdC-dQ-HZw" id="Gz6-bW-0Eq"/>
                         <outlet property="draculaLaughButton" destination="wWQ-3A-l4N" id="LoH-pU-55a"/>
                         <outlet property="ghostBooButton" destination="lP4-hh-rvx" id="RWf-os-S9M"/>
                         <outlet property="ghostlyChildrenButton" destination="Geq-hS-dgf" id="ldo-g2-nSv"/>
@@ -1633,8 +1604,6 @@
     <resources>
         <image name="alien" width="29" height="29"/>
         <image name="amityville" width="40" height="40"/>
-        <image name="bats" width="20" height="20"/>
-        <image name="bats_flipped" width="20" height="20"/>
         <image name="black_cat" width="40" height="40"/>
         <image name="blowing_wind" width="40" height="40"/>
         <image name="cat_scream" width="40" height="40"/>

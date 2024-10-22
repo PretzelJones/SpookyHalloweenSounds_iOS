@@ -15,7 +15,7 @@ var audioPlayers: [UIButton: AVAudioPlayer] = [:]
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
-    @IBOutlet weak var daysLabel: UILabel!
+    //@IBOutlet weak var daysLabel: UILabel!
     
     @IBOutlet weak var witchCackleButton: UIButton!
     @IBOutlet weak var blackCatButton: UIButton!
@@ -65,7 +65,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
         
         // Initialize Countdown
-        daysLabel.text = countdownManager.getCountdownText()
+        //daysLabel.text = countdownManager.getCountdownText()
         startCountdownTimer()
         
         setupNavigationTitleWithCountdown()
@@ -235,14 +235,33 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     // Helper function to set the daysLabel as the titleView
     func setupNavigationTitleWithCountdown() {
-        // Create the bats image view with a larger frame size
+        // Create the bats image view
         let batsImage = UIImage(named: "bats")
         let batsImageView = UIImageView(image: batsImage)
-        batsImageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)  // Increase width and height to make it larger
         batsImageView.contentMode = .scaleAspectFit
+        batsImageView.translatesAutoresizingMaskIntoConstraints = false
 
-        // Create a UIBarButtonItem with the bats image view
-        let imageItem = UIBarButtonItem(customView: batsImageView)
+        // Create a container view to hold the bats image
+        let containerView = UIView()
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.addSubview(batsImageView)
+
+        // Set Auto Layout constraints for the bats image to ensure proper scaling within container
+        NSLayoutConstraint.activate([
+            batsImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            batsImageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            batsImageView.topAnchor.constraint(equalTo: containerView.topAnchor),
+            batsImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+        ])
+
+        // Set a specific height and width for the container view relative to the navigation bar height
+        NSLayoutConstraint.activate([
+            containerView.widthAnchor.constraint(equalToConstant: 50),  // Set a dynamic width; increase this to make it larger
+            containerView.heightAnchor.constraint(equalToConstant: 40)  // Set height based on navigation bar height
+        ])
+
+        // Create a UIBarButtonItem with the container view holding the bats image
+        let imageItem = UIBarButtonItem(customView: containerView)
 
         // Create a negative spacer to move the image to the far left
         let negativeSpacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
@@ -253,7 +272,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
         // Create the countdown label for the title view
         let countdownLabel = UILabel()
-        countdownLabel.text = daysLabel.text ?? "Countdown"
+        countdownLabel.text = countdownManager.getCountdownText()  // Get the countdown text directly from countdownManager
         countdownLabel.font = UIFont(name: "Creepster", size: 28)
         countdownLabel.textColor = halloweenOrange
         countdownLabel.textAlignment = .center
@@ -262,11 +281,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // Set the countdown label as the titleView
         self.navigationItem.titleView = countdownLabel
     }
-    
+
     @objc func updateCountdownText() {
         // Update both the main label and the title view label
         let countdownText = countdownManager.getCountdownText()
-        daysLabel.text = countdownText
+        //daysLabel.text = countdownText
         if let containerView = self.navigationItem.titleView as? UIView,
            let stackView = containerView.subviews.first as? UIStackView,
            let countdownLabel = stackView.arrangedSubviews.last as? UILabel {
