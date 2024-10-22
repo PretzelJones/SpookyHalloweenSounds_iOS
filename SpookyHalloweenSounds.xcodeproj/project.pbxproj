@@ -354,11 +354,11 @@
 				0465560828EF87E50036842D /* shining.mp3 */,
 				7B987D722133718C00743717 /* dracula_laugh.mp3 */,
 				7B987D652133718A00743717 /* evil_man.mp3 */,
+				7B987D572133718900743717 /* haunted_organ.mp3 */,
 				0465560A28EF88250036842D /* freddy_coming.mp3 */,
 				7B987D752133718C00743717 /* ghost_boo.mp3 */,
 				7B987D602133718A00743717 /* ghostly_whisper.mp3 */,
 				7B987D712133718C00743717 /* haunted_house.mp3 */,
-				7B987D572133718900743717 /* haunted_organ.mp3 */,
 				7B987D6B2133718B00743717 /* haunted_swamp.mp3 */,
 				7B987D6E2133718C00743717 /* horror_ambience.mp3 */,
 				7B987D782133718D00743717 /* horror_film.mp3 */,
@@ -957,7 +957,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -985,7 +985,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";

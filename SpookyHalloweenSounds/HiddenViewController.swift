@@ -9,208 +9,177 @@
 import UIKit
 import AVFoundation
 
-class HiddenViewController: UIViewController, AVAudioPlayerDelegate {
-    
-    var ghostSongPlayer: AVAudioPlayer?
-    var oldTapePlayer: AVAudioPlayer?
-    var criesOfInsanityPlayer: AVAudioPlayer?
-    var criesHellPlayer: AVAudioPlayer?
-    
+// Dictionary to map buttons to their respective AVAudioPlayers
+var hiddenAudioPlayers: [UIButton: AVAudioPlayer] = [:]
+
+class HiddenViewController: UIViewController, AVAudioPlayerDelegate, UIGestureRecognizerDelegate {
+
     @IBOutlet weak var ghostSongButton: UIButton!
     @IBOutlet weak var oldTapeButton: UIButton!
     @IBOutlet weak var criesOfInsanityButton: UIButton!
     @IBOutlet weak var criesHellButton: UIButton!
-    
+
     let ghostSongLongPress = UILongPressGestureRecognizer()
     let oldTapeLongPress = UILongPressGestureRecognizer()
     let criesOfInsanityLongPress = UILongPressGestureRecognizer()
     let criesHellLongPress = UILongPressGestureRecognizer()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        PopupManager.shared.showPopup(inViewController: self)
-        
+
+        //PopupManager.shared.showPopup(inViewController: self)
+
+        // Customize buttons
         ghostSongButton.noHighlight(ghostSongButton)
         oldTapeButton.noHighlight(oldTapeButton)
         criesOfInsanityButton.noHighlight(criesOfInsanityButton)
         criesHellButton.noHighlight(criesHellButton)
-        
-        // Set the target and action for each gesture recognizer
+
+        // Initialize audio players
+        initializeAudioPlayers()
+
+        // Set up long press gesture recognizers
+        setUpGestureRecognizers()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Stop or pause all audio players when navigating away
+        for (_, player) in hiddenAudioPlayers {
+            if player.isPlaying {
+                player.stop()  // Stops the audio and resets the player to the beginning
+            }
+        }
+    }
+
+    // Initialize AVAudioPlayers for each button
+    func initializeAudioPlayers() {
+        let soundFiles = [
+            ghostSongButton: "the_ghost_song",
+            oldTapeButton: "the_old_tape",
+            criesOfInsanityButton: "chilling_cries",
+            criesHellButton: "cries_from_hell"
+        ]
+
+        for (button, sound) in soundFiles {
+            guard let button = button else { continue }  // Safely unwrap the button
+
+            var player: AVAudioPlayer?
+
+            // Try to load as mp3 first, if not found, try wav
+            if let mp3Path = Bundle.main.path(forResource: sound, ofType: "mp3") {
+                do {
+                    player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Path))
+                } catch {
+                    print("Error loading MP3 file \(sound): \(error)")
+                }
+            } else if let wavPath = Bundle.main.path(forResource: sound, ofType: "wav") {
+                do {
+                    player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavPath))
+                } catch {
+                    print("Error loading WAV file \(sound): \(error)")
+                }
+            } else {
+                print("File not found: \(sound) as either mp3 or wav")
+            }
+
+            // If the player is successfully created, store it in the dictionary
+            if let player = player {
+                player.prepareToPlay()
+                player.delegate = self
+                hiddenAudioPlayers[button] = player
+            }
+        }
+    }
+
+    // Set up gesture recognizers for long press actions
+    func setUpGestureRecognizers() {
         ghostSongLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
         oldTapeLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
         criesOfInsanityLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
         criesHellLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
 
-        // Add the gesture recognizers to the buttons
         ghostSongButton.addGestureRecognizer(ghostSongLongPress)
         oldTapeButton.addGestureRecognizer(oldTapeLongPress)
         criesOfInsanityButton.addGestureRecognizer(criesOfInsanityLongPress)
         criesHellButton.addGestureRecognizer(criesHellLongPress)
-    
-        do {
-            
-            ghostSongPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "the_ghost_song", ofType: "mp3")!))
-            ghostSongPlayer?.prepareToPlay()
-        }
-        catch {
-            print(error)
-            
-        }
-        
-        do {
-            
-            oldTapePlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "the_old_tape", ofType: "mp3")!))
-            oldTapePlayer?.prepareToPlay()
-        }
-        catch {
-            print(error)        }
-        
-        
-        do {
-            
-            criesOfInsanityPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "chilling_cries", ofType: "mp3")!))
-            criesOfInsanityPlayer?.prepareToPlay()
-        }
-        catch {
-            print(error)        }
-        
-        do {
-            
-            criesHellPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "cries_from_hell", ofType: "mp3")!))
-            criesHellPlayer?.prepareToPlay()
-        }
-        catch {
-            print(error)        }
     }
-    
+
+    // Handle button presses
+    @IBAction func soundButtonPressed(_ sender: UIButton) {
+        guard let player = hiddenAudioPlayers[sender] else { return }
+
+        sender.pulsate(sender)
+        sender.haptic(sender)
+        sender.showsTouchWhenHighlighted = true
+
+        if player.isPlaying {
+            player.pause()
+            updateButtonUI(sender, isPlaying: false)
+        } else {
+            player.play()
+            updateButtonUI(sender, isPlaying: true)
+        }
+    }
+
+    // Update button UI when audio plays or pauses
+    func updateButtonUI(_ button: UIButton, isPlaying: Bool) {
+        if isPlaying {
+            button.backgroundColor = halloweenOrangeHighlight
+            button.setImage(UIImage(named: "pause"), for: .normal)
+        } else {
+            button.backgroundColor = halloweenOrange
+            let originalImage = getOriginalImageName(for: button)
+            button.setImage(UIImage(named: originalImage), for: .normal)
+        }
+    }
+
+    // Return the original image for each button
+    func getOriginalImageName(for button: UIButton) -> String {
+        switch button {
+        case ghostSongButton: return "ghost_song"
+        case oldTapeButton: return "old_tape"
+        case criesOfInsanityButton: return "dispair"
+        case criesHellButton: return "cries_hell"
+        default: return "default_icon"
+        }
+    }
+
+    // Long press handler
     @objc func replayButtonLongPressed(_ gestureRecognizer: UILongPressGestureRecognizer) {
         if gestureRecognizer.state == .began {
             switch gestureRecognizer {
             case ghostSongLongPress:
-                handleReplay(for: ghostSongButton, with: ghostSongPlayer)
+                handleReplay(for: ghostSongButton, with: hiddenAudioPlayers[ghostSongButton])
             case oldTapeLongPress:
-                handleReplay(for: oldTapeButton, with: oldTapePlayer)
+                handleReplay(for: oldTapeButton, with: hiddenAudioPlayers[oldTapeButton])
             case criesOfInsanityLongPress:
-                handleReplay(for: criesOfInsanityButton, with: criesOfInsanityPlayer)
+                handleReplay(for: criesOfInsanityButton, with: hiddenAudioPlayers[criesOfInsanityButton])
             case criesHellLongPress:
-                handleReplay(for: criesHellButton, with: criesHellPlayer)
+                handleReplay(for: criesHellButton, with: hiddenAudioPlayers[criesHellButton])
             default:
                 break
             }
         }
     }
-    
-    @IBAction func ghostSongPlay(_ sender: Any) {
-        
-        ghostSongButton.pulsate(ghostSongButton)
-        ghostSongButton.haptic(ghostSongButton)
-        ghostSongButton.showsTouchWhenHighlighted = true
-        
-        if (ghostSongPlayer!.isPlaying)
-        {
-            ghostSongPlayer?.delegate = self
-            ghostSongPlayer!.pause();
-            ghostSongButton.backgroundColor = halloweenOrange
-            ghostSongButton.setImage(UIImage(named: "ghost_song"), for: .normal)
-        }
-        else
-        {
-            ghostSongPlayer?.delegate = self
-            ghostSongPlayer!.play();
-            ghostSongPlayer!.numberOfLoops = -1
-            ghostSongButton.backgroundColor = halloweenOrangeHighlight
-            ghostSongButton.setImage(UIImage(named: "pause"), for: .normal)
-        }
+
+    // Replay logic for long press
+    func handleReplay(for button: UIButton, with player: AVAudioPlayer?) {
+        guard let player = player else { return }
+        player.currentTime = 0 // Restart the audio
+        player.play()
+        updateButtonUI(button, isPlaying: true) // Update button state to show it's playing
     }
-    
-    @IBAction func oldTapePlay(_ sender: Any) {
-        
-        oldTapeButton.pulsate(oldTapeButton)
-        oldTapeButton.haptic(oldTapeButton)
-        oldTapeButton.showsTouchWhenHighlighted = true
-        
-        if (oldTapePlayer!.isPlaying)
-        {
-            oldTapePlayer?.delegate = self
-            oldTapePlayer!.pause();
-            oldTapeButton.backgroundColor = halloweenOrange
-            oldTapeButton.setImage(UIImage(named: "old_tape"), for: .normal)
-        }
-        else
-        {
-            oldTapePlayer?.delegate = self
-            oldTapePlayer!.play();
-            oldTapePlayer!.numberOfLoops = -1
-            oldTapeButton.backgroundColor = halloweenOrangeHighlight
-            oldTapeButton.setImage(UIImage(named: "pause"), for: .normal)
-        }
-    }
-    
-    @IBAction func criesOfInsanityPlay(_ sender: Any) {
-        
-        criesOfInsanityButton.pulsate(criesOfInsanityButton)
-        criesOfInsanityButton.haptic(criesOfInsanityButton)
-        criesOfInsanityButton.showsTouchWhenHighlighted = true
-        
-        if (criesOfInsanityPlayer!.isPlaying)
-        {
-            criesOfInsanityPlayer?.delegate = self
-            criesOfInsanityPlayer!.pause();
-            criesOfInsanityButton.backgroundColor = halloweenOrange
-            criesOfInsanityButton.setImage(UIImage(named: "dispair"), for: .normal)
-        }
-        else
-        {
-            criesOfInsanityPlayer?.delegate = self
-            criesOfInsanityPlayer!.play();
-            criesOfInsanityPlayer!.numberOfLoops = -1
-            criesOfInsanityButton.backgroundColor = halloweenOrangeHighlight
-            criesOfInsanityButton.setImage(UIImage(named: "pause"), for: .normal)
-        }
-    }
-    
-    @IBAction func criesHellPlay(_ sender: Any) {
-        
-        criesHellButton.pulsate(criesHellButton)
-        criesHellButton.haptic(criesHellButton)
-        criesHellButton.showsTouchWhenHighlighted = true
-        
-        if (criesHellPlayer!.isPlaying)
-        {
-            criesHellPlayer?.delegate = self
-            criesHellPlayer!.pause();
-            criesHellButton.backgroundColor = halloweenOrange
-            criesHellButton.setImage(UIImage(named: "cries_hell"), for: .normal)
-        }
-        else
-        {
-            criesHellPlayer?.delegate = self
-            criesHellPlayer!.play();
-            criesHellPlayer!.numberOfLoops = -1
-            criesHellButton.backgroundColor = halloweenOrangeHighlight
-            criesHellButton.setImage(UIImage(named: "pause"), for: .normal)
-        }
-    }
-    
+
+    // Audio player finished playing
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        if (player === ghostSongPlayer) {
-            ghostSongButton.backgroundColor = halloweenOrange
-            ghostSongButton.setImage(UIImage(named: "ghost_song"), for: .normal)
-            ghostSongButton.pulsate2(ghostSongButton)
-        } else if (player === oldTapePlayer) {
-            oldTapeButton.backgroundColor = halloweenOrange
-            oldTapeButton.setImage(UIImage(named: "old_tape"), for: .normal)
-            oldTapeButton.pulsate2(oldTapeButton)
-        } else if (player === criesOfInsanityPlayer) {
-            criesOfInsanityButton.backgroundColor = halloweenOrange
-            criesOfInsanityButton.setImage(UIImage(named: "dispair"), for: .normal)
-            criesOfInsanityButton.pulsate2(criesOfInsanityButton)
-        } else if (player === criesHellPlayer) {
-            criesHellButton.backgroundColor = halloweenOrange
-            criesHellButton.setImage(UIImage(named: "cries_hell"), for: .normal)
-            criesHellButton.pulsate2(criesHellButton)
+        DispatchQueue.main.async { [weak self] in
+            if let button = hiddenAudioPlayers.first(where: { $0.value === player })?.key {
+                self?.updateButtonUI(button, isPlaying: false)
+                button.pulsate2(button)
+                button.haptic(button)
+            }
         }
     }
-    
 }

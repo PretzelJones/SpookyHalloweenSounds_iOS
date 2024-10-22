@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,22 +13,22 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Spooky Halloween Sounds-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-Ci-EFb">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="837"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="2500"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LM2-LV-woq" userLabel="Looping Mixes Button">
-                                                <rect key="frame" x="0.0" y="64" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="64" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="V8c-6H-cNh"/>
@@ -44,12 +44,12 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="loopingMixesPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62M-rP-30T"/>
+                                                    <action selector="nonAudioButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Suj-2C-VBS"/>
                                                     <segue destination="lrZ-Ov-kYt" kind="show" id="maY-aR-zMO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94m-NW-PO3" userLabel="Horror Theme Button">
-                                                <rect key="frame" x="0.0" y="122" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="122" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="kGa-kT-ggR"/>
@@ -65,12 +65,12 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="horrorThemePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jL8-c4-jbS"/>
+                                                    <action selector="nonAudioButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iCf-D9-QNf"/>
                                                     <segue destination="3dX-ln-9cZ" kind="show" id="bEN-zN-Aa7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvs-tF-XxO">
-                                                <rect key="frame" x="0.0" y="180" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="180" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="K5k-Nz-UEH"/>
@@ -86,11 +86,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="witchCacklePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEI-09-LBO"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyG-PA-DyW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-Rg-vnl">
-                                                <rect key="frame" x="0.0" y="238" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="238" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Zf1-ri-yyr"/>
@@ -106,11 +106,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="blackCatPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmM-v7-O6g"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swc-j9-gK1"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7D-5m-0y7">
-                                                <rect key="frame" x="0.0" y="296" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="296" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="M0Q-Zf-PGd"/>
@@ -126,11 +126,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="creepyLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTj-1a-U50"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mph-tI-85B"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-no-Em0">
-                                                <rect key="frame" x="0.0" y="354" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="354" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wXh-Ng-DIR"/>
@@ -146,11 +146,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="creakyDoorPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lan-Og-GEV"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reR-di-59j"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12x-sj-Khg">
-                                                <rect key="frame" x="0.0" y="412" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="412" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Wa8-ll-GSJ"/>
@@ -166,11 +166,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="horrorAmbiancePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rtr-LK-e2e"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsw-3b-KEq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXR-xM-xy8">
-                                                <rect key="frame" x="0.0" y="470" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="470" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wFQ-jA-NeH"/>
@@ -185,11 +185,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="monsterGrowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiU-Xy-q03"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eih-e4-KEd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUV-bF-FK7">
-                                                <rect key="frame" x="0.0" y="528" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="528" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Ckm-zT-2jt"/>
@@ -205,11 +205,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="monsterWalkingPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDT-Ha-rxp"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zPy-Yl-mYh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke0-6q-0N0">
-                                                <rect key="frame" x="0.0" y="586" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="586" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c9V-zL-aup"/>
@@ -225,11 +225,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="spookyChainsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vq-2F-8mA"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izR-5m-NMe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQn-cP-KJy">
-                                                <rect key="frame" x="0.0" y="644" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="644" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="4q4-OW-QRQ"/>
@@ -245,11 +245,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="thunderStormPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Mn-vO-sI9"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSb-Cu-kkA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-XV-bXZ">
-                                                <rect key="frame" x="0.0" y="702" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="702" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mw1-Ds-CqW"/>
@@ -265,11 +265,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="scaryScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="553-rL-pH9"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W51-UB-cfM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-Se-SLz">
-                                                <rect key="frame" x="0.0" y="760" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="760" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="8jg-v6-X5f"/>
@@ -285,11 +285,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="zombieGroanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gai-eX-y7Y"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxt-fr-6dl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lP4-hh-rvx">
-                                                <rect key="frame" x="0.0" y="818" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="818" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="HIL-Dz-LgM"/>
@@ -305,11 +305,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="ghostBooPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h56-qM-qto"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xRN-DB-8EQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TY-Jj-eUn">
-                                                <rect key="frame" x="0.0" y="876" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="876" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c9g-Sc-zM7"/>
@@ -325,11 +325,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="wereWolfHowlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5f-M5-chs"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nah-c6-5Lp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-8E-Jgq" userLabel="Poltergeist Voice">
-                                                <rect key="frame" x="0.0" y="934" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="934" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LdC-08-gKQ"/>
@@ -345,11 +345,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="poltergeistVoicePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4X-ef-TFb"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zcj-RB-xeq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-UM-s2y">
-                                                <rect key="frame" x="0.0" y="992" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="992" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="OIK-JK-TGv"/>
@@ -365,11 +365,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="zombieCallPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ad-rd-H5t"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tL5-lb-3S0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-Zj-0Wt">
-                                                <rect key="frame" x="0.0" y="1050" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1050" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="UuO-an-w7G"/>
@@ -385,11 +385,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="catScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q64-dC-ms3"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ts-tE-WgA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twt-zf-07d">
-                                                <rect key="frame" x="0.0" y="1108" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1108" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="htv-as-xkl"/>
@@ -405,11 +405,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="wraithWailPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgY-YS-lZf"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="inC-Hl-VvZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-l4-qp2">
-                                                <rect key="frame" x="0.0" y="1166" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1166" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="FGq-9N-Hzn"/>
@@ -425,11 +425,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="spookyOwlPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtN-Ni-A6c"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1S6-4w-MdY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DED-VW-7xT">
-                                                <rect key="frame" x="0.0" y="1224" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1224" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="bqz-9c-9GT"/>
@@ -445,11 +445,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="chainedGhoulPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z81-Go-IhI"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zm7-Mh-dhj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Age-0K-NlH">
-                                                <rect key="frame" x="0.0" y="1282" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1282" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mW3-O1-IGy"/>
@@ -465,11 +465,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="terrifiedScreamPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTQ-u3-pCm"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PT2-oY-gXu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-44-OjK">
-                                                <rect key="frame" x="0.0" y="1340" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1340" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="o1Q-oj-Zsb"/>
@@ -485,11 +485,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="hauntedOrganPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhb-5S-k5h"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXe-1Z-1Lt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73N-uY-Xdd">
-                                                <rect key="frame" x="0.0" y="1398" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1398" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="sZs-aJ-yT7"/>
@@ -505,11 +505,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="scareCrowPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yoK-JW-S9e"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CvL-qd-sbB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGr-gW-NiH">
-                                                <rect key="frame" x="0.0" y="1456" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1456" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="qnf-Vd-SkR"/>
@@ -525,11 +525,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="blowingWindPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdU-OF-cCm"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zA9-BB-LDd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAM-xK-aic">
-                                                <rect key="frame" x="0.0" y="1514" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1514" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="hfS-Mh-OPf"/>
@@ -545,11 +545,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="ghostlyWhisperPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAK-7i-KoX"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipV-8Y-nJd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWQ-3A-l4N">
-                                                <rect key="frame" x="0.0" y="1572" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1572" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="CcR-96-SGd"/>
@@ -565,11 +565,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="draculaLaughPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVs-Vc-PsT"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZT8-bm-lxn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-Sn-1J5">
-                                                <rect key="frame" x="0.0" y="1630" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1630" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="BpK-KI-ugo"/>
@@ -585,11 +585,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="wolfCryPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yS-Lk-SR0"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yav-Tt-4UF"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-m9-chY">
-                                                <rect key="frame" x="0.0" y="1688" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1688" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c8P-N7-UoG"/>
@@ -605,11 +605,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="knockKnockPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRB-5b-yjL"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hZ-mF-1C0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmX-91-FOB" userLabel="Frankenstein Button">
-                                                <rect key="frame" x="0.0" y="1746" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1746" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="rBH-Oc-zWq"/>
@@ -625,11 +625,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="igorGrumblePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHv-la-zdb"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1P-Wi-34O"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-zy-FTl" userLabel="Horror Movie Button">
-                                                <rect key="frame" x="0.0" y="1804" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1804" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dUg-61-me3"/>
@@ -645,11 +645,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="horrorMoviePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esb-ko-rDf"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9a0-lx-ukX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-3N-V7Q">
-                                                <rect key="frame" x="0.0" y="1862" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1862" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="HVr-9g-4M9"/>
@@ -665,11 +665,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="warningBellsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DuA-Wv-bKa"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PKI-IX-kKp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKc-6q-NMq">
-                                                <rect key="frame" x="0.0" y="1920" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1920" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="c5q-z6-Ad2"/>
@@ -685,11 +685,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="painfulMoanPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qer-1U-qZY"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNI-qo-wwT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-YQ-ScV">
-                                                <rect key="frame" x="0.0" y="1978" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1978" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="gQs-yS-7jv"/>
@@ -705,11 +705,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="witchesCauldronPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snq-Uy-6r8"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7lP-CL-496"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-hS-dgf">
-                                                <rect key="frame" x="0.0" y="2036" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="2036" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="fGO-d5-dL3"/>
@@ -725,11 +725,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="ghostlyChildrenPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6e-Bp-F4C"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1N-9r-lFp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CD0-rM-CbT">
-                                                <rect key="frame" x="0.0" y="2094" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="2094" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ZUc-Jc-Kqh"/>
@@ -745,11 +745,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="hauntedSwampPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nh9-17-4gg"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZ6-Bv-WNV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfP-2V-Npe">
-                                                <rect key="frame" x="0.0" y="2152" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="2152" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Rly-i1-bBq"/>
@@ -765,11 +765,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="torturedSoulsPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dj2-Kt-Rtl"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WKY-a4-6Qx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1S-3s-Bd6">
-                                                <rect key="frame" x="0.0" y="2210" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="2210" width="393" height="50"/>
                                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Zti-gJ-DMo"/>
@@ -785,11 +785,11 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="chillingHornPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zQ-oN-U6I"/>
+                                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxS-Kc-Luv"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-jA-jKv">
-                                                <rect key="frame" x="0.0" y="2268" width="453" height="232"/>
+                                                <rect key="frame" x="0.0" y="2268" width="432" height="232"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="232" id="GCp-ib-pUN"/>
                                                 </constraints>
@@ -800,13 +800,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 DAYS TILL HALLOWEEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="tdC-dQ-HZw">
-                                                <rect key="frame" x="84" y="8" width="252" height="48"/>
+                                                <rect key="frame" x="84" y="8" width="231" height="48"/>
                                                 <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="30"/>
                                                 <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bats_flipped" translatesAutoresizingMaskIntoConstraints="NO" id="f0d-yD-HXi">
-                                                <rect key="frame" x="344" y="8" width="70" height="48"/>
+                                                <rect key="frame" x="323" y="8" width="70" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="Fxc-VO-3LI"/>
                                                 </constraints>
@@ -976,7 +976,7 @@
                             <constraint firstItem="Am6-Ci-EFb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oCo-yc-7Gd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Spooky Halloween Sounds" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="pumpkin" id="USB-oa-mGh">
                             <color key="tintColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -1035,11 +1035,11 @@
             <objects>
                 <viewController id="YAK-Zu-roR" customClass="AboutViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6b-IE-eF6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="PaL-Ar-NW6">
-                                <rect key="frame" x="8" y="20" width="398" height="240"/>
+                                <rect key="frame" x="8" y="20" width="377" height="240"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spooky Halloween Sounds is brought to you by" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6D-H5-0tu">
                                 <rect key="frame" x="88" y="319" width="237" height="60"/>
@@ -1047,15 +1047,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="App Version 1.2.0 - November 6, 2022" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ya-BJe">
-                                <rect key="frame" x="20" y="723" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="bosson design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aec-vP-VF5">
                                 <rect key="frame" x="20" y="387" width="374" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="59"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-ya-BJe">
+                                <rect key="frame" x="20" y="660" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1086,6 +1086,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="versionLabel" destination="4ud-ya-BJe" id="kub-EB-y5x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMx-il-2fQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1096,11 +1099,11 @@
             <objects>
                 <viewController id="lrZ-Ov-kYt" customClass="LongMixViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wU3-CW-mrY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-4E-zIy">
-                                <rect key="frame" x="0.0" y="202" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="202" width="1352" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="j6J-MK-5bF"/>
@@ -1116,11 +1119,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="hauntedHousePlay:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="iXt-zi-5wt"/>
+                                    <action selector="soundButtonPressed:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="jXm-NJ-EdY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-h1-AJt">
-                                <rect key="frame" x="0.0" y="260" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="260" width="1352" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pF9-UV-SG8"/>
@@ -1136,11 +1139,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="spookySoundsPlayer:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="xbo-K9-rod"/>
+                                    <action selector="soundButtonPressed:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="P1T-SM-ErT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtT-Uc-9rd">
-                                <rect key="frame" x="0.0" y="318" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="318" width="1352" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yDC-rh-8jp"/>
@@ -1156,11 +1159,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="spaceTerrorPlayer:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="gl2-tz-Xwk"/>
+                                    <action selector="soundButtonPressed:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="h8X-Zk-2uc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ex-mw-HV9">
-                                <rect key="frame" x="0.0" y="376" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="376" width="1352" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pq7-ew-Fpp"/>
@@ -1176,11 +1179,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="dontLetThemIn:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="Mof-8N-dVv"/>
+                                    <action selector="soundButtonPressed:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="sNj-qn-UKX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VB-UG-b7Q">
-                                <rect key="frame" x="0.0" y="144" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="144" width="1352" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="W3b-Ng-3xC"/>
@@ -1196,19 +1199,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="ultraTerrorPlay:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="iVX-EA-5Iq"/>
+                                    <action selector="soundButtonPressed:" destination="lrZ-Ov-kYt" eventType="touchUpInside" id="GDu-te-vQq"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-jR-PWl">
-                                <rect key="frame" x="0.0" y="434" width="414" height="340"/>
+                                <rect key="frame" x="0.0" y="434" width="1352" height="281"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-cI-Mq1">
-                                <rect key="frame" x="20" y="8" width="374" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-cI-Mq1">
+                                <rect key="frame" x="20" y="8" width="357" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="TCb-Fk-wQE"/>
                                     <constraint firstAttribute="height" constant="128" id="YNe-rN-cDS"/>
@@ -1263,26 +1266,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMf-5L-dgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1993" y="-176"/>
+            <point key="canvasLocation" x="1991.6030534351144" y="-176.05633802816902"/>
         </scene>
         <!--Horror Movie Themes-->
         <scene sceneID="byf-cW-9Dr">
             <objects>
                 <viewController id="3dX-ln-9cZ" customClass="HorrorMovieViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ly2-QD-7ju">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-ss-dCV">
-                                <rect key="frame" x="0.0" y="488" width="414" height="276"/>
+                                <rect key="frame" x="0.0" y="488" width="393" height="217"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here lies a collection of some of the most famous theme songs from your favorite horror films. Enjoy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-H0-iiE">
+                                <rect key="frame" x="16" y="20" width="361" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="7F2-CI-qbX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-ta-iZ0">
-                                <rect key="frame" x="0.0" y="140" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="140" width="393" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Dp-g1-Ifb"/>
@@ -1297,11 +1309,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="halloweenPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="3v9-e5-q1g"/>
+                                    <action selector="soundButtonPressed:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="arL-8Z-c57"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fef-gd-b0I">
-                                <rect key="frame" x="0.0" y="198" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="198" width="393" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QKs-O3-0qn"/>
@@ -1316,11 +1328,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="exorcistPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="Ef4-PB-ceX"/>
+                                    <action selector="soundButtonPressed:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="8dW-Yc-s4Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAk-N4-kim">
-                                <rect key="frame" x="0.0" y="256" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="256" width="393" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aQG-GL-UCR"/>
@@ -1335,20 +1347,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="shiningPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="eUu-Ex-4bm"/>
+                                    <action selector="soundButtonPressed:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="ksE-vi-GLB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here lies a collection of some of the most famous theme songs from your favorite horror films. Enjoy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-H0-iiE">
-                                <rect key="frame" x="20" y="20" width="374" height="112"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="7F2-CI-qbX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
-                                <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQp-YS-MJU">
-                                <rect key="frame" x="0.0" y="314" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="314" width="393" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4na-lZ-vAN"/>
@@ -1363,11 +1366,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="nightmaterPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="xmU-6k-OWW"/>
+                                    <action selector="soundButtonPressed:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="PtP-Ex-EWX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-t8-Dej">
-                                <rect key="frame" x="0.0" y="372" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="372" width="393" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pH5-Ac-2NV"/>
@@ -1382,11 +1385,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="fridayPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="nEE-gi-rSC"/>
+                                    <action selector="soundButtonPressed:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="jfS-qq-KDJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTV-Fu-Gb5">
-                                <rect key="frame" x="0.0" y="430" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="430" width="393" height="50"/>
                                 <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qIg-sV-hlK"/>
@@ -1401,7 +1404,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="amityPlay:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="J6O-6G-LDe"/>
+                                    <action selector="soundButtonPressed:" destination="3dX-ln-9cZ" eventType="touchUpInside" id="ItY-ye-6QW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1454,14 +1457,14 @@
             <objects>
                 <viewController id="t1I-FK-ggP" customClass="HiddenViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEb-Jn-bmi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6h-XR-WMW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoP-8k-yZU">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="216"/>
+                                        <rect key="frame" x="0.0" y="8" width="393" height="216"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="216" id="fzh-so-FNy"/>
                                         </constraints>
@@ -1472,7 +1475,7 @@
                                         <string key="userLabel">Congratulations! You’ve found the hidden sounds. We’ve saved the best for here. The sounds below are audio recordings found deep in the web. These are genuine recordings of mysterious origin and meaning. They are not for the faint of heart and may leave you feeling uneasy, frightened, and paranoid. You have been warned.</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-aB-cvW">
-                                        <rect key="frame" x="0.0" y="290" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="290" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="sUB-N6-6eJ"/>
@@ -1487,11 +1490,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="oldTapePlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="rym-Cq-aZd"/>
+                                            <action selector="soundButtonPressed:" destination="t1I-FK-ggP" eventType="touchUpInside" id="HRc-03-rB4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdY-Y9-yvx">
-                                        <rect key="frame" x="0.0" y="348" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="348" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Llk-Hy-zUf"/>
@@ -1506,11 +1509,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="criesOfInsanityPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="4tp-mK-SAP"/>
+                                            <action selector="soundButtonPressed:" destination="t1I-FK-ggP" eventType="touchUpInside" id="sk8-mx-Zbg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaI-SI-g20">
-                                        <rect key="frame" x="0.0" y="406" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="406" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.52549019610000003" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="gpb-R6-N3e"/>
@@ -1525,14 +1528,14 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="criesHellPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="X5H-xh-chm"/>
+                                            <action selector="soundButtonPressed:" destination="t1I-FK-ggP" eventType="touchUpInside" id="B22-EC-me9"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="M4J-sT-cHh">
-                                        <rect key="frame" x="8" y="464" width="398" height="310"/>
+                                        <rect key="frame" x="8" y="464" width="377" height="251"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6V-Hk-3t2">
-                                        <rect key="frame" x="0.0" y="232" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="232" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="t3Z-US-tuA"/>
@@ -1547,7 +1550,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="ghostSongPlay:" destination="t1I-FK-ggP" eventType="touchUpInside" id="WtE-PI-n12"/>
+                                            <action selector="soundButtonPressed:" destination="t1I-FK-ggP" eventType="touchUpInside" id="X7o-VX-628"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1604,7 +1607,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbS-8A-ydh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rUF-dG-xkY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
