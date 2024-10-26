@@ -20,6 +20,8 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
     @IBOutlet weak var nightmareButton: UIButton!
     @IBOutlet weak var fridayButton: UIButton!
     @IBOutlet weak var amityvilleButton: UIButton!
+    @IBOutlet weak var unsolvedButton: UIButton!
+    @IBOutlet weak var xfilesButton: UIButton!
 
     let halloweenLongPress = UILongPressGestureRecognizer()
     let exorcistLongPress = UILongPressGestureRecognizer()
@@ -27,6 +29,8 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
     let nightmareLongPress = UILongPressGestureRecognizer()
     let fridayLongPress = UILongPressGestureRecognizer()
     let amityvilleLongPress = UILongPressGestureRecognizer()
+    let unsolvedLongPress = UILongPressGestureRecognizer()
+    let xfilesLongPress = UILongPressGestureRecognizer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +44,8 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
         nightmareButton.noHighlight(nightmareButton)
         fridayButton.noHighlight(fridayButton)
         amityvilleButton.noHighlight(amityvilleButton)
+        unsolvedButton.noHighlight(unsolvedButton)
+        xfilesButton.noHighlight(xfilesButton)
 
         // Initialize audio players
         initializeAudioPlayers()
@@ -67,7 +73,9 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
             shiningButton: "shining",
             nightmareButton: "elm_street",
             fridayButton: "vorhees",
-            amityvilleButton: "amityville"
+            amityvilleButton: "amityville",
+            unsolvedButton: "unsolved_mysteries",
+            xfilesButton: "xfiles"
         ]
 
         for (button, sound) in soundFiles {
@@ -110,6 +118,8 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
         nightmareLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
         fridayLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
         amityvilleLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        unsolvedLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
+        xfilesLongPress.addTarget(self, action: #selector(replayButtonLongPressed(_:)))
 
         halloweenButton.addGestureRecognizer(halloweenLongPress)
         exorcistButton.addGestureRecognizer(exorcistLongPress)
@@ -117,6 +127,8 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
         nightmareButton.addGestureRecognizer(nightmareLongPress)
         fridayButton.addGestureRecognizer(fridayLongPress)
         amityvilleButton.addGestureRecognizer(amityvilleLongPress)
+        unsolvedButton.addGestureRecognizer(unsolvedLongPress)
+        xfilesButton.addGestureRecognizer(xfilesLongPress)
     }
 
     // Handle button presses
@@ -157,6 +169,8 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
         case nightmareButton: return "freddy"
         case fridayButton: return "vorhees"
         case amityvilleButton: return "amityville"
+        case unsolvedButton: return "question_mark"
+        case xfilesButton: return "magnifying_glass"
         default: return "default_icon"
         }
     }
@@ -177,6 +191,10 @@ class HorrorMovieViewController: UIViewController, AVAudioPlayerDelegate, UIGest
                 handleReplay(for: fridayButton, with: horrorMovieAudioPlayers[fridayButton])
             case amityvilleLongPress:
                 handleReplay(for: amityvilleButton, with: horrorMovieAudioPlayers[amityvilleButton])
+            case unsolvedLongPress:
+                handleReplay(for: unsolvedButton, with: horrorMovieAudioPlayers[unsolvedButton])
+            case xfilesLongPress:
+                handleReplay(for: xfilesButton, with: horrorMovieAudioPlayers[xfilesButton])
             default:
                 break
             }

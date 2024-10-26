@@ -16,6 +16,8 @@
 		0476EC64250D3CA6007ED260 /* eyes_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC62250D3CA6007ED260 /* eyes_orange.png */; };
 		04AA90D8252E4A1C00343F7E /* amityville.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04AA90D7252E4A1C00343F7E /* amityville.mp3 */; };
 		04BF57302C791FC40027560F /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF572F2C791FC40027560F /* AudioPlayerManager.swift */; };
+		04C3B20D2CCC7FC600680F40 /* xfiles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C3B20C2CCC7FC600680F40 /* xfiles.mp3 */; };
+		04C3B20E2CCC7FC600680F40 /* unsolved_mysteries.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C3B20B2CCC7FC600680F40 /* unsolved_mysteries.mp3 */; };
 		04E463DC28C63CCB006F06DD /* Replay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E463DB28C63CCB006F06DD /* Replay.swift */; };
 		04F2C3D328D9159C003C63A2 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		04F2C3D628D915B2003C63A2 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -127,6 +129,8 @@
 		0476EC62250D3CA6007ED260 /* eyes_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes_orange.png; sourceTree = "<group>"; };
 		04AA90D7252E4A1C00343F7E /* amityville.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = amityville.mp3; sourceTree = "<group>"; };
 		04BF572F2C791FC40027560F /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		04C3B20B2CCC7FC600680F40 /* unsolved_mysteries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unsolved_mysteries.mp3; sourceTree = "<group>"; };
+		04C3B20C2CCC7FC600680F40 /* xfiles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xfiles.mp3; sourceTree = "<group>"; };
 		04E463DB28C63CCB006F06DD /* Replay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Replay.swift; sourceTree = "<group>"; };
 		04E463DD28C64130006F06DD /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = exorcist.mp3; path = ../../../old/SpookyHalloweenSounds_iOS_bak/SpookyHalloweenSounds/Audio/exorcist.mp3; sourceTree = "<group>"; };
 		04E463DF28C64138006F06DD /* halloween.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = halloween.mp3; path = ../../../old/SpookyHalloweenSounds_iOS_bak/SpookyHalloweenSounds/Audio/halloween.mp3; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 				7B987D532133718900743717 /* creepy_song.mp3 */,
 				0465560828EF87E50036842D /* shining.mp3 */,
 				7B987D722133718C00743717 /* dracula_laugh.mp3 */,
+				04C3B20B2CCC7FC600680F40 /* unsolved_mysteries.mp3 */,
+				04C3B20C2CCC7FC600680F40 /* xfiles.mp3 */,
 				7B987D652133718A00743717 /* evil_man.mp3 */,
 				7B987D572133718900743717 /* haunted_organ.mp3 */,
 				0465560A28EF88250036842D /* freddy_coming.mp3 */,
@@ -448,6 +454,7 @@
 				7B305C862132F25300B184F5 /* Frameworks */,
 				7B305C872132F25300B184F5 /* Resources */,
 				8FBEEB418EF09C0E01959D66 /* [CP] Embed Pods Frameworks */,
+				0409F5E22CCD2F2F00A5EDC8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -615,6 +622,8 @@
 				14472517248C244600A27662 /* dont_let_in.mp3 in Resources */,
 				0465560B28EF88250036842D /* freddy_coming.mp3 in Resources */,
 				14357AAF234949CA00D9B0D3 /* bosson_full_logo.PNG in Resources */,
+				04C3B20D2CCC7FC600680F40 /* xfiles.mp3 in Resources */,
+				04C3B20E2CCC7FC600680F40 /* unsolved_mysteries.mp3 in Resources */,
 				7B987D9D2133718D00743717 /* tortured_souls.mp3 in Resources */,
 				7B05DEA42137665B00BAC058 /* graveyard.png in Resources */,
 				0476EC64250D3CA6007ED260 /* eyes_orange.png in Resources */,
@@ -647,6 +656,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0409F5E22CCD2F2F00A5EDC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Grab build date for app\nBUILD_DATE=$(date \"+%Y-%m-%d %H:%M:%S\")\n/usr/libexec/PlistBuddy -c \"Set :BuildDate ${BUILD_DATE}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+		};
 		31864E261531EF8FCD04A365 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -948,7 +974,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
@@ -957,7 +983,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -976,7 +1002,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
@@ -985,7 +1011,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
