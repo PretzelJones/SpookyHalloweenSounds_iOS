@@ -20,8 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // This will clear UserDefaults data. Use this ONLY for testing.
-                UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
-                UserDefaults.standard.synchronize()
+        //#if DEBUG
+        //UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        //UserDefaults.standard.synchronize()
+        //#endif
+        
+        #if DEBUG
+        if CommandLine.arguments.contains("-resetNewFeatureFlag") {
+            FirstRunGate.reset(key: FeatureFlags.newFeatureV1Seen)
+        }
+        #endif
+
         //code for lock screen controls
         let audioSession = AVAudioSession.sharedInstance()
         do {
@@ -36,6 +45,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //used for Firebase Messaging
         //        Messaging.messaging().delegate = self as? MessagingDelegate
         
+        for family in UIFont.familyNames.sorted() {
+            print("Family: \(family)")
+            for name in UIFont.fontNames(forFamilyName: family) {
+                print("  Font: \(name)")
+            }
+        }
+
+        //set navbar font
+        if let customFont = UIFont(name: "Creepster-Regular", size: 30) {
+            let appearance = UINavigationBar.appearance()
+            appearance.titleTextAttributes = [
+                .font: customFont,
+                .foregroundColor: halloweenOrange // or whatever your theme uses
+            ]
+            appearance.tintColor = UIColor.orange
+            appearance.backIndicatorImage = UIImage(named: "back-arrow")
+            appearance.backIndicatorTransitionMaskImage = UIImage(named: "back-arrow")
+        }
+
         //keep screen on
         UIApplication.shared.isIdleTimerDisabled = true
         

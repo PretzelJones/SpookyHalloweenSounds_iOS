@@ -11,3 +11,4 @@ import UIKit
 
 let halloweenOrange = UIColor(red: 243/255, green: 127/255, blue: 54/255, alpha: 1)
 let halloweenOrangeHighlight = UIColor(red: 245/255, green: 154/255, blue: 75/255, alpha: 1)
+let halloweenDarkOrange = UIColor(red: 0.9, green: 0.4, blue: 0.1, alpha: 1.0)

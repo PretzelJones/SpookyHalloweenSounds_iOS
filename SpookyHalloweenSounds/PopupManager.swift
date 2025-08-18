@@ -8,28 +8,41 @@
 import UIKit
 
 class PopupManager {
-    static let shared = PopupManager() // Singleton instance
+    static let shared = PopupManager()
 
-    private let userDefaultsKey = "popupShown"
+    private let popupVersionKey = "popupVersionShown"
+    private let currentPopupVersion = "1.5" // 🔁 Change when you want the popup to show again
 
     func shouldShowPopup() -> Bool {
-        return !UserDefaults.standard.bool(forKey: userDefaultsKey)
+        let shownVersion = UserDefaults.standard.string(forKey: popupVersionKey)
+        let shouldShow = (shownVersion != currentPopupVersion)
+        print("[PopupManager] Last shown: \(shownVersion ?? "none"), Should show: \(shouldShow)")
+        return shouldShow
     }
 
     func markPopupAsShown() {
-        UserDefaults.standard.set(true, forKey: userDefaultsKey)
+        print("[PopupManager] Marking popup version \(currentPopupVersion) as shown.")
+        UserDefaults.standard.set(currentPopupVersion, forKey: popupVersionKey)
     }
 
     func showPopup(inViewController viewController: UIViewController) {
-        if shouldShowPopup() {
-            let alertController = UIAlertController(title: "New Feature!", message: "Hold your finger on the button to restart any of the Movie Theme or Looping Mix sounds!", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-                // Handle the OK button tap if needed
-                self.markPopupAsShown()
-            }))
-            
-            viewController.present(alertController, animated: true, completion: nil)
-        }
+        guard shouldShowPopup() else { return }
+
+        let alertController = UIAlertController(
+            title: "New Feature!",
+            message: "Hold your finger on the button to restart any of the Movie Theme or Looping Mix sounds!",
+            preferredStyle: .alert
+        )
+
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            self.markPopupAsShown()
+        }))
+
+        viewController.present(alertController, animated: true)
+    }
+
+    // Optional: reset popup manually for testing
+    func resetPopupForTesting() {
+        UserDefaults.standard.removeObject(forKey: popupVersionKey)
     }
 }
-
