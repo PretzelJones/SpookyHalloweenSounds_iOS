@@ -13,11 +13,13 @@ final class PartySongsViewController: UIViewController, AVAudioPlayerDelegate {
     // MARK: - Outlets
     @IBOutlet weak var ghostbustersButton: SeekButton!
     @IBOutlet weak var spellonyouButton: SeekButton!
+    @IBOutlet weak var coralineButton: SeekButton!
     @IBOutlet weak var thisishalloweenButton: SeekButton!
     @IBOutlet weak var littleshopofhorrorsButton: SeekButton!
     @IBOutlet weak var adamsfamilyButton: SeekButton!
     @IBOutlet weak var mostermashButton: SeekButton!
     @IBOutlet weak var spookyscaryskeletonsButton: SeekButton!
+    
     
     // MARK: - Strong refs
     private var audioPlayers: [SeekButton: AVAudioPlayer] = [:]
@@ -35,6 +37,7 @@ final class PartySongsViewController: UIViewController, AVAudioPlayerDelegate {
 
         [ghostbustersButton,
          spellonyouButton,
+         coralineButton,
          thisishalloweenButton,
          littleshopofhorrorsButton,
          adamsfamilyButton,
@@ -59,6 +62,7 @@ final class PartySongsViewController: UIViewController, AVAudioPlayerDelegate {
         let items: [(SeekButton, String)] = [
             (ghostbustersButton, "ghostbusters"),
             (spellonyouButton, "i_put_a_spell_on_you"),
+            (coralineButton, "coraline"),
             (thisishalloweenButton, "this_is_halloween"),
             (littleshopofhorrorsButton, "little_shop_of_horrors"),
             (adamsfamilyButton, "adams_family"),
@@ -128,7 +132,8 @@ final class PartySongsViewController: UIViewController, AVAudioPlayerDelegate {
     private func getOriginalImageName(for button: SeekButton) -> String {
         switch button {
         case ghostbustersButton:          return "ghostbusters"
-        case spellonyouButton:            return "spell_on_you"   // corrected from "hocus_pocus"
+        case spellonyouButton:            return "spell_on_you"
+        case coralineButton:              return "coraline"
         case thisishalloweenButton:       return "jack_skellington"
         case littleshopofhorrorsButton:   return "audrey"
         case adamsfamilyButton:           return "creaky_door"

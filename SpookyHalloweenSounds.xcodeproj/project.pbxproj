@@ -17,6 +17,7 @@
 		043D626C2E4D374000F8305A /* adams_family.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043D62612E4D374000F8305A /* adams_family.mp3 */; };
 		043D626D2E4D374000F8305A /* monster_mash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043D62652E4D374000F8305A /* monster_mash.mp3 */; };
 		043D626E2E4D374000F8305A /* spooky_scary_skeletons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043D62662E4D374000F8305A /* spooky_scary_skeletons.mp3 */; };
+		04499E442E7F4A4C0043C36C /* coraline.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04499E432E7F4A4C0043C36C /* coraline.mp3 */; };
 		0465560528EF87BD0036842D /* halloween.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0465560428EF87BD0036842D /* halloween.mp3 */; };
 		0465560728EF87D70036842D /* exorcist.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0465560628EF87D70036842D /* exorcist.mp3 */; };
 		0465560928EF87E50036842D /* shining.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0465560828EF87E50036842D /* shining.mp3 */; };
@@ -178,6 +179,7 @@
 		043D62652E4D374000F8305A /* monster_mash.mp3 */ = {isa = PBXFileReference; explicitFileType = audio.mp3; path = monster_mash.mp3; sourceTree = "<group>"; };
 		043D62662E4D374000F8305A /* spooky_scary_skeletons.mp3 */ = {isa = PBXFileReference; explicitFileType = audio.mp3; path = spooky_scary_skeletons.mp3; sourceTree = "<group>"; };
 		043D62672E4D374000F8305A /* this_is_halloween.mp3 */ = {isa = PBXFileReference; explicitFileType = audio.mp3; path = this_is_halloween.mp3; sourceTree = "<group>"; };
+		04499E432E7F4A4C0043C36C /* coraline.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coraline.mp3; sourceTree = "<group>"; };
 		0465560428EF87BD0036842D /* halloween.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = halloween.mp3; sourceTree = "<group>"; };
 		0465560628EF87D70036842D /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exorcist.mp3; sourceTree = "<group>"; };
 		0465560828EF87E50036842D /* shining.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shining.mp3; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 		7B305CBB2132F9F300B184F5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				04499E432E7F4A4C0043C36C /* coraline.mp3 */,
 				04AA90D7252E4A1C00343F7E /* amityville.mp3 */,
 				043D625F2E4BE52700F8305A /* shining.mp3 */,
 				043D625D2E4BE51E00F8305A /* halloween.mp3 */,
@@ -733,6 +736,7 @@
 				0465560928EF87E50036842D /* shining.mp3 in Resources */,
 				7B987D972133718D00743717 /* black_cat.mp3 in Resources */,
 				1451D9FC24925D320094053E /* elm_street.mp3 in Resources */,
+				04499E442E7F4A4C0043C36C /* coraline.mp3 in Resources */,
 				0476EC60250D3BCC007ED260 /* peak.png in Resources */,
 				7B305C942132F25500B184F5 /* Assets.xcassets in Resources */,
 				043D62602E4BE52700F8305A /* shining.mp3 in Resources */,
@@ -836,7 +840,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Grab build date for app\nBUILD_DATE=$(date \"+%Y-%m-%d %H:%M:%S\")\n/usr/libexec/PlistBuddy -c \"Set :BuildDate ${BUILD_DATE}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+			shellScript = "# Grab build date for app\n#BUILD_DATE=$(date \"+%Y-%m-%d %H:%M:%S\")\n#/usr/libexec/PlistBuddy -c \"Set :BuildDate ${BUILD_DATE}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
 		};
 		31864E261531EF8FCD04A365 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

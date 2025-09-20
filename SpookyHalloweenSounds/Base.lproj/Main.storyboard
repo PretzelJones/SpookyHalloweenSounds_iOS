@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,11 +18,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Am6-Ci-EFb">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="768"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-Pm-nch" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="2409"/>
@@ -917,7 +917,7 @@
             <objects>
                 <viewController id="YAK-Zu-roR" customClass="AboutViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6b-IE-eF6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="PaL-Ar-NW6">
@@ -981,7 +981,7 @@
             <objects>
                 <viewController id="lrZ-Ov-kYt" customClass="LongMixViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wU3-CW-mrY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-4E-zIy" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
@@ -1095,7 +1095,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-jR-PWl">
-                                <rect key="frame" x="0.0" y="414" width="393" height="208"/>
+                                <rect key="frame" x="0.0" y="414" width="393" height="198"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -1148,7 +1148,7 @@
             <objects>
                 <viewController title="Horror Movie &amp; TV Themes" id="3dX-ln-9cZ" customClass="HorrorMovieViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ly2-QD-7ju">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-ta-iZ0" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
@@ -1304,7 +1304,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-ss-dCV">
-                                <rect key="frame" x="0.0" y="584" width="409" height="72"/>
+                                <rect key="frame" x="0.0" y="584" width="409" height="62"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -1378,11 +1378,11 @@
             <objects>
                 <viewController id="t1I-FK-ggP" customClass="HiddenViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MEb-Jn-bmi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6h-XR-WMW">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="622"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="612"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-aB-cvW" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="261" width="393" height="50"/>
@@ -1442,7 +1442,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_orange.png" translatesAutoresizingMaskIntoConstraints="NO" id="M4J-sT-cHh">
-                                        <rect key="frame" x="8" y="435" width="377" height="158"/>
+                                        <rect key="frame" x="8" y="435" width="377" height="148"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6V-Hk-3t2" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="203" width="393" height="50"/>
@@ -1528,7 +1528,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbS-8A-ydh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rUF-dG-xkY">
-                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1555,11 +1555,11 @@
             <objects>
                 <viewController id="Mpf-yW-Qfc" userLabel="Party Songs" customClass="PartySongsViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zui-iZ-AYI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-XB-GA2">
-                                <rect key="frame" x="0.0" y="136" width="393" height="398"/>
+                                <rect key="frame" x="0.0" y="136" width="393" height="456"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQZ-aO-N7S" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
@@ -1601,8 +1601,28 @@
                                             <action selector="soundButtonPressed:" destination="Mpf-yW-Qfc" eventType="touchUpInside" id="eBB-4G-DBy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqk-bR-91b" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-Ss-YY4" userLabel="Coraline Button" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="393" height="50"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IE6-tc-zKw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="  Coraline" image="coraline">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="soundButtonPressed:" destination="Mpf-yW-Qfc" eventType="touchUpInside" id="aLV-Xa-BGb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqk-bR-91b" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="174" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ijz-rT-n0U"/>
@@ -1622,7 +1642,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPk-fo-Ml5" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174" width="393" height="50"/>
+                                        <rect key="frame" x="0.0" y="232" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Gb4-Hx-xe1"/>
@@ -1642,7 +1662,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgc-IR-Rlg" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="232" width="393" height="50"/>
+                                        <rect key="frame" x="0.0" y="290" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="tDW-NL-N4J"/>
@@ -1662,7 +1682,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th9-2t-dXr" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="290" width="393" height="50"/>
+                                        <rect key="frame" x="0.0" y="348" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="sQF-cU-lq9"/>
@@ -1682,7 +1702,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51q-tX-71Z" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="348" width="393" height="50"/>
+                                        <rect key="frame" x="0.0" y="406" width="393" height="50"/>
                                         <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="haU-O5-B2l"/>
@@ -1714,7 +1734,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graveyard.png" translatesAutoresizingMaskIntoConstraints="NO" id="fda-0X-hmt">
-                                <rect key="frame" x="0.0" y="542" width="393" height="134"/>
+                                <rect key="frame" x="0.0" y="600" width="393" height="66"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -1740,6 +1760,7 @@
                     <navigationItem key="navigationItem" title="Halloween Party Songs" id="d5N-Ni-JpK"/>
                     <connections>
                         <outlet property="adamsfamilyButton" destination="Lgc-IR-Rlg" id="i0b-UI-VtH"/>
+                        <outlet property="coralineButton" destination="gIO-Ss-YY4" id="kQL-Hg-ls0"/>
                         <outlet property="ghostbustersButton" destination="YQZ-aO-N7S" id="peh-ac-8gf"/>
                         <outlet property="littleshopofhorrorsButton" destination="aPk-fo-Ml5" id="KTV-RD-rgH"/>
                         <outlet property="mostermashButton" destination="Th9-2t-dXr" id="0i5-p4-rMy"/>
@@ -1756,12 +1777,13 @@
     <resources>
         <image name="alien" width="29" height="29"/>
         <image name="amityville" width="40" height="40"/>
-        <image name="audrey" width="60" height="60"/>
+        <image name="audrey" width="40" height="40"/>
         <image name="black_cat" width="40" height="40"/>
         <image name="blowing_wind" width="40" height="40"/>
         <image name="cat_scream" width="40" height="40"/>
         <image name="chained_ghoul" width="29" height="29"/>
         <image name="chains" width="40" height="40"/>
+        <image name="coraline" width="25.333333969116211" height="25.333333969116211"/>
         <image name="creaky_door" width="29" height="29"/>
         <image name="cries_hell" width="29" height="29"/>
         <image name="cross" width="29" height="29"/>
