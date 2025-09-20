@@ -8,77 +8,174 @@
 import WidgetKit
 import SwiftUI
 
-struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), emoji: "😀")
+// MARK: - Timeline Entry
+struct HalloweenCountdownEntry: TimelineEntry {
+    let date: Date
+    let daysRemaining: Int
+}
+
+// MARK: - Provider
+struct HalloweenCountdownProvider: TimelineProvider {
+    func placeholder(in context: Context) -> HalloweenCountdownEntry {
+        HalloweenCountdownEntry(date: Date(), daysRemaining: 0)
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), emoji: "😀")
+    func getSnapshot(in context: Context, completion: @escaping (HalloweenCountdownEntry) -> Void) {
+        let entry = HalloweenCountdownEntry(
+            date: Date(),
+            daysRemaining: CountdownManager().daysUntilNextDate()
+        )
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+    func getTimeline(in context: Context, completion: @escaping (Timeline<HalloweenCountdownEntry>) -> Void) {
+        var entries: [HalloweenCountdownEntry] = []
+        let calendar = Calendar.current
+        let startOfToday = calendar.startOfDay(for: Date())
 
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀")
-            entries.append(entry)
+        // Generate entries for the next 7 days
+        for offset in 0..<7 {
+            if let entryDate = calendar.date(byAdding: .day, value: offset, to: startOfToday) {
+                let daysRemaining = CountdownManager().daysUntilNextDate() - offset
+                let entry = HalloweenCountdownEntry(date: entryDate, daysRemaining: max(daysRemaining, 0))
+                entries.append(entry)
+            }
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
-
-//    func relevances() async -> WidgetRelevances<Void> {
-//        // Generate a list containing the contexts this widget is relevant in.
-//    }
 }
 
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-    let emoji: String
-}
-
-struct HalloweenCountdownWidgetEntryView : View {
-    var entry: Provider.Entry
-
-    var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
-
-            Text("Emoji:")
-            Text(entry.emoji)
+// MARK: - Widget View
+struct HalloweenCountdownWidgetEntryView: View {
+    var entry: HalloweenCountdownEntry
+    @Environment(\.widgetFamily) var family
+    
+    init(entry: HalloweenCountdownEntry) {
+        self.entry = entry
+        
+        // DEBUG: Print all fonts available in the widget target
+        for family in UIFont.familyNames {
+            print("Family: \(family)")
+            for name in UIFont.fontNames(forFamilyName: family) {
+                print("   \(name)")
+            }
         }
     }
+    
+    var body: some View {
+        switch family {
+        case .systemSmall:
+            ZStack {
+                // ORANGE OUTLINE (8-direction offsets for a strong halo)
+                Group {
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: 1, y: 0)
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: -1, y: 0)
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: 0, y: 1)
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: 0, y: -1)
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: 1, y: 1)
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: -1, y: 1)
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: 1, y: -1)
+                    Text("\(entry.daysRemaining)")
+                        .offset(x: -1, y: -1)
+                }
+                .font(.custom("Creepster", size: 70))
+                .foregroundColor(.orange)
+                .opacity(0.95)
+
+                // BLACK FILL (sharp foreground)
+                Text("\(entry.daysRemaining)")
+                    .font(.custom("Creepster", size: 90))
+                    .foregroundColor(.black)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .containerBackground(for: .widget) {
+                // Use scaledToFit to avoid cropping; background fills any letterbox
+                Image("graveyard_square")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .clipped()
+                    .background(Color.black)
+            }
+
+        case .systemMedium:
+            HStack {
+                ZStack {
+                    Group {
+                        Text("\(entry.daysRemaining)").offset(x: 1, y: 0)
+                        Text("\(entry.daysRemaining)").offset(x: -1, y: 0)
+                        Text("\(entry.daysRemaining)").offset(x: 0, y: 1)
+                        Text("\(entry.daysRemaining)").offset(x: 0, y: -1)
+                        Text("\(entry.daysRemaining)").offset(x: 1, y: 1)
+                        Text("\(entry.daysRemaining)").offset(x: -1, y: 1)
+                        Text("\(entry.daysRemaining)").offset(x: 1, y: -1)
+                        Text("\(entry.daysRemaining)").offset(x: -1, y: -1)
+                    }
+                    .font(.custom("Creepster", size: 80))
+                    .foregroundColor(.orange)
+                    .opacity(0.95)
+                    
+                    Text("\(entry.daysRemaining)")
+                        .font(.custom("Creepster", size: 80))
+                        .foregroundColor(.black)
+                }
+                
+                Spacer()
+        
+                ZStack {
+                    Group {
+                        Text("Days till Halloween").offset(x: 1, y: 0)
+                        Text("Days till Halloween").offset(x: -1, y: 0)
+                        Text("Days till Halloween").offset(x: 0, y: 1)
+                        Text("Days till Halloween").offset(x: 0, y: -1)
+                        Text("Days till Halloween").offset(x: 1, y: 1)
+                        Text("Days till Halloween").offset(x: -1, y: 1)
+                        Text("Days till Halloween").offset(x: 1, y: -1)
+                        Text("Days till Halloween").offset(x: -1, y: -1)
+                    }
+                    .font(.custom("Creepster", size: 34))
+                    .foregroundColor(.orange)
+                    .opacity(0.95)
+
+                    Text("Days till Halloween")
+                        .font(.custom("Creepster", size: 34))
+                        .foregroundColor(.black)
+                }
+            }
+            .padding()
+            .containerBackground(for: .widget) {
+                Image("graveyard_rectangle")
+                    .resizable()
+                    .scaledToFill()
+            }
+
+        default:
+            EmptyView()
+        }
+    }
+
 }
 
+// MARK: - Widget
+@main
 struct HalloweenCountdownWidget: Widget {
     let kind: String = "HalloweenCountdownWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(iOS 17.0, *) {
-                HalloweenCountdownWidgetEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                HalloweenCountdownWidgetEntryView(entry: entry)
-                    .padding()
-                    .background()
-            }
+        StaticConfiguration(kind: kind, provider: HalloweenCountdownProvider()) { entry in
+            HalloweenCountdownWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Halloween Countdown")
+        .description("Shows the number of days remaining until Halloween.")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
-}
-
-#Preview(as: .systemSmall) {
-    HalloweenCountdownWidget()
-} timeline: {
-    SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
 }

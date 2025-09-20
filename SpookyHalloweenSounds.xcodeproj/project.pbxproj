@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,10 +25,18 @@
 		046F61242E4E6EFF00CCC8DD /* PartySongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F61232E4E6EFB00CCC8DD /* PartySongsViewController.swift */; };
 		0476EC60250D3BCC007ED260 /* peak.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC5F250D3BCB007ED260 /* peak.png */; };
 		0476EC64250D3CA6007ED260 /* eyes_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC62250D3CA6007ED260 /* eyes_orange.png */; };
+		0488B8732E7DF82500ABB977 /* graveyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA32137665A00BAC058 /* graveyard.png */; };
+		0488B8742E7DF97300ABB977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B305C932132F25500B184F5 /* Assets.xcassets */; };
+		049702132E7A204400E8EE48 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049702122E7A204400E8EE48 /* WidgetKit.framework */; };
+		049702152E7A204400E8EE48 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049702142E7A204400E8EE48 /* SwiftUI.framework */; };
+		049702242E7A204B00E8EE48 /* HalloweenCountdownWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 049702112E7A204400E8EE48 /* HalloweenCountdownWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04A764A02E5228460087FA41 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7649F2E5228410087FA41 /* FeatureFlags.swift */; };
 		04A764A32E5228E10087FA41 /* FirstRunGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A764A22E5228DE0087FA41 /* FirstRunGate.swift */; };
 		04A764A52E5229210087FA41 /* NewFeatureAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A764A42E5229180087FA41 /* NewFeatureAlert.swift */; };
 		04A764A72E522B7A0087FA41 /* UIViewController+NewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A764A62E522B770087FA41 /* UIViewController+NewFeature.swift */; };
+		04A8362F2E7B784600778E09 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9F924925CE20094053E /* Colors.swift */; };
+		04A836302E7B785100778E09 /* Creepster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BCD3730213F4DBC00B27F54 /* Creepster.ttf */; };
+		04A836312E7CBE2600778E09 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DACA42CBC12930071822F /* CountdownManager.swift */; };
 		04AA90D8252E4A1C00343F7E /* amityville.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04AA90D7252E4A1C00343F7E /* amityville.mp3 */; };
 		04BF57302C791FC40027560F /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF572F2C791FC40027560F /* AudioPlayerManager.swift */; };
 		04C3B20D2CCC7FC600680F40 /* xfiles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04C3B20C2CCC7FC600680F40 /* xfiles.mp3 */; };
@@ -122,6 +130,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		049702222E7A204B00E8EE48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B305C812132F25300B184F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049702102E7A204400E8EE48;
+			remoteInfo = HalloweenCountdownWidgetExtension;
+		};
 		7B305C9E2132F25500B184F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7B305C812132F25300B184F5 /* Project object */;
@@ -137,6 +152,20 @@
 			remoteInfo = SpookyHalloweenSounds;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		049702252E7A204B00E8EE48 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				049702242E7A204B00E8EE48 /* HalloweenCountdownWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		043D625B2E4BE50E00F8305A /* exorcist.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exorcist.mp3; sourceTree = "<group>"; };
@@ -157,6 +186,9 @@
 		046F61232E4E6EFB00CCC8DD /* PartySongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartySongsViewController.swift; sourceTree = "<group>"; };
 		0476EC5F250D3BCB007ED260 /* peak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peak.png; sourceTree = "<group>"; };
 		0476EC62250D3CA6007ED260 /* eyes_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes_orange.png; sourceTree = "<group>"; };
+		049702112E7A204400E8EE48 /* HalloweenCountdownWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HalloweenCountdownWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		049702122E7A204400E8EE48 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		049702142E7A204400E8EE48 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		04A7649F2E5228410087FA41 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		04A764A22E5228DE0087FA41 /* FirstRunGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRunGate.swift; sourceTree = "<group>"; };
 		04A764A42E5229180087FA41 /* NewFeatureAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatureAlert.swift; sourceTree = "<group>"; };
@@ -264,7 +296,37 @@
 		FD631482F5B4176DD8612C5B /* Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		049702282E7A204B00E8EE48 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 049702102E7A204400E8EE48 /* HalloweenCountdownWidgetExtension */;
+		};
+		049DF2A82E7DF21400FE8BBF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WidgetStyles.swift,
+			);
+			target = 7B305C882132F25300B184F5 /* SpookyHalloweenSounds */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		049702162E7A204400E8EE48 /* HalloweenCountdownWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (049DF2A82E7DF21400FE8BBF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 049702282E7A204B00E8EE48 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = HalloweenCountdownWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		0497020E2E7A204400E8EE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049702152E7A204400E8EE48 /* SwiftUI.framework in Frameworks */,
+				049702132E7A204400E8EE48 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B305C862132F25300B184F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +360,7 @@
 				7B305C8B2132F25300B184F5 /* SpookyHalloweenSounds */,
 				7B305CA02132F25500B184F5 /* SpookyHalloweenSoundsTests */,
 				7B305CAB2132F25500B184F5 /* SpookyHalloweenSoundsUITests */,
+				049702162E7A204400E8EE48 /* HalloweenCountdownWidget */,
 				7B305C8A2132F25300B184F5 /* Products */,
 				F3A2236FE0EDE91A0BAAF736 /* Pods */,
 				9607FA2F19C1477936D0F4B7 /* Frameworks */,
@@ -310,6 +373,7 @@
 				7B305C892132F25300B184F5 /* Halloween.app */,
 				7B305C9D2132F25500B184F5 /* SpookyHalloweenSoundsTests.xctest */,
 				7B305CA82132F25500B184F5 /* SpookyHalloweenSoundsUITests.xctest */,
+				049702112E7A204400E8EE48 /* HalloweenCountdownWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -476,6 +540,8 @@
 				CC5A0743CCE83A7079B1B572 /* Pods_SpookyHalloweenSounds.framework */,
 				FD631482F5B4176DD8612C5B /* Pods_SpookyHalloweenSounds_SpookyHalloweenSoundsUITests.framework */,
 				E643C4557D38D4F6A4E83706 /* Pods_SpookyHalloweenSoundsTests.framework */,
+				049702122E7A204400E8EE48 /* WidgetKit.framework */,
+				049702142E7A204400E8EE48 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -496,6 +562,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		049702102E7A204400E8EE48 /* HalloweenCountdownWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049702292E7A204B00E8EE48 /* Build configuration list for PBXNativeTarget "HalloweenCountdownWidgetExtension" */;
+			buildPhases = (
+				0497020D2E7A204400E8EE48 /* Sources */,
+				0497020E2E7A204400E8EE48 /* Frameworks */,
+				0497020F2E7A204400E8EE48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				049702162E7A204400E8EE48 /* HalloweenCountdownWidget */,
+			);
+			name = HalloweenCountdownWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = HalloweenCountdownWidgetExtension;
+			productReference = 049702112E7A204400E8EE48 /* HalloweenCountdownWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7B305C882132F25300B184F5 /* SpookyHalloweenSounds */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B305CB12132F25500B184F5 /* Build configuration list for PBXNativeTarget "SpookyHalloweenSounds" */;
@@ -506,10 +594,12 @@
 				7B305C872132F25300B184F5 /* Resources */,
 				8FBEEB418EF09C0E01959D66 /* [CP] Embed Pods Frameworks */,
 				0409F5E22CCD2F2F00A5EDC8 /* ShellScript */,
+				049702252E7A204B00E8EE48 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				049702232E7A204B00E8EE48 /* PBXTargetDependency */,
 			);
 			name = SpookyHalloweenSounds;
 			productName = SpookyHalloweenSounds;
@@ -561,10 +651,13 @@
 		7B305C812132F25300B184F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					049702102E7A204400E8EE48 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					7B305C882132F25300B184F5 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1030;
@@ -605,11 +698,22 @@
 				7B305C882132F25300B184F5 /* SpookyHalloweenSounds */,
 				7B305C9C2132F25500B184F5 /* SpookyHalloweenSoundsTests */,
 				7B305CA72132F25500B184F5 /* SpookyHalloweenSoundsUITests */,
+				049702102E7A204400E8EE48 /* HalloweenCountdownWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0497020F2E7A204400E8EE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0488B8732E7DF82500ABB977 /* graveyard.png in Resources */,
+				0488B8742E7DF97300ABB977 /* Assets.xcassets in Resources */,
+				04A836302E7B785100778E09 /* Creepster.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B305C872132F25300B184F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -845,6 +949,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0497020D2E7A204400E8EE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A836312E7CBE2600778E09 /* CountdownManager.swift in Sources */,
+				04A8362F2E7B784600778E09 /* Colors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B305C852132F25300B184F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -895,6 +1008,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		049702232E7A204B00E8EE48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049702102E7A204400E8EE48 /* HalloweenCountdownWidgetExtension */;
+			targetProxy = 049702222E7A204B00E8EE48 /* PBXContainerItemProxy */;
+		};
 		7B305C9F2132F25500B184F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7B305C882132F25300B184F5 /* SpookyHalloweenSounds */;
@@ -927,6 +1045,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		049702262E7A204B00E8EE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HalloweenCountdownWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HalloweenCountdownWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds.HalloweenCountdownWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		049702272E7A204B00E8EE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HalloweenCountdownWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HalloweenCountdownWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds.HalloweenCountdownWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7B305CAF2132F25500B184F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1052,7 +1242,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 31;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
@@ -1061,7 +1251,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1080,7 +1270,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 31;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
@@ -1089,7 +1279,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1188,6 +1378,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		049702292E7A204B00E8EE48 /* Build configuration list for PBXNativeTarget "HalloweenCountdownWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049702262E7A204B00E8EE48 /* Debug */,
+				049702272E7A204B00E8EE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7B305C842132F25300B184F5 /* Build configuration list for PBXProject "SpookyHalloweenSounds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

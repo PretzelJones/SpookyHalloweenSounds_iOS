@@ -11,7 +11,7 @@ enum NewFeatureAlert {
     static func make() -> UIAlertController {
         let alert = UIAlertController(
             title: "New Feature!",
-            message: "Press, hold and slide your finger across the button to scroll through the long mix, movie and party sounds",
+            message: "Press and hold a button, then slide your finger to fast-forward or rewind the sound",
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: "Got it", style: .default))

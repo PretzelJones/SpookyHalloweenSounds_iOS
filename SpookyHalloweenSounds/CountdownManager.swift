@@ -5,7 +5,6 @@
 //  Created by Sean Patterson on 10/13/24.
 //
 
-
 import Foundation
 
 class CountdownManager {

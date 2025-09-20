@@ -8,7 +8,7 @@
 import WidgetKit
 import SwiftUI
 
-@main
+//@main
 struct HalloweenCountdownWidgetBundle: WidgetBundle {
     var body: some Widget {
         HalloweenCountdownWidget()
