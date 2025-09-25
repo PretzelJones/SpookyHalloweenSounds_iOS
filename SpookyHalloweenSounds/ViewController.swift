@@ -63,12 +63,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     // viewDidLoad method, override to customize your ViewController behavior
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         // Initialize Countdown
         //daysLabel.text = countdownManager.getCountdownText()
         startCountdownTimer()
         
         setupNavigationTitleWithCountdown()
+        
+        // Fix for iOS 26 circular glass border on right bar button item (pumpkin)
+                if #available(iOS 26.0, *) {
+                    if let pumpkinItem = navigationItem.rightBarButtonItem {
+                        pumpkinItem.hidesSharedBackground = true
+                    }
+                }
         
         // Initialize all sounds with helper function
         initializeAudioPlayers()
@@ -250,10 +257,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         let batsImageView = UIImageView(image: batsImage)
         batsImageView.contentMode = .scaleAspectFit
         batsImageView.translatesAutoresizingMaskIntoConstraints = false
+        batsImageView.tintColor = halloweenOrange
         
         // Create a container view to hold the bats image
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.backgroundColor = .clear
         containerView.addSubview(batsImageView)
         
         // Set Auto Layout constraints for the bats image to ensure proper scaling within container
@@ -273,6 +282,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // Create a UIBarButtonItem with the container view holding the bats image
         let imageItem = UIBarButtonItem(customView: containerView)
         
+        // New iOS 26 fix for circular glass border
+        if #available(iOS 26.0, *) {
+            imageItem.hidesSharedBackground = true
+        }
+
         // Create a negative spacer to move the image to the far left
         let negativeSpacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         negativeSpacer.width = -15  // Adjust this value to fine-tune the alignment

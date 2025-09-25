@@ -56,6 +56,11 @@ final class PartySongsViewController: UIViewController, AVAudioPlayerDelegate {
                 action: #selector(onBack)
             )
             backItem.tintColor = halloweenOrange
+            if #available(iOS 26.0, *) {
+                backItem.hidesSharedBackground = true
+            } else {
+                // Fallback on earlier versions
+            }
             navigationItem.leftBarButtonItem = backItem
         }
         navigationController?.interactivePopGestureRecognizer?.delegate = nil

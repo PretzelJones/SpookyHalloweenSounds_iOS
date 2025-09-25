@@ -860,7 +860,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="YPw-MA-E8X" userLabel="SpookyHalloweenSounds">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="pumpkin" id="USB-oa-mGh">
+                        <barButtonItem key="rightBarButtonItem" title="pumpkinItem" image="pumpkin" id="USB-oa-mGh">
                             <color key="tintColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="YAK-Zu-roR" kind="show" id="6db-NU-499"/>
@@ -1148,7 +1148,7 @@
             <objects>
                 <viewController title="Horror Movie &amp; TV Themes" id="3dX-ln-9cZ" customClass="HorrorMovieViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ly2-QD-7ju">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-ta-iZ0" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
@@ -1783,7 +1783,7 @@
         <image name="cat_scream" width="40" height="40"/>
         <image name="chained_ghoul" width="29" height="29"/>
         <image name="chains" width="40" height="40"/>
-        <image name="coraline" width="25.333333969116211" height="25.333333969116211"/>
+        <image name="coraline" width="40" height="40"/>
         <image name="creaky_door" width="29" height="29"/>
         <image name="cries_hell" width="29" height="29"/>
         <image name="cross" width="29" height="29"/>

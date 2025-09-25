@@ -4,7 +4,8 @@
 //
 //  Created by Sean Patterson on 8/26/18.
 //  Copyright © 2018 Bosson Design. All rights reserved.
-// test
+//
+
 
 import UIKit
 import Firebase
@@ -55,6 +56,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = UINavigationBarAppearance()
         nav.configureWithOpaqueBackground()
         nav.backgroundColor = .black
+
+        if let f = UIFont(name: "Creepster-Regular", size: 30) {
+            nav.titleTextAttributes = [
+                .font: f,
+                .foregroundColor: halloweenOrange
+            ]
+        }
+
+        if let back = UIImage(named: "left_arrow") {
+            nav.setBackIndicatorImage(back, transitionMaskImage: back)
+        }
+
+        // Hide back button text
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(
+            UIOffset(horizontal: -1000, vertical: 0), for: .default
+        )
+
+        // Remove glass backgrounds globally
+        let buttonAppearance = UIBarButtonItemAppearance(style: .plain)
+        buttonAppearance.normal.backgroundImage = nil
+        buttonAppearance.highlighted.backgroundImage = nil
+        buttonAppearance.focused.backgroundImage = nil
+        buttonAppearance.disabled.backgroundImage = nil
+
+        nav.buttonAppearance = buttonAppearance
+        nav.doneButtonAppearance = buttonAppearance
+        nav.backButtonAppearance = buttonAppearance
+
+
+        nav.buttonAppearance = buttonAppearance
+        nav.doneButtonAppearance = buttonAppearance
+        nav.backButtonAppearance = buttonAppearance
+
+        // Apply tint + appearances
+        UINavigationBar.appearance().tintColor = halloweenOrange
+        UINavigationBar.appearance().standardAppearance = nav
+        UINavigationBar.appearance().scrollEdgeAppearance = nav
+        UINavigationBar.appearance().compactAppearance = nav
+
+        /*
+        let nav = UINavigationBarAppearance()
+        nav.configureWithOpaqueBackground()
+        nav.backgroundColor = .black
         
         if let f = UIFont(name: "Creepster-Regular", size: 30) {
             nav.titleTextAttributes = [
@@ -71,7 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().standardAppearance = nav
         UINavigationBar.appearance().scrollEdgeAppearance = nav
         UINavigationBar.appearance().compactAppearance = nav
-
+*/
         
         /*
         //set navbar font
@@ -148,3 +192,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 }
+

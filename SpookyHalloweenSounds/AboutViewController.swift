@@ -47,6 +47,11 @@ class AboutViewController: UIViewController {
                 action: #selector(onBack)
             )
             backItem.tintColor = halloweenOrange
+            if #available(iOS 26.0, *) {
+                backItem.hidesSharedBackground = true
+            } else {
+                // Fallback on earlier versions
+            } 
             navigationItem.leftBarButtonItem = backItem
         }
         
@@ -54,6 +59,11 @@ class AboutViewController: UIViewController {
             if let keyImg = UIImage(named: "key")?.withRenderingMode(.alwaysTemplate) {
                 rightItem.image = keyImg
                 rightItem.tintColor = halloweenOrange
+                if #available(iOS 26.0, *) {
+                    rightItem.hidesSharedBackground = true
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         }
 
