@@ -96,15 +96,20 @@ struct HalloweenCountdownWidgetEntryView: View {
                     .font(.custom("Creepster", size: 90))
                     .foregroundColor(.black)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: .infinity) // ensure overlay hugs container edge
             .containerBackground(for: .widget) {
-                // Use scaledToFit to avoid cropping; background fills any letterbox
+                // Background image fills the container shape
                 Image("graveyard_square")
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .clipped()
                     .background(Color.black)
+            }
+            // Draw a border that follows the widget's rounded shape (covers the white rim)
+            .overlay {
+                ContainerRelativeShape()
+                    .strokeBorder(.black, lineWidth: 4)
             }
 
         case .systemMedium:
@@ -177,5 +182,6 @@ struct HalloweenCountdownWidget: Widget {
         .configurationDisplayName("Halloween Countdown")
         .description("Shows the number of days remaining until Halloween.")
         .supportedFamilies([.systemSmall, .systemMedium])
+        .contentMarginsDisabled() // let content/overlay reach the inner container edge
     }
 }

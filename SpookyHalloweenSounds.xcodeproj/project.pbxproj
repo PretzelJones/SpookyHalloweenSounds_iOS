@@ -840,7 +840,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Grab build date for app\n#BUILD_DATE=$(date \"+%Y-%m-%d %H:%M:%S\")\n#/usr/libexec/PlistBuddy -c \"Set :BuildDate ${BUILD_DATE}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n";
+			shellScript = "# Grab build date for app\n#BUILD_DATE=$(date \"+%Y-%m-%d %H:%M:%S\")\n#/usr/libexec/PlistBuddy -c \"Set :BuildDate ${BUILD_DATE}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n# Grab build date for app\necho \"=== Updating BuildDate in $TARGET_BUILD_DIR/$PRODUCT_NAME.app/Info.plist ===\"\n\nPLIST=\"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Info.plist\"\nls -l \"$PLIST\"\n\nBUILD_DATE=$(date \"+%Y-%m-%d %H:%M:%S\")\n\n/usr/libexec/PlistBuddy -c \"Delete :BuildDate\" \"$PLIST\" 2>/dev/null\n/usr/libexec/PlistBuddy -c \"Add :BuildDate string $BUILD_DATE\" \"$PLIST\"\n\necho \"BuildDate set to $BUILD_DATE\"\n\n";
 		};
 		31864E261531EF8FCD04A365 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -39,7 +39,24 @@ final class LongMixViewController: UIViewController, AVAudioPlayerDelegate {
          dontLetThemInButton].forEach { $0?.noHighlight($0!) }
 
         initializeAudioPlayers()
+        
+        // Custom back button
+        navigationItem.hidesBackButton = true
+        if let img = UIImage(named: "left_arrow")?.withRenderingMode(.alwaysTemplate) {
+            let backItem = UIBarButtonItem(
+                image: img,
+                style: .plain,
+                target: self,
+                action: #selector(onBack)
+            )
+            backItem.tintColor = halloweenOrange
+            navigationItem.leftBarButtonItem = backItem
+        }
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+
     }
+    
+    @objc private func onBack() { navigationController?.popViewController(animated: true) }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

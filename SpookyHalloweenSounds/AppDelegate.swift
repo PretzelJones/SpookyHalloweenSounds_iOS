@@ -25,12 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UserDefaults.standard.synchronize()
         //#endif
         
-        #if DEBUG
+#if DEBUG
         if CommandLine.arguments.contains("-resetNewFeatureFlag") {
             FirstRunGate.reset(key: FeatureFlags.newFeatureV1Seen)
         }
-        #endif
-
+#endif
+        
         //code for lock screen controls
         let audioSession = AVAudioSession.sharedInstance()
         do {
@@ -52,6 +52,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 
+        let nav = UINavigationBarAppearance()
+        nav.configureWithOpaqueBackground()
+        nav.backgroundColor = .black
+        
+        if let f = UIFont(name: "Creepster-Regular", size: 30) {
+            nav.titleTextAttributes = [
+                .font: f,
+                .foregroundColor: halloweenOrange
+            ]
+        }
+
+        if let back = UIImage(named: "left_arrow") {
+            nav.setBackIndicatorImage(back, transitionMaskImage: back)
+        }
+
+        UINavigationBar.appearance().tintColor = halloweenOrange
+        UINavigationBar.appearance().standardAppearance = nav
+        UINavigationBar.appearance().scrollEdgeAppearance = nav
+        UINavigationBar.appearance().compactAppearance = nav
+
+        
+        /*
         //set navbar font
         if let customFont = UIFont(name: "Creepster-Regular", size: 30) {
             let appearance = UINavigationBar.appearance()
@@ -62,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appearance.tintColor = UIColor.orange
             appearance.backIndicatorImage = UIImage(named: "back-arrow")
             appearance.backIndicatorTransitionMaskImage = UIImage(named: "back-arrow")
-        }
+        } */
 
         //keep screen on
         UIApplication.shared.isIdleTimerDisabled = true

@@ -20,11 +20,57 @@ class AboutViewController: UIViewController {
         let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown version"
         let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Unknown build"
         
+        if let buildDateStr = Bundle.main.infoDictionary?["BuildDate"] as? String {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss" // must match the format from the build script
+            
+            if let buildDate = dateFormatter.date(from: buildDateStr) {
+                let outputFormatter = DateFormatter()
+                outputFormatter.dateFormat = "dd MMM yyyy"
+                _ = outputFormatter.string(from: buildDate)
+                
+                versionLabel.text = "Version \(appVersion) (\(buildNumber))"
+            } else {
+                versionLabel.text = "Version \(appVersion) (\(buildNumber))"
+            }
+        } else {
+            versionLabel.text = "Version \(appVersion) (\(buildNumber))"
+        }
+        
+        // Custom back button
+        navigationItem.hidesBackButton = true
+        if let img = UIImage(named: "left_arrow")?.withRenderingMode(.alwaysTemplate) {
+            let backItem = UIBarButtonItem(
+                image: img,
+                style: .plain,
+                target: self,
+                action: #selector(onBack)
+            )
+            backItem.tintColor = halloweenOrange
+            navigationItem.leftBarButtonItem = backItem
+        }
+        
+        if let rightItem = navigationItem.rightBarButtonItem {
+            if let keyImg = UIImage(named: "key")?.withRenderingMode(.alwaysTemplate) {
+                rightItem.image = keyImg
+                rightItem.tintColor = halloweenOrange
+            }
+        }
+
+        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+    }
+    
+    @objc private func onBack() {
+        navigationController?.popViewController(animated: true)
+    }
+}
+
+        /*
         // Get the build date string from Info.plist
         if let buildDateStr = Bundle.main.infoDictionary?["BuildDate"] as? String {
             // Create a DateFormatter to match the format used in the build script
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss" // Format used in build script
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             
             // Parse the build date string into a Date object
             if let buildDate = dateFormatter.date(from: buildDateStr) {
@@ -42,4 +88,6 @@ class AboutViewController: UIViewController {
             versionLabel.text = "Version \(appVersion) (\(buildNumber)) - Built on: Unknown date"
         }
     }
+         
 }
+*/

@@ -74,20 +74,17 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         initializeAudioPlayers()
         
         // Set up back button customization
-        setupBackButton()
+        //setupBackButton()
         
-        /////
         let key = "popupVersionShown"
         let stored = UserDefaults.standard.string(forKey: key) ?? "none"
         print("[UD TEST] Before write:", stored)
 
         UserDefaults.standard.set("test_value", forKey: key)
-        UserDefaults.standard.synchronize() // Force flush
+        UserDefaults.standard.synchronize()
 
         let updated = UserDefaults.standard.string(forKey: key) ?? "none"
         print("[UD TEST] After write:", updated)
-
-        
     }
     
     // Helper function to initialize AVAudioPlayers and map them to buttons
@@ -323,6 +320,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
      daysLabel.text = countdownManager.getCountdownText()
      } */
     
+
+    /*
     // Customize back button
     func setupBackButton() {
         let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
@@ -333,7 +332,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = arrowImage
         self.navigationController?.navigationBar.backItem?.title = "Custom"
     }
-    
+    */
     // Audio player finished playing
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         DispatchQueue.main.async {
