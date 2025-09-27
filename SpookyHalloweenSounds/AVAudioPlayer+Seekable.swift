@@ -7,4 +7,5 @@
 
 import AVFoundation
 
-extension AVAudioPlayer: AudioSeekable {}
+extension AVAudioPlayer: AudioSeekable {
+}

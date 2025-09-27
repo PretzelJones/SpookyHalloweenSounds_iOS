@@ -47,6 +47,7 @@ struct HalloweenCountdownProvider: TimelineProvider {
     }
 }
 
+
 // MARK: - Widget View
 struct HalloweenCountdownWidgetEntryView: View {
     var entry: HalloweenCountdownEntry
@@ -62,6 +63,7 @@ struct HalloweenCountdownWidgetEntryView: View {
                 print("   \(name)")
             }
         }
+        
     }
     
     var body: some View {
@@ -181,7 +183,8 @@ struct HalloweenCountdownWidget: Widget {
         }
         .configurationDisplayName("Halloween Countdown")
         .description("Shows the number of days remaining until Halloween.")
-        .supportedFamilies([.systemSmall, .systemMedium])
-        .contentMarginsDisabled() // let content/overlay reach the inner container edge
+        //.supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium, .accessoryCircular, .accessoryRectangular, .accessoryInline])
+        .contentMarginsDisabled()
     }
 }

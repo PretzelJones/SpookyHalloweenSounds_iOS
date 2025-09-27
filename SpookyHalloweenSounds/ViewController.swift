@@ -317,36 +317,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             countdownLabel.text = countdownManager.getCountdownText()
         }
     }
-    /*
-     @objc func updateCountdownText() {
-     // Update both the main label and the title view label
-     let countdownText = countdownManager.getCountdownText()
-     //daysLabel.text = countdownText
-     if let containerView = self.navigationItem.titleView as? UIView,
-     let stackView = containerView.subviews.first as? UIStackView,
-     let countdownLabel = stackView.arrangedSubviews.last as? UILabel {
-     countdownLabel.text = countdownText
-     }
-     } */
-    
-    /*
-     @objc func updateCountdownText() {
-     daysLabel.text = countdownManager.getCountdownText()
-     } */
-    
 
-    /*
-    // Customize back button
-    func setupBackButton() {
-        let backBarButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem = backBarButton
-        
-        let arrowImage = UIImage(named: "left_arrow")
-        self.navigationController?.navigationBar.backIndicatorImage = arrowImage
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = arrowImage
-        self.navigationController?.navigationBar.backItem?.title = "Custom"
-    }
-    */
     // Audio player finished playing
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         DispatchQueue.main.async {
@@ -381,7 +352,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         startCountdownTimer()
-        SKStoreReviewController.requestReview()
+        if let scene = view.window?.windowScene {
+            SKStoreReviewController.requestReview(in: scene)
+        }
     }
 }
 

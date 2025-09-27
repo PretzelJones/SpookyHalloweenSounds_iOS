@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbS-8A-ydh">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -80,7 +80,7 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="  Halloween Party Songs" image="note">
+                                                        <state key="normal" title="  Kids &amp; Party Songs" image="note">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -1148,7 +1148,7 @@
             <objects>
                 <viewController title="Horror Movie &amp; TV Themes" id="3dX-ln-9cZ" customClass="HorrorMovieViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ly2-QD-7ju">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-ta-iZ0" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
@@ -1357,7 +1357,7 @@
                             <constraint firstItem="tQp-YS-MJU" firstAttribute="trailing" secondItem="9hR-t8-Dej" secondAttribute="trailing" id="zao-VE-24H"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Horror Movie &amp; TV Themes" id="xpv-Qt-GW1"/>
+                    <navigationItem key="navigationItem" title="Movie &amp; TV Themes" id="xpv-Qt-GW1"/>
                     <connections>
                         <outlet property="amityvilleButton" destination="hTV-Fu-Gb5" id="ggf-bP-qXJ"/>
                         <outlet property="exorcistButton" destination="Fef-gd-b0I" id="arV-E9-MVg"/>
@@ -1534,7 +1534,7 @@
                         <color key="tintColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="25"/>
+                            <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="18"/>
                             <color key="textColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
@@ -1757,7 +1757,7 @@
                             <constraint firstAttribute="bottomMargin" secondItem="fda-0X-hmt" secondAttribute="bottom" constant="-54" id="pyt-lF-BCi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Halloween Party Songs" id="d5N-Ni-JpK"/>
+                    <navigationItem key="navigationItem" title="Kids &amp; Party Songs" id="d5N-Ni-JpK"/>
                     <connections>
                         <outlet property="adamsfamilyButton" destination="Lgc-IR-Rlg" id="i0b-UI-VtH"/>
                         <outlet property="coralineButton" destination="gIO-Ss-YY4" id="kQL-Hg-ls0"/>
