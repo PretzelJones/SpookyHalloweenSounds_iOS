@@ -981,7 +981,7 @@
             <objects>
                 <viewController id="lrZ-Ov-kYt" customClass="LongMixViewController" customModule="Halloween" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wU3-CW-mrY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="680"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-4E-zIy" customClass="SeekButton" customModule="Halloween" customModuleProvider="target">
@@ -1669,7 +1669,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Creepster-Regular" family="Creepster" pointSize="23"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="  Adam's family" image="creaky_door">
+                                        <state key="normal" title="  The Addams family" image="creaky_door">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
