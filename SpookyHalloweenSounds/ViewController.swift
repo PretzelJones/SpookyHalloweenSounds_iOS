@@ -83,15 +83,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // Set up back button customization
         //setupBackButton()
         
-        let key = "popupVersionShown"
-        let stored = UserDefaults.standard.string(forKey: key) ?? "none"
-        print("[UD TEST] Before write:", stored)
-
-        UserDefaults.standard.set("test_value", forKey: key)
-        UserDefaults.standard.synchronize()
-
-        let updated = UserDefaults.standard.string(forKey: key) ?? "none"
-        print("[UD TEST] After write:", updated)
     }
     
     // Helper function to initialize AVAudioPlayers and map them to buttons
