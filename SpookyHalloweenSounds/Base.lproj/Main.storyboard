@@ -1128,13 +1128,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Looping Mixes" id="sKz-1w-qfR"/>
-                    <connections>
-                        <outlet property="dontLetThemInButton" destination="9Ex-mw-HV9" id="bMJ-KY-7dI"/>
-                        <outlet property="hauntedHouseButton" destination="Yba-4E-zIy" id="u4v-HX-dbS"/>
-                        <outlet property="spaceTerrorButton" destination="mtT-Uc-9rd" id="CYy-Bq-Pcb"/>
-                        <outlet property="spookySoundsButton" destination="VHt-h1-AJt" id="GKC-bh-V4T"/>
-                        <outlet property="ultraTerrorButton" destination="0VB-UG-b7Q" id="0no-pC-Jnl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMf-5L-dgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

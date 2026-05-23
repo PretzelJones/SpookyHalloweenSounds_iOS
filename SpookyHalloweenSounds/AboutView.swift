@@ -28,7 +28,7 @@ struct AboutView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 40)
 
-                Text("bosson design")
+                Text("Sean Patterson")
                     .font(.system(size: 52))
                     .foregroundColor(.white)
                     .padding(.top, 8)
