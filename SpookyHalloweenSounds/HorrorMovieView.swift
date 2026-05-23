@@ -54,13 +54,13 @@ final class HorrorMovieViewModel {
     }
 
     func toggle(id: Int) {
-        guard let i = tracks.firstIndex(where: { $0.id == id }),
-              let player = players[id] else { return }
-        if player.isPlaying {
-            player.pause()
+        guard let i = tracks.firstIndex(where: { $0.id == id }) else { return }
+        let player = players[id]
+        if tracks[i].isPlaying {
+            player?.pause()
             tracks[i].isPlaying = false
         } else {
-            player.play()
+            player?.play()
             tracks[i].isPlaying = true
         }
     }
