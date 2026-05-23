@@ -18,23 +18,24 @@ final class HorrorMovieViewModel {
         let imageName: String
         let soundFile: String
         var isPlaying: Bool = false
-        var player: AVAudioPlayer?
     }
 
     var tracks: [Track] = [
-        Track(id: 0, title: "Halloween",               imageName: "halloween",       soundFile: "halloween"),
-        Track(id: 1, title: "The Exorcist",            imageName: "cross",           soundFile: "exorcist"),
-        Track(id: 2, title: "The Shining",             imageName: "shining",         soundFile: "shining"),
-        Track(id: 3, title: "Nightmare on Elm Street", imageName: "freddy",          soundFile: "elm_street"),
-        Track(id: 4, title: "Friday the 13th",         imageName: "vorhees",         soundFile: "vorhees"),
-        Track(id: 5, title: "Amityville Horror",       imageName: "amityville",      soundFile: "amityville"),
-        Track(id: 6, title: "Unsolved Mysteries",      imageName: "question_mark",   soundFile: "unsolved_mysteries"),
+        Track(id: 0, title: "Halloween",               imageName: "halloween",        soundFile: "halloween"),
+        Track(id: 1, title: "The Exorcist",            imageName: "cross",            soundFile: "exorcist"),
+        Track(id: 2, title: "The Shining",             imageName: "shining",          soundFile: "shining"),
+        Track(id: 3, title: "Nightmare on Elm Street", imageName: "freddy",           soundFile: "elm_street"),
+        Track(id: 4, title: "Friday the 13th",         imageName: "vorhees",          soundFile: "vorhees"),
+        Track(id: 5, title: "Amityville Horror",       imageName: "amityville",       soundFile: "amityville"),
+        Track(id: 6, title: "Unsolved Mysteries",      imageName: "question_mark",    soundFile: "unsolved_mysteries"),
         Track(id: 7, title: "X-Files",                 imageName: "magnifying_glass", soundFile: "xfiles"),
     ]
 
+    private var players: [Int: AVAudioPlayer] = [:]
+
     init() {
-        for i in tracks.indices {
-            let file = tracks[i].soundFile
+        for track in tracks {
+            let file = track.soundFile
             let url = Bundle.main.url(forResource: file, withExtension: "mp3")
                    ?? Bundle.main.url(forResource: file, withExtension: "wav")
             guard let url else {
@@ -45,7 +46,7 @@ final class HorrorMovieViewModel {
                 let player = try AVAudioPlayer(contentsOf: url)
                 player.prepareToPlay()
                 player.numberOfLoops = -1
-                tracks[i].player = player
+                players[track.id] = player
             } catch {
                 print("HorrorMovie: failed to load \(file): \(error)")
             }
@@ -54,7 +55,7 @@ final class HorrorMovieViewModel {
 
     func toggle(id: Int) {
         guard let i = tracks.firstIndex(where: { $0.id == id }),
-              let player = tracks[i].player else { return }
+              let player = players[id] else { return }
         if player.isPlaying {
             player.pause()
             tracks[i].isPlaying = false
@@ -66,7 +67,7 @@ final class HorrorMovieViewModel {
 
     func pauseAll() {
         for i in tracks.indices where tracks[i].isPlaying {
-            tracks[i].player?.pause()
+            players[tracks[i].id]?.pause()
             tracks[i].isPlaying = false
         }
     }

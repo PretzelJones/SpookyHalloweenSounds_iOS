@@ -18,20 +18,21 @@ final class LongMixViewModel {
         let imageName: String
         let soundFile: String
         var isPlaying: Bool = false
-        var player: AVAudioPlayer?
     }
 
     var tracks: [Track] = [
-        Track(id: 0, title: "Ultra Terror",      imageName: "ultra_terror",  soundFile: "ultra_terror"),
+        Track(id: 0, title: "Ultra Terror",      imageName: "ultra_terror",   soundFile: "ultra_terror"),
         Track(id: 1, title: "Haunted House",     imageName: "haunted_circus", soundFile: "haunted_house"),
-        Track(id: 2, title: "Spooky Sounds",     imageName: "spooky_sounds", soundFile: "long_mix"),
-        Track(id: 3, title: "Space Terror",      imageName: "space_terrors", soundFile: "space_terror"),
-        Track(id: 4, title: "Don't Let Them In", imageName: "key",           soundFile: "dont_let_in"),
+        Track(id: 2, title: "Spooky Sounds",     imageName: "spooky_sounds",  soundFile: "long_mix"),
+        Track(id: 3, title: "Space Terror",      imageName: "space_terrors",  soundFile: "space_terror"),
+        Track(id: 4, title: "Don't Let Them In", imageName: "key",            soundFile: "dont_let_in"),
     ]
 
+    private var players: [Int: AVAudioPlayer] = [:]
+
     init() {
-        for i in tracks.indices {
-            let file = tracks[i].soundFile
+        for track in tracks {
+            let file = track.soundFile
             let url = Bundle.main.url(forResource: file, withExtension: "mp3")
                    ?? Bundle.main.url(forResource: file, withExtension: "wav")
             guard let url else {
@@ -42,7 +43,7 @@ final class LongMixViewModel {
                 let player = try AVAudioPlayer(contentsOf: url)
                 player.prepareToPlay()
                 player.numberOfLoops = -1
-                tracks[i].player = player
+                players[track.id] = player
             } catch {
                 print("LongMix: failed to load \(file): \(error)")
             }
@@ -51,7 +52,7 @@ final class LongMixViewModel {
 
     func toggle(id: Int) {
         guard let i = tracks.firstIndex(where: { $0.id == id }),
-              let player = tracks[i].player else { return }
+              let player = players[id] else { return }
         if player.isPlaying {
             player.pause()
             tracks[i].isPlaying = false
@@ -63,7 +64,7 @@ final class LongMixViewModel {
 
     func pauseAll() {
         for i in tracks.indices where tracks[i].isPlaying {
-            tracks[i].player?.pause()
+            players[tracks[i].id]?.pause()
             tracks[i].isPlaying = false
         }
     }
