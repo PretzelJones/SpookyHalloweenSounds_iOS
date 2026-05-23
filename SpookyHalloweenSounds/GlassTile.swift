@@ -43,6 +43,7 @@ struct GlassTile: View {
             )
         }
         .buttonStyle(.plain)
+        .contentShape(Rectangle())
     }
 }
 
