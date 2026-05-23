@@ -1738,16 +1738,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kids &amp; Party Songs" id="d5N-Ni-JpK"/>
-                    <connections>
-                        <outlet property="adamsfamilyButton" destination="Lgc-IR-Rlg" id="i0b-UI-VtH"/>
-                        <outlet property="coralineButton" destination="gIO-Ss-YY4" id="kQL-Hg-ls0"/>
-                        <outlet property="ghostbustersButton" destination="YQZ-aO-N7S" id="peh-ac-8gf"/>
-                        <outlet property="littleshopofhorrorsButton" destination="aPk-fo-Ml5" id="KTV-RD-rgH"/>
-                        <outlet property="mostermashButton" destination="Th9-2t-dXr" id="0i5-p4-rMy"/>
-                        <outlet property="spellonyouButton" destination="cqt-ZS-vyx" id="bjQ-u1-Akl"/>
-                        <outlet property="spookyscaryskeletonsButton" destination="51q-tX-71Z" id="izi-jt-hhg"/>
-                        <outlet property="thisishalloweenButton" destination="pqk-bR-91b" id="FWZ-WM-RWC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oak-UV-7px" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

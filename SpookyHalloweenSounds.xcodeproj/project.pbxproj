@@ -60,6 +60,7 @@
 		7F25C37E673640EB9CB0612F /* GlassTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4361F6D405144429E78B9FF /* GlassTile.swift */; };
 		C915F91BC0884EE79112C247 /* LongMixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD990822B5404DBD0D3D15 /* LongMixView.swift */; };
 		F3D71B2849A6C5E0B482093A /* HorrorMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */; };
+		C2E8A5F9B3D640719E0F5C82 /* PartySongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */; };
 		66F8B4B54CFC4E908663870B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */; };
 		F909EAE5037A47FDBD1FF834 /* MeshGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */; };
 		1451D9FC24925D320094053E /* elm_street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451D9FB24925D320094053E /* elm_street.mp3 */; };
@@ -213,6 +214,7 @@
 		E4361F6D405144429E78B9FF /* GlassTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassTile.swift; sourceTree = "<group>"; };
 		4EFD990822B5404DBD0D3D15 /* LongMixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongMixView.swift; sourceTree = "<group>"; };
 		A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorMovieView.swift; sourceTree = "<group>"; };
+		7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartySongsView.swift; sourceTree = "<group>"; };
 		0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientBackground.swift; sourceTree = "<group>"; };
 		1451D9FB24925D320094053E /* elm_street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elm_street.mp3; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 				E4361F6D405144429E78B9FF /* GlassTile.swift */,
 				4EFD990822B5404DBD0D3D15 /* LongMixView.swift */,
 				A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */,
+				7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */,
 				0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */,
 				31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */,
 				04A7649F2E5228410087FA41 /* FeatureFlags.swift */,
@@ -847,6 +850,7 @@
 				7F25C37E673640EB9CB0612F /* GlassTile.swift in Sources */,
 				C915F91BC0884EE79112C247 /* LongMixView.swift in Sources */,
 				F3D71B2849A6C5E0B482093A /* HorrorMovieView.swift in Sources */,
+				C2E8A5F9B3D640719E0F5C82 /* PartySongsView.swift in Sources */,
 				66F8B4B54CFC4E908663870B /* Theme.swift in Sources */,
 				F909EAE5037A47FDBD1FF834 /* MeshGradientBackground.swift in Sources */,
 			);
