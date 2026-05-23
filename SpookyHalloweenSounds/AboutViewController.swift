@@ -17,15 +17,15 @@ final class AboutViewController: UIHostingController<AboutView> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "App Information"
-        navigationItem.hidesBackButton = true
-
-        if let img = UIImage(named: "left_arrow")?.withRenderingMode(.alwaysTemplate) {
-            let back = UIBarButtonItem(image: img, style: .plain, target: self, action: #selector(onBack))
-            back.tintColor = halloweenOrange
-            if #available(iOS 26.0, *) { back.hidesSharedBackground = true }
-            navigationItem.leftBarButtonItem = back
-        }
+        let titleLabel = UILabel()
+        titleLabel.text = "App Information"
+        titleLabel.font = UIFont(name: "Creepster", size: 28) ?? UIFont.boldSystemFont(ofSize: 20)
+        titleLabel.textColor = halloweenOrange
+        titleLabel.adjustsFontSizeToFitWidth = true
+        titleLabel.minimumScaleFactor = 0.5
+        titleLabel.textAlignment = .center
+        navigationItem.titleView = titleLabel
+        navigationItem.largeTitleDisplayMode = .never
 
         // Keep the storyboard's right bar button item so its segue to HiddenViewController stays wired.
         if let keyItem = navigationItem.rightBarButtonItem {
@@ -34,9 +34,5 @@ final class AboutViewController: UIHostingController<AboutView> {
         }
 
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
-    }
-
-    @objc private func onBack() {
-        navigationController?.popViewController(animated: true)
     }
 }

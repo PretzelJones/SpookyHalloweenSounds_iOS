@@ -10,12 +10,13 @@ struct AboutView: View {
 
     var body: some View {
         ZStack {
-            MeshGradientBackground()
+            MeshGradientBackground() // handles .ignoresSafeArea() internally
 
             VStack(spacing: 0) {
                 Image("tab_logo")
                     .resizable()
                     .scaledToFit()
+                    .frame(maxWidth: .infinity, maxHeight: 240)
                     .padding(.horizontal, 8)
                     .padding(.top, 20)
 
@@ -40,7 +41,6 @@ struct AboutView: View {
                     .padding(.bottom, 30)
             }
         }
-        .ignoresSafeArea()
     }
 }
 

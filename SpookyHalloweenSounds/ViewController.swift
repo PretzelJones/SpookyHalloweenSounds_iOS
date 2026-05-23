@@ -71,11 +71,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         setupNavigationTitleWithCountdown()
         
         // Fix for iOS 26 circular glass border on right bar button item (pumpkin)
-                if #available(iOS 26.0, *) {
-                    if let pumpkinItem = navigationItem.rightBarButtonItem {
-                        pumpkinItem.hidesSharedBackground = true
-                    }
-                }
+        if #available(iOS 26.0, *) {
+            if let pumpkinItem = navigationItem.rightBarButtonItem {
+                pumpkinItem.hidesSharedBackground = true
+            }
+        }
+
+        // On iOS 26, the glass cluster back button ignores tintColor unless backBarButtonItem
+        // is set explicitly. No image here — setBackIndicatorImage in AppDelegate provides the icon.
+        if #available(iOS 26.0, *) {
+            let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+            backItem.tintColor = halloweenOrange
+            navigationItem.backBarButtonItem = backItem
+        }
+
         
         // Initialize all sounds with helper function
         initializeAudioPlayers()
