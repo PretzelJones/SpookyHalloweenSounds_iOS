@@ -1,5 +1,5 @@
 //
-//  LongMixView.swift
+//  HorrorMovieView.swift
 //  SpookyHalloweenSounds
 //
 
@@ -10,7 +10,7 @@ import Observation
 // MARK: - View Model
 
 @Observable
-final class LongMixViewModel {
+final class HorrorMovieViewModel {
 
     struct Track: Identifiable {
         let id: Int
@@ -22,11 +22,14 @@ final class LongMixViewModel {
     }
 
     var tracks: [Track] = [
-        Track(id: 0, title: "Ultra Terror",      imageName: "ultra_terror",  soundFile: "ultra_terror"),
-        Track(id: 1, title: "Haunted House",     imageName: "haunted_circus", soundFile: "haunted_house"),
-        Track(id: 2, title: "Spooky Sounds",     imageName: "spooky_sounds", soundFile: "long_mix"),
-        Track(id: 3, title: "Space Terror",      imageName: "space_terrors", soundFile: "space_terror"),
-        Track(id: 4, title: "Don't Let Them In", imageName: "key",           soundFile: "dont_let_in"),
+        Track(id: 0, title: "Halloween",               imageName: "halloween",       soundFile: "halloween"),
+        Track(id: 1, title: "The Exorcist",            imageName: "cross",           soundFile: "exorcist"),
+        Track(id: 2, title: "The Shining",             imageName: "shining",         soundFile: "shining"),
+        Track(id: 3, title: "Nightmare on Elm Street", imageName: "freddy",          soundFile: "elm_street"),
+        Track(id: 4, title: "Friday the 13th",         imageName: "vorhees",         soundFile: "vorhees"),
+        Track(id: 5, title: "Amityville Horror",       imageName: "amityville",      soundFile: "amityville"),
+        Track(id: 6, title: "Unsolved Mysteries",      imageName: "question_mark",   soundFile: "unsolved_mysteries"),
+        Track(id: 7, title: "X-Files",                 imageName: "magnifying_glass", soundFile: "xfiles"),
     ]
 
     init() {
@@ -35,7 +38,7 @@ final class LongMixViewModel {
             let url = Bundle.main.url(forResource: file, withExtension: "mp3")
                    ?? Bundle.main.url(forResource: file, withExtension: "wav")
             guard let url else {
-                print("LongMix: file not found — \(file)")
+                print("HorrorMovie: file not found — \(file)")
                 continue
             }
             do {
@@ -44,7 +47,7 @@ final class LongMixViewModel {
                 player.numberOfLoops = -1
                 tracks[i].player = player
             } catch {
-                print("LongMix: failed to load \(file): \(error)")
+                print("HorrorMovie: failed to load \(file): \(error)")
             }
         }
     }
@@ -71,8 +74,8 @@ final class LongMixViewModel {
 
 // MARK: - View
 
-struct LongMixView: View {
-    @State private var model = LongMixViewModel()
+struct HorrorMovieView: View {
+    @State private var model = HorrorMovieViewModel()
 
     var body: some View {
         ZStack {
@@ -80,7 +83,7 @@ struct LongMixView: View {
 
             ScrollView {
                 VStack(spacing: 8) {
-                    Text("The looping sounds will continue to play indefinitely! Press a button a second time to pause, or press two or more to mix sounds together.")
+                    Text("Here lies a collection of some of the most famous theme songs from your favorite horror films. Enjoy!")
                         .font(.custom("Creepster", size: 20))
                         .foregroundStyle(Theme.orange)
                         .multilineTextAlignment(.center)
@@ -116,5 +119,5 @@ struct LongMixView: View {
 }
 
 #Preview {
-    LongMixView()
+    HorrorMovieView()
 }

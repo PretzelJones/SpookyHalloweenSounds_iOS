@@ -1348,16 +1348,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movie &amp; TV Themes" id="xpv-Qt-GW1"/>
-                    <connections>
-                        <outlet property="amityvilleButton" destination="hTV-Fu-Gb5" id="ggf-bP-qXJ"/>
-                        <outlet property="exorcistButton" destination="Fef-gd-b0I" id="arV-E9-MVg"/>
-                        <outlet property="fridayButton" destination="9hR-t8-Dej" id="my5-dV-8ly"/>
-                        <outlet property="halloweenButton" destination="9bC-ta-iZ0" id="eVc-E6-XH5"/>
-                        <outlet property="nightmareButton" destination="tQp-YS-MJU" id="io3-DJ-Awp"/>
-                        <outlet property="shiningButton" destination="HAk-N4-kim" id="5yj-6l-eM8"/>
-                        <outlet property="unsolvedButton" destination="W8h-gK-uF4" id="R2t-KI-Xs8"/>
-                        <outlet property="xfilesButton" destination="I1X-HA-Ucy" id="KcR-S5-sK2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4n-0E-4go" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
