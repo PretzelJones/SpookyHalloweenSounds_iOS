@@ -101,13 +101,6 @@ struct HorrorMovieView: View {
                         }
                     }
 
-                    Image("graveyard")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 200)
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .padding(.top, 4)
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 16)
