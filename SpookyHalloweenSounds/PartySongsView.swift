@@ -17,19 +17,20 @@ final class PartySongsViewModel {
         let title: String
         let imageName: String
         let soundFile: String
-        var isPlaying: Bool = false
     }
 
-    var tracks: [Track] = [
-        Track(id: 0, title: "Ghostbusters",          imageName: "ghostbusters",    soundFile: "ghostbusters"),
-        Track(id: 1, title: "I Put a Spell on You",  imageName: "hocus_pocus",     soundFile: "i_put_a_spell_on_you"),
-        Track(id: 2, title: "Coraline",              imageName: "coraline",        soundFile: "coraline"),
-        Track(id: 3, title: "This Is Halloween",     imageName: "jack_skellington", soundFile: "this_is_halloween"),
-        Track(id: 4, title: "Little Shop of Horrors", imageName: "audrey",         soundFile: "little_shop_of_horrors"),
-        Track(id: 5, title: "The Addams Family",     imageName: "creaky_door",     soundFile: "adams_family"),
-        Track(id: 6, title: "Monster Mash",          imageName: "monster_mash",    soundFile: "monster_mash"),
+    let tracks: [Track] = [
+        Track(id: 0, title: "Ghostbusters",           imageName: "ghostbusters",     soundFile: "ghostbusters"),
+        Track(id: 1, title: "I Put a Spell on You",   imageName: "hocus_pocus",      soundFile: "i_put_a_spell_on_you"),
+        Track(id: 2, title: "Coraline",               imageName: "coraline",         soundFile: "coraline"),
+        Track(id: 3, title: "This Is Halloween",      imageName: "jack_skellington",  soundFile: "this_is_halloween"),
+        Track(id: 4, title: "Little Shop of Horrors", imageName: "audrey",           soundFile: "little_shop_of_horrors"),
+        Track(id: 5, title: "The Addams Family",      imageName: "creaky_door",      soundFile: "adams_family"),
+        Track(id: 6, title: "Monster Mash",           imageName: "monster_mash",     soundFile: "monster_mash"),
         Track(id: 7, title: "Spooky Scary Skeletons", imageName: "spooky_skeletons", soundFile: "spooky_scary_skeletons"),
     ]
+
+    var playingId: Int? = nil
 
     private var players: [Int: AVAudioPlayer] = [:]
 
@@ -54,22 +55,34 @@ final class PartySongsViewModel {
     }
 
     func toggle(id: Int) {
-        guard let i = tracks.firstIndex(where: { $0.id == id }) else { return }
-        let player = players[id]
-        if tracks[i].isPlaying {
+        let coordinator = NowPlayingCoordinator.shared
+        if playingId == id {
+            let player = players[id]
             player?.pause()
-            tracks[i].isPlaying = false
+            if let player { coordinator.clearIfMatches(player) }
+            playingId = nil
         } else {
-            player?.play()
-            tracks[i].isPlaying = true
+            if let prev = playingId { players[prev]?.pause() }
+            guard let player = players[id],
+                  let track = tracks.first(where: { $0.id == id }) else { return }
+            player.play()
+            playingId = id
+            coordinator.start(
+                id: id, title: track.title, imageName: track.imageName,
+                player: player,
+                setPlaying: { [weak self] isPlaying in
+                    self?.playingId = isPlaying ? id : nil
+                }
+            )
         }
     }
 
     func pauseAll() {
-        for i in tracks.indices where tracks[i].isPlaying {
-            players[tracks[i].id]?.pause()
-            tracks[i].isPlaying = false
-        }
+        guard let id = playingId else { return }
+        let player = players[id]
+        player?.pause()
+        if let player { NowPlayingCoordinator.shared.clearIfMatches(player) }
+        playingId = nil
     }
 }
 
@@ -77,8 +90,10 @@ final class PartySongsViewModel {
 
 struct PartySongsView: View {
     @State private var model = PartySongsViewModel()
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
+        NowPlayingContainer {
         ZStack {
             MeshGradientBackground()
 
@@ -95,7 +110,7 @@ struct PartySongsView: View {
                         GlassTile(
                             imageName: track.imageName,
                             title: track.title,
-                            isPlaying: track.isPlaying
+                            isPlaying: model.playingId == track.id
                         ) {
                             model.toggle(id: track.id)
                         }
@@ -105,8 +120,21 @@ struct PartySongsView: View {
                 .padding(.bottom, 16)
             }
         }
-        .onDisappear {
-            model.pauseAll()
+        .safeAreaInset(edge: .bottom) {
+            MiniPlayerBarView()
+        }
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    PaletteIconView(imageName: "left_arrow")
+                        .frame(width: 24, height: 24)
+                }
+                .buttonStyle(.plain)
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  LongMixView.swift
+//  HiddenView.swift
 //  SpookyHalloweenSounds
 //
 
@@ -10,7 +10,7 @@ import Observation
 // MARK: - View Model
 
 @Observable
-final class LongMixViewModel {
+final class HiddenViewModel {
 
     struct Track: Identifiable {
         let id: Int
@@ -20,11 +20,10 @@ final class LongMixViewModel {
     }
 
     let tracks: [Track] = [
-        Track(id: 0, title: "Ultra Terror",      imageName: "ultra_terror",   soundFile: "ultra_terror"),
-        Track(id: 1, title: "Haunted House",     imageName: "haunted_circus", soundFile: "haunted_house"),
-        Track(id: 2, title: "Spooky Sounds",     imageName: "spooky_sounds",  soundFile: "long_mix"),
-        Track(id: 3, title: "Space Terror",      imageName: "space_terrors",  soundFile: "space_terror"),
-        Track(id: 4, title: "Don't Let Them In", imageName: "key",            soundFile: "dont_let_in"),
+        Track(id: 0, title: "The Ghost Song",  imageName: "ghost_song", soundFile: "the_ghost_song"),
+        Track(id: 1, title: "The Old Tape",    imageName: "old_tape",   soundFile: "the_old_tape"),
+        Track(id: 2, title: "Chilling Cries",  imageName: "dispair",    soundFile: "chilling_cries"),
+        Track(id: 3, title: "Cries From Hell", imageName: "cries_hell", soundFile: "cries_from_hell"),
     ]
 
     var playingId: Int? = nil
@@ -37,7 +36,7 @@ final class LongMixViewModel {
             let url = Bundle.main.url(forResource: file, withExtension: "mp3")
                    ?? Bundle.main.url(forResource: file, withExtension: "wav")
             guard let url else {
-                print("LongMix: file not found — \(file)")
+                print("Hidden: file not found — \(file)")
                 continue
             }
             do {
@@ -46,7 +45,7 @@ final class LongMixViewModel {
                 player.numberOfLoops = -1
                 players[track.id] = player
             } catch {
-                print("LongMix: failed to load \(file): \(error)")
+                print("Hidden: failed to load \(file): \(error)")
             }
         }
     }
@@ -85,8 +84,8 @@ final class LongMixViewModel {
 
 // MARK: - View
 
-struct LongMixView: View {
-    @State private var model = LongMixViewModel()
+struct HiddenView: View {
+    @State private var model = HiddenViewModel()
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -96,7 +95,7 @@ struct LongMixView: View {
 
             ScrollView {
                 VStack(spacing: 8) {
-                    Text("The looping sounds will continue to play indefinitely! Press a button a second time to pause, or press two or more to mix sounds together.")
+                    Text("Shh... you found the hidden sounds. These mysterious tracks were too eerie for the main stage.")
                         .font(.custom("Creepster", size: 20))
                         .foregroundStyle(Theme.orange)
                         .multilineTextAlignment(.center)
@@ -137,5 +136,5 @@ struct LongMixView: View {
 }
 
 #Preview {
-    LongMixView()
+    HiddenView()
 }

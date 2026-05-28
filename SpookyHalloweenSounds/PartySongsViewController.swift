@@ -8,6 +8,8 @@ import SwiftUI
 
 final class PartySongsViewController: UIHostingController<PartySongsView> {
 
+    private var titleHostingVC: UIHostingController<PaletteText>?
+
     required init?(coder: NSCoder) {
         super.init(coder: coder, rootView: PartySongsView())
     }
@@ -15,21 +17,37 @@ final class PartySongsViewController: UIHostingController<PartySongsView> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let titleLabel = UILabel()
-        titleLabel.text = "Kids & Party Songs"
-        titleLabel.font = UIFont(name: "Creepster", size: 28) ?? UIFont.boldSystemFont(ofSize: 20)
-        titleLabel.textColor = halloweenOrange
-        titleLabel.adjustsFontSizeToFitWidth = true
-        titleLabel.minimumScaleFactor = 0.5
-        titleLabel.textAlignment = .center
-        navigationItem.titleView = titleLabel
+        let titleHC = UIHostingController(rootView: PaletteText(text: "Kids & Party Songs", font: .custom("Creepster", size: 22)))
+        titleHC.view.backgroundColor = .clear
+        titleHC.view.frame = CGRect(x: 0, y: 0, width: 280, height: 44)
+        navigationItem.titleView = titleHC.view
+        titleHostingVC = titleHC
         navigationItem.largeTitleDisplayMode = .never
 
         navigationController?.interactivePopGestureRecognizer?.delegate = nil
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        hideLeadingGlassBackgrounds()
+    }
+
+    override func viewIsAppearing(_ animated: Bool) {
+        super.viewIsAppearing(animated)
+        hideLeadingGlassBackgrounds()
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presentNewFeatureOnce()
+    }
+
+    private func hideLeadingGlassBackgrounds() {
+        guard #available(iOS 26.0, *) else { return }
+        navigationItem.leftBarButtonItem?.hidesSharedBackground = true
+        navigationItem.leftBarButtonItems?.forEach { $0.hidesSharedBackground = true }
+        navigationItem.leadingItemGroups.forEach { group in
+            group.barButtonItems.forEach { $0.hidesSharedBackground = true }
+        }
     }
 }

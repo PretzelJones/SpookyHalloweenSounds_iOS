@@ -17,10 +17,9 @@ final class HorrorMovieViewModel {
         let title: String
         let imageName: String
         let soundFile: String
-        var isPlaying: Bool = false
     }
 
-    var tracks: [Track] = [
+    let tracks: [Track] = [
         Track(id: 0, title: "Halloween",               imageName: "halloween",        soundFile: "halloween"),
         Track(id: 1, title: "The Exorcist",            imageName: "cross",            soundFile: "exorcist"),
         Track(id: 2, title: "The Shining",             imageName: "shining",          soundFile: "shining"),
@@ -30,6 +29,8 @@ final class HorrorMovieViewModel {
         Track(id: 6, title: "Unsolved Mysteries",      imageName: "question_mark",    soundFile: "unsolved_mysteries"),
         Track(id: 7, title: "X-Files",                 imageName: "magnifying_glass", soundFile: "xfiles"),
     ]
+
+    var playingId: Int? = nil
 
     private var players: [Int: AVAudioPlayer] = [:]
 
@@ -54,22 +55,34 @@ final class HorrorMovieViewModel {
     }
 
     func toggle(id: Int) {
-        guard let i = tracks.firstIndex(where: { $0.id == id }) else { return }
-        let player = players[id]
-        if tracks[i].isPlaying {
+        let coordinator = NowPlayingCoordinator.shared
+        if playingId == id {
+            let player = players[id]
             player?.pause()
-            tracks[i].isPlaying = false
+            if let player { coordinator.clearIfMatches(player) }
+            playingId = nil
         } else {
-            player?.play()
-            tracks[i].isPlaying = true
+            if let prev = playingId { players[prev]?.pause() }
+            guard let player = players[id],
+                  let track = tracks.first(where: { $0.id == id }) else { return }
+            player.play()
+            playingId = id
+            coordinator.start(
+                id: id, title: track.title, imageName: track.imageName,
+                player: player,
+                setPlaying: { [weak self] isPlaying in
+                    self?.playingId = isPlaying ? id : nil
+                }
+            )
         }
     }
 
     func pauseAll() {
-        for i in tracks.indices where tracks[i].isPlaying {
-            players[tracks[i].id]?.pause()
-            tracks[i].isPlaying = false
-        }
+        guard let id = playingId else { return }
+        let player = players[id]
+        player?.pause()
+        if let player { NowPlayingCoordinator.shared.clearIfMatches(player) }
+        playingId = nil
     }
 }
 
@@ -77,8 +90,10 @@ final class HorrorMovieViewModel {
 
 struct HorrorMovieView: View {
     @State private var model = HorrorMovieViewModel()
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
+        NowPlayingContainer {
         ZStack {
             MeshGradientBackground()
 
@@ -95,19 +110,31 @@ struct HorrorMovieView: View {
                         GlassTile(
                             imageName: track.imageName,
                             title: track.title,
-                            isPlaying: track.isPlaying
+                            isPlaying: model.playingId == track.id
                         ) {
                             model.toggle(id: track.id)
                         }
                     }
-
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 16)
             }
         }
-        .onDisappear {
-            model.pauseAll()
+        .safeAreaInset(edge: .bottom) {
+            MiniPlayerBarView()
+        }
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    PaletteIconView(imageName: "left_arrow")
+                        .frame(width: 24, height: 24)
+                }
+                .buttonStyle(.plain)
+            }
         }
     }
 }
