@@ -142,12 +142,14 @@ struct NowPlayingContainer<Content: View>: View {
         content
             .overlay {
                 if coordinator.showExpanded {
-                    ExpandedPlayerView()
-                        .ignoresSafeArea()
-                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                    GeometryReader { geo in
+                        ExpandedPlayerView(safeAreaBottom: geo.safeAreaInsets.bottom)
+                    }
+                    .ignoresSafeArea()
+                    .transition(.move(edge: .bottom))
                 }
             }
-            .animation(.spring(response: 0.42, dampingFraction: 0.76),
+            .animation(.spring(response: 0.45, dampingFraction: 1.0),
                         value: coordinator.showExpanded)
             .onDisappear {
                 coordinator.showExpanded = false
@@ -175,7 +177,7 @@ struct MiniPlayerBarView: View {
     var body: some View {
         let coordinator = NowPlayingCoordinator.shared
         VStack(spacing: 0) {
-            if coordinator.isVisible {
+            if coordinator.isVisible && !coordinator.showExpanded {
                 card(coordinator)
                     .transition(.asymmetric(
                         insertion: .move(edge: .bottom).combined(with: .opacity),
@@ -184,6 +186,7 @@ struct MiniPlayerBarView: View {
             }
         }
         .animation(.spring(response: 0.42, dampingFraction: 0.76), value: coordinator.isVisible)
+        .animation(.spring(response: 0.42, dampingFraction: 0.76), value: coordinator.showExpanded)
     }
 
     @ViewBuilder
@@ -253,7 +256,7 @@ struct MiniPlayerBarView: View {
         )
         .shadow(color: .black.opacity(0.38), radius: 16, y: -5)
         .padding(.horizontal, 10)
-        .padding(.bottom, 8)
+        .padding(.bottom, 0)
         .contentShape(Rectangle())
         .onTapGesture { coordinator.showExpanded = true }
         .gesture(
@@ -277,6 +280,7 @@ struct MiniPlayerBarView: View {
 // MARK: - Expanded Player
 
 struct ExpandedPlayerView: View {
+    var safeAreaBottom: CGFloat = 0
     @State private var progress: Double = 0
     @State private var isDragging = false
     @Environment(\.colorScheme) private var colorScheme
@@ -299,7 +303,9 @@ struct ExpandedPlayerView: View {
         ZStack {
             Color.black.opacity(0.45)
                 .ignoresSafeArea()
-                .onTapGesture { coordinator.showExpanded = false }
+                .onTapGesture {
+                    withAnimation(.easeIn(duration: 0.25)) { coordinator.showExpanded = false }
+                }
 
             VStack(spacing: 0) {
                 Capsule()
@@ -386,13 +392,14 @@ struct ExpandedPlayerView: View {
             )
             .shadow(color: .black.opacity(0.45), radius: 20, y: 8)
             .padding(.horizontal, 16)
-            .padding(.vertical, 20)
+            .padding(.top, 20)
+            .padding(.bottom, safeAreaBottom + 30)
         }
         .gesture(
             DragGesture(minimumDistance: 20)
                 .onEnded { value in
                     if value.translation.height > 80 {
-                        coordinator.showExpanded = false
+                        withAnimation(.easeIn(duration: 0.25)) { coordinator.showExpanded = false }
                     }
                 }
         )
