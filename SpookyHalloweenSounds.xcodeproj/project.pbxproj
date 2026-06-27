@@ -33,10 +33,6 @@
 		049702132E7A204400E8EE48 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049702122E7A204400E8EE48 /* WidgetKit.framework */; };
 		049702152E7A204400E8EE48 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049702142E7A204400E8EE48 /* SwiftUI.framework */; };
 		049702242E7A204B00E8EE48 /* HalloweenCountdownWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 049702112E7A204400E8EE48 /* HalloweenCountdownWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		04A764A02E5228460087FA41 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7649F2E5228410087FA41 /* FeatureFlags.swift */; };
-		04A764A32E5228E10087FA41 /* FirstRunGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A764A22E5228DE0087FA41 /* FirstRunGate.swift */; };
-		04A764A52E5229210087FA41 /* NewFeatureAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A764A42E5229180087FA41 /* NewFeatureAlert.swift */; };
-		04A764A72E522B7A0087FA41 /* UIViewController+NewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A764A62E522B770087FA41 /* UIViewController+NewFeature.swift */; };
 		04A8362F2E7B784600778E09 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9F924925CE20094053E /* Colors.swift */; };
 		04A836302E7B785100778E09 /* Creepster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BCD3730213F4DBC00B27F54 /* Creepster.ttf */; };
 		04A836312E7CBE2600778E09 /* CountdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DACA42CBC12930071822F /* CountdownManager.swift */; };
@@ -58,10 +54,6 @@
 		14472519248C306A00A27662 /* monster_walking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14472518248C306A00A27662 /* monster_walking.mp3 */; };
 		1451D9FA24925CE20094053E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9F924925CE20094053E /* Colors.swift */; };
 		1451D9FC24925D320094053E /* elm_street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451D9FB24925D320094053E /* elm_street.mp3 */; };
-		1451D9FE24925F920094053E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9FD24925F920094053E /* PulseAnimation.swift */; };
-		1451DA04249589630094053E /* NoHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA03249589630094053E /* NoHighlightButton.swift */; };
-		1451DA0624958B9F0094053E /* PulseAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA0524958B9F0094053E /* PulseAnimation2.swift */; };
-		1451DA08249592BB0094053E /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA07249592BB0094053E /* HapticFeedback.swift */; };
 		1455C2B5234E8AD60053D99C /* space_terror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1455C2B4234E8AD60053D99C /* space_terror.mp3 */; };
 		148A187C2360F8BD00CA2493 /* orange_skull.png in Resources */ = {isa = PBXBuildFile; fileRef = 148A187B2360F8BC00CA2493 /* orange_skull.png */; };
 		14995AC9234AA6220042E5F1 /* the_ghost_song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */; };
@@ -199,10 +191,6 @@
 		049702112E7A204400E8EE48 /* HalloweenCountdownWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HalloweenCountdownWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		049702122E7A204400E8EE48 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		049702142E7A204400E8EE48 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		04A7649F2E5228410087FA41 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
-		04A764A22E5228DE0087FA41 /* FirstRunGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRunGate.swift; sourceTree = "<group>"; };
-		04A764A42E5229180087FA41 /* NewFeatureAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatureAlert.swift; sourceTree = "<group>"; };
-		04A764A62E522B770087FA41 /* UIViewController+NewFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NewFeature.swift"; sourceTree = "<group>"; };
 		04AA90D7252E4A1C00343F7E /* amityville.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = amityville.mp3; sourceTree = "<group>"; };
 		04C3B20C2CCC7FC600680F40 /* xfiles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xfiles.mp3; sourceTree = "<group>"; };
 		04F415402E4564ED0073381F /* AudioSeekable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSeekable.swift; sourceTree = "<group>"; };
@@ -220,10 +208,6 @@
 		14472518248C306A00A27662 /* monster_walking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monster_walking.mp3; sourceTree = "<group>"; };
 		1451D9F924925CE20094053E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		1451D9FB24925D320094053E /* elm_street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elm_street.mp3; sourceTree = "<group>"; };
-		1451D9FD24925F920094053E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
-		1451DA03249589630094053E /* NoHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHighlightButton.swift; sourceTree = "<group>"; };
-		1451DA0524958B9F0094053E /* PulseAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation2.swift; sourceTree = "<group>"; };
-		1451DA07249592BB0094053E /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		1455C2B4234E8AD60053D99C /* space_terror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = space_terror.mp3; sourceTree = "<group>"; };
 		148A187B2360F8BC00CA2493 /* orange_skull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_skull.png; sourceTree = "<group>"; };
 		14995AC8234AA6220042E5F1 /* the_ghost_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = the_ghost_song.mp3; sourceTree = "<group>"; };
@@ -397,10 +381,6 @@
 				046F61232E4E6EFB00CCC8DD /* PartySongsViewController.swift */,
 				14357AB2234A8B1200D9B0D3 /* AboutViewController.swift */,
 				046DACA42CBC12930071822F /* CountdownManager.swift */,
-				1451D9FD24925F920094053E /* PulseAnimation.swift */,
-				1451DA0524958B9F0094053E /* PulseAnimation2.swift */,
-				1451DA03249589630094053E /* NoHighlightButton.swift */,
-				1451DA07249592BB0094053E /* HapticFeedback.swift */,
 				1451D9F924925CE20094053E /* Colors.swift */,
 				DBD9BE89AB7C46378BCA2EC1 /* AboutView.swift */,
 				E4361F6D405144429E78B9FF /* GlassTile.swift */,
@@ -415,10 +395,6 @@
 				H2A3B4C5D6E70718293A4B5C /* Favorites.swift */,
 				0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */,
 				31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */,
-				04A7649F2E5228410087FA41 /* FeatureFlags.swift */,
-				04A764A22E5228DE0087FA41 /* FirstRunGate.swift */,
-				04A764A42E5229180087FA41 /* NewFeatureAlert.swift */,
-				04A764A62E522B770087FA41 /* UIViewController+NewFeature.swift */,
 				04F415442E4565EA0073381F /* SeekButton.swift */,
 				04F415402E4564ED0073381F /* AudioSeekable.swift */,
 				04F415422E4565AB0073381F /* AVAudioPlayer+Seekable.swift */,
@@ -851,22 +827,14 @@
 				14357AB5234A8C2F00D9B0D3 /* HiddenViewController.swift in Sources */,
 				046F61242E4E6EFF00CCC8DD /* PartySongsViewController.swift in Sources */,
 				1451D9FA24925CE20094053E /* Colors.swift in Sources */,
-				1451DA08249592BB0094053E /* HapticFeedback.swift in Sources */,
 				04F415432E4565B00073381F /* AVAudioPlayer+Seekable.swift in Sources */,
-				04A764A02E5228460087FA41 /* FeatureFlags.swift in Sources */,
-				1451DA04249589630094053E /* NoHighlightButton.swift in Sources */,
 				04F415412E4564EF0073381F /* AudioSeekable.swift in Sources */,
 				04F415452E4565EC0073381F /* SeekButton.swift in Sources */,
 				1447250B248C1EF600A27662 /* HorrorMovieViewController.swift in Sources */,
 				14FE01E4248B260A00E1B0B0 /* LongMixViewController.swift in Sources */,
-				1451DA0624958B9F0094053E /* PulseAnimation2.swift in Sources */,
-				04A764A32E5228E10087FA41 /* FirstRunGate.swift in Sources */,
 				046DACA52CBC12930071822F /* CountdownManager.swift in Sources */,
 				14357AB3234A8B1200D9B0D3 /* AboutViewController.swift in Sources */,
 				7B305C8F2132F25300B184F5 /* ViewController.swift in Sources */,
-				1451D9FE24925F920094053E /* PulseAnimation.swift in Sources */,
-				04A764A52E5229210087FA41 /* NewFeatureAlert.swift in Sources */,
-				04A764A72E522B7A0087FA41 /* UIViewController+NewFeature.swift in Sources */,
 				7B305C8D2132F25300B184F5 /* AppDelegate.swift in Sources */,
 				463716B7BD3C4CE3BFA65C9B /* AboutView.swift in Sources */,
 				7F25C37E673640EB9CB0612F /* GlassTile.swift in Sources */,

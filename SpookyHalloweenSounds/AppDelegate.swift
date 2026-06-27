@@ -23,12 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UserDefaults.standard.synchronize()
         //#endif
         
-#if DEBUG
-        if CommandLine.arguments.contains("-resetNewFeatureFlag") {
-            FirstRunGate.reset(key: FeatureFlags.newFeatureV1Seen)
-        }
-#endif
-        
         //code for lock screen controls
         let audioSession = AVAudioSession.sharedInstance()
         do {

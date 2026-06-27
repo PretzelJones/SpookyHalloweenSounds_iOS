@@ -5,11 +5,13 @@
 
 import SwiftUI
 
-private struct FlyingBat: View {
+struct FlyingBat: View {
     let angleDegrees: Double
     let duration: Double
     let delay: Double
     let flipped: Bool
+    var travelRadius: Double = 340
+    var batWidth: CGFloat = 36
 
     @State private var startDate: Date? = nil
 
@@ -23,12 +25,12 @@ private struct FlyingBat: View {
             Image("bat_single")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 36)
+                .frame(width: batWidth)
                 .scaleEffect(x: flipped ? -1 : 1, y: 1)
                 .scaleEffect(0.06 + 6.94 * eased)
                 .offset(
-                    x: cos(radians) * 340 * eased,
-                    y: sin(radians) * 340 * eased
+                    x: cos(radians) * travelRadius * eased,
+                    y: sin(radians) * travelRadius * eased
                 )
                 .opacity(startDate == nil ? 0 : 1.0 - t)
         }

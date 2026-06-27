@@ -164,6 +164,14 @@ struct MiniPlayerBarView: View {
 
     private let ticker = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
 
+    private let bats: [(angle: Double, duration: Double, delay: Double, flipped: Bool)] = [
+        (-120, 1.8, 0.0, false),
+        (-90,  1.6, 0.5, true),
+        (-60,  2.0, 1.0, false),
+        (-150, 1.7, 0.3, true),
+        (30,   1.8, 0.6, false),
+    ]
+
     var body: some View {
         let coordinator = NowPlayingCoordinator.shared
         VStack(spacing: 0) {
@@ -188,7 +196,23 @@ struct MiniPlayerBarView: View {
                 .padding(.bottom, 6)
 
             HStack(spacing: 10) {
-                LivingOrbView(isPlaying: coordinator.isPlaying, displaySize: 64)
+                Image("full_moon")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 51, height: 51)
+                    .overlay {
+                        ForEach(Array(bats.enumerated()), id: \.offset) { _, config in
+                            FlyingBat(
+                                angleDegrees: config.angle,
+                                duration: config.duration,
+                                delay: config.delay,
+                                flipped: config.flipped,
+                                travelRadius: 28,
+                                batWidth: 9
+                            )
+                        }
+                    }
+                    .clipped()
 
                 PaletteText(text: coordinator.item?.title ?? "", font: .custom("Creepster", size: 24))
                     .lineLimit(1)
@@ -255,10 +279,19 @@ struct MiniPlayerBarView: View {
 struct ExpandedPlayerView: View {
     @State private var progress: Double = 0
     @State private var isDragging = false
-    @State private var glowPulse = false
     @Environment(\.colorScheme) private var colorScheme
 
     private let ticker = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
+
+    private let bats: [(angle: Double, duration: Double, delay: Double, flipped: Bool)] = [
+        (-120, 1.8, 0.0, false),
+        (-90,  1.6, 0.5, true),
+        (-60,  2.0, 1.0, false),
+        (-150, 1.7, 0.3, true),
+        (-30,  1.9, 0.8, false),
+        (150,  2.1, 1.3, true),
+        (30,   1.8, 0.6, false),
+    ]
 
     var body: some View {
         let coordinator = NowPlayingCoordinator.shared
@@ -277,7 +310,20 @@ struct ExpandedPlayerView: View {
 
                 Spacer(minLength: 8)
 
-                LivingOrbView(isPlaying: coordinator.isPlaying)
+                Image("full_moon")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 240)
+                    .overlay {
+                        ForEach(Array(bats.enumerated()), id: \.offset) { _, config in
+                            FlyingBat(
+                                angleDegrees: config.angle,
+                                duration: config.duration,
+                                delay: config.delay,
+                                flipped: config.flipped
+                            )
+                        }
+                    }
                     .padding(.bottom, 18)
 
                 PaletteText(text: coordinator.item?.title ?? "", font: .custom("Creepster", size: 36))
@@ -326,8 +372,7 @@ struct ExpandedPlayerView: View {
                             .background(
                                 Circle()
                                     .fill(color)
-                                    .shadow(color: color.opacity(glowPulse ? 0.75 : 0.35),
-                                            radius: glowPulse ? 18 : 8)
+                                    .shadow(color: color.opacity(0.5), radius: 12)
                             )
                     }
                 }
@@ -351,17 +396,6 @@ struct ExpandedPlayerView: View {
                     }
                 }
         )
-        .task(id: coordinator.isPlaying) {
-            if coordinator.isPlaying {
-                withAnimation(.easeInOut(duration: 1.8).repeatForever(autoreverses: true)) {
-                    glowPulse = true
-                }
-            } else {
-                withAnimation(.easeInOut(duration: 0.55)) {
-                    glowPulse = false
-                }
-            }
-        }
         .onAppear { syncProgress(coordinator) }
         .onReceive(ticker) { _ in if !isDragging { syncProgress(coordinator) } }
     }
