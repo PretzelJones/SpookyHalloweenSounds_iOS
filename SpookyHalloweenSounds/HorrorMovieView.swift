@@ -28,6 +28,7 @@ final class HorrorMovieViewModel {
         Track(id: 5, title: "Amityville Horror",       imageName: "amityville",       soundFile: "amityville"),
         Track(id: 6, title: "Unsolved Mysteries",      imageName: "question_mark",    soundFile: "unsolved_mysteries"),
         Track(id: 7, title: "X-Files",                 imageName: "magnifying_glass", soundFile: "xfiles"),
+        Track(id: 8, title: "Psycho",                  imageName: "psycho",           soundFile: "psycho"),
     ]
 
     var playingId: Int? = nil
@@ -66,7 +67,6 @@ final class HorrorMovieViewModel {
             guard let player = players[id],
                   let track = tracks.first(where: { $0.id == id }) else { return }
             player.play()
-            playingId = id
             coordinator.start(
                 id: id, title: track.title, imageName: track.imageName,
                 player: player,
@@ -74,6 +74,7 @@ final class HorrorMovieViewModel {
                     self?.playingId = isPlaying ? id : nil
                 }
             )
+            playingId = id
         }
     }
 
@@ -90,7 +91,6 @@ final class HorrorMovieViewModel {
 
 struct HorrorMovieView: View {
     @State private var model = HorrorMovieViewModel()
-    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         NowPlayingContainer {
@@ -99,10 +99,7 @@ struct HorrorMovieView: View {
 
             ScrollView {
                 VStack(spacing: 8) {
-                    Text("Here lies a collection of some of the most famous theme songs from your favorite horror films. Enjoy!")
-                        .font(.custom("Creepster", size: 20))
-                        .foregroundStyle(Theme.orange)
-                        .multilineTextAlignment(.center)
+                    PaletteText(text: "Here lies a collection of some of the most famous theme songs from your favorite horror films. Enjoy!", font: .custom("Creepster", size: 20), multiline: true)
                         .padding(.top, 8)
                         .padding(.horizontal, 4)
 
@@ -125,17 +122,6 @@ struct HorrorMovieView: View {
         }
         }
         .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button {
-                    dismiss()
-                } label: {
-                    PaletteIconView(imageName: "left_arrow")
-                        .frame(width: 24, height: 24)
-                }
-                .buttonStyle(.plain)
-            }
-        }
     }
 }
 

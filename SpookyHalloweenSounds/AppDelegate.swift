@@ -49,10 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ]
         }
 
-        if let back = UIImage(named: "left_arrow") {
-            nav.setBackIndicatorImage(back, transitionMaskImage: back)
-        }
-
         // Hide back button text
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(
             UIOffset(horizontal: -1000, vertical: 0), for: .default

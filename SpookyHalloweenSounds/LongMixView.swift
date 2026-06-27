@@ -63,7 +63,6 @@ final class LongMixViewModel {
             guard let player = players[id],
                   let track = tracks.first(where: { $0.id == id }) else { return }
             player.play()
-            playingId = id
             coordinator.start(
                 id: id, title: track.title, imageName: track.imageName,
                 player: player,
@@ -71,6 +70,7 @@ final class LongMixViewModel {
                     self?.playingId = isPlaying ? id : nil
                 }
             )
+            playingId = id
         }
     }
 
@@ -87,7 +87,6 @@ final class LongMixViewModel {
 
 struct LongMixView: View {
     @State private var model = LongMixViewModel()
-    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         NowPlayingContainer {
@@ -96,10 +95,7 @@ struct LongMixView: View {
 
             ScrollView {
                 VStack(spacing: 8) {
-                    Text("The looping sounds will continue to play indefinitely! Press a button a second time to pause, or press two or more to mix sounds together.")
-                        .font(.custom("Creepster", size: 20))
-                        .foregroundStyle(Theme.orange)
-                        .multilineTextAlignment(.center)
+                    PaletteText(text: "The looping sounds will continue to play indefinitely! Press a button a second time to pause, or press two or more to mix sounds together.", font: .custom("Creepster", size: 20), multiline: true)
                         .padding(.top, 8)
                         .padding(.horizontal, 4)
 
@@ -122,17 +118,6 @@ struct LongMixView: View {
         }
         }
         .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button {
-                    dismiss()
-                } label: {
-                    PaletteIconView(imageName: "left_arrow")
-                        .frame(width: 24, height: 24)
-                }
-                .buttonStyle(.plain)
-            }
-        }
     }
 }
 

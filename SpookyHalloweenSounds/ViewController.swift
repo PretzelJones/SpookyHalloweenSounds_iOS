@@ -2,359 +2,131 @@
 //  ViewController.swift
 //  SpookyHalloweenSounds
 //
-//  Created by Sean Patterson on 9/29/18.
-//  Copyright © 2019 Bosson Design. All rights reserved.
-//
 
 import UIKit
+import SwiftUI
 import AVFoundation
 import StoreKit
 
-// Dictionary to map buttons to their respective AVAudioPlayers
-var audioPlayers: [UIButton: AVAudioPlayer] = [:]
+final class ViewController: UIHostingController<SoundboardView> {
 
-class ViewController: UIViewController, AVAudioPlayerDelegate {
-    
-    //@IBOutlet weak var daysLabel: UILabel!
-    
-    @IBOutlet weak var witchCackleButton: UIButton!
-    @IBOutlet weak var blackCatButton: UIButton!
-    @IBOutlet weak var creepyLaughButton: UIButton!
-    @IBOutlet weak var creakyDoorButton: UIButton!
-    @IBOutlet weak var horrorAmbianceButton: UIButton!
-    @IBOutlet weak var monsterGrowlButton: UIButton!
-    @IBOutlet weak var monsterWalkingButton: UIButton!
-    @IBOutlet weak var spookyChainsButton: UIButton!
-    @IBOutlet weak var thunderStormButton: UIButton!
-    @IBOutlet weak var scaryScreamButton: UIButton!
-    @IBOutlet weak var zombieGroanButton: UIButton!
-    @IBOutlet weak var ghostBooButton: UIButton!
-    @IBOutlet weak var werewolfHowlButton: UIButton!
-    @IBOutlet weak var poltergeistVoiceButton: UIButton!
-    @IBOutlet weak var zombieCallButton: UIButton!
-    @IBOutlet weak var catScreamButton: UIButton!
-    @IBOutlet weak var wraithWailButton: UIButton!
-    @IBOutlet weak var spookyOwlButton: UIButton!
-    @IBOutlet weak var chainedGhoulButton: UIButton!
-    @IBOutlet weak var terrifiedScreamButton: UIButton!
-    @IBOutlet weak var hauntedOrganButton: UIButton!
-    @IBOutlet weak var scarecrowButton: UIButton!
-    @IBOutlet weak var blowingWindButton: UIButton!
-    @IBOutlet weak var ghostlyWhisperButton: UIButton!
-    @IBOutlet weak var draculaLaughButton: UIButton!
-    @IBOutlet weak var wolfCryButton: UIButton!
-    @IBOutlet weak var knockKnockButton: UIButton!
-    @IBOutlet weak var igorGrumbleButton: UIButton!
-    @IBOutlet weak var horrorMovieButton: UIButton!
-    @IBOutlet weak var warningBellsButton: UIButton!
-    @IBOutlet weak var painfulMoanButton: UIButton!
-    @IBOutlet weak var witchesCauldronButton: UIButton!
-    @IBOutlet weak var ghostlyChildrenButton: UIButton!
-    @IBOutlet weak var hauntedSwampButton: UIButton!
-    @IBOutlet weak var torturedSoulsButton: UIButton!
-    @IBOutlet weak var chillingHornButton: UIButton!
-    
-    @IBOutlet weak var loopingMixButton: UIButton!
-    @IBOutlet weak var horrorThemeButton: UIButton!
-    
+    private let soundModel: SoundboardViewModel
     var countdownTimer: Timer?
     let countdownManager = CountdownManager()
-    
-    // viewDidLoad method, override to customize your ViewController behavior
+    private var titleHostingVC: UIHostingController<PaletteText>?
+    private var batsHostingVC: UIHostingController<PaletteIconView>?
+    private var pumpkinHostingVC: UIHostingController<PaletteIconView>?
+
+    required init?(coder: NSCoder) {
+        let model = SoundboardViewModel()
+        soundModel = model
+        super.init(coder: coder, rootView: SoundboardView(model: model))
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Initialize Countdown
-        //daysLabel.text = countdownManager.getCountdownText()
+
         startCountdownTimer()
-        
         setupNavigationTitleWithCountdown()
-        
-        // Fix for iOS 26 circular glass border on right bar button item (pumpkin)
-        if #available(iOS 26.0, *) {
-            if let pumpkinItem = navigationItem.rightBarButtonItem {
-                pumpkinItem.hidesSharedBackground = true
+
+        installPaletteRightBarButton()
+
+        rootView.onNavigate = { [weak self] destination in
+            guard let self, let sb = self.storyboard else { return }
+            let identifier: String
+            switch destination {
+            case .loopingMixes:  identifier = "LongMixViewController"
+            case .horrorMovies:  identifier = "HorrorMovieViewController"
+            case .partySongs:    identifier = "PartySongsViewController"
             }
+            let vc = sb.instantiateViewController(withIdentifier: identifier)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
 
-        // On iOS 26, the glass cluster back button ignores tintColor unless backBarButtonItem
-        // is set explicitly. No image here — setBackIndicatorImage in AppDelegate provides the icon.
-        if #available(iOS 26.0, *) {
-            let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-            backItem.tintColor = halloweenOrange
-            navigationItem.backBarButtonItem = backItem
-        }
+    }
 
-        
-        // Initialize all sounds with helper function
-        initializeAudioPlayers()
-        
-        // Set up back button customization
-        //setupBackButton()
-        
-    }
-    
-    // Helper function to initialize AVAudioPlayers and map them to buttons
-    func initializeAudioPlayers() {
-        let soundFiles = [
-            witchCackleButton: "witch_laugh",
-            blackCatButton: "black_cat",
-            creepyLaughButton: "evil_man",
-            creakyDoorButton: "creaky_door",
-            horrorAmbianceButton: "horror_ambience",
-            monsterGrowlButton: "monster_growl",
-            monsterWalkingButton: "monster_walking",
-            spookyChainsButton: "spooky_chains",
-            thunderStormButton: "thunder",
-            scaryScreamButton: "scary_scream",
-            zombieGroanButton: "zombie",
-            ghostBooButton: "ghost_boo",
-            werewolfHowlButton: "werewolf_howl",
-            poltergeistVoiceButton: "poltergeist_voice",
-            zombieCallButton: "zombie_come",
-            catScreamButton: "cat_scream",
-            wraithWailButton: "wraith_wail",
-            spookyOwlButton: "spooky_owl",
-            chainedGhoulButton: "chained_ghoul",
-            terrifiedScreamButton: "terrified_scream",
-            hauntedOrganButton: "haunted_organ",
-            scarecrowButton: "scarecrow",
-            blowingWindButton: "blowing_wind",
-            ghostlyWhisperButton: "ghostly_whisper",
-            draculaLaughButton: "dracula_laugh",
-            wolfCryButton: "wolf_cry",
-            knockKnockButton: "knock_knock",
-            igorGrumbleButton: "igor_grumble",
-            horrorMovieButton: "horror_film",
-            warningBellsButton: "warning_bells",
-            painfulMoanButton: "painful_moan",
-            witchesCauldronButton: "bubbles",
-            ghostlyChildrenButton: "scary_nursery",
-            hauntedSwampButton: "haunted_swamp",
-            torturedSoulsButton: "tortured_souls",
-            chillingHornButton: "chilling_horn"
-        ]
-        
-        for (button, sound) in soundFiles {
-            guard let button = button else { continue }  // Safely unwrap button
-            
-            var player: AVAudioPlayer?
-            
-            // Try to load as mp3 first, if not found, try wav
-            if let mp3Path = Bundle.main.path(forResource: sound, ofType: "mp3") {
-                do {
-                    player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: mp3Path))
-                } catch {
-                    print("Error loading MP3 file \(sound): \(error)")
-                }
-            } else if let wavPath = Bundle.main.path(forResource: sound, ofType: "wav") {
-                do {
-                    player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: wavPath))
-                } catch {
-                    print("Error loading WAV file \(sound): \(error)")
-                }
-            } else {
-                print("File not found: \(sound) as either mp3 or wav")
-            }
-            
-            // If the player is successfully created, store it in the dictionary
-            if let player = player {
-                player.prepareToPlay()
-                player.delegate = self // <-- Ensure delegate is set here
-                audioPlayers[button] = player
-            }
-        }
-    }
-    
-    // Single handler for sound button interactions
-    @IBAction func soundButtonPressed(_ sender: UIButton) {
-        guard let player = audioPlayers[sender] else { return }
-        
-        sender.pulsate(sender)
-        sender.haptic(sender)
-        sender.showsTouchWhenHighlighted = true
-        
-        if player.isPlaying {
-            player.pause()
-            updateButtonUI(sender, isPlaying: false)
-        } else {
-            player.play()
-            updateButtonUI(sender, isPlaying: true)
-        }
-    }
-    
-    // Single handler for loopingMix and horrorTheme buttons
-    @IBAction func nonAudioButtonPressed(_ sender: UIButton) {
-        sender.pulsate(sender)
-        sender.haptic(sender)
-    }
-    
-    // Helper function to update button UI based on play/pause state
-    func updateButtonUI(_ button: UIButton, isPlaying: Bool) {
-        print("Updating button UI for: \(button) | isPlaying: \(isPlaying)")
-        if isPlaying {
-            button.backgroundColor = halloweenOrangeHighlight
-            button.setImage(UIImage(named: "pause"), for: .normal)
-        } else {
-            button.backgroundColor = halloweenOrange
-            let originalImage = getOriginalImageName(for: button)
-            print("Setting image for button to: \(originalImage)")
-            button.setImage(UIImage(named: originalImage), for: .normal)
-        }
-    }
-    
-    func getOriginalImageName(for button: UIButton) -> String {
-        switch button {
-        case witchCackleButton: return "witch"
-        case blackCatButton: return "black_cat"
-        case creepyLaughButton: return "evil_man"
-        case creakyDoorButton: return "creaky_door"
-        case horrorAmbianceButton: return "spider"
-        case monsterGrowlButton: return "monster_growl"
-        case monsterWalkingButton: return "monster_walking"
-        case spookyChainsButton: return "chains"
-        case thunderStormButton: return "thunder"
-        case scaryScreamButton: return "scream"
-        case zombieGroanButton: return "zombie"
-        case ghostBooButton: return "ghost_boo"
-        case werewolfHowlButton: return "werewolf"
-        case poltergeistVoiceButton: return "poltergeist_tv"
-        case zombieCallButton: return "zombie_call"
-        case catScreamButton: return "cat_scream"
-        case wraithWailButton: return "wraith_wail"
-        case spookyOwlButton: return "spooky_owl"
-        case chainedGhoulButton: return "chained_ghoul"
-        case terrifiedScreamButton: return "terrified_scream"
-        case hauntedOrganButton: return "haunted_organ"
-        case scarecrowButton: return "scarecrow"
-        case blowingWindButton: return "blowing_wind"
-        case ghostlyWhisperButton: return "ghostly_whisper"
-        case draculaLaughButton: return "dracula_laugh"
-        case wolfCryButton: return "wolf"
-        case knockKnockButton: return "knock"
-        case igorGrumbleButton: return "igor"
-        case horrorMovieButton: return "film"
-        case warningBellsButton: return "warning_bells"
-        case painfulMoanButton: return "grave_stone"
-        case witchesCauldronButton: return "witches_cauldron"
-        case ghostlyChildrenButton: return "ghostly_children"
-        case hauntedSwampButton: return "haunted_swamp"
-        case torturedSoulsButton: return "tortured_souls"
-        case chillingHornButton: return "alien"
-        default: return "default_icon" // Fallback in case a button is not matched
-        }
-    }
-    
-    // Start countdown timer
     func startCountdownTimer() {
         countdownTimer = Timer.scheduledTimer(timeInterval: 60.0, target: self, selector: #selector(updateCountdownText), userInfo: nil, repeats: true)
     }
-    
-    // Helper function to set the daysLabel as the titleView
+
     func setupNavigationTitleWithCountdown() {
-        // Create the bats image view
-        let batsImage = UIImage(named: "bats")
-        let batsImageView = UIImageView(image: batsImage)
-        batsImageView.contentMode = .scaleAspectFit
-        batsImageView.translatesAutoresizingMaskIntoConstraints = false
-        batsImageView.tintColor = halloweenOrange
-        
-        // Create a container view to hold the bats image
+        let batsHC = UIHostingController(rootView: PaletteIconView(imageName: "bats"))
+        batsHC.view.backgroundColor = .clear
+        batsHC.view.translatesAutoresizingMaskIntoConstraints = false
+        batsHC.view.isUserInteractionEnabled = false
+        batsHostingVC = batsHC
+
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.backgroundColor = .clear
-        containerView.addSubview(batsImageView)
-        
-        // Set Auto Layout constraints for the bats image to ensure proper scaling within container
+        containerView.addSubview(batsHC.view)
+
         NSLayoutConstraint.activate([
-            batsImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
-            batsImageView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            batsImageView.topAnchor.constraint(equalTo: containerView.topAnchor),
-            batsImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+            batsHC.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            batsHC.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            batsHC.view.topAnchor.constraint(equalTo: containerView.topAnchor),
+            batsHC.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
-        
-        // Set a specific height and width for the container view relative to the navigation bar height
+
         NSLayoutConstraint.activate([
-            containerView.widthAnchor.constraint(equalToConstant: 50),  // Set a dynamic width; increase this to make it larger
-            containerView.heightAnchor.constraint(equalToConstant: 40)  // Set height based on navigation bar height
+            containerView.widthAnchor.constraint(equalToConstant: 50),
+            containerView.heightAnchor.constraint(equalToConstant: 40)
         ])
-        
-        // Create a UIBarButtonItem with the container view holding the bats image
+
         let imageItem = UIBarButtonItem(customView: containerView)
-        
-        // New iOS 26 fix for circular glass border
+
         if #available(iOS 26.0, *) {
             imageItem.hidesSharedBackground = true
         }
 
-        // Create a negative spacer to move the image to the far left
         let negativeSpacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-        negativeSpacer.width = -15  // Adjust this value to fine-tune the alignment
-        
-        // Set the left bar button items to include the negative spacer and the image item
-        self.navigationItem.leftBarButtonItems = [negativeSpacer, imageItem]
-        
-        // Create the countdown label for the title view
-        
-        let countdownLabel = UILabel()
-        // Add these lines to enable text resizing
-        countdownLabel.adjustsFontSizeToFitWidth = true
-        countdownLabel.minimumScaleFactor = 0.5  // Set the minimum scale factor to 50% of original size
-        countdownLabel.lineBreakMode = .byTruncatingTail  // Ensure text truncates with an ellipsis if it gets too small
-        countdownLabel.text = countdownManager.getCountdownText()  // Get the countdown text directly from countdownManager
-        countdownLabel.font = UIFont(name: "Creepster", size: 28)
-        countdownLabel.textColor = halloweenOrange
-        countdownLabel.textAlignment = .center
-        countdownLabel.sizeToFit()
-        
-        // Set the countdown label as the titleView
-        self.navigationItem.titleView = countdownLabel
-    }
-    
-    @objc func updateCountdownText() {
-        // Update the countdown label in the navigation bar title view
-        if let countdownLabel = self.navigationItem.titleView as? UILabel {
-            countdownLabel.text = countdownManager.getCountdownText()
-        }
+        negativeSpacer.width = -15
+
+        navigationItem.leftBarButtonItems = [negativeSpacer, imageItem]
+
+        let hc = UIHostingController(rootView: PaletteText(text: countdownManager.getCountdownText(), font: .custom("Creepster", size: 22)))
+        hc.view.backgroundColor = .clear
+        hc.view.frame = CGRect(x: 0, y: 0, width: 280, height: 44)
+        navigationItem.titleView = hc.view
+        titleHostingVC = hc
     }
 
-    // Audio player finished playing
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        DispatchQueue.main.async {
-            if let button = audioPlayers.first(where: { $0.value === player })?.key {
-                print("Audio finished for button: \(button)")
-                // Reset the button's UI to the original state
-                self.updateButtonUI(button, isPlaying: false)
-                button.pulsate2(button)
-                button.haptic(button)
-            } else {
-                print("Could not find button for finished audio player")
-            }
+    private func installPaletteRightBarButton() {
+        let pumpkinHC = UIHostingController(rootView: PaletteIconView(imageName: "pumpkin"))
+        pumpkinHC.view.backgroundColor = .clear
+        pumpkinHC.view.frame = CGRect(x: 0, y: 0, width: 29, height: 29)
+        pumpkinHC.view.isUserInteractionEnabled = false
+        pumpkinHostingVC = pumpkinHC
+
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+        button.addSubview(pumpkinHC.view)
+        pumpkinHC.view.center = CGPoint(x: 22, y: 22)
+        button.addAction(UIAction { [weak self] _ in
+            self?.performSegue(withIdentifier: "showAbout", sender: self)
+        }, for: .touchUpInside)
+
+        let item = UIBarButtonItem(customView: button)
+        if #available(iOS 26.0, *) {
+            item.hidesSharedBackground = true
         }
+        navigationItem.rightBarButtonItem = item
     }
-    
+
+    @objc func updateCountdownText() {
+        titleHostingVC?.rootView = PaletteText(text: countdownManager.getCountdownText(), font: .custom("Creepster", size: 22))
+    }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        // Stop the countdown timer to avoid memory leaks
         countdownTimer?.invalidate()
-        
-        // Stop and release all audio players when navigating away
-        for (button, player) in audioPlayers {
-            if player.isPlaying {
-                player.stop()  // Stops the audio and resets the player to the beginning
-            }
-            // Reset the button to its original state
-            updateButtonUI(button, isPlaying: false)
-        }
+        soundModel.pauseAll()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         startCountdownTimer()
         if let scene = view.window?.windowScene {
-            SKStoreReviewController.requestReview(in: scene)
+        //    SKStoreReviewController.requestReview(in: scene)
         }
     }
 }
-

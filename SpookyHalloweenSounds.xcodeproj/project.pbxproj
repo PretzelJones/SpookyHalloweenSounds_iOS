@@ -27,6 +27,7 @@
 		046F61242E4E6EFF00CCC8DD /* PartySongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F61232E4E6EFB00CCC8DD /* PartySongsViewController.swift */; };
 		0476EC60250D3BCC007ED260 /* peak.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC5F250D3BCB007ED260 /* peak.png */; };
 		0476EC64250D3CA6007ED260 /* eyes_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476EC62250D3CA6007ED260 /* eyes_orange.png */; };
+		04889EF92FF011D20012E9E5 /* psycho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04889EF82FF011D20012E9E5 /* psycho.mp3 */; };
 		0488B8732E7DF82500ABB977 /* graveyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA32137665A00BAC058 /* graveyard.png */; };
 		0488B8742E7DF97300ABB977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B305C932132F25500B184F5 /* Assets.xcassets */; };
 		049702132E7A204400E8EE48 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049702122E7A204400E8EE48 /* WidgetKit.framework */; };
@@ -56,13 +57,6 @@
 		14472517248C244600A27662 /* dont_let_in.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14472516248C244600A27662 /* dont_let_in.mp3 */; };
 		14472519248C306A00A27662 /* monster_walking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14472518248C306A00A27662 /* monster_walking.mp3 */; };
 		1451D9FA24925CE20094053E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9F924925CE20094053E /* Colors.swift */; };
-		463716B7BD3C4CE3BFA65C9B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9BE89AB7C46378BCA2EC1 /* AboutView.swift */; };
-		7F25C37E673640EB9CB0612F /* GlassTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4361F6D405144429E78B9FF /* GlassTile.swift */; };
-		C915F91BC0884EE79112C247 /* LongMixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD990822B5404DBD0D3D15 /* LongMixView.swift */; };
-		F3D71B2849A6C5E0B482093A /* HorrorMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */; };
-		C2E8A5F9B3D640719E0F5C82 /* PartySongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */; };
-		66F8B4B54CFC4E908663870B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */; };
-		F909EAE5037A47FDBD1FF834 /* MeshGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */; };
 		1451D9FC24925D320094053E /* elm_street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1451D9FB24925D320094053E /* elm_street.mp3 */; };
 		1451D9FE24925F920094053E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451D9FD24925F920094053E /* PulseAnimation.swift */; };
 		1451DA04249589630094053E /* NoHighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1451DA03249589630094053E /* NoHighlightButton.swift */; };
@@ -77,6 +71,8 @@
 		14FE01E0248B0F6400E1B0B0 /* titlebar_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FE01DF248B0F6400E1B0B0 /* titlebar_image.png */; };
 		14FE01E2248B1CE900E1B0B0 /* titlebar_image_smaller.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FE01E1248B1CE900E1B0B0 /* titlebar_image_smaller.png */; };
 		14FE01E4248B260A00E1B0B0 /* LongMixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */; };
+		463716B7BD3C4CE3BFA65C9B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9BE89AB7C46378BCA2EC1 /* AboutView.swift */; };
+		66F8B4B54CFC4E908663870B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */; };
 		7B05DEA42137665B00BAC058 /* graveyard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA32137665A00BAC058 /* graveyard.png */; };
 		7B05DEA62139EAF200BAC058 /* chilling_cries.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B05DEA52139EAF100BAC058 /* chilling_cries.mp3 */; };
 		7B305C8D2132F25300B184F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B305C8C2132F25300B184F5 /* AppDelegate.swift */; };
@@ -127,6 +123,17 @@
 		7B987DA82133718D00743717 /* vampire_bat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D7B2133718D00743717 /* vampire_bat.mp3 */; };
 		7B987DA92133718D00743717 /* creaky_door.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B987D7C2133718D00743717 /* creaky_door.mp3 */; };
 		7B987E05213371FA00743717 /* bd_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B987DD7213371FA00743717 /* bd_logo.png */; };
+		7F25C37E673640EB9CB0612F /* GlassTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4361F6D405144429E78B9FF /* GlassTile.swift */; };
+		A1B2C3D4E5F60718293A4B5C /* HiddenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2D3C4B5A60718293A4B5C /* HiddenView.swift */; };
+		B5A2C3D4E6F7089A1B2C3D4E /* SoundboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2F3A4B5C60718293A4B5C /* SoundboardView.swift */; };
+		C2E8A5F9B3D640719E0F5C82 /* PartySongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */; };
+		C915F91BC0884EE79112C247 /* LongMixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD990822B5404DBD0D3D15 /* LongMixView.swift */; };
+		E1A2B3C4D5E60718293A4B5C /* NowPlayingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3C4D5E6F70718293A4B5C /* NowPlayingCoordinator.swift */; };
+		F1A2B3C4D5E60718293A4B5C /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B3C4D5E6F70718293A4B5C /* MiniPlayerView.swift */; };
+		F3D71B2849A6C5E0B482093A /* HorrorMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */; };
+		F909EAE5037A47FDBD1FF834 /* MeshGradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */; };
+		G1H2I3J4K5L60718293A4B5C /* PaletteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = G2H3I4J5K6L70718293A4B5C /* PaletteComponents.swift */; };
+		H1A2B3C4D5E60718293A4B5C /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = H2A3B4C5D6E70718293A4B5C /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +195,7 @@
 		046F61232E4E6EFB00CCC8DD /* PartySongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartySongsViewController.swift; sourceTree = "<group>"; };
 		0476EC5F250D3BCB007ED260 /* peak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peak.png; sourceTree = "<group>"; };
 		0476EC62250D3CA6007ED260 /* eyes_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eyes_orange.png; sourceTree = "<group>"; };
+		04889EF82FF011D20012E9E5 /* psycho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = psycho.mp3; sourceTree = "<group>"; };
 		049702112E7A204400E8EE48 /* HalloweenCountdownWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HalloweenCountdownWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		049702122E7A204400E8EE48 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		049702142E7A204400E8EE48 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -200,6 +208,7 @@
 		04F415402E4564ED0073381F /* AudioSeekable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSeekable.swift; sourceTree = "<group>"; };
 		04F415422E4565AB0073381F /* AVAudioPlayer+Seekable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayer+Seekable.swift"; sourceTree = "<group>"; };
 		04F415442E4565EA0073381F /* SeekButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekButton.swift; sourceTree = "<group>"; };
+		0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		140E733E216AC5CC00E653D0 /* SpookyHalloweenSounds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpookyHalloweenSounds.entitlements; sourceTree = "<group>"; };
 		14357AAE234949CA00D9B0D3 /* bosson_full_logo.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bosson_full_logo.PNG; sourceTree = "<group>"; };
 		14357AB0234A196700D9B0D3 /* tab_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_logo.png; sourceTree = "<group>"; };
@@ -210,13 +219,6 @@
 		14472516248C244600A27662 /* dont_let_in.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dont_let_in.mp3; sourceTree = "<group>"; };
 		14472518248C306A00A27662 /* monster_walking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monster_walking.mp3; sourceTree = "<group>"; };
 		1451D9F924925CE20094053E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		DBD9BE89AB7C46378BCA2EC1 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		E4361F6D405144429E78B9FF /* GlassTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassTile.swift; sourceTree = "<group>"; };
-		4EFD990822B5404DBD0D3D15 /* LongMixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongMixView.swift; sourceTree = "<group>"; };
-		A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorMovieView.swift; sourceTree = "<group>"; };
-		7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartySongsView.swift; sourceTree = "<group>"; };
-		0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientBackground.swift; sourceTree = "<group>"; };
 		1451D9FB24925D320094053E /* elm_street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elm_street.mp3; sourceTree = "<group>"; };
 		1451D9FD24925F920094053E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 		1451DA03249589630094053E /* NoHighlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHighlightButton.swift; sourceTree = "<group>"; };
@@ -230,6 +232,8 @@
 		14FE01DF248B0F6400E1B0B0 /* titlebar_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar_image.png; sourceTree = "<group>"; };
 		14FE01E1248B1CE900E1B0B0 /* titlebar_image_smaller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar_image_smaller.png; sourceTree = "<group>"; };
 		14FE01E3248B260A00E1B0B0 /* LongMixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongMixViewController.swift; sourceTree = "<group>"; };
+		31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientBackground.swift; sourceTree = "<group>"; };
+		4EFD990822B5404DBD0D3D15 /* LongMixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongMixView.swift; sourceTree = "<group>"; };
 		7B05DEA32137665A00BAC058 /* graveyard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graveyard.png; sourceTree = "<group>"; };
 		7B05DEA52139EAF100BAC058 /* chilling_cries.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chilling_cries.mp3; sourceTree = "<group>"; };
 		7B305C892132F25300B184F5 /* Halloween.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halloween.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,6 +292,16 @@
 		7B987DD7213371FA00743717 /* bd_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bd_logo.png; sourceTree = "<group>"; };
 		7BCD372F213F1C3000B27F54 /* witch_laugh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = witch_laugh.m4a; sourceTree = "<group>"; };
 		7BCD3730213F4DBC00B27F54 /* Creepster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Creepster.ttf; sourceTree = "<group>"; };
+		7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartySongsView.swift; sourceTree = "<group>"; };
+		A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorMovieView.swift; sourceTree = "<group>"; };
+		D1E2F3A4B5C60718293A4B5C /* SoundboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardView.swift; sourceTree = "<group>"; };
+		DBD9BE89AB7C46378BCA2EC1 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		E2B3C4D5E6F70718293A4B5C /* NowPlayingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCoordinator.swift; sourceTree = "<group>"; };
+		E4361F6D405144429E78B9FF /* GlassTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassTile.swift; sourceTree = "<group>"; };
+		F1E2D3C4B5A60718293A4B5C /* HiddenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenView.swift; sourceTree = "<group>"; };
+		F2B3C4D5E6F70718293A4B5C /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
+		G2H3I4J5K6L70718293A4B5C /* PaletteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteComponents.swift; sourceTree = "<group>"; };
+		H2A3B4C5D6E70718293A4B5C /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -393,6 +407,12 @@
 				4EFD990822B5404DBD0D3D15 /* LongMixView.swift */,
 				A9C4E2F7B8D5A3016E4C789F /* HorrorMovieView.swift */,
 				7D4B6E2A1F8C953E0A7B4D91 /* PartySongsView.swift */,
+				D1E2F3A4B5C60718293A4B5C /* SoundboardView.swift */,
+				F1E2D3C4B5A60718293A4B5C /* HiddenView.swift */,
+				E2B3C4D5E6F70718293A4B5C /* NowPlayingCoordinator.swift */,
+				F2B3C4D5E6F70718293A4B5C /* MiniPlayerView.swift */,
+				G2H3I4J5K6L70718293A4B5C /* PaletteComponents.swift */,
+				H2A3B4C5D6E70718293A4B5C /* Favorites.swift */,
 				0E789FEB8C6D44F0A74CD8A3 /* Theme.swift */,
 				31B07B22CB224A219D0EC818 /* MeshGradientBackground.swift */,
 				04A7649F2E5228410087FA41 /* FeatureFlags.swift */,
@@ -431,6 +451,7 @@
 		7B305CBB2132F9F300B184F5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				04889EF82FF011D20012E9E5 /* psycho.mp3 */,
 				04057A222E9F074E00F7FCEB /* unsolved_mysteries.mp3 */,
 				04499E432E7F4A4C0043C36C /* coraline.mp3 */,
 				04AA90D7252E4A1C00343F7E /* amityville.mp3 */,
@@ -732,6 +753,7 @@
 				7B987D882133718D00743717 /* long_mix.mp3 in Resources */,
 				7B987D7F2133718D00743717 /* igor_grumble.mp3 in Resources */,
 				04F2C3D328D9159C003C63A2 /* (null) in Resources */,
+				04889EF92FF011D20012E9E5 /* psycho.mp3 in Resources */,
 				043D625C2E4BE50E00F8305A /* exorcist.mp3 in Resources */,
 				7B987D7E2133718D00743717 /* cat_scream.mp3 in Resources */,
 				14357AB1234A196700D9B0D3 /* tab_logo.png in Resources */,
@@ -851,6 +873,12 @@
 				C915F91BC0884EE79112C247 /* LongMixView.swift in Sources */,
 				F3D71B2849A6C5E0B482093A /* HorrorMovieView.swift in Sources */,
 				C2E8A5F9B3D640719E0F5C82 /* PartySongsView.swift in Sources */,
+				B5A2C3D4E6F7089A1B2C3D4E /* SoundboardView.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5C /* HiddenView.swift in Sources */,
+				E1A2B3C4D5E60718293A4B5C /* NowPlayingCoordinator.swift in Sources */,
+				F1A2B3C4D5E60718293A4B5C /* MiniPlayerView.swift in Sources */,
+				G1H2I3J4K5L60718293A4B5C /* PaletteComponents.swift in Sources */,
+				H1A2B3C4D5E60718293A4B5C /* Favorites.swift in Sources */,
 				66F8B4B54CFC4E908663870B /* Theme.swift in Sources */,
 				F909EAE5037A47FDBD1FF834 /* MeshGradientBackground.swift in Sources */,
 			);
@@ -1108,7 +1136,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 39;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
@@ -1117,7 +1145,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.7;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1135,7 +1163,7 @@
 				CODE_SIGN_ENTITLEMENTS = SpookyHalloweenSounds/SpookyHalloweenSounds.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 39;
 				DEVELOPMENT_TEAM = Z4JJZ2GKLM;
 				INFOPLIST_FILE = SpookyHalloweenSounds/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
@@ -1144,7 +1172,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.7;
+				MARKETING_VERSION = 1.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bossondesign.SpookyHalloweenSounds;
 				PRODUCT_NAME = Halloween;
 				PROVISIONING_PROFILE_SPECIFIER = "";
