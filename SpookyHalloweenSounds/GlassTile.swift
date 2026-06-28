@@ -57,13 +57,32 @@ struct GlassTile: View {
             .onTapGesture { action() }
 
             if let isFavorited, let onToggleFavorite {
-                Image(systemName: isFavorited ? "heart.fill" : "heart")
-                    .font(.system(size: 22, weight: .medium))
-                    .foregroundStyle(isFavorited ? favoritePurple : .black)
-                    .frame(width: 44, height: 44)
-                    .contentShape(Rectangle())
-                    .onTapGesture { onToggleFavorite() }
-                    .padding(.trailing, 16)
+                TimelineView(.animation(minimumInterval: 1.0 / 12.0)) { context in
+                    let rawT = context.date.timeIntervalSinceReferenceDate
+                    let glowRadius = 3.0 + 5.0 * (0.5 + 0.5 * sin(rawT * 0.6))
+                    let orangeBright = Color(red: 255/255, green: 165/255, blue:  70/255)
+                    let orangeDeep   = Color(red: 230/255, green: 100/255, blue:  20/255)
+                    let gradient = AngularGradient(
+                        colors: [orangeBright, orangeDeep, orangeBright, orangeDeep, orangeBright],
+                        center: .center,
+                        angle: .degrees(rawT * 12)
+                    )
+                    ZStack {
+                        if isFavorited {
+                            Image(systemName: "heart.fill")
+                                .font(.system(size: 22, weight: .medium))
+                                .foregroundStyle(gradient)
+                                .shadow(color: favoritePurple.opacity(0.85), radius: glowRadius, x: 0, y: 0)
+                        }
+                        Image(systemName: "heart")
+                            .font(.system(size: 22, weight: .medium))
+                            .foregroundStyle(.black)
+                    }
+                }
+                .frame(width: 44, height: 44)
+                .contentShape(Rectangle())
+                .onTapGesture { onToggleFavorite() }
+                .padding(.trailing, 16)
             }
         }
     }
